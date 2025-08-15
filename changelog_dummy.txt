@@ -1,1 +1,2 @@
 Update 0: Enhance error handling and validation in dashboard
+Update 1: Update database models documentation and inline comments
