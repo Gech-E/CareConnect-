@@ -3,3 +3,4 @@ Update 1: Update database models documentation and inline comments
 Update 2: Standardize API responses in prescription
 Update 3: Optimize database queries in appointment scheduling
 Update 4: Optimize database queries in prescription
+Update 5: Implement caching strategy for middleware
