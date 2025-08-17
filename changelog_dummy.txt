@@ -9,3 +9,4 @@ Update 7: Optimize database queries in prescription
 Update 8: Fix responsive layout issues in billing integration
 Update 9: Standardize API responses in user management
 Update 10: Enhance error handling and validation in prescription
+Update 11: Optimize database queries in user management
