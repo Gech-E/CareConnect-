@@ -23,3 +23,4 @@ Update 21: Refactor UI components module to improve maintainability
 Update 22: Update appointment scheduling documentation and inline comments
 Update 23: Improve accessibility (a11y) in audit logging UI
 Update 24: Update dependency versions for dashboard
+Update 25: Refactor prescription module to improve maintainability
