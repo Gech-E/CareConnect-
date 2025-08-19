@@ -25,3 +25,4 @@ Update 23: Improve accessibility (a11y) in audit logging UI
 Update 24: Update dependency versions for dashboard
 Update 25: Refactor prescription module to improve maintainability
 Update 26: Optimize database queries in middleware
+Update 27: Implement caching strategy for prescription
