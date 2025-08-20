@@ -34,3 +34,4 @@ Update 32: Update dependency versions for patient management
 Update 33: Fix edge case bug in billing integration component
 Update 34: Add comprehensive unit tests for dashboard
 Update 35: Add comprehensive unit tests for video consultation
+Update 36: Resolve ESLint warnings in user management
