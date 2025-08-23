@@ -63,3 +63,4 @@ Update 61: Improve accessibility (a11y) in database models UI
 Update 62: Standardize API responses in billing integration
 Update 63: Add end-to-end test coverage for auth
 Update 64: Refactor audit logging module to improve maintainability
+Update 65: Add comprehensive unit tests for API router
