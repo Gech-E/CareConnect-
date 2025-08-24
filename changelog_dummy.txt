@@ -70,3 +70,4 @@ Update 68: Add end-to-end test coverage for prescription
 Update 69: Improve accessibility (a11y) in patient management UI
 Update 70: Fix edge case bug in database models component
 Update 71: Add comprehensive unit tests for dashboard
+Update 72: Optimize database queries in prescription
