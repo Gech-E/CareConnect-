@@ -73,3 +73,4 @@ Update 71: Add comprehensive unit tests for dashboard
 Update 72: Optimize database queries in prescription
 Update 73: Clean up dead code in user management service
 Update 74: Update middleware documentation and inline comments
+Update 75: Add end-to-end test coverage for billing integration
