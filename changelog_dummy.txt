@@ -88,3 +88,4 @@ Update 86: Enhance error handling and validation in secure messaging
 Update 87: Implement caching strategy for billing integration
 Update 88: Improve state management performance in billing integration
 Update 89: Update billing integration documentation and inline comments
+Update 90: Add comprehensive unit tests for appointment scheduling
