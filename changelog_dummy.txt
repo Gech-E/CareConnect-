@@ -85,3 +85,4 @@ Update 83: Implement caching strategy for appointment scheduling
 Update 84: Enhance error handling and validation in billing integration
 Update 85: Update audit logging documentation and inline comments
 Update 86: Enhance error handling and validation in secure messaging
+Update 87: Implement caching strategy for billing integration
