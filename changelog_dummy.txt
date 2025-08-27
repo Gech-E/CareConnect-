@@ -97,3 +97,4 @@ Update 95: Update dependency versions for API router
 Update 96: Implement caching strategy for database models
 Update 97: Add end-to-end test coverage for dashboard
 Update 98: Optimize database queries in user management
+Update 99: Implement caching strategy for prescription
