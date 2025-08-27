@@ -92,3 +92,4 @@ Update 90: Add comprehensive unit tests for appointment scheduling
 Update 91: Fix edge case bug in audit logging component
 Update 92: Fix responsive layout issues in audit logging
 Update 93: Improve state management performance in dashboard
+Update 94: Improve accessibility (a11y) in video consultation UI
