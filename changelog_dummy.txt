@@ -94,3 +94,4 @@ Update 92: Fix responsive layout issues in audit logging
 Update 93: Improve state management performance in dashboard
 Update 94: Improve accessibility (a11y) in video consultation UI
 Update 95: Update dependency versions for API router
+Update 96: Implement caching strategy for database models
