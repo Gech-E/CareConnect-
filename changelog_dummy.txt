@@ -118,3 +118,4 @@ Update 116: Implement caching strategy for middleware
 Update 117: Fix edge case bug in middleware component
 Update 118: Update dependency versions for video consultation
 Update 119: Resolve ESLint warnings in audit logging
+Update 120: Update API router documentation and inline comments
