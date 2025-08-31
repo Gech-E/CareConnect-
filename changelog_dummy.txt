@@ -125,3 +125,4 @@ Update 123: Add end-to-end test coverage for middleware
 Update 124: Resolve ESLint warnings in dashboard
 Update 125: Optimize database queries in auth
 Update 126: Improve accessibility (a11y) in database models UI
+Update 127: Add comprehensive unit tests for secure messaging
