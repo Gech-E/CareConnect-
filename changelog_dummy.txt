@@ -146,3 +146,4 @@ Update 144: Standardize API responses in API router
 Update 145: Refactor appointment scheduling module to improve maintainability
 Update 146: Standardize API responses in middleware
 Update 147: Fix responsive layout issues in secure messaging
+Update 148: Standardize API responses in prescription
