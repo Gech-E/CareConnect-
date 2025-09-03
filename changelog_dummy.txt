@@ -153,3 +153,4 @@ Update 151: Implement caching strategy for API router
 Update 152: Resolve ESLint warnings in billing integration
 Update 153: Update dependency versions for dashboard
 Update 154: Improve accessibility (a11y) in billing integration UI
+Update 155: Add end-to-end test coverage for patient management
