@@ -163,3 +163,4 @@ Update 161: Add comprehensive unit tests for audit logging
 Update 162: Fix edge case bug in UI components component
 Update 163: Resolve ESLint warnings in patient management
 Update 164: Add end-to-end test coverage for UI components
+Update 165: Refactor user management module to improve maintainability
