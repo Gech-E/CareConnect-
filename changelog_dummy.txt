@@ -158,3 +158,4 @@ Update 156: Update dependency versions for secure messaging
 Update 157: Add comprehensive unit tests for middleware
 Update 158: Fix responsive layout issues in UI components
 Update 159: Standardize API responses in prescription
+Update 160: Improve accessibility (a11y) in billing integration UI
