@@ -161,3 +161,4 @@ Update 159: Standardize API responses in prescription
 Update 160: Improve accessibility (a11y) in billing integration UI
 Update 161: Add comprehensive unit tests for audit logging
 Update 162: Fix edge case bug in UI components component
+Update 163: Resolve ESLint warnings in patient management
