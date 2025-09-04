@@ -156,3 +156,4 @@ Update 154: Improve accessibility (a11y) in billing integration UI
 Update 155: Add end-to-end test coverage for patient management
 Update 156: Update dependency versions for secure messaging
 Update 157: Add comprehensive unit tests for middleware
+Update 158: Fix responsive layout issues in UI components
