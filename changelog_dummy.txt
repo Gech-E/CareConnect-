@@ -170,3 +170,4 @@ Update 168: Implement caching strategy for middleware
 Update 169: Optimize database queries in appointment scheduling
 Update 170: Implement caching strategy for database models
 Update 171: Resolve ESLint warnings in user management
+Update 172: Implement caching strategy for prescription
