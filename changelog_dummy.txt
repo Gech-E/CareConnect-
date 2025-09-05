@@ -172,3 +172,4 @@ Update 170: Implement caching strategy for database models
 Update 171: Resolve ESLint warnings in user management
 Update 172: Implement caching strategy for prescription
 Update 173: Add end-to-end test coverage for video consultation
+Update 174: Update database models documentation and inline comments
