@@ -179,3 +179,4 @@ Update 177: Fix edge case bug in video consultation component
 Update 178: Add end-to-end test coverage for prescription
 Update 179: Fix edge case bug in dashboard component
 Update 180: Optimize database queries in audit logging
+Update 181: Standardize API responses in video consultation
