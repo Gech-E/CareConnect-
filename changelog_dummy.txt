@@ -175,3 +175,4 @@ Update 173: Add end-to-end test coverage for video consultation
 Update 174: Update database models documentation and inline comments
 Update 175: Resolve ESLint warnings in secure messaging
 Update 176: Add comprehensive unit tests for audit logging
+Update 177: Fix edge case bug in video consultation component
