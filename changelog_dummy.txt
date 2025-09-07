@@ -185,3 +185,4 @@ Update 183: Add comprehensive unit tests for appointment scheduling
 Update 184: Optimize database queries in auth
 Update 185: Standardize API responses in API router
 Update 186: Clean up dead code in secure messaging service
+Update 187: Add end-to-end test coverage for appointment scheduling
