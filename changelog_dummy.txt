@@ -189,3 +189,4 @@ Update 187: Add end-to-end test coverage for appointment scheduling
 Update 188: Improve state management performance in auth
 Update 189: Improve state management performance in middleware
 Update 190: Clean up dead code in user management service
+Update 191: Enhance error handling and validation in video consultation
