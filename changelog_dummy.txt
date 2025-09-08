@@ -196,3 +196,4 @@ Update 194: Add end-to-end test coverage for appointment scheduling
 Update 195: Fix responsive layout issues in user management
 Update 196: Update dependency versions for prescription
 Update 197: Implement caching strategy for appointment scheduling
+Update 198: Resolve ESLint warnings in UI components
