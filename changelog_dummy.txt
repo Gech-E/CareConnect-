@@ -194,3 +194,4 @@ Update 192: Fix edge case bug in patient management component
 Update 193: Improve state management performance in audit logging
 Update 194: Add end-to-end test coverage for appointment scheduling
 Update 195: Fix responsive layout issues in user management
+Update 196: Update dependency versions for prescription
