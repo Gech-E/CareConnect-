@@ -206,3 +206,4 @@ Update 204: Optimize database queries in dashboard
 Update 205: Add comprehensive unit tests for audit logging
 Update 206: Improve accessibility (a11y) in middleware UI
 Update 207: Clean up dead code in audit logging service
+Update 208: Fix edge case bug in video consultation component
