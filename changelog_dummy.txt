@@ -209,3 +209,4 @@ Update 207: Clean up dead code in audit logging service
 Update 208: Fix edge case bug in video consultation component
 Update 209: Standardize API responses in database models
 Update 210: Resolve ESLint warnings in prescription
+Update 211: Enhance error handling and validation in dashboard
