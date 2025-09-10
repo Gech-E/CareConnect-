@@ -212,3 +212,4 @@ Update 210: Resolve ESLint warnings in prescription
 Update 211: Enhance error handling and validation in dashboard
 Update 212: Clean up dead code in dashboard service
 Update 213: Enhance error handling and validation in secure messaging
+Update 214: Update dependency versions for prescription
