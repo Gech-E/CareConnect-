@@ -220,3 +220,4 @@ Update 218: Add end-to-end test coverage for billing integration
 Update 219: Optimize database queries in video consultation
 Update 220: Fix responsive layout issues in dashboard
 Update 221: Add end-to-end test coverage for auth
+Update 222: Clean up dead code in API router service
