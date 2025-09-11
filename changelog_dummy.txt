@@ -219,3 +219,4 @@ Update 217: Optimize database queries in dashboard
 Update 218: Add end-to-end test coverage for billing integration
 Update 219: Optimize database queries in video consultation
 Update 220: Fix responsive layout issues in dashboard
+Update 221: Add end-to-end test coverage for auth
