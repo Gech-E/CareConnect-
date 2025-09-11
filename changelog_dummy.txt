@@ -215,3 +215,4 @@ Update 213: Enhance error handling and validation in secure messaging
 Update 214: Update dependency versions for prescription
 Update 215: Update dependency versions for secure messaging
 Update 216: Improve accessibility (a11y) in prescription UI
+Update 217: Optimize database queries in dashboard
