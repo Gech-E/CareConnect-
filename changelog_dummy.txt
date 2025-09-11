@@ -217,3 +217,4 @@ Update 215: Update dependency versions for secure messaging
 Update 216: Improve accessibility (a11y) in prescription UI
 Update 217: Optimize database queries in dashboard
 Update 218: Add end-to-end test coverage for billing integration
+Update 219: Optimize database queries in video consultation
