@@ -229,3 +229,4 @@ Update 227: Update secure messaging documentation and inline comments
 Update 228: Standardize API responses in prescription
 Update 229: Refactor appointment scheduling module to improve maintainability
 Update 230: Optimize database queries in billing integration
+Update 231: Fix responsive layout issues in secure messaging
