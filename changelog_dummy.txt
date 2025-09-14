@@ -243,3 +243,4 @@ Update 241: Update dependency versions for dashboard
 Update 242: Standardize API responses in UI components
 Update 243: Update audit logging documentation and inline comments
 Update 244: Add end-to-end test coverage for dashboard
+Update 245: Add end-to-end test coverage for prescription
