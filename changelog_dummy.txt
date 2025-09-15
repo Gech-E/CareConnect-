@@ -247,3 +247,4 @@ Update 245: Add end-to-end test coverage for prescription
 Update 246: Fix edge case bug in user management component
 Update 247: Enhance error handling and validation in patient management
 Update 248: Clean up dead code in UI components service
+Update 249: Add end-to-end test coverage for patient management
