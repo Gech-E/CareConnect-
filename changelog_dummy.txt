@@ -249,3 +249,4 @@ Update 247: Enhance error handling and validation in patient management
 Update 248: Clean up dead code in UI components service
 Update 249: Add end-to-end test coverage for patient management
 Update 250: Fix edge case bug in patient management component
+Update 251: Refactor appointment scheduling module to improve maintainability
