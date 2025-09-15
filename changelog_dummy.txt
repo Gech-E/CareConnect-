@@ -251,3 +251,4 @@ Update 249: Add end-to-end test coverage for patient management
 Update 250: Fix edge case bug in patient management component
 Update 251: Refactor appointment scheduling module to improve maintainability
 Update 252: Update user management documentation and inline comments
+Update 253: Enhance error handling and validation in prescription
