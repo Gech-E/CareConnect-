@@ -259,3 +259,4 @@ Update 257: Clean up dead code in secure messaging service
 Update 258: Add end-to-end test coverage for secure messaging
 Update 259: Update dependency versions for prescription
 Update 260: Improve state management performance in API router
+Update 261: Update dependency versions for patient management
