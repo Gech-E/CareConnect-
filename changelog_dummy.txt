@@ -262,3 +262,4 @@ Update 260: Improve state management performance in API router
 Update 261: Update dependency versions for patient management
 Update 262: Add end-to-end test coverage for database models
 Update 263: Optimize database queries in video consultation
+Update 264: Add comprehensive unit tests for patient management
