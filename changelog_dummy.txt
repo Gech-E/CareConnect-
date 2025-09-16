@@ -256,3 +256,4 @@ Update 254: Refactor video consultation module to improve maintainability
 Update 255: Clean up dead code in patient management service
 Update 256: Enhance error handling and validation in appointment scheduling
 Update 257: Clean up dead code in secure messaging service
+Update 258: Add end-to-end test coverage for secure messaging
