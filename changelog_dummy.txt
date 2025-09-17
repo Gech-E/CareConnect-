@@ -265,3 +265,4 @@ Update 263: Optimize database queries in video consultation
 Update 264: Add comprehensive unit tests for patient management
 Update 265: Update user management documentation and inline comments
 Update 266: Implement caching strategy for dashboard
+Update 267: Update dependency versions for billing integration
