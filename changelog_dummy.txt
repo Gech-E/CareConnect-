@@ -279,3 +279,4 @@ Update 277: Fix edge case bug in video consultation component
 Update 278: Improve state management performance in API router
 Update 279: Update UI components documentation and inline comments
 Update 280: Enhance error handling and validation in auth
+Update 281: Update billing integration documentation and inline comments
