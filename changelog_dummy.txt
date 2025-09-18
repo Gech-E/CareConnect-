@@ -275,3 +275,4 @@ Update 273: Update API router documentation and inline comments
 Update 274: Implement caching strategy for patient management
 Update 275: Enhance error handling and validation in API router
 Update 276: Optimize database queries in database models
+Update 277: Fix edge case bug in video consultation component
