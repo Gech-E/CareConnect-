@@ -281,3 +281,4 @@ Update 279: Update UI components documentation and inline comments
 Update 280: Enhance error handling and validation in auth
 Update 281: Update billing integration documentation and inline comments
 Update 282: Add end-to-end test coverage for user management
+Update 283: Update video consultation documentation and inline comments
