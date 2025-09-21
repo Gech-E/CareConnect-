@@ -298,3 +298,4 @@ Update 296: Improve accessibility (a11y) in prescription UI
 Update 297: Refactor appointment scheduling module to improve maintainability
 Update 298: Add end-to-end test coverage for prescription
 Update 299: Fix edge case bug in middleware component
+Update 300: Update audit logging documentation and inline comments
