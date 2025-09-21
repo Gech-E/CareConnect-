@@ -296,3 +296,4 @@ Update 294: Implement caching strategy for API router
 Update 295: Add comprehensive unit tests for appointment scheduling
 Update 296: Improve accessibility (a11y) in prescription UI
 Update 297: Refactor appointment scheduling module to improve maintainability
+Update 298: Add end-to-end test coverage for prescription
