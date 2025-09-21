@@ -302,3 +302,4 @@ Update 300: Update audit logging documentation and inline comments
 Update 301: Fix responsive layout issues in video consultation
 Update 302: Optimize database queries in patient management
 Update 303: Fix edge case bug in UI components component
+Update 304: Fix responsive layout issues in secure messaging
