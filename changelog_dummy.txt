@@ -304,3 +304,4 @@ Update 302: Optimize database queries in patient management
 Update 303: Fix edge case bug in UI components component
 Update 304: Fix responsive layout issues in secure messaging
 Update 305: Standardize API responses in video consultation
+Update 306: Update dependency versions for user management
