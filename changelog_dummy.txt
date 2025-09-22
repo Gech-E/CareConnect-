@@ -310,3 +310,4 @@ Update 308: Update dependency versions for UI components
 Update 309: Standardize API responses in auth
 Update 310: Improve state management performance in billing integration
 Update 311: Fix responsive layout issues in appointment scheduling
+Update 312: Add end-to-end test coverage for patient management
