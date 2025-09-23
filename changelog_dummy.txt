@@ -315,3 +315,4 @@ Update 313: Fix edge case bug in middleware component
 Update 314: Refactor UI components module to improve maintainability
 Update 315: Update dependency versions for secure messaging
 Update 316: Clean up dead code in audit logging service
+Update 317: Update dependency versions for secure messaging
