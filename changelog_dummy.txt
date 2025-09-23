@@ -318,3 +318,4 @@ Update 316: Clean up dead code in audit logging service
 Update 317: Update dependency versions for secure messaging
 Update 318: Enhance error handling and validation in secure messaging
 Update 319: Optimize database queries in middleware
+Update 320: Fix responsive layout issues in middleware
