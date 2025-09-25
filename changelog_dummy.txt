@@ -336,3 +336,4 @@ Update 334: Resolve ESLint warnings in auth
 Update 335: Enhance error handling and validation in audit logging
 Update 336: Add end-to-end test coverage for patient management
 Update 337: Implement caching strategy for API router
+Update 338: Improve accessibility (a11y) in patient management UI
