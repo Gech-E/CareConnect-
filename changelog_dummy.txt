@@ -330,3 +330,4 @@ Update 328: Standardize API responses in appointment scheduling
 Update 329: Improve state management performance in audit logging
 Update 330: Optimize database queries in dashboard
 Update 331: Refactor middleware module to improve maintainability
+Update 332: Add end-to-end test coverage for user management
