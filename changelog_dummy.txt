@@ -334,3 +334,4 @@ Update 332: Add end-to-end test coverage for user management
 Update 333: Implement caching strategy for audit logging
 Update 334: Resolve ESLint warnings in auth
 Update 335: Enhance error handling and validation in audit logging
+Update 336: Add end-to-end test coverage for patient management
