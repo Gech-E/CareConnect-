@@ -353,3 +353,4 @@ Update 351: Optimize database queries in video consultation
 Update 352: Refactor billing integration module to improve maintainability
 Update 353: Standardize API responses in video consultation
 Update 354: Refactor middleware module to improve maintainability
+Update 355: Fix responsive layout issues in secure messaging
