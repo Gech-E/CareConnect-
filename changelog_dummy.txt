@@ -351,3 +351,4 @@ Update 349: Implement caching strategy for API router
 Update 350: Refactor auth module to improve maintainability
 Update 351: Optimize database queries in video consultation
 Update 352: Refactor billing integration module to improve maintainability
+Update 353: Standardize API responses in video consultation
