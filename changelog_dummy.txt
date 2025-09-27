@@ -347,3 +347,4 @@ Update 345: Refactor billing integration module to improve maintainability
 Update 346: Improve accessibility (a11y) in video consultation UI
 Update 347: Implement caching strategy for appointment scheduling
 Update 348: Resolve ESLint warnings in user management
+Update 349: Implement caching strategy for API router
