@@ -349,3 +349,4 @@ Update 347: Implement caching strategy for appointment scheduling
 Update 348: Resolve ESLint warnings in user management
 Update 349: Implement caching strategy for API router
 Update 350: Refactor auth module to improve maintainability
+Update 351: Optimize database queries in video consultation
