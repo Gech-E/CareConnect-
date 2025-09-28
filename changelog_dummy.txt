@@ -361,3 +361,4 @@ Update 359: Improve state management performance in video consultation
 Update 360: Add end-to-end test coverage for user management
 Update 361: Add end-to-end test coverage for API router
 Update 362: Improve state management performance in patient management
+Update 363: Improve state management performance in UI components
