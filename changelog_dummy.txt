@@ -358,3 +358,4 @@ Update 356: Standardize API responses in appointment scheduling
 Update 357: Implement caching strategy for appointment scheduling
 Update 358: Update dependency versions for appointment scheduling
 Update 359: Improve state management performance in video consultation
+Update 360: Add end-to-end test coverage for user management
