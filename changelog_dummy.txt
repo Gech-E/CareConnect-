@@ -373,3 +373,4 @@ Update 371: Enhance error handling and validation in prescription
 Update 372: Improve state management performance in prescription
 Update 373: Update appointment scheduling documentation and inline comments
 Update 374: Update video consultation documentation and inline comments
+Update 375: Update dependency versions for patient management
