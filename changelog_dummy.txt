@@ -371,3 +371,4 @@ Update 369: Implement caching strategy for audit logging
 Update 370: Optimize database queries in billing integration
 Update 371: Enhance error handling and validation in prescription
 Update 372: Improve state management performance in prescription
+Update 373: Update appointment scheduling documentation and inline comments
