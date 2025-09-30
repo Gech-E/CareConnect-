@@ -375,3 +375,4 @@ Update 373: Update appointment scheduling documentation and inline comments
 Update 374: Update video consultation documentation and inline comments
 Update 375: Update dependency versions for patient management
 Update 376: Update dependency versions for database models
+Update 377: Improve accessibility (a11y) in API router UI
