@@ -385,3 +385,4 @@ Update 383: Improve state management performance in auth
 Update 384: Standardize API responses in patient management
 Update 385: Update dependency versions for UI components
 Update 386: Resolve ESLint warnings in video consultation
+Update 387: Update dependency versions for UI components
