@@ -391,3 +391,4 @@ Update 389: Fix responsive layout issues in user management
 Update 390: Fix edge case bug in database models component
 Update 391: Enhance error handling and validation in patient management
 Update 392: Clean up dead code in auth service
+Update 393: Add end-to-end test coverage for user management
