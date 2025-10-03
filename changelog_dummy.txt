@@ -399,3 +399,4 @@ Update 397: Optimize database queries in video consultation
 Update 398: Add end-to-end test coverage for UI components
 Update 399: Add end-to-end test coverage for video consultation
 Update 400: Update dependency versions for appointment scheduling
+Update 401: Refactor database models module to improve maintainability
