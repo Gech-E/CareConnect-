@@ -402,3 +402,4 @@ Update 400: Update dependency versions for appointment scheduling
 Update 401: Refactor database models module to improve maintainability
 Update 402: Fix edge case bug in UI components component
 Update 403: Clean up dead code in audit logging service
+Update 404: Fix edge case bug in patient management component
