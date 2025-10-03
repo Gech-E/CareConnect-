@@ -395,3 +395,4 @@ Update 393: Add end-to-end test coverage for user management
 Update 394: Resolve ESLint warnings in prescription
 Update 395: Resolve ESLint warnings in audit logging
 Update 396: Standardize API responses in secure messaging
+Update 397: Optimize database queries in video consultation
