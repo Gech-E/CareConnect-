@@ -405,3 +405,4 @@ Update 403: Clean up dead code in audit logging service
 Update 404: Fix edge case bug in patient management component
 Update 405: Standardize API responses in database models
 Update 406: Update patient management documentation and inline comments
+Update 407: Optimize database queries in patient management
