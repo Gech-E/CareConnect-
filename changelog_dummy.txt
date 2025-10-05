@@ -415,3 +415,4 @@ Update 413: Improve accessibility (a11y) in billing integration UI
 Update 414: Resolve ESLint warnings in user management
 Update 415: Improve accessibility (a11y) in UI components UI
 Update 416: Add comprehensive unit tests for auth
+Update 417: Update dashboard documentation and inline comments
