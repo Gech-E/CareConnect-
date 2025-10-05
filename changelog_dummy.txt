@@ -416,3 +416,4 @@ Update 414: Resolve ESLint warnings in user management
 Update 415: Improve accessibility (a11y) in UI components UI
 Update 416: Add comprehensive unit tests for auth
 Update 417: Update dashboard documentation and inline comments
+Update 418: Update user management documentation and inline comments
