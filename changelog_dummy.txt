@@ -411,3 +411,4 @@ Update 409: Update dependency versions for UI components
 Update 410: Add end-to-end test coverage for prescription
 Update 411: Add end-to-end test coverage for middleware
 Update 412: Refactor API router module to improve maintainability
+Update 413: Improve accessibility (a11y) in billing integration UI
