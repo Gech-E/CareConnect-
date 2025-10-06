@@ -422,3 +422,4 @@ Update 420: Enhance error handling and validation in prescription
 Update 421: Update API router documentation and inline comments
 Update 422: Implement caching strategy for database models
 Update 423: Improve state management performance in patient management
+Update 424: Standardize API responses in middleware
