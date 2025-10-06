@@ -423,3 +423,4 @@ Update 421: Update API router documentation and inline comments
 Update 422: Implement caching strategy for database models
 Update 423: Improve state management performance in patient management
 Update 424: Standardize API responses in middleware
+Update 425: Improve accessibility (a11y) in appointment scheduling UI
