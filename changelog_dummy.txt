@@ -433,3 +433,4 @@ Update 431: Refactor user management module to improve maintainability
 Update 432: Optimize database queries in API router
 Update 433: Optimize database queries in API router
 Update 434: Fix responsive layout issues in database models
+Update 435: Improve accessibility (a11y) in database models UI
