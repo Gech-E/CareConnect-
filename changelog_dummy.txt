@@ -430,3 +430,4 @@ Update 428: Standardize API responses in patient management
 Update 429: Fix edge case bug in database models component
 Update 430: Update API router documentation and inline comments
 Update 431: Refactor user management module to improve maintainability
+Update 432: Optimize database queries in API router
