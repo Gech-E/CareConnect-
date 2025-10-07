@@ -435,3 +435,4 @@ Update 433: Optimize database queries in API router
 Update 434: Fix responsive layout issues in database models
 Update 435: Improve accessibility (a11y) in database models UI
 Update 436: Implement caching strategy for video consultation
+Update 437: Fix responsive layout issues in middleware
