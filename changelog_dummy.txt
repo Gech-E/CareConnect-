@@ -439,3 +439,4 @@ Update 437: Fix responsive layout issues in middleware
 Update 438: Refactor appointment scheduling module to improve maintainability
 Update 439: Implement caching strategy for UI components
 Update 440: Optimize database queries in patient management
+Update 441: Improve accessibility (a11y) in audit logging UI
