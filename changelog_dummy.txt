@@ -443,3 +443,4 @@ Update 441: Improve accessibility (a11y) in audit logging UI
 Update 442: Add end-to-end test coverage for UI components
 Update 443: Clean up dead code in video consultation service
 Update 444: Fix responsive layout issues in prescription
+Update 445: Fix edge case bug in patient management component
