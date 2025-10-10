@@ -456,3 +456,4 @@ Update 454: Refactor database models module to improve maintainability
 Update 455: Implement caching strategy for user management
 Update 456: Improve state management performance in secure messaging
 Update 457: Add end-to-end test coverage for user management
+Update 458: Add end-to-end test coverage for prescription
