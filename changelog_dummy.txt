@@ -464,3 +464,4 @@ Update 462: Resolve ESLint warnings in database models
 Update 463: Implement caching strategy for appointment scheduling
 Update 464: Fix responsive layout issues in patient management
 Update 465: Refactor audit logging module to improve maintainability
+Update 466: Resolve ESLint warnings in video consultation
