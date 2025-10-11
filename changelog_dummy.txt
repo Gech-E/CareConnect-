@@ -466,3 +466,4 @@ Update 464: Fix responsive layout issues in patient management
 Update 465: Refactor audit logging module to improve maintainability
 Update 466: Resolve ESLint warnings in video consultation
 Update 467: Improve accessibility (a11y) in prescription UI
+Update 468: Update dependency versions for video consultation
