@@ -472,3 +472,4 @@ Update 470: Update auth documentation and inline comments
 Update 471: Clean up dead code in UI components service
 Update 472: Standardize API responses in prescription
 Update 473: Add comprehensive unit tests for prescription
+Update 474: Fix edge case bug in video consultation component
