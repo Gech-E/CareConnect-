@@ -485,3 +485,4 @@ Update 483: Update dependency versions for auth
 Update 484: Refactor secure messaging module to improve maintainability
 Update 485: Enhance error handling and validation in patient management
 Update 486: Enhance error handling and validation in API router
+Update 487: Fix edge case bug in database models component
