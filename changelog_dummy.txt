@@ -498,3 +498,4 @@ Update 496: Add end-to-end test coverage for video consultation
 Update 497: Add comprehensive unit tests for user management
 Update 498: Fix responsive layout issues in UI components
 Update 499: Standardize API responses in UI components
+Update 500: Update dependency versions for billing integration
