@@ -509,3 +509,4 @@ Update 507: Update middleware documentation and inline comments
 Update 508: Clean up dead code in dashboard service
 Update 509: Refactor auth module to improve maintainability
 Update 510: Update dependency versions for video consultation
+Update 511: Fix responsive layout issues in patient management
