@@ -503,3 +503,4 @@ Update 501: Clean up dead code in middleware service
 Update 502: Add comprehensive unit tests for audit logging
 Update 503: Improve state management performance in patient management
 Update 504: Optimize database queries in database models
+Update 505: Fix responsive layout issues in video consultation
