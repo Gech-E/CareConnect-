@@ -512,3 +512,4 @@ Update 510: Update dependency versions for video consultation
 Update 511: Fix responsive layout issues in patient management
 Update 512: Clean up dead code in video consultation service
 Update 513: Resolve ESLint warnings in user management
+Update 514: Enhance error handling and validation in dashboard
