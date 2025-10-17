@@ -516,3 +516,4 @@ Update 514: Enhance error handling and validation in dashboard
 Update 515: Improve accessibility (a11y) in secure messaging UI
 Update 516: Fix edge case bug in middleware component
 Update 517: Fix responsive layout issues in video consultation
+Update 518: Enhance error handling and validation in prescription
