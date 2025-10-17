@@ -511,3 +511,4 @@ Update 509: Refactor auth module to improve maintainability
 Update 510: Update dependency versions for video consultation
 Update 511: Fix responsive layout issues in patient management
 Update 512: Clean up dead code in video consultation service
+Update 513: Resolve ESLint warnings in user management
