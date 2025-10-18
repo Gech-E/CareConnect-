@@ -518,3 +518,4 @@ Update 516: Fix edge case bug in middleware component
 Update 517: Fix responsive layout issues in video consultation
 Update 518: Enhance error handling and validation in prescription
 Update 519: Enhance error handling and validation in appointment scheduling
+Update 520: Resolve ESLint warnings in video consultation
