@@ -531,3 +531,4 @@ Update 529: Improve state management performance in video consultation
 Update 530: Enhance error handling and validation in dashboard
 Update 531: Clean up dead code in prescription service
 Update 532: Enhance error handling and validation in dashboard
+Update 533: Resolve ESLint warnings in appointment scheduling
