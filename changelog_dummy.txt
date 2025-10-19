@@ -529,3 +529,4 @@ Update 527: Refactor UI components module to improve maintainability
 Update 528: Refactor secure messaging module to improve maintainability
 Update 529: Improve state management performance in video consultation
 Update 530: Enhance error handling and validation in dashboard
+Update 531: Clean up dead code in prescription service
