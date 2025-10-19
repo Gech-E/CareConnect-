@@ -534,3 +534,4 @@ Update 532: Enhance error handling and validation in dashboard
 Update 533: Resolve ESLint warnings in appointment scheduling
 Update 534: Improve state management performance in middleware
 Update 535: Standardize API responses in dashboard
+Update 536: Add end-to-end test coverage for dashboard
