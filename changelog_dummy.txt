@@ -539,3 +539,4 @@ Update 537: Add end-to-end test coverage for secure messaging
 Update 538: Improve accessibility (a11y) in auth UI
 Update 539: Add end-to-end test coverage for patient management
 Update 540: Refactor middleware module to improve maintainability
+Update 541: Refactor audit logging module to improve maintainability
