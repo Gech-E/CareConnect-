@@ -546,3 +546,4 @@ Update 544: Update dependency versions for secure messaging
 Update 545: Improve state management performance in audit logging
 Update 546: Improve accessibility (a11y) in UI components UI
 Update 547: Refactor audit logging module to improve maintainability
+Update 548: Improve accessibility (a11y) in appointment scheduling UI
