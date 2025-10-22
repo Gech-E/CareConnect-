@@ -559,3 +559,4 @@ Update 557: Update user management documentation and inline comments
 Update 558: Optimize database queries in audit logging
 Update 559: Standardize API responses in video consultation
 Update 560: Fix edge case bug in audit logging component
+Update 561: Fix edge case bug in middleware component
