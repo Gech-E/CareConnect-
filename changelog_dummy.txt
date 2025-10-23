@@ -561,3 +561,4 @@ Update 559: Standardize API responses in video consultation
 Update 560: Fix edge case bug in audit logging component
 Update 561: Fix edge case bug in middleware component
 Update 562: Enhance error handling and validation in auth
+Update 563: Refactor auth module to improve maintainability
