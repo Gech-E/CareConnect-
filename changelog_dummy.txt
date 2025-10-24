@@ -572,3 +572,4 @@ Update 570: Implement caching strategy for auth
 Update 571: Enhance error handling and validation in dashboard
 Update 572: Resolve ESLint warnings in billing integration
 Update 573: Update billing integration documentation and inline comments
+Update 574: Fix responsive layout issues in prescription
