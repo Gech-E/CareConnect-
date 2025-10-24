@@ -575,3 +575,4 @@ Update 573: Update billing integration documentation and inline comments
 Update 574: Fix responsive layout issues in prescription
 Update 575: Standardize API responses in UI components
 Update 576: Optimize database queries in API router
+Update 577: Add comprehensive unit tests for appointment scheduling
