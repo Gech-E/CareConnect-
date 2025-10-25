@@ -580,3 +580,4 @@ Update 578: Enhance error handling and validation in billing integration
 Update 579: Add end-to-end test coverage for appointment scheduling
 Update 580: Add comprehensive unit tests for audit logging
 Update 581: Clean up dead code in appointment scheduling service
+Update 582: Standardize API responses in appointment scheduling
