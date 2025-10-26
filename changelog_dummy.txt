@@ -591,3 +591,4 @@ Update 589: Add end-to-end test coverage for video consultation
 Update 590: Add comprehensive unit tests for dashboard
 Update 591: Refactor patient management module to improve maintainability
 Update 592: Update dependency versions for secure messaging
+Update 593: Update dependency versions for UI components
