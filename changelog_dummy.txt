@@ -584,3 +584,4 @@ Update 582: Standardize API responses in appointment scheduling
 Update 583: Resolve ESLint warnings in database models
 Update 584: Fix edge case bug in prescription component
 Update 585: Improve accessibility (a11y) in billing integration UI
+Update 586: Implement caching strategy for API router
