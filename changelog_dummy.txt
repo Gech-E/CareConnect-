@@ -594,3 +594,4 @@ Update 592: Update dependency versions for secure messaging
 Update 593: Update dependency versions for UI components
 Update 594: Fix edge case bug in secure messaging component
 Update 595: Update dependency versions for dashboard
+Update 596: Improve state management performance in middleware
