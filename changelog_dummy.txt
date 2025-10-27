@@ -596,3 +596,4 @@ Update 594: Fix edge case bug in secure messaging component
 Update 595: Update dependency versions for dashboard
 Update 596: Improve state management performance in middleware
 Update 597: Fix edge case bug in user management component
+Update 598: Update billing integration documentation and inline comments
