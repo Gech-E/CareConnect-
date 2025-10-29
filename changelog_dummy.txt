@@ -613,3 +613,4 @@ Update 611: Fix responsive layout issues in UI components
 Update 612: Optimize database queries in audit logging
 Update 613: Update secure messaging documentation and inline comments
 Update 614: Improve accessibility (a11y) in dashboard UI
+Update 615: Improve accessibility (a11y) in database models UI
