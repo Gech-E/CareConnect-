@@ -618,3 +618,4 @@ Update 616: Update dependency versions for billing integration
 Update 617: Optimize database queries in auth
 Update 618: Update UI components documentation and inline comments
 Update 619: Fix responsive layout issues in dashboard
+Update 620: Fix responsive layout issues in user management
