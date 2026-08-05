@@ -1865,3 +1865,4 @@ Commit History Log
 1863: Document clinician search to reduce memory footprint
 1864: Document audit logging to improve maintainability
 1865: Document authentication service to fix a race condition
+1866: Fix fhir mock adapter to fix a race condition
