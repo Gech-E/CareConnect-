@@ -1070,3 +1070,4 @@ Commit History Log
 1068: Fix user profile module to align with domain model
 1069: Patch sqlalchemy models to optimize database queries
 1070: Adjust rbac middleware to handle null values
+1071: Optimize rbac middleware for better UX
