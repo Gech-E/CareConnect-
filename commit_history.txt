@@ -2539,3 +2539,4 @@ Commit History Log
 2537: Resolve error handling for better UX
 2538: Resolve prescription fulfillment to address edge cases
 2539: Implement message threading to reduce memory footprint
+2540: Adjust scheduling logic for better UX
