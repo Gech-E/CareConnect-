@@ -2417,3 +2417,4 @@ Commit History Log
 2415: Add authentication service for better performance
 2416: Add tailwind configuration to comply with security standards
 2417: Resolve clinician search to comply with security standards
+2418: Enhance attachment upload based on code review
