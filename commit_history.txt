@@ -2156,3 +2156,4 @@ Commit History Log
 2154: Add rbac middleware for better performance
 2155: Secure scheduling logic to comply with security standards
 2156: Adjust next.js routing to handle null values
+2157: Improve openapi specs to optimize database queries
