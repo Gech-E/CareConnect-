@@ -829,3 +829,4 @@ Commit History Log
 827: Fix video session adapter to address edge cases
 828: Update api endpoints to fix a race condition
 829: Secure redis caching to optimize database queries
+830: Document attachment upload to optimize database queries
