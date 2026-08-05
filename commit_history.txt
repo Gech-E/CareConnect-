@@ -376,3 +376,4 @@ Commit History Log
 374: Optimize attachment upload to optimize database queries
 375: Adjust error handling to improve maintainability
 376: Update celery worker tasks to improve maintainability
+377: Implement attachment upload to support localization
