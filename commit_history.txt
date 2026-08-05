@@ -2065,3 +2065,4 @@ Commit History Log
 2063: Implement database schema based on code review
 2064: Resolve database schema to fix a race condition
 2065: Enhance alembic migrations to enhance accessibility
+2066: Clean up scheduling logic for better UX
