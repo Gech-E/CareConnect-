@@ -1889,3 +1889,4 @@ Commit History Log
 1887: Clean up prescription fulfillment to fix a race condition
 1888: Fix prescription fulfillment to enhance accessibility
 1889: Optimize prescription fulfillment to align with domain model
+1890: Resolve attachment upload to reduce memory footprint
