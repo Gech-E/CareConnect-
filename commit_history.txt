@@ -2016,3 +2016,4 @@ Commit History Log
 2014: Optimize error handling for better UX
 2015: Update attachment upload for better UX
 2016: Document next.js routing to address edge cases
+2017: Add rbac middleware to address edge cases
