@@ -396,3 +396,4 @@ Commit History Log
 394: Update docker compose setup to fix a race condition
 395: Patch waiting room ui to fix a race condition
 396: Secure user profile module to support localization
+397: Patch rbac middleware to address edge cases
