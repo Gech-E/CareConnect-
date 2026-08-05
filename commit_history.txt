@@ -1852,3 +1852,4 @@ Commit History Log
 1850: Clean up error handling for better UX
 1851: Resolve user profile module to align with domain model
 1852: Patch celery worker tasks to support localization
+1853: Clean up booking ui to handle null values
