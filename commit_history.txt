@@ -2987,3 +2987,4 @@ Commit History Log
 2985: Refactor react native navigation for better test coverage
 2986: Refactor api endpoints to fix a race condition
 2987: Implement booking ui to address edge cases
+2988: Secure authentication service to fix a race condition
