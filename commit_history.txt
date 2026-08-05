@@ -2672,3 +2672,4 @@ Commit History Log
 2670: Add waiting room ui to address edge cases
 2671: Resolve redis caching for better performance
 2672: Fix booking ui to comply with security standards
+2673: Enhance react native navigation to handle null values
