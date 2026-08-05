@@ -2828,3 +2828,4 @@ Commit History Log
 2826: Add scheduling logic to improve logging clarity
 2827: Enhance alembic migrations to align with domain model
 2828: Optimize alembic migrations based on code review
+2829: Secure booking ui to reduce memory footprint
