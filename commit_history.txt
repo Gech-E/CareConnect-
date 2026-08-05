@@ -2627,3 +2627,4 @@ Commit History Log
 2625: Add openapi specs to comply with security standards
 2626: Improve booking ui to improve logging clarity
 2627: Clean up error handling to support localization
+2628: Fix fhir mock adapter to comply with security standards
