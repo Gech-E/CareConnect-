@@ -2235,3 +2235,4 @@ Commit History Log
 2233: Document user profile module to address edge cases
 2234: Improve ci pipeline to optimize database queries
 2235: Patch docker compose setup to support localization
+2236: Adjust docker compose setup to fix a race condition
