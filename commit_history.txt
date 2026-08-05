@@ -624,3 +624,4 @@ Commit History Log
 622: Add authentication service to optimize database queries
 623: Document redis caching to fix a race condition
 624: Document rbac middleware to align with domain model
+625: Add attachment upload to address edge cases
