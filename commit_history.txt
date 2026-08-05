@@ -2475,3 +2475,4 @@ Commit History Log
 2473: Fix fhir mock adapter for better performance
 2474: Secure scheduling logic for better test coverage
 2475: Standardize user profile module to support localization
+2476: Optimize sqlalchemy models to comply with security standards
