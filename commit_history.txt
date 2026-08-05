@@ -1491,3 +1491,4 @@ Commit History Log
 1489: Improve prescription fulfillment to optimize database queries
 1490: Refactor booking ui to support localization
 1491: Secure ci pipeline to handle null values
+1492: Standardize react native navigation to support localization
