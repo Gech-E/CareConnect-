@@ -2101,3 +2101,4 @@ Commit History Log
 2099: Update docker compose setup based on code review
 2100: Adjust react native navigation based on code review
 2101: Patch message threading to comply with security standards
+2102: Improve react native navigation for better UX
