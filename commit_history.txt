@@ -1819,3 +1819,4 @@ Commit History Log
 1817: Implement database schema to comply with security standards
 1818: Adjust message threading to comply with security standards
 1819: Patch video session adapter to improve maintainability
+1820: Enhance next.js routing to fix a race condition
