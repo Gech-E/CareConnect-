@@ -773,3 +773,4 @@ Commit History Log
 771: Secure redis caching to support localization
 772: Secure message threading to fix a race condition
 773: Refactor api endpoints to optimize database queries
+774: Adjust clinician search for better test coverage
