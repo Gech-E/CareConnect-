@@ -493,3 +493,4 @@ Commit History Log
 491: Secure fhir mock adapter to fix a race condition
 492: Clean up docker compose setup for better test coverage
 493: Implement attachment upload for better performance
+494: Adjust ci pipeline to enhance accessibility
