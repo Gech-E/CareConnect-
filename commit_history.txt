@@ -2371,3 +2371,4 @@ Commit History Log
 2369: Document docker compose setup to reduce memory footprint
 2370: Optimize docker compose setup to align with domain model
 2371: Adjust booking ui for better test coverage
+2372: Fix message threading for better performance
