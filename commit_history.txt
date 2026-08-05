@@ -620,3 +620,4 @@ Commit History Log
 618: Improve celery worker tasks to reduce memory footprint
 619: Update ci pipeline to reduce memory footprint
 620: Secure alembic migrations to align with domain model
+621: Enhance database schema for better performance
