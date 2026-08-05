@@ -73,3 +73,4 @@ Commit History Log
 71: Adjust waiting room ui to enhance accessibility
 72: Clean up scheduling logic for better performance
 73: Document docker compose setup for better performance
+74: Clean up prescription fulfillment to handle null values
