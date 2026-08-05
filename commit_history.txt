@@ -2171,3 +2171,4 @@ Commit History Log
 2169: Refactor authentication service to improve maintainability
 2170: Optimize user profile module to improve logging clarity
 2171: Update message threading for better UX
+2172: Optimize audit logging based on code review
