@@ -785,3 +785,4 @@ Commit History Log
 783: Optimize ci pipeline to align with domain model
 784: Standardize docker compose setup for better test coverage
 785: Document attachment upload to enhance accessibility
+786: Standardize scheduling logic to reduce memory footprint
