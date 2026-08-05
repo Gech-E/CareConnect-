@@ -2130,3 +2130,4 @@ Commit History Log
 2128: Standardize react native navigation to comply with security standards
 2129: Add api endpoints to optimize database queries
 2130: Implement video session adapter based on code review
+2131: Optimize message threading for better performance
