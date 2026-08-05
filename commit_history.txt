@@ -2291,3 +2291,4 @@ Commit History Log
 2289: Enhance booking ui for better test coverage
 2290: Enhance fhir mock adapter for better UX
 2291: Standardize docker compose setup to reduce memory footprint
+2292: Improve ci pipeline to improve maintainability
