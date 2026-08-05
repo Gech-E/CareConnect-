@@ -1381,3 +1381,4 @@ Commit History Log
 1379: Enhance react native navigation to fix a race condition
 1380: Patch booking ui to comply with security standards
 1381: Improve message threading to support localization
+1382: Adjust scheduling logic to reduce memory footprint
