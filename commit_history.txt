@@ -1191,3 +1191,4 @@ Commit History Log
 1189: Standardize next.js routing to address edge cases
 1190: Implement user profile module for better test coverage
 1191: Secure audit logging for better UX
+1192: Adjust waiting room ui to improve maintainability
