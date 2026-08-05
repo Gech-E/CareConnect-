@@ -1587,3 +1587,4 @@ Commit History Log
 1585: Fix database schema to address edge cases
 1586: Fix waiting room ui to reduce memory footprint
 1587: Document next.js routing for better performance
+1588: Optimize prescription fulfillment to address edge cases
