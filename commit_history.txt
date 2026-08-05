@@ -2256,3 +2256,4 @@ Commit History Log
 2254: Add attachment upload to reduce memory footprint
 2255: Improve booking ui to reduce memory footprint
 2256: Optimize booking ui to fix a race condition
+2257: Document rbac middleware to improve logging clarity
