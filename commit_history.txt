@@ -1754,3 +1754,4 @@ Commit History Log
 1752: Resolve video session adapter to fix a race condition
 1753: Secure api endpoints to improve maintainability
 1754: Patch booking ui to fix a race condition
+1755: Refactor docker compose setup to address edge cases
