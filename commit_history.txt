@@ -1508,3 +1508,4 @@ Commit History Log
 1506: Add error handling to handle null values
 1507: Improve fhir mock adapter to comply with security standards
 1508: Implement authentication service for better UX
+1509: Fix audit logging based on code review
