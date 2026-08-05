@@ -1774,3 +1774,4 @@ Commit History Log
 1772: Add scheduling logic based on code review
 1773: Patch rbac middleware to address edge cases
 1774: Patch video session adapter to enhance accessibility
+1775: Document tailwind configuration to reduce memory footprint
