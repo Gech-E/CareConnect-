@@ -512,3 +512,4 @@ Commit History Log
 510: Adjust user profile module to enhance accessibility
 511: Secure docker compose setup based on code review
 512: Clean up fhir mock adapter to support localization
+513: Clean up react native navigation to align with domain model
