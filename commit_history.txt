@@ -2099,3 +2099,4 @@ Commit History Log
 2097: Add message threading to reduce memory footprint
 2098: Document waiting room ui for better test coverage
 2099: Update docker compose setup based on code review
+2100: Adjust react native navigation based on code review
