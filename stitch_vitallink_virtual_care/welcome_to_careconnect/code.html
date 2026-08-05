@@ -1,0 +1,82 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;overflow-x:hidden;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-background":"#191c1e","secondary-fixed-dim":"#6bd8cb","primary-fixed":"#d8e2ff","on-primary":"#ffffff","surface-tint":"#005bc0","tertiary":"#515f74","surface-container":"#eceef0","tertiary-fixed":"#d5e3fc","on-tertiary":"#ffffff","surface-container-low":"#f2f4f6","on-secondary-fixed":"#00201d","surface-container-highest":"#e0e3e5","outline-variant":"#c1c6d6","surface-dim":"#d8dadc","inverse-on-surface":"#eff1f3","on-secondary-fixed-variant":"#005049","tertiary-fixed-dim":"#b9c7df","secondary":"#006a61","on-error":"#ffffff","on-tertiary-fixed":"#0d1c2e","primary-container":"#1a73e8","primary-fixed-dim":"#adc7ff","surface-variant":"#e0e3e5","error-container":"#ffdad6","on-surface-variant":"#414754","on-primary-fixed":"#001a41","primary":"#005bbf","on-surface":"#191c1e","on-tertiary-fixed-variant":"#3a485b","on-primary-fixed-variant":"#004493","surface-container-high":"#e6e8ea","secondary-container":"#86f2e4","on-secondary":"#ffffff","on-tertiary-container":"#000510","secondary-fixed":"#89f5e7","surface-container-lowest":"#ffffff","on-secondary-container":"#006f66","error":"#ba1a1a","on-error-container":"#93000a","surface":"#f7f9fb","on-primary-container":"#ffffff","outline":"#727785","background":"#f7f9fb","inverse-primary":"#adc7ff","surface-bright":"#f7f9fb","inverse-surface":"#2d3133","tertiary-container":"#6a788d"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"md":"24px","lg":"40px","xs":"8px","sm":"16px","margin-mobile":"16px","margin-desktop":"48px","xl":"64px","gutter":"24px","base":"4px"},"fontFamily":{"headline-lg":["Inter"],"headline-md":["Inter"],"body-lg":["Inter"],"label-md":["Inter"],"headline-xl":["Inter"],"label-lg":["Inter"],"body-md":["Inter"],"headline-lg-mobile":["Inter"]},"fontSize":{"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"500"}],"headline-xl":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-background min-h-screen flex flex-col pt-safe pb-safe"><main class="flex-1"><div class="flex flex-col w-full relative">
+<!-- Decorative background elements to make it feel human and friendly -->
+<div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+<svg class="absolute -top-[10%] -left-[10%] w-[120%] h-[120%] opacity-20" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<radialgradient cx="50%" cy="0%" id="grad1" r="70%">
+<stop offset="0%" stop-color="#89f5e7" stop-opacity="0.4"></stop>
+<stop offset="100%" stop-color="#d8e2ff" stop-opacity="0"></stop>
+</radialgradient>
+</defs>
+<rect fill="url(#grad1)" height="100%" width="100%"></rect>
+</svg>
+<!-- Floating abstract shapes for character -->
+<div class="absolute top-16 right-4 w-12 h-12 bg-secondary-container rounded-full opacity-60 blur-xl animate-pulse" style="animation-duration: 4s;"></div>
+<div class="absolute bottom-32 left-8 w-20 h-20 bg-primary-container rounded-full opacity-30 blur-2xl animate-pulse" style="animation-duration: 6s; animation-delay: 1s;"></div>
+</div>
+<div class="flex-1 flex flex-col p-margin-mobile relative z-10 min-h-[calc(100vh-env(safe-area-inset-top)-env(safe-area-inset-bottom))] justify-between">
+<!-- Top Section: Progress & Image -->
+<div class="flex flex-col gap-6">
+<!-- Multi-step Progress Indicator -->
+<div aria-label="Signup progress" class="flex items-center justify-between w-full max-w-[200px] mx-auto mb-2">
+<div class="flex flex-col items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-lg shadow-sm">
+            1
+          </div>
+<span class="font-label-md text-primary">Welcome</span>
+</div>
+<div class="flex-1 h-[2px] bg-outline-variant mx-2 mt-[-24px]"></div>
+<div class="flex flex-col items-center gap-2 opacity-50">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center font-label-lg">
+            2
+          </div>
+<span class="font-label-md text-on-surface-variant">Details</span>
+</div>
+<div class="flex-1 h-[2px] bg-outline-variant mx-2 mt-[-24px]"></div>
+<div class="flex flex-col items-center gap-2 opacity-50">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center font-label-lg">
+            3
+          </div>
+<span class="font-label-md text-on-surface-variant">Health</span>
+</div>
+</div>
+<!-- Welcoming Hero Image -->
+<div class="w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-md relative group mt-4">
+<img alt="Friendly doctor welcoming you" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A warm, bright, and inviting photo of a diverse healthcare professional (a friendly female doctor in a light blue scrub top) smiling directly at the camera. The background is a modern, sunlit clinic with soft white and light teal colors. The lighting is soft and natural, conveying trust, empathy, and professional care." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTGN5EMwdE-qGK-agG-q1bP8S8-4x9Gf6i8J2vJiYaMwl6NLThMV42281RZHLV_nWdhxU8SDubrwswiCKmKCv8SkomuZi_XCaWQyytDO2TYrJXVb9ErbYF-FxGzsuafttv4ePf9ZIXTCEGV5Oq3yyagDvQICmYXZj5FQStOXMbk_SsWxiV_3K0wX37aaACpR1Gy11c0lBj4Zfm8ixuvgOvJNs3PJY83bm6h91-SCcKXn3Ed80R8g"/>
+<!-- Soft gradient overlay to ensure the image feels integrated -->
+<div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+</div>
+</div>
+<!-- Middle Section: Typography & Intro -->
+<div class="flex flex-col gap-4 text-center mt-8 mb-8">
+<div class="inline-flex items-center justify-center gap-2 text-primary mb-2">
+<span class="material-symbols-outlined text-[32px]">favorite</span>
+</div>
+<h1 class="font-headline-lg-mobile text-on-background">
+        Welcome to<br/>CareConnect
+      </h1>
+<p class="font-body-lg text-on-surface-variant px-2 leading-relaxed">
+        Your health, your way. We make it easy to talk to doctors, manage prescriptions, and feel better, faster.
+      </p>
+</div>
+<!-- Bottom Section: Call to Action -->
+<div class="flex flex-col gap-4 mt-auto pb-4">
+<!-- Trust Indicator -->
+<div class="flex items-center justify-center gap-2 text-on-surface-variant font-label-md mb-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+<span>Secure &amp; HIPAA Compliant</span>
+</div>
+<button class="w-full h-[56px] bg-primary text-on-primary rounded-xl font-label-lg shadow-md hover:bg-primary-fixed-variant transition-colors flex items-center justify-center gap-2 active:scale-[0.98]">
+        Get Started
+        <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<div class="text-center mt-2">
+<span class="font-body-md text-on-surface-variant">Already have an account? </span>
+<button class="font-label-lg text-primary hover:text-primary-fixed-variant transition-colors py-2 px-1">
+          Sign In
+        </button>
+</div>
+</div>
+</div>
+</div></main></body></html>
