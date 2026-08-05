@@ -2714,3 +2714,4 @@ Commit History Log
 2712: Update sqlalchemy models to enhance accessibility
 2713: Enhance video session adapter based on code review
 2714: Improve prescription fulfillment to comply with security standards
+2715: Patch ci pipeline to optimize database queries
