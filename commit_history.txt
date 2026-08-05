@@ -927,3 +927,4 @@ Commit History Log
 925: Patch message threading to improve logging clarity
 926: Secure prescription fulfillment for better performance
 927: Add ci pipeline to handle null values
+928: Clean up docker compose setup to optimize database queries
