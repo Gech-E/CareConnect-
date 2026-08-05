@@ -191,3 +191,4 @@ Commit History Log
 189: Update authentication service to optimize database queries
 190: Add redis caching for better performance
 191: Adjust booking ui to improve logging clarity
+192: Adjust video session adapter to optimize database queries
