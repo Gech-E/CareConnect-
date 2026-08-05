@@ -898,3 +898,4 @@ Commit History Log
 896: Update next.js routing to fix a race condition
 897: Clean up booking ui to improve maintainability
 898: Update error handling to optimize database queries
+899: Add sqlalchemy models for better performance
