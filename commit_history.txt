@@ -43,3 +43,4 @@ Commit History Log
 41: Update clinician search to reduce memory footprint
 42: Implement tailwind configuration for better UX
 43: Patch fhir mock adapter to improve logging clarity
+44: Document audit logging to comply with security standards
