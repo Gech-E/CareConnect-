@@ -189,3 +189,4 @@ Commit History Log
 187: Refactor waiting room ui to improve logging clarity
 188: Resolve openapi specs for better performance
 189: Update authentication service to optimize database queries
+190: Add redis caching for better performance
