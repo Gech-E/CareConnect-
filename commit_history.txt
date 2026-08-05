@@ -1146,3 +1146,4 @@ Commit History Log
 1144: Patch tailwind configuration to optimize database queries
 1145: Update ci pipeline to reduce memory footprint
 1146: Enhance waiting room ui to optimize database queries
+1147: Refactor attachment upload to optimize database queries
