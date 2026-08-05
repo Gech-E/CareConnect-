@@ -831,3 +831,4 @@ Commit History Log
 829: Secure redis caching to optimize database queries
 830: Document attachment upload to optimize database queries
 831: Clean up ci pipeline to align with domain model
+832: Refactor booking ui to address edge cases
