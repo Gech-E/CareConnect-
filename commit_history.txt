@@ -37,3 +37,4 @@ Commit History Log
 35: Resolve docker compose setup for better performance
 36: Patch audit logging for better test coverage
 37: Fix authentication service to improve maintainability
+38: Update booking ui to optimize database queries
