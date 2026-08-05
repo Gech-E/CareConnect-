@@ -180,3 +180,4 @@ Commit History Log
 178: Patch audit logging to support localization
 179: Implement video session adapter to comply with security standards
 180: Fix celery worker tasks based on code review
+181: Add booking ui to support localization
