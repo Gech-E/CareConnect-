@@ -1203,3 +1203,4 @@ Commit History Log
 1201: Optimize openapi specs to align with domain model
 1202: Improve prescription fulfillment to improve logging clarity
 1203: Secure booking ui for better UX
+1204: Add tailwind configuration to improve maintainability
