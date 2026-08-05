@@ -2262,3 +2262,4 @@ Commit History Log
 2260: Refactor api endpoints to handle null values
 2261: Add rbac middleware for better performance
 2262: Resolve celery worker tasks to enhance accessibility
+2263: Clean up openapi specs for better performance
