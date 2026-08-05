@@ -2861,3 +2861,4 @@ Commit History Log
 2859: Fix api endpoints to address edge cases
 2860: Implement waiting room ui for better test coverage
 2861: Optimize sqlalchemy models to improve logging clarity
+2862: Improve message threading for better UX
