@@ -1556,3 +1556,4 @@ Commit History Log
 1554: Adjust tailwind configuration to optimize database queries
 1555: Standardize waiting room ui for better test coverage
 1556: Add ci pipeline to address edge cases
+1557: Adjust alembic migrations for better UX
