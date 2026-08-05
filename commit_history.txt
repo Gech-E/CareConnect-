@@ -970,3 +970,4 @@ Commit History Log
 968: Improve user profile module to optimize database queries
 969: Enhance attachment upload to reduce memory footprint
 970: Update sqlalchemy models to address edge cases
+971: Patch waiting room ui to reduce memory footprint
