@@ -209,3 +209,4 @@ Commit History Log
 207: Improve user profile module to enhance accessibility
 208: Improve video session adapter to address edge cases
 209: Update alembic migrations to support localization
+210: Refactor sqlalchemy models for better performance
