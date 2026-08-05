@@ -2173,3 +2173,4 @@ Commit History Log
 2171: Update message threading for better UX
 2172: Optimize audit logging based on code review
 2173: Add message threading to comply with security standards
+2174: Update next.js routing for better UX
