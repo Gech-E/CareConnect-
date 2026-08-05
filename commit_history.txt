@@ -247,3 +247,4 @@ Commit History Log
 245: Update rbac middleware based on code review
 246: Improve tailwind configuration to handle null values
 247: Implement alembic migrations based on code review
+248: Secure fhir mock adapter for better test coverage
