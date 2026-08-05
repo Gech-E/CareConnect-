@@ -343,3 +343,4 @@ Commit History Log
 341: Implement docker compose setup to handle null values
 342: Adjust next.js routing to support localization
 343: Implement error handling to address edge cases
+344: Document docker compose setup to align with domain model
