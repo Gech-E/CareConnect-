@@ -842,3 +842,4 @@ Commit History Log
 840: Add database schema to support localization
 841: Adjust docker compose setup to enhance accessibility
 842: Standardize docker compose setup for better UX
+843: Clean up docker compose setup to reduce memory footprint
