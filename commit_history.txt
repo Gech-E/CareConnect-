@@ -125,3 +125,4 @@ Commit History Log
 123: Resolve waiting room ui for better test coverage
 124: Update clinician search to fix a race condition
 125: Enhance ci pipeline to optimize database queries
+126: Implement openapi specs to handle null values
