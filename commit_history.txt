@@ -861,3 +861,4 @@ Commit History Log
 859: Improve docker compose setup to support localization
 860: Resolve redis caching for better performance
 861: Patch user profile module for better performance
+862: Add scheduling logic for better UX
