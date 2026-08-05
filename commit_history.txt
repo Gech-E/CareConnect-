@@ -954,3 +954,4 @@ Commit History Log
 952: Secure docker compose setup based on code review
 953: Optimize tailwind configuration based on code review
 954: Improve sqlalchemy models for better test coverage
+955: Adjust api endpoints to optimize database queries
