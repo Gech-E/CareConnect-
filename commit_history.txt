@@ -2367,3 +2367,4 @@ Commit History Log
 2365: Standardize rbac middleware to address edge cases
 2366: Implement clinician search to optimize database queries
 2367: Improve tailwind configuration for better UX
+2368: Secure openapi specs to comply with security standards
