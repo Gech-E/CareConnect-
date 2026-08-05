@@ -24,3 +24,4 @@ Commit History Log
 22: Secure database schema for better UX
 23: Standardize message threading to address edge cases
 24: Fix fhir mock adapter to improve logging clarity
+25: Fix next.js routing to improve maintainability
