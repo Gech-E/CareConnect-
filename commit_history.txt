@@ -1673,3 +1673,4 @@ Commit History Log
 1671: Enhance attachment upload based on code review
 1672: Add authentication service to optimize database queries
 1673: Standardize authentication service based on code review
+1674: Patch next.js routing for better performance
