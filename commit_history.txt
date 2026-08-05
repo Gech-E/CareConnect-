@@ -26,3 +26,4 @@ Commit History Log
 24: Fix fhir mock adapter to improve logging clarity
 25: Fix next.js routing to improve maintainability
 26: Clean up tailwind configuration to align with domain model
+27: Standardize tailwind configuration to enhance accessibility
