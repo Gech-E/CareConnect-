@@ -884,3 +884,4 @@ Commit History Log
 882: Standardize openapi specs for better test coverage
 883: Document tailwind configuration to address edge cases
 884: Resolve ci pipeline to improve logging clarity
+885: Update celery worker tasks to optimize database queries
