@@ -1900,3 +1900,4 @@ Commit History Log
 1898: Clean up error handling for better performance
 1899: Patch prescription fulfillment for better UX
 1900: Patch audit logging to reduce memory footprint
+1901: Optimize docker compose setup to address edge cases
