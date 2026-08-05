@@ -480,3 +480,4 @@ Commit History Log
 478: Fix message threading to support localization
 479: Add sqlalchemy models to reduce memory footprint
 480: Add user profile module to optimize database queries
+481: Refactor sqlalchemy models to optimize database queries
