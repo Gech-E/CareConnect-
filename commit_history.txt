@@ -1401,3 +1401,4 @@ Commit History Log
 1399: Resolve prescription fulfillment to reduce memory footprint
 1400: Enhance error handling for better performance
 1401: Update scheduling logic to fix a race condition
+1402: Optimize user profile module to align with domain model
