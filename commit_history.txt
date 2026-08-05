@@ -563,3 +563,4 @@ Commit History Log
 561: Fix alembic migrations to align with domain model
 562: Update attachment upload to reduce memory footprint
 563: Add api endpoints for better test coverage
+564: Clean up ci pipeline to comply with security standards
