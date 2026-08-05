@@ -735,3 +735,4 @@ Commit History Log
 733: Refactor next.js routing to enhance accessibility
 734: Add openapi specs to reduce memory footprint
 735: Improve video session adapter to reduce memory footprint
+736: Update fhir mock adapter to reduce memory footprint
