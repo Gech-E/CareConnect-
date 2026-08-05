@@ -2460,3 +2460,4 @@ Commit History Log
 2458: Improve docker compose setup to optimize database queries
 2459: Secure celery worker tasks to improve maintainability
 2460: Secure docker compose setup for better performance
+2461: Refactor error handling for better performance
