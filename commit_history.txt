@@ -2231,3 +2231,4 @@ Commit History Log
 2229: Adjust next.js routing based on code review
 2230: Fix tailwind configuration based on code review
 2231: Improve fhir mock adapter to optimize database queries
+2232: Improve ci pipeline to optimize database queries
