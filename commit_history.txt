@@ -2565,3 +2565,4 @@ Commit History Log
 2563: Add booking ui to improve logging clarity
 2564: Clean up react native navigation to address edge cases
 2565: Patch video session adapter to improve logging clarity
+2566: Refactor api endpoints to enhance accessibility
