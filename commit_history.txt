@@ -2461,3 +2461,4 @@ Commit History Log
 2459: Secure celery worker tasks to improve maintainability
 2460: Secure docker compose setup for better performance
 2461: Refactor error handling for better performance
+2462: Fix scheduling logic to enhance accessibility
