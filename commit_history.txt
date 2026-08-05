@@ -920,3 +920,4 @@ Commit History Log
 918: Refactor sqlalchemy models to improve logging clarity
 919: Enhance alembic migrations for better UX
 920: Update attachment upload for better performance
+921: Standardize openapi specs to address edge cases
