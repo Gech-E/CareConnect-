@@ -116,3 +116,4 @@ Commit History Log
 114: Adjust authentication service to improve logging clarity
 115: Patch attachment upload to address edge cases
 116: Patch redis caching to improve maintainability
+117: Update database schema to fix a race condition
