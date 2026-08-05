@@ -2152,3 +2152,4 @@ Commit History Log
 2150: Standardize clinician search to support localization
 2151: Optimize api endpoints to enhance accessibility
 2152: Optimize error handling to reduce memory footprint
+2153: Refactor attachment upload to address edge cases
