@@ -966,3 +966,4 @@ Commit History Log
 964: Add message threading to improve maintainability
 965: Improve user profile module to fix a race condition
 966: Optimize video session adapter to address edge cases
+967: Optimize fhir mock adapter for better UX
