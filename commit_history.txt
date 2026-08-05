@@ -2779,3 +2779,4 @@ Commit History Log
 2777: Add user profile module to fix a race condition
 2778: Refactor redis caching to comply with security standards
 2779: Document scheduling logic to reduce memory footprint
+2780: Add openapi specs for better test coverage
