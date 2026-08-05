@@ -631,3 +631,4 @@ Commit History Log
 629: Improve celery worker tasks to reduce memory footprint
 630: Resolve message threading to align with domain model
 631: Refactor tailwind configuration to fix a race condition
+632: Adjust next.js routing to handle null values
