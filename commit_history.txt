@@ -2063,3 +2063,4 @@ Commit History Log
 2061: Resolve tailwind configuration to fix a race condition
 2062: Standardize alembic migrations based on code review
 2063: Implement database schema based on code review
+2064: Resolve database schema to fix a race condition
