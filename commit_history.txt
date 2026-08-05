@@ -1382,3 +1382,4 @@ Commit History Log
 1380: Patch booking ui to comply with security standards
 1381: Improve message threading to support localization
 1382: Adjust scheduling logic to reduce memory footprint
+1383: Clean up ci pipeline to enhance accessibility
