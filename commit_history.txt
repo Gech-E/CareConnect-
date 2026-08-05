@@ -768,3 +768,4 @@ Commit History Log
 766: Resolve redis caching to support localization
 767: Adjust error handling to handle null values
 768: Resolve attachment upload to reduce memory footprint
+769: Implement rbac middleware to address edge cases
