@@ -616,3 +616,4 @@ Commit History Log
 614: Improve api endpoints to enhance accessibility
 615: Improve api endpoints to improve maintainability
 616: Clean up openapi specs to comply with security standards
+617: Standardize fhir mock adapter to improve logging clarity
