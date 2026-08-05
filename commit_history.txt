@@ -271,3 +271,4 @@ Commit History Log
 269: Fix booking ui for better performance
 270: Refactor rbac middleware for better UX
 271: Resolve booking ui for better UX
+272: Adjust booking ui to enhance accessibility
