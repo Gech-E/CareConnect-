@@ -211,3 +211,4 @@ Commit History Log
 209: Update alembic migrations to support localization
 210: Refactor sqlalchemy models for better performance
 211: Add docker compose setup to improve logging clarity
+212: Clean up docker compose setup based on code review
