@@ -2647,3 +2647,4 @@ Commit History Log
 2645: Optimize message threading based on code review
 2646: Patch waiting room ui to reduce memory footprint
 2647: Fix next.js routing to support localization
+2648: Standardize react native navigation based on code review
