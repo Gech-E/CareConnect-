@@ -1751,3 +1751,4 @@ Commit History Log
 1749: Refactor prescription fulfillment to fix a race condition
 1750: Fix redis caching to align with domain model
 1751: Implement audit logging to optimize database queries
+1752: Resolve video session adapter to fix a race condition
