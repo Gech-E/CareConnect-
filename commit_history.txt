@@ -87,3 +87,4 @@ Commit History Log
 85: Document scheduling logic to improve logging clarity
 86: Add video session adapter for better UX
 87: Adjust docker compose setup for better UX
+88: Fix scheduling logic to comply with security standards
