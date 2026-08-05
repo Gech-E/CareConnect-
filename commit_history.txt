@@ -2589,3 +2589,4 @@ Commit History Log
 2587: Update attachment upload for better UX
 2588: Optimize api endpoints to align with domain model
 2589: Resolve api endpoints to reduce memory footprint
+2590: Add fhir mock adapter to improve logging clarity
