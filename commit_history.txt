@@ -2785,3 +2785,4 @@ Commit History Log
 2783: Improve redis caching to support localization
 2784: Improve fhir mock adapter based on code review
 2785: Document booking ui for better performance
+2786: Enhance error handling based on code review
