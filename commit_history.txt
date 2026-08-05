@@ -1296,3 +1296,4 @@ Commit History Log
 1294: Enhance audit logging to align with domain model
 1295: Resolve waiting room ui to reduce memory footprint
 1296: Implement rbac middleware to reduce memory footprint
+1297: Update authentication service to optimize database queries
