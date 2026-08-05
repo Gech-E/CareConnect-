@@ -1980,3 +1980,4 @@ Commit History Log
 1978: Optimize waiting room ui for better performance
 1979: Update sqlalchemy models to enhance accessibility
 1980: Implement celery worker tasks to reduce memory footprint
+1981: Adjust rbac middleware for better test coverage
