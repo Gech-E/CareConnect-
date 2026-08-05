@@ -2348,3 +2348,4 @@ Commit History Log
 2346: Fix scheduling logic to align with domain model
 2347: Fix message threading to enhance accessibility
 2348: Refactor alembic migrations to fix a race condition
+2349: Standardize booking ui for better test coverage
