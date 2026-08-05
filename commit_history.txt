@@ -2801,3 +2801,4 @@ Commit History Log
 2799: Implement attachment upload to support localization
 2800: Improve docker compose setup to comply with security standards
 2801: Fix celery worker tasks to align with domain model
+2802: Document authentication service to align with domain model
