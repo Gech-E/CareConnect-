@@ -982,3 +982,4 @@ Commit History Log
 980: Update alembic migrations to reduce memory footprint
 981: Optimize ci pipeline to reduce memory footprint
 982: Enhance waiting room ui to enhance accessibility
+983: Update celery worker tasks to align with domain model
