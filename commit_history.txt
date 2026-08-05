@@ -2755,3 +2755,4 @@ Commit History Log
 2753: Patch clinician search for better UX
 2754: Document scheduling logic for better UX
 2755: Implement celery worker tasks to optimize database queries
+2756: Refactor attachment upload to reduce memory footprint
