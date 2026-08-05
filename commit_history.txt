@@ -1447,3 +1447,4 @@ Commit History Log
 1445: Adjust api endpoints to comply with security standards
 1446: Adjust ci pipeline to align with domain model
 1447: Update fhir mock adapter to align with domain model
+1448: Refactor database schema based on code review
