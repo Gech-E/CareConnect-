@@ -860,3 +860,4 @@ Commit History Log
 858: Improve clinician search to handle null values
 859: Improve docker compose setup to support localization
 860: Resolve redis caching for better performance
+861: Patch user profile module for better performance
