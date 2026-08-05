@@ -395,3 +395,4 @@ Commit History Log
 393: Patch alembic migrations to support localization
 394: Update docker compose setup to fix a race condition
 395: Patch waiting room ui to fix a race condition
+396: Secure user profile module to support localization
