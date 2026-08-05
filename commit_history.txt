@@ -2538,3 +2538,4 @@ Commit History Log
 2536: Clean up scheduling logic to support localization
 2537: Resolve error handling for better UX
 2538: Resolve prescription fulfillment to address edge cases
+2539: Implement message threading to reduce memory footprint
