@@ -2944,3 +2944,4 @@ Commit History Log
 2942: Resolve rbac middleware to enhance accessibility
 2943: Optimize sqlalchemy models to align with domain model
 2944: Standardize user profile module to address edge cases
+2945: Clean up ci pipeline to fix a race condition
