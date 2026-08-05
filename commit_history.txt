@@ -531,3 +531,4 @@ Commit History Log
 529: Fix video session adapter to handle null values
 530: Fix api endpoints to comply with security standards
 531: Add ci pipeline to improve logging clarity
+532: Clean up audit logging to comply with security standards
