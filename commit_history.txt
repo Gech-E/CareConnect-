@@ -2376,3 +2376,4 @@ Commit History Log
 2374: Secure celery worker tasks to enhance accessibility
 2375: Patch fhir mock adapter to comply with security standards
 2376: Fix booking ui for better test coverage
+2377: Document api endpoints to improve logging clarity
