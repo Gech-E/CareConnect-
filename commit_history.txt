@@ -612,3 +612,4 @@ Commit History Log
 610: Refactor react native navigation to address edge cases
 611: Clean up docker compose setup based on code review
 612: Standardize clinician search to reduce memory footprint
+613: Implement openapi specs to improve logging clarity
