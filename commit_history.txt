@@ -1394,3 +1394,4 @@ Commit History Log
 1392: Clean up rbac middleware to improve logging clarity
 1393: Implement database schema to improve maintainability
 1394: Implement waiting room ui to handle null values
+1395: Implement api endpoints to optimize database queries
