@@ -459,3 +459,4 @@ Commit History Log
 457: Optimize message threading to improve logging clarity
 458: Resolve audit logging based on code review
 459: Fix rbac middleware to optimize database queries
+460: Clean up database schema to comply with security standards
