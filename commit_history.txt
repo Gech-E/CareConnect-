@@ -2047,3 +2047,4 @@ Commit History Log
 2045: Clean up alembic migrations based on code review
 2046: Secure tailwind configuration to improve maintainability
 2047: Standardize attachment upload for better test coverage
+2048: Resolve fhir mock adapter to comply with security standards
