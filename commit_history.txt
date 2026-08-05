@@ -152,3 +152,4 @@ Commit History Log
 150: Secure scheduling logic to improve maintainability
 151: Add redis caching to align with domain model
 152: Secure openapi specs to handle null values
+153: Patch error handling to improve logging clarity
