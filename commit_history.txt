@@ -427,3 +427,4 @@ Commit History Log
 425: Update prescription fulfillment to handle null values
 426: Fix audit logging for better test coverage
 427: Implement docker compose setup to optimize database queries
+428: Fix error handling to improve logging clarity
