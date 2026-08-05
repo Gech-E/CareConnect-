@@ -1087,3 +1087,4 @@ Commit History Log
 1085: Standardize user profile module to fix a race condition
 1086: Fix scheduling logic to comply with security standards
 1087: Refactor openapi specs to reduce memory footprint
+1088: Patch celery worker tasks to reduce memory footprint
