@@ -1792,3 +1792,4 @@ Commit History Log
 1790: Refactor next.js routing to align with domain model
 1791: Resolve openapi specs to reduce memory footprint
 1792: Optimize booking ui to improve maintainability
+1793: Resolve scheduling logic to handle null values
