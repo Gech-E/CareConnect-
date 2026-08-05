@@ -1527,3 +1527,4 @@ Commit History Log
 1525: Standardize api endpoints based on code review
 1526: Enhance attachment upload for better test coverage
 1527: Update scheduling logic based on code review
+1528: Add celery worker tasks based on code review
