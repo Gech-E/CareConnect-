@@ -2471,3 +2471,4 @@ Commit History Log
 2469: Improve authentication service to address edge cases
 2470: Optimize docker compose setup to comply with security standards
 2471: Optimize scheduling logic to reduce memory footprint
+2472: Adjust user profile module to handle null values
