@@ -543,3 +543,4 @@ Commit History Log
 541: Secure prescription fulfillment to align with domain model
 542: Refactor fhir mock adapter to comply with security standards
 543: Clean up booking ui to improve maintainability
+544: Refactor tailwind configuration to address edge cases
