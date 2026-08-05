@@ -875,3 +875,4 @@ Commit History Log
 873: Patch scheduling logic to handle null values
 874: Secure alembic migrations for better UX
 875: Optimize next.js routing to enhance accessibility
+876: Standardize rbac middleware for better performance
