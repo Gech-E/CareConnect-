@@ -2190,3 +2190,4 @@ Commit History Log
 2188: Add video session adapter to support localization
 2189: Clean up docker compose setup to improve logging clarity
 2190: Patch rbac middleware to address edge cases
+2191: Optimize sqlalchemy models to address edge cases
