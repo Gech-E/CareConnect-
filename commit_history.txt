@@ -144,3 +144,4 @@ Commit History Log
 142: Add audit logging to improve logging clarity
 143: Clean up booking ui to align with domain model
 144: Refactor docker compose setup to enhance accessibility
+145: Patch audit logging to comply with security standards
