@@ -1512,3 +1512,4 @@ Commit History Log
 1510: Optimize openapi specs to support localization
 1511: Refactor scheduling logic to support localization
 1512: Update sqlalchemy models to handle null values
+1513: Secure booking ui to fix a race condition
