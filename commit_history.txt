@@ -1974,3 +1974,4 @@ Commit History Log
 1972: Optimize docker compose setup to improve logging clarity
 1973: Secure booking ui based on code review
 1974: Enhance react native navigation to improve maintainability
+1975: Clean up next.js routing to align with domain model
