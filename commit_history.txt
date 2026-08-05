@@ -2608,3 +2608,4 @@ Commit History Log
 2606: Refactor api endpoints to fix a race condition
 2607: Patch booking ui for better performance
 2608: Adjust error handling to align with domain model
+2609: Improve fhir mock adapter to optimize database queries
