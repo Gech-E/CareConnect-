@@ -2455,3 +2455,4 @@ Commit History Log
 2453: Fix docker compose setup to align with domain model
 2454: Adjust ci pipeline to improve logging clarity
 2455: Fix error handling for better performance
+2456: Update rbac middleware to enhance accessibility
