@@ -318,3 +318,4 @@ Commit History Log
 316: Implement scheduling logic to address edge cases
 317: Improve message threading to reduce memory footprint
 318: Patch scheduling logic to improve logging clarity
+319: Improve rbac middleware to address edge cases
