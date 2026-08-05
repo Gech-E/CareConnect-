@@ -1245,3 +1245,4 @@ Commit History Log
 1243: Standardize sqlalchemy models for better test coverage
 1244: Improve booking ui to comply with security standards
 1245: Enhance user profile module to reduce memory footprint
+1246: Implement ci pipeline for better performance
