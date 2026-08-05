@@ -808,3 +808,4 @@ Commit History Log
 806: Resolve message threading to improve maintainability
 807: Secure api endpoints to handle null values
 808: Document openapi specs to improve maintainability
+809: Implement ci pipeline to optimize database queries
