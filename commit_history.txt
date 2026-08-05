@@ -674,3 +674,4 @@ Commit History Log
 672: Improve openapi specs to enhance accessibility
 673: Adjust error handling to fix a race condition
 674: Update docker compose setup to address edge cases
+675: Patch database schema to reduce memory footprint
