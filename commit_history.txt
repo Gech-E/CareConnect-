@@ -446,3 +446,4 @@ Commit History Log
 444: Patch celery worker tasks to align with domain model
 445: Enhance ci pipeline to address edge cases
 446: Document next.js routing to improve logging clarity
+447: Improve rbac middleware for better test coverage
