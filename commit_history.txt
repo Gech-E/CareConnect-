@@ -1780,3 +1780,4 @@ Commit History Log
 1778: Patch database schema to address edge cases
 1779: Implement video session adapter to fix a race condition
 1780: Standardize waiting room ui to support localization
+1781: Improve clinician search for better test coverage
