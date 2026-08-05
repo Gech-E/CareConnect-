@@ -2435,3 +2435,4 @@ Commit History Log
 2433: Patch clinician search for better test coverage
 2434: Optimize alembic migrations to improve logging clarity
 2435: Document api endpoints for better performance
+2436: Improve fhir mock adapter to enhance accessibility
