@@ -27,3 +27,4 @@ Commit History Log
 25: Fix next.js routing to improve maintainability
 26: Clean up tailwind configuration to align with domain model
 27: Standardize tailwind configuration to enhance accessibility
+28: Adjust authentication service to reduce memory footprint
