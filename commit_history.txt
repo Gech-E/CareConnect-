@@ -1721,3 +1721,4 @@ Commit History Log
 1719: Adjust error handling to enhance accessibility
 1720: Secure scheduling logic for better performance
 1721: Document fhir mock adapter to improve logging clarity
+1722: Adjust user profile module to align with domain model
