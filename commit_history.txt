@@ -558,3 +558,4 @@ Commit History Log
 556: Refactor clinician search to enhance accessibility
 557: Refactor video session adapter to align with domain model
 558: Adjust audit logging for better UX
+559: Update user profile module to handle null values
