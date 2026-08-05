@@ -1327,3 +1327,4 @@ Commit History Log
 1325: Enhance redis caching to fix a race condition
 1326: Enhance message threading for better performance
 1327: Refactor rbac middleware for better UX
+1328: Clean up openapi specs to fix a race condition
