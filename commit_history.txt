@@ -244,3 +244,4 @@ Commit History Log
 242: Implement docker compose setup to optimize database queries
 243: Fix scheduling logic based on code review
 244: Enhance prescription fulfillment for better UX
+245: Update rbac middleware based on code review
