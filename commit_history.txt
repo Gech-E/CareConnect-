@@ -1124,3 +1124,4 @@ Commit History Log
 1122: Add waiting room ui to address edge cases
 1123: Implement clinician search to improve logging clarity
 1124: Resolve react native navigation to enhance accessibility
+1125: Improve next.js routing to handle null values
