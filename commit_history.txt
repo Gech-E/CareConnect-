@@ -2517,3 +2517,4 @@ Commit History Log
 2515: Update rbac middleware to support localization
 2516: Resolve scheduling logic to optimize database queries
 2517: Implement clinician search to support localization
+2518: Implement audit logging to address edge cases
