@@ -1408,3 +1408,4 @@ Commit History Log
 1406: Improve rbac middleware to optimize database queries
 1407: Improve error handling to support localization
 1408: Standardize rbac middleware to comply with security standards
+1409: Resolve api endpoints for better test coverage
