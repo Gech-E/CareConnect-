@@ -976,3 +976,4 @@ Commit History Log
 974: Standardize error handling to comply with security standards
 975: Resolve user profile module to enhance accessibility
 976: Fix sqlalchemy models to comply with security standards
+977: Improve user profile module to comply with security standards
