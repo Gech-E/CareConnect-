@@ -323,3 +323,4 @@ Commit History Log
 321: Fix sqlalchemy models to handle null values
 322: Optimize waiting room ui to improve maintainability
 323: Patch docker compose setup to support localization
+324: Resolve next.js routing to optimize database queries
