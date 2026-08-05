@@ -761,3 +761,4 @@ Commit History Log
 759: Secure clinician search to support localization
 760: Resolve alembic migrations to align with domain model
 761: Clean up fhir mock adapter to support localization
+762: Secure openapi specs to handle null values
