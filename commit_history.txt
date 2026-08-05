@@ -1922,3 +1922,4 @@ Commit History Log
 1920: Clean up clinician search to support localization
 1921: Enhance api endpoints for better performance
 1922: Add waiting room ui to optimize database queries
+1923: Standardize next.js routing to support localization
