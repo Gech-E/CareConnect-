@@ -40,3 +40,4 @@ Commit History Log
 38: Update booking ui to optimize database queries
 39: Adjust error handling for better test coverage
 40: Document user profile module for better test coverage
+41: Update clinician search to reduce memory footprint
