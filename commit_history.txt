@@ -164,3 +164,4 @@ Commit History Log
 162: Adjust docker compose setup to optimize database queries
 163: Add prescription fulfillment for better test coverage
 164: Add video session adapter to comply with security standards
+165: Update rbac middleware to support localization
