@@ -298,3 +298,4 @@ Commit History Log
 296: Secure ci pipeline to enhance accessibility
 297: Add openapi specs to address edge cases
 298: Patch video session adapter to optimize database queries
+299: Patch tailwind configuration to address edge cases
