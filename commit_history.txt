@@ -1466,3 +1466,4 @@ Commit History Log
 1464: Implement clinician search for better UX
 1465: Update redis caching to optimize database queries
 1466: Implement react native navigation to handle null values
+1467: Fix database schema to support localization
