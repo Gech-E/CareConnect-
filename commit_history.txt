@@ -1183,3 +1183,4 @@ Commit History Log
 1181: Refactor alembic migrations to comply with security standards
 1182: Resolve docker compose setup based on code review
 1183: Implement error handling to enhance accessibility
+1184: Standardize next.js routing to comply with security standards
