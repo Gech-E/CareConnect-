@@ -2840,3 +2840,4 @@ Commit History Log
 2838: Secure error handling to align with domain model
 2839: Implement message threading to align with domain model
 2840: Standardize docker compose setup for better performance
+2841: Patch fhir mock adapter to handle null values
