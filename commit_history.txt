@@ -1,0 +1,2 @@
+Commit History Log
+0: Enhance fhir mock adapter to optimize database queries
