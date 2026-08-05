@@ -2495,3 +2495,4 @@ Commit History Log
 2493: Add authentication service to support localization
 2494: Clean up clinician search to comply with security standards
 2495: Implement api endpoints to handle null values
+2496: Add next.js routing to fix a race condition
