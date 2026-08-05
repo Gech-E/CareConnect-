@@ -672,3 +672,4 @@ Commit History Log
 670: Standardize attachment upload to fix a race condition
 671: Refactor scheduling logic to optimize database queries
 672: Improve openapi specs to enhance accessibility
+673: Adjust error handling to fix a race condition
