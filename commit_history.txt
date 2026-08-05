@@ -2113,3 +2113,4 @@ Commit History Log
 2111: Document react native navigation to reduce memory footprint
 2112: Resolve fhir mock adapter to address edge cases
 2113: Adjust prescription fulfillment to support localization
+2114: Secure tailwind configuration to enhance accessibility
