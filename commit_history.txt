@@ -2163,3 +2163,4 @@ Commit History Log
 2161: Refactor audit logging to comply with security standards
 2162: Update react native navigation for better performance
 2163: Implement video session adapter based on code review
+2164: Adjust rbac middleware to support localization
