@@ -2699,3 +2699,4 @@ Commit History Log
 2697: Clean up user profile module to enhance accessibility
 2698: Resolve docker compose setup to support localization
 2699: Refactor celery worker tasks to align with domain model
+2700: Clean up rbac middleware for better test coverage
