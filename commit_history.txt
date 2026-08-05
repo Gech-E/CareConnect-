@@ -254,3 +254,4 @@ Commit History Log
 252: Improve attachment upload to address edge cases
 253: Enhance ci pipeline to address edge cases
 254: Improve celery worker tasks to support localization
+255: Clean up docker compose setup to handle null values
