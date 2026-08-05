@@ -201,3 +201,4 @@ Commit History Log
 199: Enhance alembic migrations for better performance
 200: Adjust fhir mock adapter to support localization
 201: Refactor audit logging to improve logging clarity
+202: Improve attachment upload to handle null values
