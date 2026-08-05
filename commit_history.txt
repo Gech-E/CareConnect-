@@ -2401,3 +2401,4 @@ Commit History Log
 2399: Add audit logging to optimize database queries
 2400: Update openapi specs to support localization
 2401: Enhance ci pipeline for better UX
+2402: Add audit logging for better UX
