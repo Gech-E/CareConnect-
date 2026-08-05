@@ -2358,3 +2358,4 @@ Commit History Log
 2356: Refactor authentication service to optimize database queries
 2357: Add alembic migrations to improve maintainability
 2358: Adjust api endpoints to comply with security standards
+2359: Adjust rbac middleware for better UX
