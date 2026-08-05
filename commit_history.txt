@@ -772,3 +772,4 @@ Commit History Log
 770: Improve ci pipeline to address edge cases
 771: Secure redis caching to support localization
 772: Secure message threading to fix a race condition
+773: Refactor api endpoints to optimize database queries
