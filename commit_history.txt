@@ -2559,3 +2559,4 @@ Commit History Log
 2557: Adjust user profile module to reduce memory footprint
 2558: Update error handling to handle null values
 2559: Optimize alembic migrations for better UX
+2560: Update scheduling logic based on code review
