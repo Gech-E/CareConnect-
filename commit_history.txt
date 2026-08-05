@@ -2059,3 +2059,4 @@ Commit History Log
 2057: Clean up booking ui to comply with security standards
 2058: Refactor docker compose setup for better performance
 2059: Add celery worker tasks to support localization
+2060: Patch alembic migrations to address edge cases
