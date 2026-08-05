@@ -1204,3 +1204,4 @@ Commit History Log
 1202: Improve prescription fulfillment to improve logging clarity
 1203: Secure booking ui for better UX
 1204: Add tailwind configuration to improve maintainability
+1205: Adjust tailwind configuration for better test coverage
