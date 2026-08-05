@@ -1326,3 +1326,4 @@ Commit History Log
 1324: Standardize redis caching to comply with security standards
 1325: Enhance redis caching to fix a race condition
 1326: Enhance message threading for better performance
+1327: Refactor rbac middleware for better UX
