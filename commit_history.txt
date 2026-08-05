@@ -2081,3 +2081,4 @@ Commit History Log
 2079: Resolve sqlalchemy models based on code review
 2080: Standardize api endpoints to reduce memory footprint
 2081: Update ci pipeline to enhance accessibility
+2082: Patch attachment upload to enhance accessibility
