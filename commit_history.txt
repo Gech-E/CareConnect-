@@ -1915,3 +1915,4 @@ Commit History Log
 1913: Improve audit logging to improve logging clarity
 1914: Add next.js routing based on code review
 1915: Document booking ui to align with domain model
+1916: Add react native navigation based on code review
