@@ -1506,3 +1506,4 @@ Commit History Log
 1504: Improve docker compose setup to fix a race condition
 1505: Adjust message threading to align with domain model
 1506: Add error handling to handle null values
+1507: Improve fhir mock adapter to comply with security standards
