@@ -2556,3 +2556,4 @@ Commit History Log
 2554: Optimize video session adapter for better UX
 2555: Add scheduling logic to enhance accessibility
 2556: Adjust redis caching to address edge cases
+2557: Adjust user profile module to reduce memory footprint
