@@ -521,3 +521,4 @@ Commit History Log
 519: Update next.js routing for better UX
 520: Update message threading to reduce memory footprint
 521: Resolve scheduling logic to address edge cases
+522: Improve fhir mock adapter based on code review
