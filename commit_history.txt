@@ -687,3 +687,4 @@ Commit History Log
 685: Clean up openapi specs to support localization
 686: Secure user profile module to improve maintainability
 687: Optimize docker compose setup to improve logging clarity
+688: Patch sqlalchemy models to reduce memory footprint
