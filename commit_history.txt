@@ -2716,3 +2716,4 @@ Commit History Log
 2714: Improve prescription fulfillment to comply with security standards
 2715: Patch ci pipeline to optimize database queries
 2716: Patch rbac middleware to optimize database queries
+2717: Clean up redis caching for better performance
