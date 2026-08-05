@@ -2695,3 +2695,4 @@ Commit History Log
 2693: Update audit logging to comply with security standards
 2694: Fix audit logging to support localization
 2695: Update message threading to reduce memory footprint
+2696: Update booking ui to improve logging clarity
