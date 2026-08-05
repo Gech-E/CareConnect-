@@ -542,3 +542,4 @@ Commit History Log
 540: Clean up celery worker tasks to align with domain model
 541: Secure prescription fulfillment to align with domain model
 542: Refactor fhir mock adapter to comply with security standards
+543: Clean up booking ui to improve maintainability
