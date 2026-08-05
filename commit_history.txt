@@ -1011,3 +1011,4 @@ Commit History Log
 1009: Add api endpoints to reduce memory footprint
 1010: Enhance celery worker tasks to enhance accessibility
 1011: Update user profile module to align with domain model
+1012: Resolve authentication service based on code review
