@@ -169,3 +169,4 @@ Commit History Log
 167: Document sqlalchemy models to comply with security standards
 168: Implement alembic migrations to comply with security standards
 169: Fix redis caching for better UX
+170: Fix redis caching to reduce memory footprint
