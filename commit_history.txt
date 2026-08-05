@@ -1432,3 +1432,4 @@ Commit History Log
 1430: Fix video session adapter to enhance accessibility
 1431: Secure error handling to fix a race condition
 1432: Implement booking ui to support localization
+1433: Secure clinician search to improve logging clarity
