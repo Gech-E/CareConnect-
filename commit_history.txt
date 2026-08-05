@@ -1659,3 +1659,4 @@ Commit History Log
 1657: Improve error handling based on code review
 1658: Optimize openapi specs to address edge cases
 1659: Adjust docker compose setup to optimize database queries
+1660: Fix waiting room ui for better performance
