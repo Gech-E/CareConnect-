@@ -2491,3 +2491,4 @@ Commit History Log
 2489: Patch react native navigation for better performance
 2490: Enhance celery worker tasks to optimize database queries
 2491: Resolve video session adapter to optimize database queries
+2492: Resolve audit logging for better UX
