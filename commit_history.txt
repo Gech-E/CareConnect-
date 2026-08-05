@@ -2917,3 +2917,4 @@ Commit History Log
 2915: Standardize next.js routing to support localization
 2916: Improve scheduling logic for better UX
 2917: Adjust fhir mock adapter to comply with security standards
+2918: Update sqlalchemy models to reduce memory footprint
