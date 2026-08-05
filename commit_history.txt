@@ -734,3 +734,4 @@ Commit History Log
 732: Secure clinician search to optimize database queries
 733: Refactor next.js routing to enhance accessibility
 734: Add openapi specs to reduce memory footprint
+735: Improve video session adapter to reduce memory footprint
