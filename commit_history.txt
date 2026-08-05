@@ -1128,3 +1128,4 @@ Commit History Log
 1126: Optimize prescription fulfillment to reduce memory footprint
 1127: Implement message threading for better UX
 1128: Optimize alembic migrations to align with domain model
+1129: Secure rbac middleware to improve logging clarity
