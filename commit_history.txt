@@ -84,3 +84,4 @@ Commit History Log
 82: Adjust scheduling logic for better test coverage
 83: Clean up booking ui to improve logging clarity
 84: Enhance sqlalchemy models to reduce memory footprint
+85: Document scheduling logic to improve logging clarity
