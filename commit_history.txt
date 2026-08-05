@@ -2584,3 +2584,4 @@ Commit History Log
 2582: Improve authentication service for better test coverage
 2583: Standardize docker compose setup for better UX
 2584: Enhance scheduling logic to align with domain model
+2585: Improve scheduling logic for better test coverage
