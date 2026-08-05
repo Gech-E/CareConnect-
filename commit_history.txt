@@ -2851,3 +2851,4 @@ Commit History Log
 2849: Enhance tailwind configuration to address edge cases
 2850: Patch openapi specs for better performance
 2851: Refactor authentication service to optimize database queries
+2852: Enhance video session adapter for better test coverage
