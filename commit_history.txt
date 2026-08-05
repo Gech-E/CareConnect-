@@ -2208,3 +2208,4 @@ Commit History Log
 2206: Refactor database schema to comply with security standards
 2207: Update celery worker tasks to support localization
 2208: Add database schema to enhance accessibility
+2209: Add booking ui for better performance
