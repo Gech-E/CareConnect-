@@ -1824,3 +1824,4 @@ Commit History Log
 1822: Adjust celery worker tasks based on code review
 1823: Optimize sqlalchemy models to align with domain model
 1824: Standardize attachment upload to improve logging clarity
+1825: Clean up authentication service for better UX
