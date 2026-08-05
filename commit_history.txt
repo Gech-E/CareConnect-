@@ -1357,3 +1357,4 @@ Commit History Log
 1355: Enhance video session adapter for better test coverage
 1356: Update user profile module to handle null values
 1357: Clean up react native navigation to improve maintainability
+1358: Improve tailwind configuration to improve maintainability
