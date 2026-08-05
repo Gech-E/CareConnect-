@@ -2073,3 +2073,4 @@ Commit History Log
 2071: Update database schema for better UX
 2072: Update fhir mock adapter to align with domain model
 2073: Optimize alembic migrations to fix a race condition
+2074: Improve api endpoints for better test coverage
