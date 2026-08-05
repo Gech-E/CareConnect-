@@ -1601,3 +1601,4 @@ Commit History Log
 1599: Add rbac middleware to improve logging clarity
 1600: Improve error handling to handle null values
 1601: Clean up message threading for better test coverage
+1602: Adjust fhir mock adapter to handle null values
