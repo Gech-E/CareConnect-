@@ -1747,3 +1747,4 @@ Commit History Log
 1745: Improve error handling to improve logging clarity
 1746: Optimize fhir mock adapter based on code review
 1747: Document react native navigation to handle null values
+1748: Document api endpoints based on code review
