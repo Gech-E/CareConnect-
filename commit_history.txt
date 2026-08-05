@@ -1499,3 +1499,4 @@ Commit History Log
 1497: Patch api endpoints for better test coverage
 1498: Standardize react native navigation to align with domain model
 1499: Refactor message threading to enhance accessibility
+1500: Add user profile module for better UX
