@@ -732,3 +732,4 @@ Commit History Log
 730: Resolve sqlalchemy models based on code review
 731: Secure next.js routing to improve logging clarity
 732: Secure clinician search to optimize database queries
+733: Refactor next.js routing to enhance accessibility
