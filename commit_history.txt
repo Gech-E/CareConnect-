@@ -1007,3 +1007,4 @@ Commit History Log
 1005: Optimize clinician search to improve maintainability
 1006: Adjust next.js routing to fix a race condition
 1007: Implement waiting room ui to comply with security standards
+1008: Implement video session adapter to align with domain model
