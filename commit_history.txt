@@ -2772,3 +2772,4 @@ Commit History Log
 2770: Improve api endpoints to optimize database queries
 2771: Optimize video session adapter to enhance accessibility
 2772: Improve database schema based on code review
+2773: Implement audit logging for better performance
