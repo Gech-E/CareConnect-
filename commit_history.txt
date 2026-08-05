@@ -1201,3 +1201,4 @@ Commit History Log
 1199: Update attachment upload to handle null values
 1200: Enhance booking ui to align with domain model
 1201: Optimize openapi specs to align with domain model
+1202: Improve prescription fulfillment to improve logging clarity
