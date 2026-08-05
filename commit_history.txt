@@ -1668,3 +1668,4 @@ Commit History Log
 1666: Secure next.js routing for better test coverage
 1667: Standardize alembic migrations to handle null values
 1668: Fix scheduling logic to address edge cases
+1669: Secure attachment upload based on code review
