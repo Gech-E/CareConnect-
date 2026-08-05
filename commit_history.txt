@@ -2193,3 +2193,4 @@ Commit History Log
 2191: Optimize sqlalchemy models to address edge cases
 2192: Patch scheduling logic to improve maintainability
 2193: Implement user profile module to optimize database queries
+2194: Update fhir mock adapter to improve maintainability
