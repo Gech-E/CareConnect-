@@ -2480,3 +2480,4 @@ Commit History Log
 2478: Adjust attachment upload to reduce memory footprint
 2479: Add error handling to comply with security standards
 2480: Document ci pipeline to optimize database queries
+2481: Adjust audit logging to align with domain model
