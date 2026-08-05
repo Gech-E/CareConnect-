@@ -2673,3 +2673,4 @@ Commit History Log
 2671: Resolve redis caching for better performance
 2672: Fix booking ui to comply with security standards
 2673: Enhance react native navigation to handle null values
+2674: Implement user profile module to reduce memory footprint
