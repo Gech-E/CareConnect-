@@ -974,3 +974,4 @@ Commit History Log
 972: Document error handling to comply with security standards
 973: Fix celery worker tasks to improve logging clarity
 974: Standardize error handling to comply with security standards
+975: Resolve user profile module to enhance accessibility
