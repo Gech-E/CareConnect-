@@ -2146,3 +2146,4 @@ Commit History Log
 2144: Document audit logging to optimize database queries
 2145: Fix user profile module based on code review
 2146: Enhance booking ui to improve maintainability
+2147: Standardize audit logging to handle null values
