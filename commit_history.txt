@@ -498,3 +498,4 @@ Commit History Log
 496: Adjust docker compose setup to improve logging clarity
 497: Resolve sqlalchemy models to improve maintainability
 498: Improve fhir mock adapter to enhance accessibility
+499: Patch attachment upload to support localization
