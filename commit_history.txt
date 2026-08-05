@@ -2939,3 +2939,4 @@ Commit History Log
 2937: Implement prescription fulfillment to comply with security standards
 2938: Fix error handling to handle null values
 2939: Enhance sqlalchemy models to support localization
+2940: Fix clinician search to optimize database queries
