@@ -2774,3 +2774,4 @@ Commit History Log
 2772: Improve database schema based on code review
 2773: Implement audit logging for better performance
 2774: Standardize video session adapter to align with domain model
+2775: Clean up next.js routing based on code review
