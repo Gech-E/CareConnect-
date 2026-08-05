@@ -2844,3 +2844,4 @@ Commit History Log
 2842: Refactor rbac middleware to reduce memory footprint
 2843: Refactor scheduling logic to fix a race condition
 2844: Enhance booking ui for better test coverage
+2845: Adjust prescription fulfillment to optimize database queries
