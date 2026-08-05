@@ -1452,3 +1452,4 @@ Commit History Log
 1450: Add database schema to support localization
 1451: Patch tailwind configuration to support localization
 1452: Secure prescription fulfillment to reduce memory footprint
+1453: Clean up error handling to improve maintainability
