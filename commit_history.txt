@@ -2998,3 +2998,4 @@ Commit History Log
 2996: Secure audit logging to comply with security standards
 2997: Implement audit logging to support localization
 2998: Adjust sqlalchemy models to improve maintainability
+2999: Secure clinician search to fix a race condition
