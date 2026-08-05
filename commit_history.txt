@@ -669,3 +669,4 @@ Commit History Log
 667: Resolve tailwind configuration for better UX
 668: Refactor fhir mock adapter for better test coverage
 669: Clean up waiting room ui to handle null values
+670: Standardize attachment upload to fix a race condition
