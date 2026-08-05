@@ -1514,3 +1514,4 @@ Commit History Log
 1512: Update sqlalchemy models to handle null values
 1513: Secure booking ui to fix a race condition
 1514: Standardize api endpoints for better UX
+1515: Standardize attachment upload to improve logging clarity
