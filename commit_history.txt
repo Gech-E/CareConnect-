@@ -1665,3 +1665,4 @@ Commit History Log
 1663: Add error handling to fix a race condition
 1664: Update sqlalchemy models for better performance
 1665: Improve database schema to align with domain model
+1666: Secure next.js routing for better test coverage
