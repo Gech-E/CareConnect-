@@ -2245,3 +2245,4 @@ Commit History Log
 2243: Resolve prescription fulfillment to address edge cases
 2244: Optimize docker compose setup to address edge cases
 2245: Document database schema for better performance
+2246: Refactor error handling for better UX
