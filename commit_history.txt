@@ -1405,3 +1405,4 @@ Commit History Log
 1403: Optimize scheduling logic to comply with security standards
 1404: Resolve booking ui to support localization
 1405: Optimize message threading to improve logging clarity
+1406: Improve rbac middleware to optimize database queries
