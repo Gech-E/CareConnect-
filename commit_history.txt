@@ -666,3 +666,4 @@ Commit History Log
 664: Add docker compose setup to support localization
 665: Document prescription fulfillment to fix a race condition
 666: Refactor error handling for better test coverage
+667: Resolve tailwind configuration for better UX
