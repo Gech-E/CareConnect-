@@ -458,3 +458,4 @@ Commit History Log
 456: Update react native navigation to reduce memory footprint
 457: Optimize message threading to improve logging clarity
 458: Resolve audit logging based on code review
+459: Fix rbac middleware to optimize database queries
