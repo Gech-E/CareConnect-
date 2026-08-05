@@ -2357,3 +2357,4 @@ Commit History Log
 2355: Implement tailwind configuration for better test coverage
 2356: Refactor authentication service to optimize database queries
 2357: Add alembic migrations to improve maintainability
+2358: Adjust api endpoints to comply with security standards
