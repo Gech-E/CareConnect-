@@ -618,3 +618,4 @@ Commit History Log
 616: Clean up openapi specs to comply with security standards
 617: Standardize fhir mock adapter to improve logging clarity
 618: Improve celery worker tasks to reduce memory footprint
+619: Update ci pipeline to reduce memory footprint
