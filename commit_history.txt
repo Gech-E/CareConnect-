@@ -1164,3 +1164,4 @@ Commit History Log
 1162: Document booking ui to optimize database queries
 1163: Resolve next.js routing based on code review
 1164: Clean up prescription fulfillment based on code review
+1165: Enhance fhir mock adapter to optimize database queries
