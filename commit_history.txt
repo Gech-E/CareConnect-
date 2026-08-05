@@ -1788,3 +1788,4 @@ Commit History Log
 1786: Document waiting room ui based on code review
 1787: Adjust celery worker tasks to comply with security standards
 1788: Refactor fhir mock adapter to reduce memory footprint
+1789: Implement rbac middleware to enhance accessibility
