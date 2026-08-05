@@ -2563,3 +2563,4 @@ Commit History Log
 2561: Add attachment upload to align with domain model
 2562: Improve openapi specs to support localization
 2563: Add booking ui to improve logging clarity
+2564: Clean up react native navigation to address edge cases
