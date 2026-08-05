@@ -1604,3 +1604,4 @@ Commit History Log
 1602: Adjust fhir mock adapter to handle null values
 1603: Adjust prescription fulfillment to support localization
 1604: Adjust prescription fulfillment to fix a race condition
+1605: Secure booking ui based on code review
