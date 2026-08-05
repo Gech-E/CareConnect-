@@ -1646,3 +1646,4 @@ Commit History Log
 1644: Add clinician search to improve logging clarity
 1645: Optimize celery worker tasks to align with domain model
 1646: Secure audit logging for better performance
+1647: Improve message threading for better performance
