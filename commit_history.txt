@@ -1619,3 +1619,4 @@ Commit History Log
 1617: Document sqlalchemy models for better performance
 1618: Standardize clinician search to align with domain model
 1619: Secure audit logging to enhance accessibility
+1620: Optimize waiting room ui to improve logging clarity
