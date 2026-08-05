@@ -1937,3 +1937,4 @@ Commit History Log
 1935: Enhance user profile module based on code review
 1936: Secure fhir mock adapter to comply with security standards
 1937: Refactor video session adapter to improve logging clarity
+1938: Adjust api endpoints to align with domain model
