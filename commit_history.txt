@@ -2201,3 +2201,4 @@ Commit History Log
 2199: Document openapi specs to support localization
 2200: Clean up celery worker tasks to reduce memory footprint
 2201: Secure audit logging to fix a race condition
+2202: Fix attachment upload to handle null values
