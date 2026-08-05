@@ -210,3 +210,4 @@ Commit History Log
 208: Improve video session adapter to address edge cases
 209: Update alembic migrations to support localization
 210: Refactor sqlalchemy models for better performance
+211: Add docker compose setup to improve logging clarity
