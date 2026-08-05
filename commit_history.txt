@@ -1940,3 +1940,4 @@ Commit History Log
 1938: Adjust api endpoints to align with domain model
 1939: Adjust message threading to comply with security standards
 1940: Implement clinician search for better test coverage
+1941: Document next.js routing to enhance accessibility
