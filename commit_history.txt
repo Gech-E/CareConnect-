@@ -2321,3 +2321,4 @@ Commit History Log
 2319: Update api endpoints for better test coverage
 2320: Patch audit logging to enhance accessibility
 2321: Enhance celery worker tasks to improve logging clarity
+2322: Add database schema for better performance
