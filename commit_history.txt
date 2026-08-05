@@ -968,3 +968,4 @@ Commit History Log
 966: Optimize video session adapter to address edge cases
 967: Optimize fhir mock adapter for better UX
 968: Improve user profile module to optimize database queries
+969: Enhance attachment upload to reduce memory footprint
