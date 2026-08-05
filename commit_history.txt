@@ -538,3 +538,4 @@ Commit History Log
 536: Enhance celery worker tasks to address edge cases
 537: Implement user profile module to reduce memory footprint
 538: Fix tailwind configuration to optimize database queries
+539: Add celery worker tasks to support localization
