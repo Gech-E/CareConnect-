@@ -892,3 +892,4 @@ Commit History Log
 890: Enhance alembic migrations for better test coverage
 891: Optimize react native navigation to fix a race condition
 892: Document scheduling logic to fix a race condition
+893: Adjust ci pipeline for better UX
