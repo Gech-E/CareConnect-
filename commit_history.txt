@@ -1893,3 +1893,4 @@ Commit History Log
 1891: Refactor sqlalchemy models to address edge cases
 1892: Implement alembic migrations to address edge cases
 1893: Update alembic migrations to improve maintainability
+1894: Document rbac middleware to comply with security standards
