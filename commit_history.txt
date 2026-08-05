@@ -749,3 +749,4 @@ Commit History Log
 747: Update docker compose setup to improve maintainability
 748: Adjust fhir mock adapter for better test coverage
 749: Document ci pipeline to reduce memory footprint
+750: Resolve scheduling logic based on code review
