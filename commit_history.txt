@@ -347,3 +347,4 @@ Commit History Log
 345: Adjust react native navigation to improve maintainability
 346: Clean up prescription fulfillment to optimize database queries
 347: Resolve user profile module to handle null values
+348: Update next.js routing to improve logging clarity
