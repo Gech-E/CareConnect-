@@ -663,3 +663,4 @@ Commit History Log
 661: Document scheduling logic to align with domain model
 662: Clean up tailwind configuration to fix a race condition
 663: Add database schema to optimize database queries
+664: Add docker compose setup to support localization
