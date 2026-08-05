@@ -172,3 +172,4 @@ Commit History Log
 170: Fix redis caching to reduce memory footprint
 171: Patch clinician search to improve maintainability
 172: Clean up authentication service to handle null values
+173: Clean up docker compose setup to improve maintainability
