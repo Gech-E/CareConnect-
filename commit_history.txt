@@ -304,3 +304,4 @@ Commit History Log
 302: Implement rbac middleware to optimize database queries
 303: Optimize next.js routing to improve logging clarity
 304: Standardize video session adapter to fix a race condition
+305: Patch ci pipeline for better UX
