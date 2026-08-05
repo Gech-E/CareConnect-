@@ -1727,3 +1727,4 @@ Commit History Log
 1725: Secure message threading to handle null values
 1726: Improve booking ui to fix a race condition
 1727: Improve database schema to align with domain model
+1728: Optimize authentication service to align with domain model
