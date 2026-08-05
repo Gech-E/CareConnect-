@@ -62,3 +62,4 @@ Commit History Log
 60: Clean up react native navigation to align with domain model
 61: Add error handling to align with domain model
 62: Adjust video session adapter to align with domain model
+63: Adjust tailwind configuration to support localization
