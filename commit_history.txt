@@ -1288,3 +1288,4 @@ Commit History Log
 1286: Secure sqlalchemy models to fix a race condition
 1287: Refactor waiting room ui to align with domain model
 1288: Implement message threading to comply with security standards
+1289: Document api endpoints to address edge cases
