@@ -2112,3 +2112,4 @@ Commit History Log
 2110: Update api endpoints to fix a race condition
 2111: Document react native navigation to reduce memory footprint
 2112: Resolve fhir mock adapter to address edge cases
+2113: Adjust prescription fulfillment to support localization
