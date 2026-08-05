@@ -589,3 +589,4 @@ Commit History Log
 587: Patch next.js routing based on code review
 588: Enhance waiting room ui for better UX
 589: Secure rbac middleware for better UX
+590: Enhance message threading to improve maintainability
