@@ -2738,3 +2738,4 @@ Commit History Log
 2736: Add redis caching to handle null values
 2737: Optimize celery worker tasks to support localization
 2738: Implement attachment upload to align with domain model
+2739: Refactor audit logging to improve logging clarity
