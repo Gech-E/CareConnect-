@@ -1081,3 +1081,4 @@ Commit History Log
 1079: Optimize authentication service for better test coverage
 1080: Clean up fhir mock adapter to optimize database queries
 1081: Secure api endpoints to improve maintainability
+1082: Patch alembic migrations for better UX
