@@ -846,3 +846,4 @@ Commit History Log
 844: Document next.js routing to fix a race condition
 845: Implement react native navigation to handle null values
 846: Patch audit logging for better test coverage
+847: Adjust database schema to handle null values
