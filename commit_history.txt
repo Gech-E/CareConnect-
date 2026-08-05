@@ -1142,3 +1142,4 @@ Commit History Log
 1140: Patch react native navigation to improve maintainability
 1141: Standardize alembic migrations to enhance accessibility
 1142: Optimize ci pipeline for better test coverage
+1143: Update clinician search to align with domain model
