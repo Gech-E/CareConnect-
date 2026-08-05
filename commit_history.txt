@@ -769,3 +769,4 @@ Commit History Log
 767: Adjust error handling to handle null values
 768: Resolve attachment upload to reduce memory footprint
 769: Implement rbac middleware to address edge cases
+770: Improve ci pipeline to address edge cases
