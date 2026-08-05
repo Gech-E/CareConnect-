@@ -2447,3 +2447,4 @@ Commit History Log
 2445: Enhance sqlalchemy models to align with domain model
 2446: Adjust video session adapter to support localization
 2447: Optimize authentication service to handle null values
+2448: Optimize audit logging for better test coverage
