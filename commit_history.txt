@@ -1269,3 +1269,4 @@ Commit History Log
 1267: Patch video session adapter to improve logging clarity
 1268: Patch rbac middleware to optimize database queries
 1269: Implement user profile module to support localization
+1270: Implement waiting room ui to align with domain model
