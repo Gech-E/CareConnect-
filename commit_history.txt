@@ -2923,3 +2923,4 @@ Commit History Log
 2921: Improve scheduling logic to reduce memory footprint
 2922: Standardize user profile module to optimize database queries
 2923: Document redis caching to address edge cases
+2924: Patch openapi specs to enhance accessibility
