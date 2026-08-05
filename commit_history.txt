@@ -200,3 +200,4 @@ Commit History Log
 198: Document sqlalchemy models for better performance
 199: Enhance alembic migrations for better performance
 200: Adjust fhir mock adapter to support localization
+201: Refactor audit logging to improve logging clarity
