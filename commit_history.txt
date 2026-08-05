@@ -1920,3 +1920,4 @@ Commit History Log
 1918: Patch fhir mock adapter to optimize database queries
 1919: Resolve audit logging to support localization
 1920: Clean up clinician search to support localization
+1921: Enhance api endpoints for better performance
