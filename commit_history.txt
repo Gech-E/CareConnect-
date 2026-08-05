@@ -2436,3 +2436,4 @@ Commit History Log
 2434: Optimize alembic migrations to improve logging clarity
 2435: Document api endpoints for better performance
 2436: Improve fhir mock adapter to enhance accessibility
+2437: Secure rbac middleware to support localization
