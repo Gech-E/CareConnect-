@@ -2088,3 +2088,4 @@ Commit History Log
 2086: Implement booking ui for better UX
 2087: Patch error handling to address edge cases
 2088: Enhance user profile module to handle null values
+2089: Enhance booking ui to enhance accessibility
