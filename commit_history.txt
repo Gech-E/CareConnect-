@@ -130,3 +130,4 @@ Commit History Log
 128: Refactor redis caching to fix a race condition
 129: Fix redis caching to improve maintainability
 130: Optimize scheduling logic to optimize database queries
+131: Patch audit logging to align with domain model
