@@ -2185,3 +2185,4 @@ Commit History Log
 2183: Refactor openapi specs to improve logging clarity
 2184: Add booking ui for better test coverage
 2185: Improve database schema to align with domain model
+2186: Add database schema for better test coverage
