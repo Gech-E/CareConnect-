@@ -996,3 +996,4 @@ Commit History Log
 994: Resolve booking ui to comply with security standards
 995: Implement react native navigation to comply with security standards
 996: Implement booking ui for better performance
+997: Implement openapi specs based on code review
