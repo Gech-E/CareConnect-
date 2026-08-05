@@ -607,3 +607,4 @@ Commit History Log
 605: Secure sqlalchemy models to align with domain model
 606: Optimize fhir mock adapter to support localization
 607: Optimize docker compose setup to reduce memory footprint
+608: Add user profile module to improve logging clarity
