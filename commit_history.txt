@@ -698,3 +698,4 @@ Commit History Log
 696: Fix attachment upload to comply with security standards
 697: Improve prescription fulfillment to address edge cases
 698: Improve scheduling logic to fix a race condition
+699: Optimize react native navigation for better test coverage
