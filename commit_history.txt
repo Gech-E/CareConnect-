@@ -2591,3 +2591,4 @@ Commit History Log
 2589: Resolve api endpoints to reduce memory footprint
 2590: Add fhir mock adapter to improve logging clarity
 2591: Document fhir mock adapter to handle null values
+2592: Refactor clinician search to enhance accessibility
