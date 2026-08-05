@@ -654,3 +654,4 @@ Commit History Log
 652: Refactor authentication service to align with domain model
 653: Implement error handling for better UX
 654: Resolve react native navigation to optimize database queries
+655: Patch database schema to reduce memory footprint
