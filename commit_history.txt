@@ -943,3 +943,4 @@ Commit History Log
 941: Fix database schema to improve logging clarity
 942: Patch rbac middleware to address edge cases
 943: Adjust booking ui to optimize database queries
+944: Add ci pipeline based on code review
