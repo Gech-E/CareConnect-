@@ -2380,3 +2380,4 @@ Commit History Log
 2378: Document booking ui for better test coverage
 2379: Update prescription fulfillment to improve maintainability
 2380: Adjust video session adapter to handle null values
+2381: Resolve redis caching to support localization
