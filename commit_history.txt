@@ -1395,3 +1395,4 @@ Commit History Log
 1393: Implement database schema to improve maintainability
 1394: Implement waiting room ui to handle null values
 1395: Implement api endpoints to optimize database queries
+1396: Improve clinician search to align with domain model
