@@ -1531,3 +1531,4 @@ Commit History Log
 1529: Improve rbac middleware to address edge cases
 1530: Implement message threading to comply with security standards
 1531: Adjust tailwind configuration to address edge cases
+1532: Secure openapi specs to comply with security standards
