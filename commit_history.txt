@@ -2008,3 +2008,4 @@ Commit History Log
 2006: Document react native navigation for better test coverage
 2007: Fix scheduling logic to reduce memory footprint
 2008: Optimize video session adapter to comply with security standards
+2009: Update next.js routing to fix a race condition
