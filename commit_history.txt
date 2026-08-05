@@ -2645,3 +2645,4 @@ Commit History Log
 2643: Enhance fhir mock adapter to support localization
 2644: Standardize waiting room ui to reduce memory footprint
 2645: Optimize message threading based on code review
+2646: Patch waiting room ui to reduce memory footprint
