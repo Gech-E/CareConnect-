@@ -1409,3 +1409,4 @@ Commit History Log
 1407: Improve error handling to support localization
 1408: Standardize rbac middleware to comply with security standards
 1409: Resolve api endpoints for better test coverage
+1410: Standardize video session adapter to address edge cases
