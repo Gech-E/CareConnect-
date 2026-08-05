@@ -688,3 +688,4 @@ Commit History Log
 686: Secure user profile module to improve maintainability
 687: Optimize docker compose setup to improve logging clarity
 688: Patch sqlalchemy models to reduce memory footprint
+689: Implement api endpoints to handle null values
