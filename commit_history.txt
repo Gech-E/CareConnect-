@@ -2182,3 +2182,4 @@ Commit History Log
 2180: Improve ci pipeline based on code review
 2181: Clean up database schema to enhance accessibility
 2182: Improve message threading for better performance
+2183: Refactor openapi specs to improve logging clarity
