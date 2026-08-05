@@ -206,3 +206,4 @@ Commit History Log
 204: Document clinician search to align with domain model
 205: Resolve ci pipeline to comply with security standards
 206: Update tailwind configuration to optimize database queries
+207: Improve user profile module to enhance accessibility
