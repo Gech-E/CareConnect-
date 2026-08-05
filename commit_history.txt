@@ -1157,3 +1157,4 @@ Commit History Log
 1155: Optimize redis caching to fix a race condition
 1156: Standardize audit logging to improve maintainability
 1157: Implement user profile module for better test coverage
+1158: Patch celery worker tasks to comply with security standards
