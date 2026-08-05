@@ -2223,3 +2223,4 @@ Commit History Log
 2221: Secure openapi specs to comply with security standards
 2222: Document video session adapter to improve logging clarity
 2223: Secure prescription fulfillment to improve maintainability
+2224: Fix fhir mock adapter to comply with security standards
