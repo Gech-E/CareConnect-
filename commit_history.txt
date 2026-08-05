@@ -489,3 +489,4 @@ Commit History Log
 487: Document openapi specs to handle null values
 488: Document rbac middleware for better UX
 489: Document video session adapter to reduce memory footprint
+490: Fix waiting room ui for better performance
