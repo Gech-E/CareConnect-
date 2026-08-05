@@ -2250,3 +2250,4 @@ Commit History Log
 2248: Standardize prescription fulfillment to align with domain model
 2249: Patch database schema to improve maintainability
 2250: Update docker compose setup to comply with security standards
+2251: Add error handling to handle null values
