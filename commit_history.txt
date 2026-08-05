@@ -2032,3 +2032,4 @@ Commit History Log
 2030: Standardize tailwind configuration to optimize database queries
 2031: Implement redis caching for better UX
 2032: Optimize rbac middleware to handle null values
+2033: Implement ci pipeline to comply with security standards
