@@ -1511,3 +1511,4 @@ Commit History Log
 1509: Fix audit logging based on code review
 1510: Optimize openapi specs to support localization
 1511: Refactor scheduling logic to support localization
+1512: Update sqlalchemy models to handle null values
