@@ -810,3 +810,4 @@ Commit History Log
 808: Document openapi specs to improve maintainability
 809: Implement ci pipeline to optimize database queries
 810: Improve scheduling logic for better performance
+811: Improve redis caching to fix a race condition
