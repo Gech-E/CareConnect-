@@ -1621,3 +1621,4 @@ Commit History Log
 1619: Secure audit logging to enhance accessibility
 1620: Optimize waiting room ui to improve logging clarity
 1621: Standardize booking ui to fix a race condition
+1622: Document rbac middleware for better test coverage
