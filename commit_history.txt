@@ -184,3 +184,4 @@ Commit History Log
 182: Refactor audit logging to comply with security standards
 183: Enhance database schema to reduce memory footprint
 184: Standardize attachment upload based on code review
+185: Implement redis caching to support localization
