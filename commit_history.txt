@@ -2056,3 +2056,4 @@ Commit History Log
 2054: Implement rbac middleware to optimize database queries
 2055: Enhance react native navigation to improve maintainability
 2056: Enhance attachment upload to improve logging clarity
+2057: Clean up booking ui to comply with security standards
