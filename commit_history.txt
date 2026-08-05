@@ -1049,3 +1049,4 @@ Commit History Log
 1047: Implement ci pipeline for better test coverage
 1048: Fix clinician search for better performance
 1049: Update clinician search to handle null values
+1050: Resolve api endpoints to handle null values
