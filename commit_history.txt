@@ -2399,3 +2399,4 @@ Commit History Log
 2397: Clean up prescription fulfillment for better UX
 2398: Implement rbac middleware to reduce memory footprint
 2399: Add audit logging to optimize database queries
+2400: Update openapi specs to support localization
