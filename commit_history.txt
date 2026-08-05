@@ -723,3 +723,4 @@ Commit History Log
 721: Refactor fhir mock adapter to improve logging clarity
 722: Enhance waiting room ui to align with domain model
 723: Update docker compose setup to handle null values
+724: Refactor celery worker tasks to comply with security standards
