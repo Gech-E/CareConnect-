@@ -440,3 +440,4 @@ Commit History Log
 438: Improve message threading to handle null values
 439: Standardize fhir mock adapter to optimize database queries
 440: Document next.js routing to comply with security standards
+441: Optimize scheduling logic to improve maintainability
