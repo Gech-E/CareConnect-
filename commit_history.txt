@@ -1433,3 +1433,4 @@ Commit History Log
 1431: Secure error handling to fix a race condition
 1432: Implement booking ui to support localization
 1433: Secure clinician search to improve logging clarity
+1434: Implement alembic migrations to enhance accessibility
