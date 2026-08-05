@@ -2566,3 +2566,4 @@ Commit History Log
 2564: Clean up react native navigation to address edge cases
 2565: Patch video session adapter to improve logging clarity
 2566: Refactor api endpoints to enhance accessibility
+2567: Adjust scheduling logic to reduce memory footprint
