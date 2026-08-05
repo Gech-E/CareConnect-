@@ -483,3 +483,4 @@ Commit History Log
 481: Refactor sqlalchemy models to optimize database queries
 482: Document react native navigation to handle null values
 483: Optimize redis caching to comply with security standards
+484: Add celery worker tasks for better test coverage
