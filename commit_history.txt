@@ -287,3 +287,4 @@ Commit History Log
 285: Clean up docker compose setup for better test coverage
 286: Improve rbac middleware to enhance accessibility
 287: Standardize scheduling logic to comply with security standards
+288: Add react native navigation to align with domain model
