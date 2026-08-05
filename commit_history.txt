@@ -1945,3 +1945,4 @@ Commit History Log
 1943: Implement authentication service for better performance
 1944: Patch video session adapter to improve maintainability
 1945: Implement sqlalchemy models for better performance
+1946: Improve ci pipeline to reduce memory footprint
