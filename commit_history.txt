@@ -1700,3 +1700,4 @@ Commit History Log
 1698: Optimize scheduling logic to support localization
 1699: Update celery worker tasks to align with domain model
 1700: Fix react native navigation to enhance accessibility
+1701: Refactor clinician search for better UX
