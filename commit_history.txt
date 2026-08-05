@@ -216,3 +216,4 @@ Commit History Log
 214: Resolve authentication service to comply with security standards
 215: Resolve next.js routing to optimize database queries
 216: Fix alembic migrations to reduce memory footprint
+217: Secure clinician search to align with domain model
