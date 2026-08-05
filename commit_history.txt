@@ -2496,3 +2496,4 @@ Commit History Log
 2494: Clean up clinician search to comply with security standards
 2495: Implement api endpoints to handle null values
 2496: Add next.js routing to fix a race condition
+2497: Update error handling for better test coverage
