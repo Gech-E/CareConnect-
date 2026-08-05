@@ -1496,3 +1496,4 @@ Commit History Log
 1494: Fix fhir mock adapter for better test coverage
 1495: Clean up video session adapter to improve logging clarity
 1496: Optimize celery worker tasks to improve logging clarity
+1497: Patch api endpoints for better test coverage
