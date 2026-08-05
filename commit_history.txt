@@ -2770,3 +2770,4 @@ Commit History Log
 2768: Secure react native navigation to optimize database queries
 2769: Add prescription fulfillment for better test coverage
 2770: Improve api endpoints to optimize database queries
+2771: Optimize video session adapter to enhance accessibility
