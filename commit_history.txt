@@ -2625,3 +2625,4 @@ Commit History Log
 2623: Fix celery worker tasks to address edge cases
 2624: Patch audit logging to reduce memory footprint
 2625: Add openapi specs to comply with security standards
+2626: Improve booking ui to improve logging clarity
