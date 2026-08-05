@@ -1546,3 +1546,4 @@ Commit History Log
 1544: Patch alembic migrations to improve logging clarity
 1545: Standardize message threading to reduce memory footprint
 1546: Optimize scheduling logic to handle null values
+1547: Adjust booking ui to comply with security standards
