@@ -78,3 +78,4 @@ Commit History Log
 76: Implement video session adapter based on code review
 77: Fix redis caching to reduce memory footprint
 78: Patch tailwind configuration to improve maintainability
+79: Patch next.js routing based on code review
