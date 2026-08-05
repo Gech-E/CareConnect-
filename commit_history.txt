@@ -1285,3 +1285,4 @@ Commit History Log
 1283: Patch database schema to improve logging clarity
 1284: Add next.js routing to support localization
 1285: Standardize redis caching to handle null values
+1286: Secure sqlalchemy models to fix a race condition
