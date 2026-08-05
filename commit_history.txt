@@ -614,3 +614,4 @@ Commit History Log
 612: Standardize clinician search to reduce memory footprint
 613: Implement openapi specs to improve logging clarity
 614: Improve api endpoints to enhance accessibility
+615: Improve api endpoints to improve maintainability
