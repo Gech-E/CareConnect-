@@ -1738,3 +1738,4 @@ Commit History Log
 1736: Clean up alembic migrations to enhance accessibility
 1737: Improve sqlalchemy models to handle null values
 1738: Optimize api endpoints for better test coverage
+1739: Improve prescription fulfillment for better test coverage
