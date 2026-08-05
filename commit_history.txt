@@ -1064,3 +1064,4 @@ Commit History Log
 1062: Implement sqlalchemy models for better UX
 1063: Resolve video session adapter based on code review
 1064: Document booking ui based on code review
+1065: Standardize api endpoints to optimize database queries
