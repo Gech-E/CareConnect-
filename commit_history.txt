@@ -1277,3 +1277,4 @@ Commit History Log
 1275: Standardize prescription fulfillment to fix a race condition
 1276: Document openapi specs for better test coverage
 1277: Enhance openapi specs to improve logging clarity
+1278: Document audit logging to reduce memory footprint
