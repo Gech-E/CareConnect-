@@ -1439,3 +1439,4 @@ Commit History Log
 1437: Standardize waiting room ui to improve maintainability
 1438: Enhance openapi specs to optimize database queries
 1439: Secure celery worker tasks to comply with security standards
+1440: Resolve audit logging to address edge cases
