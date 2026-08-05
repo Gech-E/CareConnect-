@@ -2274,3 +2274,4 @@ Commit History Log
 2272: Update redis caching to support localization
 2273: Improve tailwind configuration to improve maintainability
 2274: Improve authentication service to reduce memory footprint
+2275: Optimize tailwind configuration to improve logging clarity
