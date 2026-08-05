@@ -455,3 +455,4 @@ Commit History Log
 453: Standardize prescription fulfillment to fix a race condition
 454: Adjust docker compose setup to comply with security standards
 455: Document audit logging to improve logging clarity
+456: Update react native navigation to reduce memory footprint
