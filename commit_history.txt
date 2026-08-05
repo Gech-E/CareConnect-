@@ -1789,3 +1789,4 @@ Commit History Log
 1787: Adjust celery worker tasks to comply with security standards
 1788: Refactor fhir mock adapter to reduce memory footprint
 1789: Implement rbac middleware to enhance accessibility
+1790: Refactor next.js routing to align with domain model
