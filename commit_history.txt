@@ -1705,3 +1705,4 @@ Commit History Log
 1703: Enhance ci pipeline to support localization
 1704: Enhance react native navigation to optimize database queries
 1705: Secure error handling to fix a race condition
+1706: Improve celery worker tasks based on code review
