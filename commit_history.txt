@@ -391,3 +391,4 @@ Commit History Log
 389: Enhance rbac middleware to comply with security standards
 390: Implement docker compose setup to fix a race condition
 391: Clean up user profile module to reduce memory footprint
+392: Resolve ci pipeline to handle null values
