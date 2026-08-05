@@ -633,3 +633,4 @@ Commit History Log
 631: Refactor tailwind configuration to fix a race condition
 632: Adjust next.js routing to handle null values
 633: Refactor attachment upload to reduce memory footprint
+634: Fix tailwind configuration to reduce memory footprint
