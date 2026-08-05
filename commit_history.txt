@@ -1369,3 +1369,4 @@ Commit History Log
 1367: Adjust booking ui to optimize database queries
 1368: Refactor booking ui to support localization
 1369: Clean up scheduling logic to improve logging clarity
+1370: Patch attachment upload based on code review
