@@ -2845,3 +2845,4 @@ Commit History Log
 2843: Refactor scheduling logic to fix a race condition
 2844: Enhance booking ui for better test coverage
 2845: Adjust prescription fulfillment to optimize database queries
+2846: Document video session adapter to enhance accessibility
