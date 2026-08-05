@@ -2454,3 +2454,4 @@ Commit History Log
 2452: Refactor user profile module to fix a race condition
 2453: Fix docker compose setup to align with domain model
 2454: Adjust ci pipeline to improve logging clarity
+2455: Fix error handling for better performance
