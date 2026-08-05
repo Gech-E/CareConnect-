@@ -1058,3 +1058,4 @@ Commit History Log
 1056: Refactor celery worker tasks based on code review
 1057: Refactor message threading for better test coverage
 1058: Refactor celery worker tasks to reduce memory footprint
+1059: Improve message threading to improve logging clarity
