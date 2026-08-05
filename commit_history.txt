@@ -2410,3 +2410,4 @@ Commit History Log
 2408: Fix clinician search to enhance accessibility
 2409: Clean up tailwind configuration to support localization
 2410: Patch docker compose setup to reduce memory footprint
+2411: Improve fhir mock adapter to support localization
