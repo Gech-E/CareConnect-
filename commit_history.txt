@@ -1329,3 +1329,4 @@ Commit History Log
 1327: Refactor rbac middleware for better UX
 1328: Clean up openapi specs to fix a race condition
 1329: Resolve prescription fulfillment based on code review
+1330: Clean up api endpoints to optimize database queries
