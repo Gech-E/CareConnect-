@@ -1279,3 +1279,4 @@ Commit History Log
 1277: Enhance openapi specs to improve logging clarity
 1278: Document audit logging to reduce memory footprint
 1279: Document react native navigation to improve maintainability
+1280: Resolve waiting room ui to reduce memory footprint
