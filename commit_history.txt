@@ -793,3 +793,4 @@ Commit History Log
 791: Clean up waiting room ui to enhance accessibility
 792: Fix attachment upload to improve maintainability
 793: Improve prescription fulfillment to address edge cases
+794: Implement user profile module to reduce memory footprint
