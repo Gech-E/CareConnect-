@@ -2038,3 +2038,4 @@ Commit History Log
 2036: Fix redis caching to align with domain model
 2037: Document database schema to improve maintainability
 2038: Implement api endpoints to reduce memory footprint
+2039: Secure api endpoints to reduce memory footprint
