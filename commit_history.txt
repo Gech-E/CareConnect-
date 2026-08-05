@@ -2976,3 +2976,4 @@ Commit History Log
 2974: Optimize docker compose setup for better UX
 2975: Fix database schema to reduce memory footprint
 2976: Document scheduling logic to comply with security standards
+2977: Patch video session adapter to optimize database queries
