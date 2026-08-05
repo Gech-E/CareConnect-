@@ -681,3 +681,4 @@ Commit History Log
 679: Adjust error handling to improve maintainability
 680: Secure user profile module for better test coverage
 681: Resolve error handling to enhance accessibility
+682: Adjust api endpoints for better UX
