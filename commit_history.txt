@@ -1737,3 +1737,4 @@ Commit History Log
 1735: Add audit logging for better performance
 1736: Clean up alembic migrations to enhance accessibility
 1737: Improve sqlalchemy models to handle null values
+1738: Optimize api endpoints for better test coverage
