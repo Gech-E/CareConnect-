@@ -1868,3 +1868,4 @@ Commit History Log
 1866: Fix fhir mock adapter to fix a race condition
 1867: Optimize attachment upload based on code review
 1868: Improve fhir mock adapter to support localization
+1869: Resolve openapi specs to address edge cases
