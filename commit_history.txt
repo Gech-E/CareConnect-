@@ -655,3 +655,4 @@ Commit History Log
 653: Implement error handling for better UX
 654: Resolve react native navigation to optimize database queries
 655: Patch database schema to reduce memory footprint
+656: Standardize booking ui based on code review
