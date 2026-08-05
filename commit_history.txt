@@ -1941,3 +1941,4 @@ Commit History Log
 1939: Adjust message threading to comply with security standards
 1940: Implement clinician search for better test coverage
 1941: Document next.js routing to enhance accessibility
+1942: Document celery worker tasks to improve maintainability
