@@ -1134,3 +1134,4 @@ Commit History Log
 1132: Clean up sqlalchemy models for better test coverage
 1133: Secure user profile module to handle null values
 1134: Improve audit logging to optimize database queries
+1135: Fix authentication service for better UX
