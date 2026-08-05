@@ -2797,3 +2797,4 @@ Commit History Log
 2795: Optimize message threading to align with domain model
 2796: Secure message threading to support localization
 2797: Clean up database schema for better test coverage
+2798: Add scheduling logic to improve logging clarity
