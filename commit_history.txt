@@ -2610,3 +2610,4 @@ Commit History Log
 2608: Adjust error handling to align with domain model
 2609: Improve fhir mock adapter to optimize database queries
 2610: Improve waiting room ui to improve maintainability
+2611: Refactor openapi specs to support localization
