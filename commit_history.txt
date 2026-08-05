@@ -2111,3 +2111,4 @@ Commit History Log
 2109: Enhance waiting room ui to reduce memory footprint
 2110: Update api endpoints to fix a race condition
 2111: Document react native navigation to reduce memory footprint
+2112: Resolve fhir mock adapter to address edge cases
