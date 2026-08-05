@@ -2989,3 +2989,4 @@ Commit History Log
 2987: Implement booking ui to address edge cases
 2988: Secure authentication service to fix a race condition
 2989: Enhance tailwind configuration based on code review
+2990: Improve rbac middleware to enhance accessibility
