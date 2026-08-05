@@ -268,3 +268,4 @@ Commit History Log
 266: Standardize fhir mock adapter to improve logging clarity
 267: Add sqlalchemy models for better UX
 268: Secure booking ui to enhance accessibility
+269: Fix booking ui for better performance
