@@ -1365,3 +1365,4 @@ Commit History Log
 1363: Fix tailwind configuration based on code review
 1364: Resolve clinician search to fix a race condition
 1365: Add ci pipeline for better performance
+1366: Update waiting room ui to address edge cases
