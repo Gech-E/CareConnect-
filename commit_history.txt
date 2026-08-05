@@ -2230,3 +2230,4 @@ Commit History Log
 2228: Clean up sqlalchemy models to address edge cases
 2229: Adjust next.js routing based on code review
 2230: Fix tailwind configuration based on code review
+2231: Improve fhir mock adapter to optimize database queries
