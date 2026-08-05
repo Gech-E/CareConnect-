@@ -1519,3 +1519,4 @@ Commit History Log
 1517: Optimize alembic migrations to address edge cases
 1518: Enhance error handling to reduce memory footprint
 1519: Update clinician search to handle null values
+1520: Resolve booking ui based on code review
