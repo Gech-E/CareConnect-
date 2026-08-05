@@ -472,3 +472,4 @@ Commit History Log
 470: Clean up alembic migrations to align with domain model
 471: Refactor rbac middleware for better test coverage
 472: Standardize audit logging to comply with security standards
+473: Implement error handling to support localization
