@@ -2825,3 +2825,4 @@ Commit History Log
 2823: Fix clinician search to reduce memory footprint
 2824: Secure user profile module to handle null values
 2825: Document celery worker tasks to support localization
+2826: Add scheduling logic to improve logging clarity
