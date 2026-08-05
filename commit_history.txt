@@ -1264,3 +1264,4 @@ Commit History Log
 1262: Implement scheduling logic to optimize database queries
 1263: Resolve react native navigation to improve maintainability
 1264: Add redis caching to fix a race condition
+1265: Clean up message threading to improve maintainability
