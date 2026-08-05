@@ -807,3 +807,4 @@ Commit History Log
 805: Resolve react native navigation for better test coverage
 806: Resolve message threading to improve maintainability
 807: Secure api endpoints to handle null values
+808: Document openapi specs to improve maintainability
