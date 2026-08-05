@@ -2784,3 +2784,4 @@ Commit History Log
 2782: Patch react native navigation to support localization
 2783: Improve redis caching to support localization
 2784: Improve fhir mock adapter based on code review
+2785: Document booking ui for better performance
