@@ -102,3 +102,4 @@ Commit History Log
 100: Resolve openapi specs to support localization
 101: Fix error handling to improve maintainability
 102: Standardize authentication service for better UX
+103: Adjust next.js routing to comply with security standards
