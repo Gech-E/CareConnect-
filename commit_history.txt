@@ -2927,3 +2927,4 @@ Commit History Log
 2925: Optimize fhir mock adapter based on code review
 2926: Optimize error handling based on code review
 2927: Resolve attachment upload to comply with security standards
+2928: Adjust openapi specs to handle null values
