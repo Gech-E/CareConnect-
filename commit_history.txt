@@ -2700,3 +2700,4 @@ Commit History Log
 2698: Resolve docker compose setup to support localization
 2699: Refactor celery worker tasks to align with domain model
 2700: Clean up rbac middleware for better test coverage
+2701: Implement react native navigation to improve logging clarity
