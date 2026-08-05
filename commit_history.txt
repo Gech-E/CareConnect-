@@ -933,3 +933,4 @@ Commit History Log
 931: Refactor redis caching to optimize database queries
 932: Standardize rbac middleware for better UX
 933: Fix rbac middleware for better performance
+934: Patch next.js routing for better test coverage
