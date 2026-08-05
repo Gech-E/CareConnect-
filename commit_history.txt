@@ -2826,3 +2826,4 @@ Commit History Log
 2824: Secure user profile module to handle null values
 2825: Document celery worker tasks to support localization
 2826: Add scheduling logic to improve logging clarity
+2827: Enhance alembic migrations to align with domain model
