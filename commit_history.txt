@@ -1835,3 +1835,4 @@ Commit History Log
 1833: Document prescription fulfillment for better UX
 1834: Patch next.js routing to comply with security standards
 1835: Resolve waiting room ui to enhance accessibility
+1836: Patch next.js routing to enhance accessibility
