@@ -5,3 +5,4 @@ Commit History Log
 3: Add user profile module to handle null values
 4: Document scheduling logic for better UX
 5: Optimize rbac middleware to improve logging clarity
+6: Clean up ci pipeline to optimize database queries
