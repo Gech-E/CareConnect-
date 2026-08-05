@@ -2593,3 +2593,4 @@ Commit History Log
 2591: Document fhir mock adapter to handle null values
 2592: Refactor clinician search to enhance accessibility
 2593: Enhance message threading to improve maintainability
+2594: Improve scheduling logic for better test coverage
