@@ -1695,3 +1695,4 @@ Commit History Log
 1693: Document tailwind configuration to handle null values
 1694: Implement sqlalchemy models to optimize database queries
 1695: Refactor booking ui based on code review
+1696: Secure next.js routing to support localization
