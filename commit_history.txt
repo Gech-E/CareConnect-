@@ -309,3 +309,4 @@ Commit History Log
 307: Add waiting room ui to support localization
 308: Resolve waiting room ui to address edge cases
 309: Enhance next.js routing to fix a race condition
+310: Document user profile module to reduce memory footprint
