@@ -1111,3 +1111,4 @@ Commit History Log
 1109: Secure ci pipeline to handle null values
 1110: Update api endpoints to handle null values
 1111: Resolve react native navigation to improve logging clarity
+1112: Implement alembic migrations to fix a race condition
