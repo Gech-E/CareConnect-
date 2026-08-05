@@ -679,3 +679,4 @@ Commit History Log
 677: Clean up next.js routing to support localization
 678: Resolve video session adapter for better test coverage
 679: Adjust error handling to improve maintainability
+680: Secure user profile module for better test coverage
