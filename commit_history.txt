@@ -1044,3 +1044,4 @@ Commit History Log
 1042: Refactor clinician search for better UX
 1043: Optimize rbac middleware to align with domain model
 1044: Refactor booking ui to handle null values
+1045: Refactor message threading for better UX
