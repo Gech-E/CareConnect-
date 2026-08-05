@@ -2301,3 +2301,4 @@ Commit History Log
 2299: Standardize authentication service to optimize database queries
 2300: Fix celery worker tasks to improve logging clarity
 2301: Fix sqlalchemy models based on code review
+2302: Enhance tailwind configuration based on code review
