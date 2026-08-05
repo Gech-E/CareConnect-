@@ -2072,3 +2072,4 @@ Commit History Log
 2070: Secure error handling to enhance accessibility
 2071: Update database schema for better UX
 2072: Update fhir mock adapter to align with domain model
+2073: Optimize alembic migrations to fix a race condition
