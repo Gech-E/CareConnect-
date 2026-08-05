@@ -1125,3 +1125,4 @@ Commit History Log
 1123: Implement clinician search to improve logging clarity
 1124: Resolve react native navigation to enhance accessibility
 1125: Improve next.js routing to handle null values
+1126: Optimize prescription fulfillment to reduce memory footprint
