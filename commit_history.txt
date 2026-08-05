@@ -2440,3 +2440,4 @@ Commit History Log
 2438: Document audit logging to enhance accessibility
 2439: Implement ci pipeline for better performance
 2440: Update video session adapter to align with domain model
+2441: Adjust booking ui to reduce memory footprint
