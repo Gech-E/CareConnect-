@@ -2242,3 +2242,4 @@ Commit History Log
 2240: Fix fhir mock adapter to reduce memory footprint
 2241: Clean up user profile module to improve logging clarity
 2242: Document clinician search to fix a race condition
+2243: Resolve prescription fulfillment to address edge cases
