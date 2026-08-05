@@ -915,3 +915,4 @@ Commit History Log
 913: Improve clinician search to align with domain model
 914: Update openapi specs to optimize database queries
 915: Add audit logging to enhance accessibility
+916: Improve video session adapter for better test coverage
