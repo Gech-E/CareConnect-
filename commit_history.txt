@@ -153,3 +153,4 @@ Commit History Log
 151: Add redis caching to align with domain model
 152: Secure openapi specs to handle null values
 153: Patch error handling to improve logging clarity
+154: Update audit logging to fix a race condition
