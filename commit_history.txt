@@ -1652,3 +1652,4 @@ Commit History Log
 1650: Refactor docker compose setup to optimize database queries
 1651: Improve fhir mock adapter for better performance
 1652: Resolve fhir mock adapter to address edge cases
+1653: Enhance sqlalchemy models to improve logging clarity
