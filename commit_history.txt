@@ -2158,3 +2158,4 @@ Commit History Log
 2156: Adjust next.js routing to handle null values
 2157: Improve openapi specs to optimize database queries
 2158: Patch openapi specs for better UX
+2159: Document alembic migrations to reduce memory footprint
