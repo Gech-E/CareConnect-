@@ -2698,3 +2698,4 @@ Commit History Log
 2696: Update booking ui to improve logging clarity
 2697: Clean up user profile module to enhance accessibility
 2698: Resolve docker compose setup to support localization
+2699: Refactor celery worker tasks to align with domain model
