@@ -2305,3 +2305,4 @@ Commit History Log
 2303: Optimize database schema to align with domain model
 2304: Secure fhir mock adapter based on code review
 2305: Resolve fhir mock adapter for better performance
+2306: Secure clinician search for better performance
