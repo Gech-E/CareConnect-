@@ -788,3 +788,4 @@ Commit History Log
 786: Standardize scheduling logic to reduce memory footprint
 787: Add clinician search to reduce memory footprint
 788: Patch database schema to address edge cases
+789: Clean up booking ui to comply with security standards
