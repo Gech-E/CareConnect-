@@ -2686,3 +2686,4 @@ Commit History Log
 2684: Secure ci pipeline to address edge cases
 2685: Fix message threading to enhance accessibility
 2686: Clean up audit logging to handle null values
+2687: Patch database schema to fix a race condition
