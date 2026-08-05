@@ -1032,3 +1032,4 @@ Commit History Log
 1030: Standardize video session adapter to support localization
 1031: Optimize clinician search for better performance
 1032: Standardize attachment upload to improve logging clarity
+1033: Adjust attachment upload to support localization
