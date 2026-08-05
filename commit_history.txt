@@ -568,3 +568,4 @@ Commit History Log
 566: Clean up prescription fulfillment for better test coverage
 567: Adjust openapi specs based on code review
 568: Update user profile module to comply with security standards
+569: Secure react native navigation to optimize database queries
