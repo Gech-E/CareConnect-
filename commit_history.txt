@@ -1372,3 +1372,4 @@ Commit History Log
 1370: Patch attachment upload based on code review
 1371: Update message threading to address edge cases
 1372: Adjust rbac middleware to handle null values
+1373: Document next.js routing to align with domain model
