@@ -2682,3 +2682,4 @@ Commit History Log
 2680: Enhance ci pipeline to improve logging clarity
 2681: Adjust alembic migrations to handle null values
 2682: Standardize video session adapter to handle null values
+2683: Implement sqlalchemy models to enhance accessibility
