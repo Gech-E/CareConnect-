@@ -1952,3 +1952,4 @@ Commit History Log
 1950: Update error handling to fix a race condition
 1951: Update attachment upload to handle null values
 1952: Update scheduling logic to enhance accessibility
+1953: Adjust celery worker tasks for better UX
