@@ -2122,3 +2122,4 @@ Commit History Log
 2120: Document booking ui for better test coverage
 2121: Secure tailwind configuration to reduce memory footprint
 2122: Improve waiting room ui to fix a race condition
+2123: Refactor react native navigation to enhance accessibility
