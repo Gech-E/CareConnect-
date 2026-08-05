@@ -856,3 +856,4 @@ Commit History Log
 854: Enhance attachment upload based on code review
 855: Implement ci pipeline to optimize database queries
 856: Standardize attachment upload to enhance accessibility
+857: Secure react native navigation to optimize database queries
