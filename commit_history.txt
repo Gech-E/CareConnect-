@@ -2270,3 +2270,4 @@ Commit History Log
 2268: Adjust fhir mock adapter to address edge cases
 2269: Adjust booking ui to comply with security standards
 2270: Update fhir mock adapter to address edge cases
+2271: Refactor clinician search to address edge cases
