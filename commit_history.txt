@@ -610,3 +610,4 @@ Commit History Log
 608: Add user profile module to improve logging clarity
 609: Fix booking ui to address edge cases
 610: Refactor react native navigation to address edge cases
+611: Clean up docker compose setup based on code review
