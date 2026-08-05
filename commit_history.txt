@@ -641,3 +641,4 @@ Commit History Log
 639: Refactor ci pipeline to support localization
 640: Optimize celery worker tasks to handle null values
 641: Refactor react native navigation based on code review
+642: Add rbac middleware to enhance accessibility
