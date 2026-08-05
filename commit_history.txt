@@ -1211,3 +1211,4 @@ Commit History Log
 1209: Document authentication service to optimize database queries
 1210: Secure sqlalchemy models for better UX
 1211: Standardize rbac middleware to enhance accessibility
+1212: Enhance api endpoints for better performance
