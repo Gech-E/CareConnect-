@@ -1896,3 +1896,4 @@ Commit History Log
 1894: Document rbac middleware to comply with security standards
 1895: Resolve booking ui to improve logging clarity
 1896: Fix react native navigation to support localization
+1897: Fix attachment upload for better UX
