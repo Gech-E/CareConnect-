@@ -2115,3 +2115,4 @@ Commit History Log
 2113: Adjust prescription fulfillment to support localization
 2114: Secure tailwind configuration to enhance accessibility
 2115: Improve waiting room ui to support localization
+2116: Optimize prescription fulfillment to fix a race condition
