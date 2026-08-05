@@ -626,3 +626,4 @@ Commit History Log
 624: Document rbac middleware to align with domain model
 625: Add attachment upload to address edge cases
 626: Adjust react native navigation to address edge cases
+627: Optimize message threading to address edge cases
