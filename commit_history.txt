@@ -1095,3 +1095,4 @@ Commit History Log
 1093: Refactor sqlalchemy models to improve logging clarity
 1094: Add ci pipeline to comply with security standards
 1095: Optimize docker compose setup to optimize database queries
+1096: Improve ci pipeline based on code review
