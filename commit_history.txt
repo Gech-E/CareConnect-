@@ -1740,3 +1740,4 @@ Commit History Log
 1738: Optimize api endpoints for better test coverage
 1739: Improve prescription fulfillment for better test coverage
 1740: Update booking ui based on code review
+1741: Standardize waiting room ui to optimize database queries
