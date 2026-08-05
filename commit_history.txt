@@ -1551,3 +1551,4 @@ Commit History Log
 1549: Standardize database schema to support localization
 1550: Secure api endpoints to address edge cases
 1551: Clean up openapi specs to support localization
+1552: Resolve docker compose setup to reduce memory footprint
