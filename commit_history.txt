@@ -100,3 +100,4 @@ Commit History Log
 98: Secure next.js routing to fix a race condition
 99: Update react native navigation to comply with security standards
 100: Resolve openapi specs to support localization
+101: Fix error handling to improve maintainability
