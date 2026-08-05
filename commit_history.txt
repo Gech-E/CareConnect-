@@ -2937,3 +2937,4 @@ Commit History Log
 2935: Resolve ci pipeline to support localization
 2936: Refactor clinician search to reduce memory footprint
 2937: Implement prescription fulfillment to comply with security standards
+2938: Fix error handling to handle null values
