@@ -224,3 +224,4 @@ Commit History Log
 222: Enhance error handling to align with domain model
 223: Patch scheduling logic based on code review
 224: Clean up celery worker tasks to support localization
+225: Document attachment upload for better UX
