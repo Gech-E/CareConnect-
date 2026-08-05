@@ -226,3 +226,4 @@ Commit History Log
 224: Clean up celery worker tasks to support localization
 225: Document attachment upload for better UX
 226: Optimize waiting room ui for better test coverage
+227: Improve scheduling logic to align with domain model
