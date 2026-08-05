@@ -523,3 +523,4 @@ Commit History Log
 521: Resolve scheduling logic to address edge cases
 522: Improve fhir mock adapter based on code review
 523: Enhance message threading to reduce memory footprint
+524: Fix fhir mock adapter to optimize database queries
