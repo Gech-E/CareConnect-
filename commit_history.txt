@@ -2957,3 +2957,4 @@ Commit History Log
 2955: Refactor video session adapter to support localization
 2956: Standardize react native navigation to reduce memory footprint
 2957: Standardize react native navigation to fix a race condition
+2958: Clean up tailwind configuration for better performance
