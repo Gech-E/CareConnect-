@@ -67,3 +67,4 @@ Commit History Log
 65: Clean up attachment upload for better performance
 66: Add rbac middleware to improve maintainability
 67: Secure authentication service for better performance
+68: Patch rbac middleware based on code review
