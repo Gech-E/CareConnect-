@@ -2560,3 +2560,4 @@ Commit History Log
 2558: Update error handling to handle null values
 2559: Optimize alembic migrations for better UX
 2560: Update scheduling logic based on code review
+2561: Add attachment upload to align with domain model
