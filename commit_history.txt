@@ -199,3 +199,4 @@ Commit History Log
 197: Refactor error handling to align with domain model
 198: Document sqlalchemy models for better performance
 199: Enhance alembic migrations for better performance
+200: Adjust fhir mock adapter to support localization
