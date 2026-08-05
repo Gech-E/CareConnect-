@@ -2149,3 +2149,4 @@ Commit History Log
 2147: Standardize audit logging to handle null values
 2148: Fix waiting room ui based on code review
 2149: Implement react native navigation to enhance accessibility
+2150: Standardize clinician search to support localization
