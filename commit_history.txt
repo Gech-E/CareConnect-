@@ -468,3 +468,4 @@ Commit History Log
 466: Secure rbac middleware to fix a race condition
 467: Resolve scheduling logic to comply with security standards
 468: Standardize prescription fulfillment for better UX
+469: Implement clinician search to fix a race condition
