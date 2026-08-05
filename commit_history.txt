@@ -636,3 +636,4 @@ Commit History Log
 634: Fix tailwind configuration to reduce memory footprint
 635: Improve clinician search to fix a race condition
 636: Standardize tailwind configuration to address edge cases
+637: Resolve error handling to enhance accessibility
