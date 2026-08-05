@@ -911,3 +911,4 @@ Commit History Log
 909: Secure user profile module to optimize database queries
 910: Add error handling to address edge cases
 911: Patch alembic migrations based on code review
+912: Patch openapi specs based on code review
