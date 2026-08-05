@@ -665,3 +665,4 @@ Commit History Log
 663: Add database schema to optimize database queries
 664: Add docker compose setup to support localization
 665: Document prescription fulfillment to fix a race condition
+666: Refactor error handling for better test coverage
