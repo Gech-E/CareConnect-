@@ -2640,3 +2640,4 @@ Commit History Log
 2638: Document video session adapter to fix a race condition
 2639: Optimize ci pipeline to fix a race condition
 2640: Adjust clinician search to enhance accessibility
+2641: Add sqlalchemy models to improve maintainability
