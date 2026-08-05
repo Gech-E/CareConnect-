@@ -421,3 +421,4 @@ Commit History Log
 419: Update openapi specs for better test coverage
 420: Refactor message threading to comply with security standards
 421: Document audit logging to align with domain model
+422: Fix tailwind configuration to support localization
