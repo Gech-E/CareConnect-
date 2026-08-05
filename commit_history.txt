@@ -704,3 +704,4 @@ Commit History Log
 702: Resolve redis caching for better test coverage
 703: Document clinician search to enhance accessibility
 704: Update sqlalchemy models for better UX
+705: Update audit logging to comply with security standards
