@@ -556,3 +556,4 @@ Commit History Log
 554: Document next.js routing for better UX
 555: Update attachment upload for better performance
 556: Refactor clinician search to enhance accessibility
+557: Refactor video session adapter to align with domain model
