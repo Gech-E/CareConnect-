@@ -847,3 +847,4 @@ Commit History Log
 845: Implement react native navigation to handle null values
 846: Patch audit logging for better test coverage
 847: Adjust database schema to handle null values
+848: Add booking ui for better test coverage
