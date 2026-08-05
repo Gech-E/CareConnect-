@@ -494,3 +494,4 @@ Commit History Log
 492: Clean up docker compose setup for better test coverage
 493: Implement attachment upload for better performance
 494: Adjust ci pipeline to enhance accessibility
+495: Standardize alembic migrations to enhance accessibility
