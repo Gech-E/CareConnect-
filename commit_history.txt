@@ -2418,3 +2418,4 @@ Commit History Log
 2416: Add tailwind configuration to comply with security standards
 2417: Resolve clinician search to comply with security standards
 2418: Enhance attachment upload based on code review
+2419: Adjust video session adapter to optimize database queries
