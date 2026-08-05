@@ -1984,3 +1984,4 @@ Commit History Log
 1982: Standardize redis caching to support localization
 1983: Enhance attachment upload based on code review
 1984: Optimize docker compose setup to support localization
+1985: Improve video session adapter to enhance accessibility
