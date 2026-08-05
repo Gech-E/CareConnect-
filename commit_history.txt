@@ -1799,3 +1799,4 @@ Commit History Log
 1797: Secure openapi specs to improve maintainability
 1798: Patch clinician search to address edge cases
 1799: Adjust video session adapter for better test coverage
+1800: Resolve ci pipeline to enhance accessibility
