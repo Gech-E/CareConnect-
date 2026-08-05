@@ -2671,3 +2671,4 @@ Commit History Log
 2669: Adjust redis caching to improve maintainability
 2670: Add waiting room ui to address edge cases
 2671: Resolve redis caching for better performance
+2672: Fix booking ui to comply with security standards
