@@ -157,3 +157,4 @@ Commit History Log
 155: Secure clinician search to support localization
 156: Clean up redis caching to improve maintainability
 157: Secure scheduling logic to optimize database queries
+158: Enhance clinician search based on code review
