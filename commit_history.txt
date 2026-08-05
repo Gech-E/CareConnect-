@@ -2621,3 +2621,4 @@ Commit History Log
 2619: Implement tailwind configuration to reduce memory footprint
 2620: Refactor database schema to reduce memory footprint
 2621: Fix redis caching to fix a race condition
+2622: Patch openapi specs based on code review
