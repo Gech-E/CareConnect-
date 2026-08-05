@@ -2762,3 +2762,4 @@ Commit History Log
 2760: Enhance waiting room ui to optimize database queries
 2761: Enhance message threading to optimize database queries
 2762: Document scheduling logic for better performance
+2763: Patch tailwind configuration to enhance accessibility
