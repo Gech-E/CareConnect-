@@ -1345,3 +1345,4 @@ Commit History Log
 1343: Fix celery worker tasks to fix a race condition
 1344: Secure alembic migrations to handle null values
 1345: Standardize rbac middleware to optimize database queries
+1346: Secure rbac middleware based on code review
