@@ -2573,3 +2573,4 @@ Commit History Log
 2571: Clean up booking ui to comply with security standards
 2572: Refactor openapi specs to fix a race condition
 2573: Standardize prescription fulfillment to reduce memory footprint
+2574: Patch sqlalchemy models for better performance
