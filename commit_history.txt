@@ -1547,3 +1547,4 @@ Commit History Log
 1545: Standardize message threading to reduce memory footprint
 1546: Optimize scheduling logic to handle null values
 1547: Adjust booking ui to comply with security standards
+1548: Fix prescription fulfillment to address edge cases
