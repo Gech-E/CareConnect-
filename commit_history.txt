@@ -1963,3 +1963,4 @@ Commit History Log
 1961: Patch message threading to address edge cases
 1962: Optimize error handling for better test coverage
 1963: Implement user profile module for better performance
+1964: Standardize attachment upload to enhance accessibility
