@@ -1419,3 +1419,4 @@ Commit History Log
 1417: Implement celery worker tasks to support localization
 1418: Implement ci pipeline to align with domain model
 1419: Refactor fhir mock adapter to optimize database queries
+1420: Update scheduling logic for better UX
