@@ -2835,3 +2835,4 @@ Commit History Log
 2833: Clean up tailwind configuration to handle null values
 2834: Document tailwind configuration to enhance accessibility
 2835: Resolve next.js routing for better UX
+2836: Refactor next.js routing for better performance
