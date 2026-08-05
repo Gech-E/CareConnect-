@@ -1735,3 +1735,4 @@ Commit History Log
 1733: Standardize ci pipeline to align with domain model
 1734: Document message threading to address edge cases
 1735: Add audit logging for better performance
+1736: Clean up alembic migrations to enhance accessibility
