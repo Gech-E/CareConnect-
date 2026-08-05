@@ -1430,3 +1430,4 @@ Commit History Log
 1428: Standardize celery worker tasks to improve maintainability
 1429: Standardize video session adapter to reduce memory footprint
 1430: Fix video session adapter to enhance accessibility
+1431: Secure error handling to fix a race condition
