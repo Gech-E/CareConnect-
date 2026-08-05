@@ -2523,3 +2523,4 @@ Commit History Log
 2521: Implement tailwind configuration to address edge cases
 2522: Enhance database schema to support localization
 2523: Update fhir mock adapter to reduce memory footprint
+2524: Resolve docker compose setup to support localization
