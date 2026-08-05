@@ -1063,3 +1063,4 @@ Commit History Log
 1061: Refactor sqlalchemy models to align with domain model
 1062: Implement sqlalchemy models for better UX
 1063: Resolve video session adapter based on code review
+1064: Document booking ui based on code review
