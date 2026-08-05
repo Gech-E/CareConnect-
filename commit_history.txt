@@ -313,3 +313,4 @@ Commit History Log
 311: Refactor docker compose setup based on code review
 312: Enhance api endpoints to support localization
 313: Improve booking ui to reduce memory footprint
+314: Improve clinician search to enhance accessibility
