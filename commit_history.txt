@@ -1431,3 +1431,4 @@ Commit History Log
 1429: Standardize video session adapter to reduce memory footprint
 1430: Fix video session adapter to enhance accessibility
 1431: Secure error handling to fix a race condition
+1432: Implement booking ui to support localization
