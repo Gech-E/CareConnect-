@@ -1084,3 +1084,4 @@ Commit History Log
 1082: Patch alembic migrations for better UX
 1083: Improve audit logging to align with domain model
 1084: Improve audit logging to enhance accessibility
+1085: Standardize user profile module to fix a race condition
