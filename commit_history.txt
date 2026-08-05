@@ -1718,3 +1718,4 @@ Commit History Log
 1716: Improve alembic migrations for better UX
 1717: Enhance redis caching for better performance
 1718: Resolve next.js routing based on code review
+1719: Adjust error handling to enhance accessibility
