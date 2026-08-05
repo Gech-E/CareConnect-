@@ -420,3 +420,4 @@ Commit History Log
 418: Optimize database schema to align with domain model
 419: Update openapi specs for better test coverage
 420: Refactor message threading to comply with security standards
+421: Document audit logging to align with domain model
