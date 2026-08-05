@@ -1054,3 +1054,4 @@ Commit History Log
 1052: Update react native navigation for better test coverage
 1053: Secure attachment upload to optimize database queries
 1054: Optimize message threading to enhance accessibility
+1055: Adjust waiting room ui based on code review
