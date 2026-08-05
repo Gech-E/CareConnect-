@@ -787,3 +787,4 @@ Commit History Log
 785: Document attachment upload to enhance accessibility
 786: Standardize scheduling logic to reduce memory footprint
 787: Add clinician search to reduce memory footprint
+788: Patch database schema to address edge cases
