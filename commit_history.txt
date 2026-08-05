@@ -204,3 +204,4 @@ Commit History Log
 202: Improve attachment upload to handle null values
 203: Optimize prescription fulfillment to address edge cases
 204: Document clinician search to align with domain model
+205: Resolve ci pipeline to comply with security standards
