@@ -1426,3 +1426,4 @@ Commit History Log
 1424: Update alembic migrations for better test coverage
 1425: Resolve error handling based on code review
 1426: Secure message threading for better test coverage
+1427: Refactor database schema to improve logging clarity
