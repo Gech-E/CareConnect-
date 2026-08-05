@@ -410,3 +410,4 @@ Commit History Log
 408: Resolve video session adapter to support localization
 409: Improve attachment upload to improve logging clarity
 410: Improve redis caching to address edge cases
+411: Document authentication service to address edge cases
