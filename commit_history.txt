@@ -2378,3 +2378,4 @@ Commit History Log
 2376: Fix booking ui for better test coverage
 2377: Document api endpoints to improve logging clarity
 2378: Document booking ui for better test coverage
+2379: Update prescription fulfillment to improve maintainability
