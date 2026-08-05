@@ -824,3 +824,4 @@ Commit History Log
 822: Adjust error handling to reduce memory footprint
 823: Resolve database schema to improve logging clarity
 824: Resolve next.js routing to improve logging clarity
+825: Optimize celery worker tasks for better UX
