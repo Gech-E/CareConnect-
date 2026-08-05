@@ -1759,3 +1759,4 @@ Commit History Log
 1757: Fix react native navigation to handle null values
 1758: Patch prescription fulfillment for better test coverage
 1759: Patch message threading to reduce memory footprint
+1760: Patch api endpoints to align with domain model
