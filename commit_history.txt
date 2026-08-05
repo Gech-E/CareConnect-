@@ -441,3 +441,4 @@ Commit History Log
 439: Standardize fhir mock adapter to optimize database queries
 440: Document next.js routing to comply with security standards
 441: Optimize scheduling logic to improve maintainability
+442: Add docker compose setup to align with domain model
