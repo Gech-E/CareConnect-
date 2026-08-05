@@ -744,3 +744,4 @@ Commit History Log
 742: Refactor clinician search based on code review
 743: Resolve rbac middleware to handle null values
 744: Clean up tailwind configuration to fix a race condition
+745: Document database schema to improve maintainability
