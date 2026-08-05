@@ -2947,3 +2947,4 @@ Commit History Log
 2945: Clean up ci pipeline to fix a race condition
 2946: Refactor user profile module to align with domain model
 2947: Implement audit logging to align with domain model
+2948: Add booking ui to improve logging clarity
