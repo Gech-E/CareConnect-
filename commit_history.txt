@@ -1363,3 +1363,4 @@ Commit History Log
 1361: Implement attachment upload to enhance accessibility
 1362: Optimize booking ui to align with domain model
 1363: Fix tailwind configuration based on code review
+1364: Resolve clinician search to fix a race condition
