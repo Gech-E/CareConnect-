@@ -813,3 +813,4 @@ Commit History Log
 811: Improve redis caching to fix a race condition
 812: Implement attachment upload to comply with security standards
 813: Fix video session adapter to improve logging clarity
+814: Refactor docker compose setup for better UX
