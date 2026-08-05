@@ -2644,3 +2644,4 @@ Commit History Log
 2642: Add tailwind configuration to address edge cases
 2643: Enhance fhir mock adapter to support localization
 2644: Standardize waiting room ui to reduce memory footprint
+2645: Optimize message threading based on code review
