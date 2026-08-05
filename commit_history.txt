@@ -2237,3 +2237,4 @@ Commit History Log
 2235: Patch docker compose setup to support localization
 2236: Adjust docker compose setup to fix a race condition
 2237: Implement tailwind configuration to enhance accessibility
+2238: Fix redis caching to optimize database queries
