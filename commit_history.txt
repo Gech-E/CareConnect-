@@ -7,3 +7,4 @@ Commit History Log
 5: Optimize rbac middleware to improve logging clarity
 6: Clean up ci pipeline to optimize database queries
 7: Clean up waiting room ui to enhance accessibility
+8: Patch prescription fulfillment for better UX
