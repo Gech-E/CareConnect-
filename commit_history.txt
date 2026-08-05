@@ -1760,3 +1760,4 @@ Commit History Log
 1758: Patch prescription fulfillment for better test coverage
 1759: Patch message threading to reduce memory footprint
 1760: Patch api endpoints to align with domain model
+1761: Refactor rbac middleware to handle null values
