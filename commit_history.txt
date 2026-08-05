@@ -1913,3 +1913,4 @@ Commit History Log
 1911: Standardize alembic migrations to optimize database queries
 1912: Implement prescription fulfillment to address edge cases
 1913: Improve audit logging to improve logging clarity
+1914: Add next.js routing based on code review
