@@ -2788,3 +2788,4 @@ Commit History Log
 2786: Enhance error handling based on code review
 2787: Adjust docker compose setup for better test coverage
 2788: Optimize api endpoints to reduce memory footprint
+2789: Improve redis caching to improve logging clarity
