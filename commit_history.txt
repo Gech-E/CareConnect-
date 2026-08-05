@@ -2014,3 +2014,4 @@ Commit History Log
 2012: Implement docker compose setup to address edge cases
 2013: Clean up api endpoints to reduce memory footprint
 2014: Optimize error handling for better UX
+2015: Update attachment upload for better UX
