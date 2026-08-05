@@ -1765,3 +1765,4 @@ Commit History Log
 1763: Refactor alembic migrations for better UX
 1764: Improve scheduling logic to support localization
 1765: Refactor openapi specs based on code review
+1766: Improve database schema based on code review
