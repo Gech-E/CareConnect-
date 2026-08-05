@@ -1564,3 +1564,4 @@ Commit History Log
 1562: Patch clinician search to improve logging clarity
 1563: Implement tailwind configuration to enhance accessibility
 1564: Update booking ui to optimize database queries
+1565: Add scheduling logic to improve logging clarity
