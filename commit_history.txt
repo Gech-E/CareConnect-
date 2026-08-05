@@ -2572,3 +2572,4 @@ Commit History Log
 2570: Adjust rbac middleware to improve maintainability
 2571: Clean up booking ui to comply with security standards
 2572: Refactor openapi specs to fix a race condition
+2573: Standardize prescription fulfillment to reduce memory footprint
