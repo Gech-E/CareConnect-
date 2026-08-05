@@ -2633,3 +2633,4 @@ Commit History Log
 2631: Refactor booking ui to reduce memory footprint
 2632: Secure clinician search to optimize database queries
 2633: Patch sqlalchemy models to optimize database queries
+2634: Optimize waiting room ui to improve logging clarity
