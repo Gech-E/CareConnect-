@@ -1831,3 +1831,4 @@ Commit History Log
 1829: Add booking ui for better test coverage
 1830: Secure rbac middleware to improve maintainability
 1831: Adjust authentication service based on code review
+1832: Resolve tailwind configuration to comply with security standards
