@@ -923,3 +923,4 @@ Commit History Log
 921: Standardize openapi specs to address edge cases
 922: Optimize openapi specs for better UX
 923: Optimize next.js routing to fix a race condition
+924: Implement alembic migrations for better performance
