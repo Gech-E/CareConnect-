@@ -1823,3 +1823,4 @@ Commit History Log
 1821: Refactor docker compose setup for better UX
 1822: Adjust celery worker tasks based on code review
 1823: Optimize sqlalchemy models to align with domain model
+1824: Standardize attachment upload to improve logging clarity
