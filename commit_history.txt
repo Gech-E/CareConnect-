@@ -583,3 +583,4 @@ Commit History Log
 581: Add rbac middleware based on code review
 582: Update clinician search to fix a race condition
 583: Update react native navigation to support localization
+584: Optimize redis caching to handle null values
