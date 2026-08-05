@@ -1227,3 +1227,4 @@ Commit History Log
 1225: Clean up sqlalchemy models for better UX
 1226: Patch redis caching to align with domain model
 1227: Enhance openapi specs to comply with security standards
+1228: Implement docker compose setup to comply with security standards
