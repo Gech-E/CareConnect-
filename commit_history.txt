@@ -2685,3 +2685,4 @@ Commit History Log
 2683: Implement sqlalchemy models to enhance accessibility
 2684: Secure ci pipeline to address edge cases
 2685: Fix message threading to enhance accessibility
+2686: Clean up audit logging to handle null values
