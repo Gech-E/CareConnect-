@@ -1161,3 +1161,4 @@ Commit History Log
 1159: Enhance waiting room ui to support localization
 1160: Fix openapi specs to fix a race condition
 1161: Update database schema for better UX
+1162: Document booking ui to optimize database queries
