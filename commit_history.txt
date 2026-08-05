@@ -1323,3 +1323,4 @@ Commit History Log
 1321: Add rbac middleware to optimize database queries
 1322: Patch fhir mock adapter based on code review
 1323: Update scheduling logic to address edge cases
+1324: Standardize redis caching to comply with security standards
