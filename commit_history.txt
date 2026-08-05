@@ -763,3 +763,4 @@ Commit History Log
 761: Clean up fhir mock adapter to support localization
 762: Secure openapi specs to handle null values
 763: Adjust react native navigation to handle null values
+764: Improve alembic migrations to improve maintainability
