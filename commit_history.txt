@@ -97,3 +97,4 @@ Commit History Log
 95: Add waiting room ui to enhance accessibility
 96: Optimize message threading to align with domain model
 97: Update prescription fulfillment for better test coverage
+98: Secure next.js routing to fix a race condition
