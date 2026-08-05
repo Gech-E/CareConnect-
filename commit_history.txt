@@ -2034,3 +2034,4 @@ Commit History Log
 2032: Optimize rbac middleware to handle null values
 2033: Implement ci pipeline to comply with security standards
 2034: Improve fhir mock adapter to support localization
+2035: Improve sqlalchemy models to align with domain model
