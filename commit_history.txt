@@ -371,3 +371,4 @@ Commit History Log
 369: Refactor authentication service to handle null values
 370: Adjust celery worker tasks based on code review
 371: Document rbac middleware to enhance accessibility
+372: Optimize redis caching to fix a race condition
