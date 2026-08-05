@@ -505,3 +505,4 @@ Commit History Log
 503: Secure database schema to fix a race condition
 504: Resolve react native navigation for better performance
 505: Adjust rbac middleware for better performance
+506: Improve fhir mock adapter to address edge cases
