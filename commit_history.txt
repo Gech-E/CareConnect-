@@ -1168,3 +1168,4 @@ Commit History Log
 1166: Update database schema for better test coverage
 1167: Adjust docker compose setup for better test coverage
 1168: Document redis caching to comply with security standards
+1169: Adjust ci pipeline to align with domain model
