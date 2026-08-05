@@ -696,3 +696,4 @@ Commit History Log
 694: Optimize react native navigation to handle null values
 695: Refactor prescription fulfillment to handle null values
 696: Fix attachment upload to comply with security standards
+697: Improve prescription fulfillment to address edge cases
