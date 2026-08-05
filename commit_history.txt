@@ -1089,3 +1089,4 @@ Commit History Log
 1087: Refactor openapi specs to reduce memory footprint
 1088: Patch celery worker tasks to reduce memory footprint
 1089: Clean up booking ui to support localization
+1090: Optimize fhir mock adapter to fix a race condition
