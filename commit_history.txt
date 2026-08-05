@@ -2679,3 +2679,4 @@ Commit History Log
 2677: Patch openapi specs to improve maintainability
 2678: Enhance waiting room ui to optimize database queries
 2679: Resolve audit logging to support localization
+2680: Enhance ci pipeline to improve logging clarity
