@@ -549,3 +549,4 @@ Commit History Log
 547: Adjust attachment upload to fix a race condition
 548: Document redis caching to reduce memory footprint
 549: Add booking ui for better UX
+550: Implement ci pipeline for better performance
