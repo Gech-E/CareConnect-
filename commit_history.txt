@@ -1482,3 +1482,4 @@ Commit History Log
 1480: Document next.js routing to enhance accessibility
 1481: Optimize clinician search to address edge cases
 1482: Secure tailwind configuration to address edge cases
+1483: Update authentication service to comply with security standards
