@@ -1352,3 +1352,4 @@ Commit History Log
 1350: Refactor react native navigation to enhance accessibility
 1351: Enhance celery worker tasks to optimize database queries
 1352: Enhance scheduling logic to handle null values
+1353: Resolve next.js routing based on code review
