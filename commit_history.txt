@@ -1047,3 +1047,4 @@ Commit History Log
 1045: Refactor message threading for better UX
 1046: Add celery worker tasks to align with domain model
 1047: Implement ci pipeline for better test coverage
+1048: Fix clinician search for better performance
