@@ -560,3 +560,4 @@ Commit History Log
 558: Adjust audit logging for better UX
 559: Update user profile module to handle null values
 560: Document redis caching to align with domain model
+561: Fix alembic migrations to align with domain model
