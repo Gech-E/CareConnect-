@@ -1876,3 +1876,4 @@ Commit History Log
 1874: Clean up authentication service to handle null values
 1875: Improve database schema to support localization
 1876: Clean up booking ui to align with domain model
+1877: Update redis caching for better performance
