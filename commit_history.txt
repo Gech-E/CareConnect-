@@ -366,3 +366,4 @@ Commit History Log
 364: Document api endpoints to comply with security standards
 365: Add scheduling logic to fix a race condition
 366: Secure next.js routing to fix a race condition
+367: Improve redis caching to improve logging clarity
