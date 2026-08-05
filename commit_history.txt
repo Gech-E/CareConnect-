@@ -1005,3 +1005,4 @@ Commit History Log
 1003: Implement audit logging to enhance accessibility
 1004: Improve alembic migrations to comply with security standards
 1005: Optimize clinician search to improve maintainability
+1006: Adjust next.js routing to fix a race condition
