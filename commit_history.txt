@@ -2630,3 +2630,4 @@ Commit History Log
 2628: Fix fhir mock adapter to comply with security standards
 2629: Improve video session adapter based on code review
 2630: Fix redis caching to comply with security standards
+2631: Refactor booking ui to reduce memory footprint
