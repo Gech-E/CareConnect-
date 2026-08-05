@@ -369,3 +369,4 @@ Commit History Log
 367: Improve redis caching to improve logging clarity
 368: Implement clinician search to reduce memory footprint
 369: Refactor authentication service to handle null values
+370: Adjust celery worker tasks based on code review
