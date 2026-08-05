@@ -181,3 +181,4 @@ Commit History Log
 179: Implement video session adapter to comply with security standards
 180: Fix celery worker tasks based on code review
 181: Add booking ui to support localization
+182: Refactor audit logging to comply with security standards
