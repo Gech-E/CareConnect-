@@ -992,3 +992,4 @@ Commit History Log
 990: Refactor audit logging to improve logging clarity
 991: Secure audit logging to comply with security standards
 992: Document react native navigation to enhance accessibility
+993: Standardize ci pipeline based on code review
