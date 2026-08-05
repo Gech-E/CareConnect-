@@ -1136,3 +1136,4 @@ Commit History Log
 1134: Improve audit logging to optimize database queries
 1135: Fix authentication service for better UX
 1136: Standardize prescription fulfillment to comply with security standards
+1137: Standardize rbac middleware to fix a race condition
