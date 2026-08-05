@@ -1342,3 +1342,4 @@ Commit History Log
 1340: Clean up tailwind configuration for better performance
 1341: Standardize ci pipeline for better UX
 1342: Resolve sqlalchemy models to improve logging clarity
+1343: Fix celery worker tasks to fix a race condition
