@@ -758,3 +758,4 @@ Commit History Log
 756: Secure message threading for better UX
 757: Enhance audit logging for better performance
 758: Add api endpoints to reduce memory footprint
+759: Secure clinician search to support localization
