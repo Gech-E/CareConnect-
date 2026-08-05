@@ -2509,3 +2509,4 @@ Commit History Log
 2507: Document audit logging to address edge cases
 2508: Implement redis caching for better test coverage
 2509: Patch celery worker tasks for better UX
+2510: Document prescription fulfillment to handle null values
