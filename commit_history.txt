@@ -2965,3 +2965,4 @@ Commit History Log
 2963: Enhance rbac middleware to improve maintainability
 2964: Optimize video session adapter to comply with security standards
 2965: Enhance waiting room ui to comply with security standards
+2966: Refactor celery worker tasks to fix a race condition
