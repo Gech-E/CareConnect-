@@ -2952,3 +2952,4 @@ Commit History Log
 2950: Add user profile module to fix a race condition
 2951: Improve video session adapter to fix a race condition
 2952: Secure celery worker tasks for better performance
+2953: Document tailwind configuration to address edge cases
