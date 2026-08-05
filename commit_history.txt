@@ -1898,3 +1898,4 @@ Commit History Log
 1896: Fix react native navigation to support localization
 1897: Fix attachment upload for better UX
 1898: Clean up error handling for better performance
+1899: Patch prescription fulfillment for better UX
