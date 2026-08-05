@@ -290,3 +290,4 @@ Commit History Log
 288: Add react native navigation to align with domain model
 289: Improve error handling to support localization
 290: Improve authentication service for better performance
+291: Standardize tailwind configuration to reduce memory footprint
