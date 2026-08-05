@@ -1813,3 +1813,4 @@ Commit History Log
 1811: Patch alembic migrations for better UX
 1812: Adjust message threading to optimize database queries
 1813: Secure user profile module to improve maintainability
+1814: Adjust openapi specs to enhance accessibility
