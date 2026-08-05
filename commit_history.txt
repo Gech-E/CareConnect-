@@ -934,3 +934,4 @@ Commit History Log
 932: Standardize rbac middleware for better UX
 933: Fix rbac middleware for better performance
 934: Patch next.js routing for better test coverage
+935: Resolve tailwind configuration to handle null values
