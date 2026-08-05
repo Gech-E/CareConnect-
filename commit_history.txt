@@ -2148,3 +2148,4 @@ Commit History Log
 2146: Enhance booking ui to improve maintainability
 2147: Standardize audit logging to handle null values
 2148: Fix waiting room ui based on code review
+2149: Implement react native navigation to enhance accessibility
