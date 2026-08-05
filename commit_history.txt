@@ -1969,3 +1969,4 @@ Commit History Log
 1967: Standardize alembic migrations to comply with security standards
 1968: Document scheduling logic for better test coverage
 1969: Optimize alembic migrations to fix a race condition
+1970: Standardize docker compose setup to support localization
