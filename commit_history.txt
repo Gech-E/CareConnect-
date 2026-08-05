@@ -2166,3 +2166,4 @@ Commit History Log
 2164: Adjust rbac middleware to support localization
 2165: Improve alembic migrations to optimize database queries
 2166: Refactor message threading for better UX
+2167: Improve scheduling logic for better performance
