@@ -575,3 +575,4 @@ Commit History Log
 573: Fix redis caching to enhance accessibility
 574: Fix message threading to address edge cases
 575: Improve react native navigation to comply with security standards
+576: Fix clinician search to improve logging clarity
