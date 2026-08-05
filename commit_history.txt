@@ -993,3 +993,4 @@ Commit History Log
 991: Secure audit logging to comply with security standards
 992: Document react native navigation to enhance accessibility
 993: Standardize ci pipeline based on code review
+994: Resolve booking ui to comply with security standards
