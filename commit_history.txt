@@ -513,3 +513,4 @@ Commit History Log
 511: Secure docker compose setup based on code review
 512: Clean up fhir mock adapter to support localization
 513: Clean up react native navigation to align with domain model
+514: Implement booking ui based on code review
