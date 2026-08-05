@@ -2856,3 +2856,4 @@ Commit History Log
 2854: Optimize fhir mock adapter to comply with security standards
 2855: Secure waiting room ui to improve maintainability
 2856: Patch ci pipeline to comply with security standards
+2857: Resolve rbac middleware for better performance
