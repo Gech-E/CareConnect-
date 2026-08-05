@@ -14,3 +14,4 @@ Commit History Log
 12: Optimize prescription fulfillment for better UX
 13: Improve audit logging for better UX
 14: Document waiting room ui to improve logging clarity
+15: Clean up clinician search to comply with security standards
