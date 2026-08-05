@@ -1143,3 +1143,4 @@ Commit History Log
 1141: Standardize alembic migrations to enhance accessibility
 1142: Optimize ci pipeline for better test coverage
 1143: Update clinician search to align with domain model
+1144: Patch tailwind configuration to optimize database queries
