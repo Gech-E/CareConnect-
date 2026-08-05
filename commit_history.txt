@@ -2837,3 +2837,4 @@ Commit History Log
 2835: Resolve next.js routing for better UX
 2836: Refactor next.js routing for better performance
 2837: Standardize ci pipeline to address edge cases
+2838: Secure error handling to align with domain model
