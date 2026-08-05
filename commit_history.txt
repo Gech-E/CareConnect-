@@ -2510,3 +2510,4 @@ Commit History Log
 2508: Implement redis caching for better test coverage
 2509: Patch celery worker tasks for better UX
 2510: Document prescription fulfillment to handle null values
+2511: Standardize openapi specs to support localization
