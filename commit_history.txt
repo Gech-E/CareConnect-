@@ -1100,3 +1100,4 @@ Commit History Log
 1098: Secure clinician search to reduce memory footprint
 1099: Enhance react native navigation for better test coverage
 1100: Standardize rbac middleware to enhance accessibility
+1101: Standardize clinician search to enhance accessibility
