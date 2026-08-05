@@ -1116,3 +1116,4 @@ Commit History Log
 1114: Secure message threading to align with domain model
 1115: Optimize message threading to align with domain model
 1116: Standardize user profile module to enhance accessibility
+1117: Resolve tailwind configuration to enhance accessibility
