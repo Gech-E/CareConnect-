@@ -994,3 +994,4 @@ Commit History Log
 992: Document react native navigation to enhance accessibility
 993: Standardize ci pipeline based on code review
 994: Resolve booking ui to comply with security standards
+995: Implement react native navigation to comply with security standards
