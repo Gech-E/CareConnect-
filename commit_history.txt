@@ -464,3 +464,4 @@ Commit History Log
 462: Adjust audit logging to support localization
 463: Adjust database schema for better UX
 464: Clean up alembic migrations based on code review
+465: Secure docker compose setup to improve logging clarity
