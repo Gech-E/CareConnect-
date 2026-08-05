@@ -683,3 +683,4 @@ Commit History Log
 681: Resolve error handling to enhance accessibility
 682: Adjust api endpoints for better UX
 683: Refactor user profile module to fix a race condition
+684: Update attachment upload to fix a race condition
