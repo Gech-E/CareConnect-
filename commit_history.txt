@@ -2794,3 +2794,4 @@ Commit History Log
 2792: Implement clinician search to address edge cases
 2793: Resolve audit logging to improve maintainability
 2794: Update booking ui to address edge cases
+2795: Optimize message threading to align with domain model
