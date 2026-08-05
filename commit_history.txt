@@ -748,3 +748,4 @@ Commit History Log
 746: Clean up celery worker tasks for better test coverage
 747: Update docker compose setup to improve maintainability
 748: Adjust fhir mock adapter for better test coverage
+749: Document ci pipeline to reduce memory footprint
