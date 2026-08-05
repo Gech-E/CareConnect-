@@ -1247,3 +1247,4 @@ Commit History Log
 1245: Enhance user profile module to reduce memory footprint
 1246: Implement ci pipeline for better performance
 1247: Adjust authentication service to comply with security standards
+1248: Standardize ci pipeline to enhance accessibility
