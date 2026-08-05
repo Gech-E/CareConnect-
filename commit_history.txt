@@ -1697,3 +1697,4 @@ Commit History Log
 1695: Refactor booking ui based on code review
 1696: Secure next.js routing to support localization
 1697: Patch database schema to reduce memory footprint
+1698: Optimize scheduling logic to support localization
