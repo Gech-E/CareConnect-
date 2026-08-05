@@ -2931,3 +2931,4 @@ Commit History Log
 2929: Update react native navigation for better performance
 2930: Update message threading to improve maintainability
 2931: Add react native navigation to support localization
+2932: Secure next.js routing to enhance accessibility
