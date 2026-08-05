@@ -1009,3 +1009,4 @@ Commit History Log
 1007: Implement waiting room ui to comply with security standards
 1008: Implement video session adapter to align with domain model
 1009: Add api endpoints to reduce memory footprint
+1010: Enhance celery worker tasks to enhance accessibility
