@@ -1314,3 +1314,4 @@ Commit History Log
 1312: Adjust openapi specs to fix a race condition
 1313: Resolve scheduling logic to optimize database queries
 1314: Fix tailwind configuration to address edge cases
+1315: Refactor next.js routing based on code review
