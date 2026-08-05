@@ -913,3 +913,4 @@ Commit History Log
 911: Patch alembic migrations based on code review
 912: Patch openapi specs based on code review
 913: Improve clinician search to align with domain model
+914: Update openapi specs to optimize database queries
