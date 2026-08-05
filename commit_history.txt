@@ -2817,3 +2817,4 @@ Commit History Log
 2815: Fix rbac middleware based on code review
 2816: Standardize docker compose setup for better UX
 2817: Refactor tailwind configuration to improve maintainability
+2818: Refactor redis caching to reduce memory footprint
