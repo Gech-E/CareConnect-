@@ -2814,3 +2814,4 @@ Commit History Log
 2812: Standardize ci pipeline to handle null values
 2813: Clean up scheduling logic based on code review
 2814: Document waiting room ui to handle null values
+2815: Fix rbac middleware based on code review
