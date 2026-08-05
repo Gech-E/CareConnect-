@@ -42,3 +42,4 @@ Commit History Log
 40: Document user profile module for better test coverage
 41: Update clinician search to reduce memory footprint
 42: Implement tailwind configuration for better UX
+43: Patch fhir mock adapter to improve logging clarity
