@@ -1654,3 +1654,4 @@ Commit History Log
 1652: Resolve fhir mock adapter to address edge cases
 1653: Enhance sqlalchemy models to improve logging clarity
 1654: Enhance booking ui to fix a race condition
+1655: Refactor prescription fulfillment to fix a race condition
