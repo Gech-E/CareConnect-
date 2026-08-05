@@ -1225,3 +1225,4 @@ Commit History Log
 1223: Update next.js routing to optimize database queries
 1224: Clean up react native navigation for better UX
 1225: Clean up sqlalchemy models for better UX
+1226: Patch redis caching to align with domain model
