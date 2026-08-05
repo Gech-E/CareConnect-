@@ -2752,3 +2752,4 @@ Commit History Log
 2750: Optimize redis caching to fix a race condition
 2751: Document api endpoints to improve maintainability
 2752: Add waiting room ui to comply with security standards
+2753: Patch clinician search for better UX
