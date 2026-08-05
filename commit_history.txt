@@ -703,3 +703,4 @@ Commit History Log
 701: Secure alembic migrations to optimize database queries
 702: Resolve redis caching for better test coverage
 703: Document clinician search to enhance accessibility
+704: Update sqlalchemy models for better UX
