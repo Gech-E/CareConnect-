@@ -1787,3 +1787,4 @@ Commit History Log
 1785: Clean up celery worker tasks to fix a race condition
 1786: Document waiting room ui based on code review
 1787: Adjust celery worker tasks to comply with security standards
+1788: Refactor fhir mock adapter to reduce memory footprint
