@@ -1524,3 +1524,4 @@ Commit History Log
 1522: Resolve error handling to optimize database queries
 1523: Refactor authentication service for better performance
 1524: Enhance booking ui to fix a race condition
+1525: Standardize api endpoints based on code review
