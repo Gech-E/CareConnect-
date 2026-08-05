@@ -1294,3 +1294,4 @@ Commit History Log
 1292: Update sqlalchemy models to address edge cases
 1293: Fix user profile module to handle null values
 1294: Enhance audit logging to align with domain model
+1295: Resolve waiting room ui to reduce memory footprint
