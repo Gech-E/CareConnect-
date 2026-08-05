@@ -1276,3 +1276,4 @@ Commit History Log
 1274: Update fhir mock adapter for better performance
 1275: Standardize prescription fulfillment to fix a race condition
 1276: Document openapi specs for better test coverage
+1277: Enhance openapi specs to improve logging clarity
