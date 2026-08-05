@@ -2813,3 +2813,4 @@ Commit History Log
 2811: Secure ci pipeline based on code review
 2812: Standardize ci pipeline to handle null values
 2813: Clean up scheduling logic based on code review
+2814: Document waiting room ui to handle null values
