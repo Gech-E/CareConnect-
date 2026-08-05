@@ -959,3 +959,4 @@ Commit History Log
 957: Update prescription fulfillment to comply with security standards
 958: Standardize authentication service based on code review
 959: Implement ci pipeline to improve logging clarity
+960: Fix booking ui to optimize database queries
