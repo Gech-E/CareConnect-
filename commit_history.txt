@@ -1672,3 +1672,4 @@ Commit History Log
 1670: Optimize authentication service to support localization
 1671: Enhance attachment upload based on code review
 1672: Add authentication service to optimize database queries
+1673: Standardize authentication service based on code review
