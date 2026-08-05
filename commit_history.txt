@@ -1713,3 +1713,4 @@ Commit History Log
 1711: Implement error handling to comply with security standards
 1712: Improve attachment upload to support localization
 1713: Optimize alembic migrations for better performance
+1714: Implement alembic migrations to fix a race condition
