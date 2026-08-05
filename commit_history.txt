@@ -2884,3 +2884,4 @@ Commit History Log
 2882: Improve scheduling logic for better performance
 2883: Adjust redis caching for better UX
 2884: Improve alembic migrations based on code review
+2885: Adjust celery worker tasks to address edge cases
