@@ -1497,3 +1497,4 @@ Commit History Log
 1495: Clean up video session adapter to improve logging clarity
 1496: Optimize celery worker tasks to improve logging clarity
 1497: Patch api endpoints for better test coverage
+1498: Standardize react native navigation to align with domain model
