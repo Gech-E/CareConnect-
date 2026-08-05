@@ -600,3 +600,4 @@ Commit History Log
 598: Improve redis caching based on code review
 599: Secure message threading to address edge cases
 600: Implement react native navigation to optimize database queries
+601: Patch attachment upload to fix a race condition
