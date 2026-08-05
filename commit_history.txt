@@ -370,3 +370,4 @@ Commit History Log
 368: Implement clinician search to reduce memory footprint
 369: Refactor authentication service to handle null values
 370: Adjust celery worker tasks based on code review
+371: Document rbac middleware to enhance accessibility
