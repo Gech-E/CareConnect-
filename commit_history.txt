@@ -1039,3 +1039,4 @@ Commit History Log
 1037: Standardize prescription fulfillment to improve logging clarity
 1038: Resolve openapi specs to handle null values
 1039: Standardize booking ui for better performance
+1040: Resolve error handling to improve logging clarity
