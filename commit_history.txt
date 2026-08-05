@@ -501,3 +501,4 @@ Commit History Log
 499: Patch attachment upload to support localization
 500: Patch user profile module for better performance
 501: Improve ci pipeline to improve logging clarity
+502: Clean up redis caching for better performance
