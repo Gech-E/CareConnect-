@@ -114,3 +114,4 @@ Commit History Log
 112: Patch prescription fulfillment to fix a race condition
 113: Refactor message threading to support localization
 114: Adjust authentication service to improve logging clarity
+115: Patch attachment upload to address edge cases
