@@ -2960,3 +2960,4 @@ Commit History Log
 2958: Clean up tailwind configuration for better performance
 2959: Implement fhir mock adapter for better UX
 2960: Document authentication service to handle null values
+2961: Implement redis caching to align with domain model
