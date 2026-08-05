@@ -1234,3 +1234,4 @@ Commit History Log
 1232: Standardize message threading to handle null values
 1233: Refactor fhir mock adapter based on code review
 1234: Fix attachment upload to optimize database queries
+1235: Add openapi specs to support localization
