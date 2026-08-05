@@ -1443,3 +1443,4 @@ Commit History Log
 1441: Document prescription fulfillment to optimize database queries
 1442: Refactor tailwind configuration to support localization
 1443: Clean up tailwind configuration to align with domain model
+1444: Adjust audit logging to improve maintainability
