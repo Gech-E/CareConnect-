@@ -429,3 +429,4 @@ Commit History Log
 427: Implement docker compose setup to optimize database queries
 428: Fix error handling to improve logging clarity
 429: Add fhir mock adapter to handle null values
+430: Update docker compose setup to support localization
