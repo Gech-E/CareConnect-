@@ -1539,3 +1539,4 @@ Commit History Log
 1537: Clean up audit logging to reduce memory footprint
 1538: Add ci pipeline to address edge cases
 1539: Enhance ci pipeline to handle null values
+1540: Update celery worker tasks to reduce memory footprint
