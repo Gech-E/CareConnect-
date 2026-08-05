@@ -2955,3 +2955,4 @@ Commit History Log
 2953: Document tailwind configuration to address edge cases
 2954: Optimize audit logging to reduce memory footprint
 2955: Refactor video session adapter to support localization
+2956: Standardize react native navigation to reduce memory footprint
