@@ -2345,3 +2345,4 @@ Commit History Log
 2343: Refactor user profile module for better performance
 2344: Improve sqlalchemy models to optimize database queries
 2345: Standardize tailwind configuration to improve logging clarity
+2346: Fix scheduling logic to align with domain model
