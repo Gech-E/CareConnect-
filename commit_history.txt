@@ -1603,3 +1603,4 @@ Commit History Log
 1601: Clean up message threading for better test coverage
 1602: Adjust fhir mock adapter to handle null values
 1603: Adjust prescription fulfillment to support localization
+1604: Adjust prescription fulfillment to fix a race condition
