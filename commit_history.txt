@@ -377,3 +377,4 @@ Commit History Log
 375: Adjust error handling to improve maintainability
 376: Update celery worker tasks to improve maintainability
 377: Implement attachment upload to support localization
+378: Document sqlalchemy models for better performance
