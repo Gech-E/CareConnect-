@@ -2877,3 +2877,4 @@ Commit History Log
 2875: Enhance docker compose setup to reduce memory footprint
 2876: Resolve openapi specs for better test coverage
 2877: Clean up next.js routing to reduce memory footprint
+2878: Secure message threading for better test coverage
