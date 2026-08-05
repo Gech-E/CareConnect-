@@ -1371,3 +1371,4 @@ Commit History Log
 1369: Clean up scheduling logic to improve logging clarity
 1370: Patch attachment upload based on code review
 1371: Update message threading to address edge cases
+1372: Adjust rbac middleware to handle null values
