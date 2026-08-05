@@ -1379,3 +1379,4 @@ Commit History Log
 1377: Fix next.js routing to support localization
 1378: Implement user profile module to improve logging clarity
 1379: Enhance react native navigation to fix a race condition
+1380: Patch booking ui to comply with security standards
