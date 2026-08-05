@@ -1199,3 +1199,4 @@ Commit History Log
 1197: Resolve celery worker tasks to optimize database queries
 1198: Implement video session adapter to improve logging clarity
 1199: Update attachment upload to handle null values
+1200: Enhance booking ui to align with domain model
