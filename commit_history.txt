@@ -1930,3 +1930,4 @@ Commit History Log
 1928: Secure fhir mock adapter to improve maintainability
 1929: Adjust celery worker tasks to align with domain model
 1930: Secure booking ui to align with domain model
+1931: Update audit logging to improve maintainability
