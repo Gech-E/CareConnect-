@@ -1606,3 +1606,4 @@ Commit History Log
 1604: Adjust prescription fulfillment to fix a race condition
 1605: Secure booking ui based on code review
 1606: Adjust tailwind configuration to comply with security standards
+1607: Secure openapi specs based on code review
