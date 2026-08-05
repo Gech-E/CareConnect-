@@ -1708,3 +1708,4 @@ Commit History Log
 1706: Improve celery worker tasks based on code review
 1707: Adjust prescription fulfillment to fix a race condition
 1708: Standardize waiting room ui to improve logging clarity
+1709: Add api endpoints to enhance accessibility
