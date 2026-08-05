@@ -2590,3 +2590,4 @@ Commit History Log
 2588: Optimize api endpoints to align with domain model
 2589: Resolve api endpoints to reduce memory footprint
 2590: Add fhir mock adapter to improve logging clarity
+2591: Document fhir mock adapter to handle null values
