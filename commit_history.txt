@@ -1420,3 +1420,4 @@ Commit History Log
 1418: Implement ci pipeline to align with domain model
 1419: Refactor fhir mock adapter to optimize database queries
 1420: Update scheduling logic for better UX
+1421: Secure prescription fulfillment for better UX
