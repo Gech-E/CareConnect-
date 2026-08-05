@@ -4,3 +4,4 @@ Commit History Log
 2: Clean up react native navigation to reduce memory footprint
 3: Add user profile module to handle null values
 4: Document scheduling logic for better UX
+5: Optimize rbac middleware to improve logging clarity
