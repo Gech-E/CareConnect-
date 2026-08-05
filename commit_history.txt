@@ -2705,3 +2705,4 @@ Commit History Log
 2703: Improve user profile module for better performance
 2704: Fix react native navigation to address edge cases
 2705: Improve tailwind configuration for better test coverage
+2706: Resolve rbac middleware for better UX
