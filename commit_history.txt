@@ -2296,3 +2296,4 @@ Commit History Log
 2294: Fix database schema to handle null values
 2295: Refactor waiting room ui to address edge cases
 2296: Resolve attachment upload based on code review
+2297: Update alembic migrations to optimize database queries
