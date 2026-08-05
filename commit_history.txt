@@ -2415,3 +2415,4 @@ Commit History Log
 2413: Adjust next.js routing for better UX
 2414: Add scheduling logic to comply with security standards
 2415: Add authentication service for better performance
+2416: Add tailwind configuration to comply with security standards
