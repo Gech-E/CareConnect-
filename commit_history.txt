@@ -2606,3 +2606,4 @@ Commit History Log
 2604: Secure video session adapter to comply with security standards
 2605: Document openapi specs to enhance accessibility
 2606: Refactor api endpoints to fix a race condition
+2607: Patch booking ui for better performance
