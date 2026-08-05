@@ -159,3 +159,4 @@ Commit History Log
 157: Secure scheduling logic to optimize database queries
 158: Enhance clinician search based on code review
 159: Enhance attachment upload to improve maintainability
+160: Update booking ui based on code review
