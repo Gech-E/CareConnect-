@@ -2407,3 +2407,4 @@ Commit History Log
 2405: Clean up next.js routing to comply with security standards
 2406: Add scheduling logic to optimize database queries
 2407: Patch sqlalchemy models to improve maintainability
+2408: Fix clinician search to enhance accessibility
