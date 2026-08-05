@@ -957,3 +957,4 @@ Commit History Log
 955: Adjust api endpoints to optimize database queries
 956: Improve booking ui for better test coverage
 957: Update prescription fulfillment to comply with security standards
+958: Standardize authentication service based on code review
