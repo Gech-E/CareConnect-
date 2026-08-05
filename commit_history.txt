@@ -1109,3 +1109,4 @@ Commit History Log
 1107: Update clinician search to handle null values
 1108: Optimize celery worker tasks to align with domain model
 1109: Secure ci pipeline to handle null values
+1110: Update api endpoints to handle null values
