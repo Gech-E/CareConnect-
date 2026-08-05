@@ -2155,3 +2155,4 @@ Commit History Log
 2153: Refactor attachment upload to address edge cases
 2154: Add rbac middleware for better performance
 2155: Secure scheduling logic to comply with security standards
+2156: Adjust next.js routing to handle null values
