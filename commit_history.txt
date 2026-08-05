@@ -833,3 +833,4 @@ Commit History Log
 831: Clean up ci pipeline to align with domain model
 832: Refactor booking ui to address edge cases
 833: Optimize docker compose setup to enhance accessibility
+834: Adjust docker compose setup to comply with security standards
