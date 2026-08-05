@@ -1458,3 +1458,4 @@ Commit History Log
 1456: Clean up celery worker tasks to improve maintainability
 1457: Improve next.js routing to improve maintainability
 1458: Resolve next.js routing to reduce memory footprint
+1459: Enhance docker compose setup to fix a race condition
