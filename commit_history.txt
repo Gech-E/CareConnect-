@@ -2120,3 +2120,4 @@ Commit History Log
 2118: Resolve next.js routing based on code review
 2119: Update celery worker tasks to handle null values
 2120: Document booking ui for better test coverage
+2121: Secure tailwind configuration to reduce memory footprint
