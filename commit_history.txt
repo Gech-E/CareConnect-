@@ -1894,3 +1894,4 @@ Commit History Log
 1892: Implement alembic migrations to address edge cases
 1893: Update alembic migrations to improve maintainability
 1894: Document rbac middleware to comply with security standards
+1895: Resolve booking ui to improve logging clarity
