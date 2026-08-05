@@ -2068,3 +2068,4 @@ Commit History Log
 2066: Clean up scheduling logic for better UX
 2067: Improve prescription fulfillment based on code review
 2068: Refactor celery worker tasks to fix a race condition
+2069: Refactor celery worker tasks to fix a race condition
