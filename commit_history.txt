@@ -1498,3 +1498,4 @@ Commit History Log
 1496: Optimize celery worker tasks to improve logging clarity
 1497: Patch api endpoints for better test coverage
 1498: Standardize react native navigation to align with domain model
+1499: Refactor message threading to enhance accessibility
