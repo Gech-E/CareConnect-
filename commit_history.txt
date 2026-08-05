@@ -1826,3 +1826,4 @@ Commit History Log
 1824: Standardize attachment upload to improve logging clarity
 1825: Clean up authentication service for better UX
 1826: Adjust rbac middleware to optimize database queries
+1827: Update docker compose setup to enhance accessibility
