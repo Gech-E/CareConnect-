@@ -2365,3 +2365,4 @@ Commit History Log
 2363: Adjust rbac middleware to fix a race condition
 2364: Adjust alembic migrations for better performance
 2365: Standardize rbac middleware to address edge cases
+2366: Implement clinician search to optimize database queries
