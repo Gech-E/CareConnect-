@@ -2526,3 +2526,4 @@ Commit History Log
 2524: Resolve docker compose setup to support localization
 2525: Document waiting room ui to support localization
 2526: Implement sqlalchemy models to comply with security standards
+2527: Standardize sqlalchemy models for better performance
