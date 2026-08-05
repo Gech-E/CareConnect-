@@ -2519,3 +2519,4 @@ Commit History Log
 2517: Implement clinician search to support localization
 2518: Implement audit logging to address edge cases
 2519: Adjust error handling based on code review
+2520: Enhance redis caching based on code review
