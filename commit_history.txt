@@ -1159,3 +1159,4 @@ Commit History Log
 1157: Implement user profile module for better test coverage
 1158: Patch celery worker tasks to comply with security standards
 1159: Enhance waiting room ui to support localization
+1160: Fix openapi specs to fix a race condition
