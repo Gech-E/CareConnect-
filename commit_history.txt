@@ -241,3 +241,4 @@ Commit History Log
 239: Fix ci pipeline to reduce memory footprint
 240: Resolve authentication service to handle null values
 241: Enhance booking ui for better performance
+242: Implement docker compose setup to optimize database queries
