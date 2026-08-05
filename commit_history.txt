@@ -2553,3 +2553,4 @@ Commit History Log
 2551: Adjust database schema to address edge cases
 2552: Enhance prescription fulfillment to handle null values
 2553: Improve ci pipeline to fix a race condition
+2554: Optimize video session adapter for better UX
