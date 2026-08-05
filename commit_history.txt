@@ -2160,3 +2160,4 @@ Commit History Log
 2158: Patch openapi specs for better UX
 2159: Document alembic migrations to reduce memory footprint
 2160: Implement redis caching to comply with security standards
+2161: Refactor audit logging to comply with security standards
