@@ -2329,3 +2329,4 @@ Commit History Log
 2327: Refactor message threading to align with domain model
 2328: Document docker compose setup based on code review
 2329: Clean up tailwind configuration to optimize database queries
+2330: Secure redis caching to support localization
