@@ -218,3 +218,4 @@ Commit History Log
 216: Fix alembic migrations to reduce memory footprint
 217: Secure clinician search to align with domain model
 218: Add attachment upload for better test coverage
+219: Update waiting room ui to enhance accessibility
