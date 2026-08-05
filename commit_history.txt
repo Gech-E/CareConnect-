@@ -1254,3 +1254,4 @@ Commit History Log
 1252: Enhance openapi specs to improve maintainability
 1253: Resolve react native navigation to enhance accessibility
 1254: Update authentication service to handle null values
+1255: Resolve booking ui to improve logging clarity
