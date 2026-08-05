@@ -2094,3 +2094,4 @@ Commit History Log
 2092: Add fhir mock adapter to address edge cases
 2093: Standardize attachment upload based on code review
 2094: Implement audit logging to address edge cases
+2095: Document waiting room ui to enhance accessibility
