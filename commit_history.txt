@@ -2427,3 +2427,4 @@ Commit History Log
 2425: Implement attachment upload for better performance
 2426: Secure rbac middleware to comply with security standards
 2427: Clean up database schema to enhance accessibility
+2428: Fix clinician search to optimize database queries
