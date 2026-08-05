@@ -2369,3 +2369,4 @@ Commit History Log
 2367: Improve tailwind configuration for better UX
 2368: Secure openapi specs to comply with security standards
 2369: Document docker compose setup to reduce memory footprint
+2370: Optimize docker compose setup to align with domain model
