@@ -791,3 +791,4 @@ Commit History Log
 789: Clean up booking ui to comply with security standards
 790: Standardize redis caching for better UX
 791: Clean up waiting room ui to enhance accessibility
+792: Fix attachment upload to improve maintainability
