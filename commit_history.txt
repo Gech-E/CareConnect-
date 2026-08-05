@@ -2119,3 +2119,4 @@ Commit History Log
 2117: Improve redis caching to fix a race condition
 2118: Resolve next.js routing based on code review
 2119: Update celery worker tasks to handle null values
+2120: Document booking ui for better test coverage
