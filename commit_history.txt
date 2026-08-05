@@ -1976,3 +1976,4 @@ Commit History Log
 1974: Enhance react native navigation to improve maintainability
 1975: Clean up next.js routing to align with domain model
 1976: Document database schema to handle null values
+1977: Update scheduling logic to improve maintainability
