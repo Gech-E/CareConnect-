@@ -2135,3 +2135,4 @@ Commit History Log
 2133: Add scheduling logic to align with domain model
 2134: Implement error handling based on code review
 2135: Add booking ui to enhance accessibility
+2136: Standardize video session adapter to handle null values
