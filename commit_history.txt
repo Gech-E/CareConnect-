@@ -1219,3 +1219,4 @@ Commit History Log
 1217: Fix audit logging to support localization
 1218: Document alembic migrations to enhance accessibility
 1219: Standardize redis caching for better UX
+1220: Improve tailwind configuration based on code review
