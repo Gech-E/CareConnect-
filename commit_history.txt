@@ -2285,3 +2285,4 @@ Commit History Log
 2283: Add prescription fulfillment to improve logging clarity
 2284: Secure tailwind configuration to align with domain model
 2285: Improve openapi specs to fix a race condition
+2286: Optimize waiting room ui to optimize database queries
