@@ -269,3 +269,4 @@ Commit History Log
 267: Add sqlalchemy models for better UX
 268: Secure booking ui to enhance accessibility
 269: Fix booking ui for better performance
+270: Refactor rbac middleware for better UX
