@@ -2724,3 +2724,4 @@ Commit History Log
 2722: Optimize alembic migrations to address edge cases
 2723: Optimize video session adapter to optimize database queries
 2724: Adjust openapi specs to address edge cases
+2725: Document sqlalchemy models for better test coverage
