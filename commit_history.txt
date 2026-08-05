@@ -2693,3 +2693,4 @@ Commit History Log
 2691: Optimize authentication service to align with domain model
 2692: Fix docker compose setup for better performance
 2693: Update audit logging to comply with security standards
+2694: Fix audit logging to support localization
