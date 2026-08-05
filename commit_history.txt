@@ -2433,3 +2433,4 @@ Commit History Log
 2431: Document tailwind configuration to address edge cases
 2432: Document message threading to address edge cases
 2433: Patch clinician search for better test coverage
+2434: Optimize alembic migrations to improve logging clarity
