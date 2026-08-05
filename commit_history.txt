@@ -760,3 +760,4 @@ Commit History Log
 758: Add api endpoints to reduce memory footprint
 759: Secure clinician search to support localization
 760: Resolve alembic migrations to align with domain model
+761: Clean up fhir mock adapter to support localization
