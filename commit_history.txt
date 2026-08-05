@@ -2124,3 +2124,4 @@ Commit History Log
 2122: Improve waiting room ui to fix a race condition
 2123: Refactor react native navigation to enhance accessibility
 2124: Improve prescription fulfillment to enhance accessibility
+2125: Implement next.js routing to fix a race condition
