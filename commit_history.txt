@@ -65,3 +65,4 @@ Commit History Log
 63: Adjust tailwind configuration to support localization
 64: Adjust audit logging to enhance accessibility
 65: Clean up attachment upload for better performance
+66: Add rbac middleware to improve maintainability
