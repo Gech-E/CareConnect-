@@ -1474,3 +1474,4 @@ Commit History Log
 1472: Optimize redis caching to optimize database queries
 1473: Resolve clinician search based on code review
 1474: Optimize alembic migrations to improve maintainability
+1475: Standardize message threading to optimize database queries
