@@ -155,3 +155,4 @@ Commit History Log
 153: Patch error handling to improve logging clarity
 154: Update audit logging to fix a race condition
 155: Secure clinician search to support localization
+156: Clean up redis caching to improve maintainability
