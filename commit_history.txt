@@ -1944,3 +1944,4 @@ Commit History Log
 1942: Document celery worker tasks to improve maintainability
 1943: Implement authentication service for better performance
 1944: Patch video session adapter to improve maintainability
+1945: Implement sqlalchemy models for better performance
