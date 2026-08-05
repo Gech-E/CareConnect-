@@ -713,3 +713,4 @@ Commit History Log
 711: Add next.js routing based on code review
 712: Refactor video session adapter for better test coverage
 713: Document booking ui to optimize database queries
+714: Optimize alembic migrations based on code review
