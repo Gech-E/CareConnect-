@@ -2874,3 +2874,4 @@ Commit History Log
 2872: Clean up api endpoints for better UX
 2873: Improve authentication service based on code review
 2874: Secure audit logging for better UX
+2875: Enhance docker compose setup to reduce memory footprint
