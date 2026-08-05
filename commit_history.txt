@@ -2941,3 +2941,4 @@ Commit History Log
 2939: Enhance sqlalchemy models to support localization
 2940: Fix clinician search to optimize database queries
 2941: Adjust message threading to comply with security standards
+2942: Resolve rbac middleware to enhance accessibility
