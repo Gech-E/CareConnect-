@@ -2015,3 +2015,4 @@ Commit History Log
 2013: Clean up api endpoints to reduce memory footprint
 2014: Optimize error handling for better UX
 2015: Update attachment upload for better UX
+2016: Document next.js routing to address edge cases
