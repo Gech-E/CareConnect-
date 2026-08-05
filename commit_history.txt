@@ -2092,3 +2092,4 @@ Commit History Log
 2090: Enhance sqlalchemy models to support localization
 2091: Fix sqlalchemy models to fix a race condition
 2092: Add fhir mock adapter to address edge cases
+2093: Standardize attachment upload based on code review
