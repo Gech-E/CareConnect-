@@ -76,3 +76,4 @@ Commit History Log
 74: Clean up prescription fulfillment to handle null values
 75: Standardize fhir mock adapter to reduce memory footprint
 76: Implement video session adapter based on code review
+77: Fix redis caching to reduce memory footprint
