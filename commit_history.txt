@@ -1322,3 +1322,4 @@ Commit History Log
 1320: Standardize celery worker tasks to fix a race condition
 1321: Add rbac middleware to optimize database queries
 1322: Patch fhir mock adapter based on code review
+1323: Update scheduling logic to address edge cases
