@@ -779,3 +779,4 @@ Commit History Log
 777: Implement tailwind configuration for better test coverage
 778: Clean up clinician search to improve maintainability
 779: Resolve docker compose setup based on code review
+780: Implement authentication service to handle null values
