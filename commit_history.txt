@@ -737,3 +737,4 @@ Commit History Log
 735: Improve video session adapter to reduce memory footprint
 736: Update fhir mock adapter to reduce memory footprint
 737: Secure docker compose setup for better UX
+738: Resolve react native navigation for better performance
