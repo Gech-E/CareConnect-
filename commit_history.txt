@@ -2387,3 +2387,4 @@ Commit History Log
 2385: Document fhir mock adapter for better test coverage
 2386: Resolve message threading to reduce memory footprint
 2387: Optimize next.js routing for better performance
+2388: Adjust celery worker tasks to fix a race condition
