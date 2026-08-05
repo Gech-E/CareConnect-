@@ -12,3 +12,4 @@ Commit History Log
 10: Adjust prescription fulfillment to align with domain model
 11: Fix audit logging to support localization
 12: Optimize prescription fulfillment for better UX
+13: Improve audit logging for better UX
