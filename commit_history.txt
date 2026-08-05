@@ -95,3 +95,4 @@ Commit History Log
 93: Document scheduling logic to reduce memory footprint
 94: Document fhir mock adapter to address edge cases
 95: Add waiting room ui to enhance accessibility
+96: Optimize message threading to align with domain model
