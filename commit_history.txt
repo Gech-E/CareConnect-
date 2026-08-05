@@ -80,3 +80,4 @@ Commit History Log
 78: Patch tailwind configuration to improve maintainability
 79: Patch next.js routing based on code review
 80: Fix booking ui to reduce memory footprint
+81: Enhance video session adapter to improve logging clarity
