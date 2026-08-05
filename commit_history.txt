@@ -186,3 +186,4 @@ Commit History Log
 184: Standardize attachment upload based on code review
 185: Implement redis caching to support localization
 186: Fix redis caching for better UX
+187: Refactor waiting room ui to improve logging clarity
