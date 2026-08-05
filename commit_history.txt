@@ -1903,3 +1903,4 @@ Commit History Log
 1901: Optimize docker compose setup to address edge cases
 1902: Patch user profile module to handle null values
 1903: Adjust video session adapter for better performance
+1904: Fix celery worker tasks to enhance accessibility
