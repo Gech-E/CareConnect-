@@ -2880,3 +2880,4 @@ Commit History Log
 2878: Secure message threading for better test coverage
 2879: Enhance user profile module to handle null values
 2880: Resolve booking ui for better test coverage
+2881: Improve video session adapter to fix a race condition
