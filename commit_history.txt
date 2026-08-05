@@ -1561,3 +1561,4 @@ Commit History Log
 1559: Document video session adapter based on code review
 1560: Standardize celery worker tasks for better performance
 1561: Adjust prescription fulfillment to fix a race condition
+1562: Patch clinician search to improve logging clarity
