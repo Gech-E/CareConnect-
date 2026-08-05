@@ -872,3 +872,4 @@ Commit History Log
 870: Document user profile module to optimize database queries
 871: Add scheduling logic to enhance accessibility
 872: Resolve react native navigation for better test coverage
+873: Patch scheduling logic to handle null values
