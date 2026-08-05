@@ -1576,3 +1576,4 @@ Commit History Log
 1574: Document redis caching to handle null values
 1575: Secure scheduling logic for better UX
 1576: Update react native navigation to address edge cases
+1577: Resolve rbac middleware to align with domain model
