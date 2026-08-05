@@ -2933,3 +2933,4 @@ Commit History Log
 2931: Add react native navigation to support localization
 2932: Secure next.js routing to enhance accessibility
 2933: Adjust booking ui to reduce memory footprint
+2934: Improve user profile module to handle null values
