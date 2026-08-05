@@ -1684,3 +1684,4 @@ Commit History Log
 1682: Enhance scheduling logic to address edge cases
 1683: Adjust message threading to address edge cases
 1684: Implement user profile module to support localization
+1685: Standardize sqlalchemy models for better test coverage
