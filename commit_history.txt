@@ -691,3 +691,4 @@ Commit History Log
 689: Implement api endpoints to handle null values
 690: Clean up scheduling logic to fix a race condition
 691: Improve docker compose setup to align with domain model
+692: Clean up tailwind configuration to improve maintainability
