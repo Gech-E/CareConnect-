@@ -86,3 +86,4 @@ Commit History Log
 84: Enhance sqlalchemy models to reduce memory footprint
 85: Document scheduling logic to improve logging clarity
 86: Add video session adapter for better UX
+87: Adjust docker compose setup for better UX
