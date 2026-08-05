@@ -2396,3 +2396,4 @@ Commit History Log
 2394: Add user profile module to support localization
 2395: Standardize message threading to improve maintainability
 2396: Document rbac middleware to address edge cases
+2397: Clean up prescription fulfillment for better UX
