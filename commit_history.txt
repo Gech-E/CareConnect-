@@ -792,3 +792,4 @@ Commit History Log
 790: Standardize redis caching for better UX
 791: Clean up waiting room ui to enhance accessibility
 792: Fix attachment upload to improve maintainability
+793: Improve prescription fulfillment to address edge cases
