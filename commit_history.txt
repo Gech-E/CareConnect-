@@ -2368,3 +2368,4 @@ Commit History Log
 2366: Implement clinician search to optimize database queries
 2367: Improve tailwind configuration for better UX
 2368: Secure openapi specs to comply with security standards
+2369: Document docker compose setup to reduce memory footprint
