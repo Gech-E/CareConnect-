@@ -517,3 +517,4 @@ Commit History Log
 515: Secure next.js routing to improve maintainability
 516: Refactor video session adapter to improve maintainability
 517: Standardize booking ui to optimize database queries
+518: Improve api endpoints for better test coverage
