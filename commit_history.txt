@@ -515,3 +515,4 @@ Commit History Log
 513: Clean up react native navigation to align with domain model
 514: Implement booking ui based on code review
 515: Secure next.js routing to improve maintainability
+516: Refactor video session adapter to improve maintainability
