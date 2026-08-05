@@ -1559,3 +1559,4 @@ Commit History Log
 1557: Adjust alembic migrations for better UX
 1558: Optimize openapi specs for better test coverage
 1559: Document video session adapter based on code review
+1560: Standardize celery worker tasks for better performance
