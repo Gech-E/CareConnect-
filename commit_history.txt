@@ -745,3 +745,4 @@ Commit History Log
 743: Resolve rbac middleware to handle null values
 744: Clean up tailwind configuration to fix a race condition
 745: Document database schema to improve maintainability
+746: Clean up celery worker tasks for better test coverage
