@@ -2677,3 +2677,4 @@ Commit History Log
 2675: Standardize database schema based on code review
 2676: Resolve rbac middleware for better performance
 2677: Patch openapi specs to improve maintainability
+2678: Enhance waiting room ui to optimize database queries
