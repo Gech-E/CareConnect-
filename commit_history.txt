@@ -380,3 +380,4 @@ Commit History Log
 378: Document sqlalchemy models for better performance
 379: Enhance prescription fulfillment for better UX
 380: Document api endpoints to reduce memory footprint
+381: Enhance openapi specs to improve logging clarity
