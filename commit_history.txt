@@ -540,3 +540,4 @@ Commit History Log
 538: Fix tailwind configuration to optimize database queries
 539: Add celery worker tasks to support localization
 540: Clean up celery worker tasks to align with domain model
+541: Secure prescription fulfillment to align with domain model
