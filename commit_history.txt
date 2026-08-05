@@ -1239,3 +1239,4 @@ Commit History Log
 1237: Resolve attachment upload to reduce memory footprint
 1238: Resolve authentication service to handle null values
 1239: Add ci pipeline based on code review
+1240: Add video session adapter to reduce memory footprint
