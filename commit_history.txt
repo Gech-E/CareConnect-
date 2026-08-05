@@ -1989,3 +1989,4 @@ Commit History Log
 1987: Resolve alembic migrations to support localization
 1988: Standardize clinician search to address edge cases
 1989: Secure prescription fulfillment for better UX
+1990: Optimize clinician search to fix a race condition
