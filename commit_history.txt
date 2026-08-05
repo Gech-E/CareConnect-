@@ -2726,3 +2726,4 @@ Commit History Log
 2724: Adjust openapi specs to address edge cases
 2725: Document sqlalchemy models for better test coverage
 2726: Update message threading to address edge cases
+2727: Resolve celery worker tasks based on code review
