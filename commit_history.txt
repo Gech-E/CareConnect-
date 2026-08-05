@@ -1480,3 +1480,4 @@ Commit History Log
 1478: Standardize react native navigation to optimize database queries
 1479: Patch video session adapter to handle null values
 1480: Document next.js routing to enhance accessibility
+1481: Optimize clinician search to address edge cases
