@@ -2883,3 +2883,4 @@ Commit History Log
 2881: Improve video session adapter to fix a race condition
 2882: Improve scheduling logic for better performance
 2883: Adjust redis caching for better UX
+2884: Improve alembic migrations based on code review
