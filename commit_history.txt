@@ -1287,3 +1287,4 @@ Commit History Log
 1285: Standardize redis caching to handle null values
 1286: Secure sqlalchemy models to fix a race condition
 1287: Refactor waiting room ui to align with domain model
+1288: Implement message threading to comply with security standards
