@@ -1678,3 +1678,4 @@ Commit History Log
 1676: Fix video session adapter to optimize database queries
 1677: Improve react native navigation to enhance accessibility
 1678: Clean up fhir mock adapter for better test coverage
+1679: Optimize scheduling logic to handle null values
