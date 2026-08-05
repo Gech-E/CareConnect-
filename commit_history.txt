@@ -2938,3 +2938,4 @@ Commit History Log
 2936: Refactor clinician search to reduce memory footprint
 2937: Implement prescription fulfillment to comply with security standards
 2938: Fix error handling to handle null values
+2939: Enhance sqlalchemy models to support localization
