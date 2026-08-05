@@ -2277,3 +2277,4 @@ Commit History Log
 2275: Optimize tailwind configuration to improve logging clarity
 2276: Fix sqlalchemy models to improve logging clarity
 2277: Refactor user profile module to enhance accessibility
+2278: Refactor rbac middleware based on code review
