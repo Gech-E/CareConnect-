@@ -311,3 +311,4 @@ Commit History Log
 309: Enhance next.js routing to fix a race condition
 310: Document user profile module to reduce memory footprint
 311: Refactor docker compose setup based on code review
+312: Enhance api endpoints to support localization
