@@ -1286,3 +1286,4 @@ Commit History Log
 1284: Add next.js routing to support localization
 1285: Standardize redis caching to handle null values
 1286: Secure sqlalchemy models to fix a race condition
+1287: Refactor waiting room ui to align with domain model
