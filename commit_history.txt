@@ -2858,3 +2858,4 @@ Commit History Log
 2856: Patch ci pipeline to comply with security standards
 2857: Resolve rbac middleware for better performance
 2858: Enhance clinician search to support localization
+2859: Fix api endpoints to address edge cases
