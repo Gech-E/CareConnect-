@@ -1680,3 +1680,4 @@ Commit History Log
 1678: Clean up fhir mock adapter for better test coverage
 1679: Optimize scheduling logic to handle null values
 1680: Improve database schema to reduce memory footprint
+1681: Document database schema to improve logging clarity
