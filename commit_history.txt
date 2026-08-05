@@ -1958,3 +1958,4 @@ Commit History Log
 1956: Implement react native navigation to fix a race condition
 1957: Patch sqlalchemy models to align with domain model
 1958: Document celery worker tasks to handle null values
+1959: Document database schema based on code review
