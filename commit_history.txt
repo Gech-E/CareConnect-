@@ -2585,3 +2585,4 @@ Commit History Log
 2583: Standardize docker compose setup for better UX
 2584: Enhance scheduling logic to align with domain model
 2585: Improve scheduling logic for better test coverage
+2586: Optimize booking ui to improve logging clarity
