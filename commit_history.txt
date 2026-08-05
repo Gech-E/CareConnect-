@@ -730,3 +730,4 @@ Commit History Log
 728: Refactor tailwind configuration to improve maintainability
 729: Patch fhir mock adapter to reduce memory footprint
 730: Resolve sqlalchemy models based on code review
+731: Secure next.js routing to improve logging clarity
