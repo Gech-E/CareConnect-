@@ -273,3 +273,4 @@ Commit History Log
 271: Resolve booking ui for better UX
 272: Adjust booking ui to enhance accessibility
 273: Add error handling to handle null values
+274: Enhance user profile module to align with domain model
