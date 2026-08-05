@@ -2412,3 +2412,4 @@ Commit History Log
 2410: Patch docker compose setup to reduce memory footprint
 2411: Improve fhir mock adapter to support localization
 2412: Standardize redis caching to align with domain model
+2413: Adjust next.js routing for better UX
