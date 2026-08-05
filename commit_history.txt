@@ -1019,3 +1019,4 @@ Commit History Log
 1017: Resolve attachment upload to enhance accessibility
 1018: Secure clinician search for better performance
 1019: Document alembic migrations to handle null values
+1020: Secure scheduling logic to reduce memory footprint
