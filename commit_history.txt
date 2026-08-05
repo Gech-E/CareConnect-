@@ -765,3 +765,4 @@ Commit History Log
 763: Adjust react native navigation to handle null values
 764: Improve alembic migrations to improve maintainability
 765: Patch redis caching to address edge cases
+766: Resolve redis caching to support localization
