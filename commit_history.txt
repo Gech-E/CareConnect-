@@ -1790,3 +1790,4 @@ Commit History Log
 1788: Refactor fhir mock adapter to reduce memory footprint
 1789: Implement rbac middleware to enhance accessibility
 1790: Refactor next.js routing to align with domain model
+1791: Resolve openapi specs to reduce memory footprint
