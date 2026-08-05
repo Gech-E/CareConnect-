@@ -2860,3 +2860,4 @@ Commit History Log
 2858: Enhance clinician search to support localization
 2859: Fix api endpoints to address edge cases
 2860: Implement waiting room ui for better test coverage
+2861: Optimize sqlalchemy models to improve logging clarity
