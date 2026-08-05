@@ -1355,3 +1355,4 @@ Commit History Log
 1353: Resolve next.js routing based on code review
 1354: Patch celery worker tasks to handle null values
 1355: Enhance video session adapter for better test coverage
+1356: Update user profile module to handle null values
