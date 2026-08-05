@@ -2448,3 +2448,4 @@ Commit History Log
 2446: Adjust video session adapter to support localization
 2447: Optimize authentication service to handle null values
 2448: Optimize audit logging for better test coverage
+2449: Secure audit logging to reduce memory footprint
