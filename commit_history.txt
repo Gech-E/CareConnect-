@@ -796,3 +796,4 @@ Commit History Log
 794: Implement user profile module to reduce memory footprint
 795: Optimize tailwind configuration to handle null values
 796: Add message threading for better UX
+797: Enhance clinician search to address edge cases
