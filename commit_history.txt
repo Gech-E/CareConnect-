@@ -2100,3 +2100,4 @@ Commit History Log
 2098: Document waiting room ui for better test coverage
 2099: Update docker compose setup based on code review
 2100: Adjust react native navigation based on code review
+2101: Patch message threading to comply with security standards
