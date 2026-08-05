@@ -977,3 +977,4 @@ Commit History Log
 975: Resolve user profile module to enhance accessibility
 976: Fix sqlalchemy models to comply with security standards
 977: Improve user profile module to comply with security standards
+978: Add user profile module to fix a race condition
