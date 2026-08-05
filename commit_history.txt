@@ -1706,3 +1706,4 @@ Commit History Log
 1704: Enhance react native navigation to optimize database queries
 1705: Secure error handling to fix a race condition
 1706: Improve celery worker tasks based on code review
+1707: Adjust prescription fulfillment to fix a race condition
