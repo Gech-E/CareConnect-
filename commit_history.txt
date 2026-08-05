@@ -283,3 +283,4 @@ Commit History Log
 281: Patch attachment upload to improve logging clarity
 282: Secure sqlalchemy models for better test coverage
 283: Enhance message threading to comply with security standards
+284: Update celery worker tasks to address edge cases
