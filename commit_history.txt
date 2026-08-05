@@ -2272,3 +2272,4 @@ Commit History Log
 2270: Update fhir mock adapter to address edge cases
 2271: Refactor clinician search to address edge cases
 2272: Update redis caching to support localization
+2273: Improve tailwind configuration to improve maintainability
