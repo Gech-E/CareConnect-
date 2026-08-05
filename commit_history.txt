@@ -1445,3 +1445,4 @@ Commit History Log
 1443: Clean up tailwind configuration to align with domain model
 1444: Adjust audit logging to improve maintainability
 1445: Adjust api endpoints to comply with security standards
+1446: Adjust ci pipeline to align with domain model
