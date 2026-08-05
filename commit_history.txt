@@ -64,3 +64,4 @@ Commit History Log
 62: Adjust video session adapter to align with domain model
 63: Adjust tailwind configuration to support localization
 64: Adjust audit logging to enhance accessibility
+65: Clean up attachment upload for better performance
