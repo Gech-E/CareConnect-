@@ -2327,3 +2327,4 @@ Commit History Log
 2325: Adjust ci pipeline to optimize database queries
 2326: Implement error handling to address edge cases
 2327: Refactor message threading to align with domain model
+2328: Document docker compose setup based on code review
