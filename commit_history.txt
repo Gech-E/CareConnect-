@@ -2664,3 +2664,4 @@ Commit History Log
 2662: Patch ci pipeline to handle null values
 2663: Update waiting room ui to support localization
 2664: Document clinician search to handle null values
+2665: Document ci pipeline for better test coverage
