@@ -937,3 +937,4 @@ Commit History Log
 935: Resolve tailwind configuration to handle null values
 936: Enhance prescription fulfillment to improve logging clarity
 937: Enhance api endpoints to address edge cases
+938: Fix docker compose setup for better UX
