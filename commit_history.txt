@@ -2503,3 +2503,4 @@ Commit History Log
 2501: Secure database schema to handle null values
 2502: Patch celery worker tasks to fix a race condition
 2503: Adjust waiting room ui based on code review
+2504: Resolve openapi specs to optimize database queries
