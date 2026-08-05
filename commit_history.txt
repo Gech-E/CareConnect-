@@ -832,3 +832,4 @@ Commit History Log
 830: Document attachment upload to optimize database queries
 831: Clean up ci pipeline to align with domain model
 832: Refactor booking ui to address edge cases
+833: Optimize docker compose setup to enhance accessibility
