@@ -2674,3 +2674,4 @@ Commit History Log
 2672: Fix booking ui to comply with security standards
 2673: Enhance react native navigation to handle null values
 2674: Implement user profile module to reduce memory footprint
+2675: Standardize database schema based on code review
