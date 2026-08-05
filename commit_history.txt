@@ -1397,3 +1397,4 @@ Commit History Log
 1395: Implement api endpoints to optimize database queries
 1396: Improve clinician search to align with domain model
 1397: Patch video session adapter for better UX
+1398: Document booking ui to handle null values
