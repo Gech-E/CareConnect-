@@ -1722,3 +1722,4 @@ Commit History Log
 1720: Secure scheduling logic for better performance
 1721: Document fhir mock adapter to improve logging clarity
 1722: Adjust user profile module to align with domain model
+1723: Document database schema to reduce memory footprint
