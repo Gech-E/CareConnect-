@@ -574,3 +574,4 @@ Commit History Log
 572: Document alembic migrations to align with domain model
 573: Fix redis caching to enhance accessibility
 574: Fix message threading to address edge cases
+575: Improve react native navigation to comply with security standards
