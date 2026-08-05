@@ -2791,3 +2791,4 @@ Commit History Log
 2789: Improve redis caching to improve logging clarity
 2790: Document authentication service for better performance
 2791: Update prescription fulfillment for better test coverage
+2792: Implement clinician search to address edge cases
