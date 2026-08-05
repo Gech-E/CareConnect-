@@ -1888,3 +1888,4 @@ Commit History Log
 1886: Adjust react native navigation based on code review
 1887: Clean up prescription fulfillment to fix a race condition
 1888: Fix prescription fulfillment to enhance accessibility
+1889: Optimize prescription fulfillment to align with domain model
