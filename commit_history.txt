@@ -1038,3 +1038,4 @@ Commit History Log
 1036: Implement alembic migrations to address edge cases
 1037: Standardize prescription fulfillment to improve logging clarity
 1038: Resolve openapi specs to handle null values
+1039: Standardize booking ui for better performance
