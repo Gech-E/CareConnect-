@@ -2743,3 +2743,4 @@ Commit History Log
 2741: Optimize celery worker tasks to reduce memory footprint
 2742: Improve next.js routing to improve maintainability
 2743: Add authentication service for better test coverage
+2744: Patch scheduling logic based on code review
