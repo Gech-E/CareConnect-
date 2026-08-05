@@ -196,3 +196,4 @@ Commit History Log
 194: Fix authentication service to reduce memory footprint
 195: Improve database schema to align with domain model
 196: Resolve next.js routing for better performance
+197: Refactor error handling to align with domain model
