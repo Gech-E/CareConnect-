@@ -2098,3 +2098,4 @@ Commit History Log
 2096: Patch video session adapter for better performance
 2097: Add message threading to reduce memory footprint
 2098: Document waiting room ui for better test coverage
+2099: Update docker compose setup based on code review
