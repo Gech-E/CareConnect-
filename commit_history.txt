@@ -2019,3 +2019,4 @@ Commit History Log
 2017: Add rbac middleware to address edge cases
 2018: Implement tailwind configuration for better performance
 2019: Update fhir mock adapter for better UX
+2020: Adjust message threading to reduce memory footprint
