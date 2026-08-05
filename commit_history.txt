@@ -2658,3 +2658,4 @@ Commit History Log
 2656: Improve scheduling logic to reduce memory footprint
 2657: Patch booking ui for better test coverage
 2658: Refactor fhir mock adapter to align with domain model
+2659: Add next.js routing to support localization
