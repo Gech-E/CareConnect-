@@ -1436,3 +1436,4 @@ Commit History Log
 1434: Implement alembic migrations to enhance accessibility
 1435: Patch docker compose setup to address edge cases
 1436: Resolve message threading to improve logging clarity
+1437: Standardize waiting room ui to improve maintainability
