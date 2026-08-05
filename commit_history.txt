@@ -2506,3 +2506,4 @@ Commit History Log
 2504: Resolve openapi specs to optimize database queries
 2505: Implement booking ui for better performance
 2506: Fix docker compose setup to improve logging clarity
+2507: Document audit logging to address edge cases
