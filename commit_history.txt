@@ -1061,3 +1061,4 @@ Commit History Log
 1059: Improve message threading to improve logging clarity
 1060: Patch ci pipeline to comply with security standards
 1061: Refactor sqlalchemy models to align with domain model
+1062: Implement sqlalchemy models for better UX
