@@ -1344,3 +1344,4 @@ Commit History Log
 1342: Resolve sqlalchemy models to improve logging clarity
 1343: Fix celery worker tasks to fix a race condition
 1344: Secure alembic migrations to handle null values
+1345: Standardize rbac middleware to optimize database queries
