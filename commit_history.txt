@@ -2198,3 +2198,4 @@ Commit History Log
 2196: Fix scheduling logic to comply with security standards
 2197: Add error handling based on code review
 2198: Clean up message threading to reduce memory footprint
+2199: Document openapi specs to support localization
