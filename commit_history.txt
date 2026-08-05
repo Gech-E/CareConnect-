@@ -1563,3 +1563,4 @@ Commit History Log
 1561: Adjust prescription fulfillment to fix a race condition
 1562: Patch clinician search to improve logging clarity
 1563: Implement tailwind configuration to enhance accessibility
+1564: Update booking ui to optimize database queries
