@@ -214,3 +214,4 @@ Commit History Log
 212: Clean up docker compose setup based on code review
 213: Resolve ci pipeline to reduce memory footprint
 214: Resolve authentication service to comply with security standards
+215: Resolve next.js routing to optimize database queries
