@@ -2615,3 +2615,4 @@ Commit History Log
 2613: Add api endpoints to align with domain model
 2614: Clean up database schema for better UX
 2615: Resolve database schema to optimize database queries
+2616: Improve rbac middleware based on code review
