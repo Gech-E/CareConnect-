@@ -2052,3 +2052,4 @@ Commit History Log
 2050: Document prescription fulfillment to support localization
 2051: Secure error handling for better UX
 2052: Add redis caching to support localization
+2053: Update user profile module to fix a race condition
