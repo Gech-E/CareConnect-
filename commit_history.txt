@@ -2930,3 +2930,4 @@ Commit History Log
 2928: Adjust openapi specs to handle null values
 2929: Update react native navigation for better performance
 2930: Update message threading to improve maintainability
+2931: Add react native navigation to support localization
