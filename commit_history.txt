@@ -664,3 +664,4 @@ Commit History Log
 662: Clean up tailwind configuration to fix a race condition
 663: Add database schema to optimize database queries
 664: Add docker compose setup to support localization
+665: Document prescription fulfillment to fix a race condition
