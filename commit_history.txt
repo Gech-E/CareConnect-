@@ -1290,3 +1290,4 @@ Commit History Log
 1288: Implement message threading to comply with security standards
 1289: Document api endpoints to address edge cases
 1290: Improve database schema to fix a race condition
+1291: Add fhir mock adapter to reduce memory footprint
