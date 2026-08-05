@@ -1088,3 +1088,4 @@ Commit History Log
 1086: Fix scheduling logic to comply with security standards
 1087: Refactor openapi specs to reduce memory footprint
 1088: Patch celery worker tasks to reduce memory footprint
+1089: Clean up booking ui to support localization
