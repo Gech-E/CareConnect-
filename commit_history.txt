@@ -2562,3 +2562,4 @@ Commit History Log
 2560: Update scheduling logic based on code review
 2561: Add attachment upload to align with domain model
 2562: Improve openapi specs to support localization
+2563: Add booking ui to improve logging clarity
