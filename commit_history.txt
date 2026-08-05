@@ -2795,3 +2795,4 @@ Commit History Log
 2793: Resolve audit logging to improve maintainability
 2794: Update booking ui to address edge cases
 2795: Optimize message threading to align with domain model
+2796: Secure message threading to support localization
