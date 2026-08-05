@@ -1585,3 +1585,4 @@ Commit History Log
 1583: Enhance audit logging to handle null values
 1584: Refactor tailwind configuration to optimize database queries
 1585: Fix database schema to address edge cases
+1586: Fix waiting room ui to reduce memory footprint
