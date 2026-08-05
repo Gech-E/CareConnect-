@@ -2107,3 +2107,4 @@ Commit History Log
 2105: Standardize next.js routing to reduce memory footprint
 2106: Document user profile module to improve maintainability
 2107: Resolve attachment upload to improve maintainability
+2108: Fix rbac middleware based on code review
