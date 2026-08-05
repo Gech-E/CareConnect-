@@ -334,3 +334,4 @@ Commit History Log
 332: Improve fhir mock adapter to address edge cases
 333: Adjust api endpoints to address edge cases
 334: Optimize video session adapter for better test coverage
+335: Fix booking ui to align with domain model
