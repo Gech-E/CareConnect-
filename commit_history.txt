@@ -336,3 +336,4 @@ Commit History Log
 334: Optimize video session adapter for better test coverage
 335: Fix booking ui to align with domain model
 336: Document scheduling logic to address edge cases
+337: Patch scheduling logic to align with domain model
