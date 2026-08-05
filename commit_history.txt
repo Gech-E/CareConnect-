@@ -975,3 +975,4 @@ Commit History Log
 973: Fix celery worker tasks to improve logging clarity
 974: Standardize error handling to comply with security standards
 975: Resolve user profile module to enhance accessibility
+976: Fix sqlalchemy models to comply with security standards
