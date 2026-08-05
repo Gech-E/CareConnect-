@@ -1091,3 +1091,4 @@ Commit History Log
 1089: Clean up booking ui to support localization
 1090: Optimize fhir mock adapter to fix a race condition
 1091: Refactor authentication service to optimize database queries
+1092: Enhance redis caching to optimize database queries
