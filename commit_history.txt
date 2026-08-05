@@ -451,3 +451,4 @@ Commit History Log
 449: Enhance booking ui based on code review
 450: Optimize attachment upload based on code review
 451: Improve clinician search for better UX
+452: Refactor alembic migrations to reduce memory footprint
