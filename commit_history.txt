@@ -1,2 +1,3 @@
 Commit History Log
 0: Enhance fhir mock adapter to optimize database queries
+1: Refactor api endpoints to improve logging clarity
