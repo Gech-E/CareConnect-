@@ -2896,3 +2896,4 @@ Commit History Log
 2894: Update fhir mock adapter to optimize database queries
 2895: Fix alembic migrations to optimize database queries
 2896: Refactor authentication service for better performance
+2897: Patch sqlalchemy models to fix a race condition
