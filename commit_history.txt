@@ -1538,3 +1538,4 @@ Commit History Log
 1536: Fix docker compose setup to optimize database queries
 1537: Clean up audit logging to reduce memory footprint
 1538: Add ci pipeline to address edge cases
+1539: Enhance ci pipeline to handle null values
