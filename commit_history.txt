@@ -724,3 +724,4 @@ Commit History Log
 722: Enhance waiting room ui to align with domain model
 723: Update docker compose setup to handle null values
 724: Refactor celery worker tasks to comply with security standards
+725: Secure fhir mock adapter for better performance
