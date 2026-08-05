@@ -1887,3 +1887,4 @@ Commit History Log
 1885: Resolve scheduling logic for better test coverage
 1886: Adjust react native navigation based on code review
 1887: Clean up prescription fulfillment to fix a race condition
+1888: Fix prescription fulfillment to enhance accessibility
