@@ -1504,3 +1504,4 @@ Commit History Log
 1502: Patch booking ui to handle null values
 1503: Standardize rbac middleware to fix a race condition
 1504: Improve docker compose setup to fix a race condition
+1505: Adjust message threading to align with domain model
