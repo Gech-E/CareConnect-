@@ -1181,3 +1181,4 @@ Commit History Log
 1179: Add authentication service to improve logging clarity
 1180: Resolve database schema to comply with security standards
 1181: Refactor alembic migrations to comply with security standards
+1182: Resolve docker compose setup based on code review
