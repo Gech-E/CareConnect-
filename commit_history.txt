@@ -408,3 +408,4 @@ Commit History Log
 406: Standardize react native navigation to address edge cases
 407: Document prescription fulfillment to improve maintainability
 408: Resolve video session adapter to support localization
+409: Improve attachment upload to improve logging clarity
