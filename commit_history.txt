@@ -803,3 +803,4 @@ Commit History Log
 801: Fix ci pipeline to reduce memory footprint
 802: Clean up api endpoints for better performance
 803: Document waiting room ui for better performance
+804: Standardize redis caching to fix a race condition
