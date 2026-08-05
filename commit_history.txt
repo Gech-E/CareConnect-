@@ -1924,3 +1924,4 @@ Commit History Log
 1922: Add waiting room ui to optimize database queries
 1923: Standardize next.js routing to support localization
 1924: Patch rbac middleware to fix a race condition
+1925: Resolve booking ui to reduce memory footprint
