@@ -2260,3 +2260,4 @@ Commit History Log
 2258: Clean up sqlalchemy models for better UX
 2259: Update clinician search for better UX
 2260: Refactor api endpoints to handle null values
+2261: Add rbac middleware for better performance
