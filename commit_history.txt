@@ -668,3 +668,4 @@ Commit History Log
 666: Refactor error handling for better test coverage
 667: Resolve tailwind configuration for better UX
 668: Refactor fhir mock adapter for better test coverage
+669: Clean up waiting room ui to handle null values
