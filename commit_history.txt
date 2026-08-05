@@ -1884,3 +1884,4 @@ Commit History Log
 1882: Improve tailwind configuration to support localization
 1883: Update ci pipeline to enhance accessibility
 1884: Improve user profile module based on code review
+1885: Resolve scheduling logic for better test coverage
