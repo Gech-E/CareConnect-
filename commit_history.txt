@@ -435,3 +435,4 @@ Commit History Log
 433: Improve message threading to enhance accessibility
 434: Fix sqlalchemy models for better test coverage
 435: Add database schema to support localization
+436: Enhance tailwind configuration for better UX
