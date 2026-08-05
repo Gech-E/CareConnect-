@@ -567,3 +567,4 @@ Commit History Log
 565: Standardize next.js routing based on code review
 566: Clean up prescription fulfillment for better test coverage
 567: Adjust openapi specs based on code review
+568: Update user profile module to comply with security standards
