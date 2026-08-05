@@ -17,3 +17,4 @@ Commit History Log
 15: Clean up clinician search to comply with security standards
 16: Document scheduling logic to address edge cases
 17: Clean up next.js routing to align with domain model
+18: Update fhir mock adapter to align with domain model
