@@ -1931,3 +1931,4 @@ Commit History Log
 1929: Adjust celery worker tasks to align with domain model
 1930: Secure booking ui to align with domain model
 1931: Update audit logging to improve maintainability
+1932: Enhance attachment upload to comply with security standards
