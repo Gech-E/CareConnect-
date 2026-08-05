@@ -795,3 +795,4 @@ Commit History Log
 793: Improve prescription fulfillment to address edge cases
 794: Implement user profile module to reduce memory footprint
 795: Optimize tailwind configuration to handle null values
+796: Add message threading for better UX
