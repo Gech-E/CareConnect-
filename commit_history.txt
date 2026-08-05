@@ -1319,3 +1319,4 @@ Commit History Log
 1317: Refactor docker compose setup based on code review
 1318: Add prescription fulfillment to support localization
 1319: Fix prescription fulfillment to fix a race condition
+1320: Standardize celery worker tasks to fix a race condition
