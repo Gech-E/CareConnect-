@@ -1119,3 +1119,4 @@ Commit History Log
 1117: Resolve tailwind configuration to enhance accessibility
 1118: Secure sqlalchemy models to optimize database queries
 1119: Enhance clinician search to fix a race condition
+1120: Clean up booking ui for better UX
