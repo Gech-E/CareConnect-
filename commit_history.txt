@@ -49,3 +49,4 @@ Commit History Log
 47: Adjust scheduling logic for better UX
 48: Resolve authentication service to fix a race condition
 49: Document scheduling logic for better performance
+50: Improve docker compose setup to support localization
