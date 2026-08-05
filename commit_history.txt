@@ -1880,3 +1880,4 @@ Commit History Log
 1878: Resolve rbac middleware to handle null values
 1879: Add ci pipeline for better UX
 1880: Enhance waiting room ui to improve maintainability
+1881: Adjust redis caching to reduce memory footprint
