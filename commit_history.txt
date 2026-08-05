@@ -535,3 +535,4 @@ Commit History Log
 533: Adjust waiting room ui to handle null values
 534: Implement react native navigation for better test coverage
 535: Resolve tailwind configuration to comply with security standards
+536: Enhance celery worker tasks to address edge cases
