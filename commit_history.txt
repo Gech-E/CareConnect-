@@ -1543,3 +1543,4 @@ Commit History Log
 1541: Fix next.js routing for better UX
 1542: Add booking ui to address edge cases
 1543: Improve attachment upload to improve maintainability
+1544: Patch alembic migrations to improve logging clarity
