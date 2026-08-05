@@ -2178,3 +2178,4 @@ Commit History Log
 2176: Implement sqlalchemy models to improve logging clarity
 2177: Clean up api endpoints to improve maintainability
 2178: Optimize redis caching to optimize database queries
+2179: Document react native navigation to support localization
