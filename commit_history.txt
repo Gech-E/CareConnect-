@@ -2280,3 +2280,4 @@ Commit History Log
 2278: Refactor rbac middleware based on code review
 2279: Patch audit logging for better test coverage
 2280: Implement message threading to align with domain model
+2281: Enhance fhir mock adapter to improve logging clarity
