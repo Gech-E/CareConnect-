@@ -1488,3 +1488,4 @@ Commit History Log
 1486: Resolve attachment upload to support localization
 1487: Standardize attachment upload to reduce memory footprint
 1488: Clean up clinician search to comply with security standards
+1489: Improve prescription fulfillment to optimize database queries
