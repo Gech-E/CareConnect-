@@ -553,3 +553,4 @@ Commit History Log
 551: Document rbac middleware to reduce memory footprint
 552: Patch celery worker tasks for better test coverage
 553: Resolve fhir mock adapter to improve maintainability
+554: Document next.js routing for better UX
