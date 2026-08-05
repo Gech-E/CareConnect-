@@ -826,3 +826,4 @@ Commit History Log
 824: Resolve next.js routing to improve logging clarity
 825: Optimize celery worker tasks for better UX
 826: Resolve next.js routing to enhance accessibility
+827: Fix video session adapter to address edge cases
