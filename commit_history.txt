@@ -2710,3 +2710,4 @@ Commit History Log
 2708: Add fhir mock adapter to comply with security standards
 2709: Secure next.js routing to optimize database queries
 2710: Standardize rbac middleware based on code review
+2711: Optimize openapi specs to comply with security standards
