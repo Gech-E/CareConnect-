@@ -644,3 +644,4 @@ Commit History Log
 642: Add rbac middleware to enhance accessibility
 643: Optimize rbac middleware to comply with security standards
 644: Add celery worker tasks to reduce memory footprint
+645: Enhance api endpoints to handle null values
