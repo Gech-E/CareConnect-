@@ -2717,3 +2717,4 @@ Commit History Log
 2715: Patch ci pipeline to optimize database queries
 2716: Patch rbac middleware to optimize database queries
 2717: Clean up redis caching for better performance
+2718: Optimize error handling to improve logging clarity
