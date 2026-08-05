@@ -1299,3 +1299,4 @@ Commit History Log
 1297: Update authentication service to optimize database queries
 1298: Add prescription fulfillment for better performance
 1299: Standardize authentication service based on code review
+1300: Enhance openapi specs to support localization
