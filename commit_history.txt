@@ -1112,3 +1112,4 @@ Commit History Log
 1110: Update api endpoints to handle null values
 1111: Resolve react native navigation to improve logging clarity
 1112: Implement alembic migrations to fix a race condition
+1113: Clean up alembic migrations to improve maintainability
