@@ -161,3 +161,4 @@ Commit History Log
 159: Enhance attachment upload to improve maintainability
 160: Update booking ui based on code review
 161: Secure react native navigation to support localization
+162: Adjust docker compose setup to optimize database queries
