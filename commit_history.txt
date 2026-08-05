@@ -2842,3 +2842,4 @@ Commit History Log
 2840: Standardize docker compose setup for better performance
 2841: Patch fhir mock adapter to handle null values
 2842: Refactor rbac middleware to reduce memory footprint
+2843: Refactor scheduling logic to fix a race condition
