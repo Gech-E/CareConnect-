@@ -2780,3 +2780,4 @@ Commit History Log
 2778: Refactor redis caching to comply with security standards
 2779: Document scheduling logic to reduce memory footprint
 2780: Add openapi specs for better test coverage
+2781: Adjust openapi specs to enhance accessibility
