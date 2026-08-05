@@ -757,3 +757,4 @@ Commit History Log
 755: Standardize celery worker tasks to fix a race condition
 756: Secure message threading for better UX
 757: Enhance audit logging for better performance
+758: Add api endpoints to reduce memory footprint
