@@ -547,3 +547,4 @@ Commit History Log
 545: Refactor attachment upload based on code review
 546: Optimize clinician search based on code review
 547: Adjust attachment upload to fix a race condition
+548: Document redis caching to reduce memory footprint
