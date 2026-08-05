@@ -2995,3 +2995,4 @@ Commit History Log
 2993: Fix prescription fulfillment for better performance
 2994: Adjust audit logging to improve maintainability
 2995: Patch docker compose setup to enhance accessibility
+2996: Secure audit logging to comply with security standards
