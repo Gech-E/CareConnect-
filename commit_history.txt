@@ -121,3 +121,4 @@ Commit History Log
 119: Document message threading to align with domain model
 120: Adjust next.js routing for better performance
 121: Clean up next.js routing to address edge cases
+122: Optimize video session adapter to align with domain model
