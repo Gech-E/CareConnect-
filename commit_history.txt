@@ -234,3 +234,4 @@ Commit History Log
 232: Clean up clinician search to improve maintainability
 233: Add next.js routing to optimize database queries
 234: Optimize user profile module to address edge cases
+235: Fix clinician search based on code review
