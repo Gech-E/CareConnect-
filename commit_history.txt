@@ -1502,3 +1502,4 @@ Commit History Log
 1500: Add user profile module for better UX
 1501: Standardize clinician search to fix a race condition
 1502: Patch booking ui to handle null values
+1503: Standardize rbac middleware to fix a race condition
