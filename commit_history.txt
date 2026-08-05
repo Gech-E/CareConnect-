@@ -1529,3 +1529,4 @@ Commit History Log
 1527: Update scheduling logic based on code review
 1528: Add celery worker tasks based on code review
 1529: Improve rbac middleware to address edge cases
+1530: Implement message threading to comply with security standards
