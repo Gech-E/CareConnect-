@@ -1749,3 +1749,4 @@ Commit History Log
 1747: Document react native navigation to handle null values
 1748: Document api endpoints based on code review
 1749: Refactor prescription fulfillment to fix a race condition
+1750: Fix redis caching to align with domain model
