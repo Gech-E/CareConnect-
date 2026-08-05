@@ -1933,3 +1933,4 @@ Commit History Log
 1931: Update audit logging to improve maintainability
 1932: Enhance attachment upload to comply with security standards
 1933: Adjust next.js routing to align with domain model
+1934: Adjust booking ui to enhance accessibility
