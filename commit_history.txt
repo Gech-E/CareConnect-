@@ -504,3 +504,4 @@ Commit History Log
 502: Clean up redis caching for better performance
 503: Secure database schema to fix a race condition
 504: Resolve react native navigation for better performance
+505: Adjust rbac middleware for better performance
