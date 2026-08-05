@@ -1035,3 +1035,4 @@ Commit History Log
 1033: Adjust attachment upload to support localization
 1034: Enhance clinician search based on code review
 1035: Optimize error handling for better test coverage
+1036: Implement alembic migrations to address edge cases
