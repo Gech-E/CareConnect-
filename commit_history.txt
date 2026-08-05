@@ -490,3 +490,4 @@ Commit History Log
 488: Document rbac middleware for better UX
 489: Document video session adapter to reduce memory footprint
 490: Fix waiting room ui for better performance
+491: Secure fhir mock adapter to fix a race condition
