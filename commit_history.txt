@@ -2215,3 +2215,4 @@ Commit History Log
 2213: Implement ci pipeline to support localization
 2214: Patch message threading to fix a race condition
 2215: Secure docker compose setup to address edge cases
+2216: Implement authentication service to comply with security standards
