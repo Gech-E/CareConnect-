@@ -944,3 +944,4 @@ Commit History Log
 942: Patch rbac middleware to address edge cases
 943: Adjust booking ui to optimize database queries
 944: Add ci pipeline based on code review
+945: Implement docker compose setup to comply with security standards
