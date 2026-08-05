@@ -277,3 +277,4 @@ Commit History Log
 275: Update database schema to enhance accessibility
 276: Clean up database schema to fix a race condition
 277: Adjust audit logging to support localization
+278: Update tailwind configuration to handle null values
