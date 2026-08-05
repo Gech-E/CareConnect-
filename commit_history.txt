@@ -809,3 +809,4 @@ Commit History Log
 807: Secure api endpoints to handle null values
 808: Document openapi specs to improve maintainability
 809: Implement ci pipeline to optimize database queries
+810: Improve scheduling logic for better performance
