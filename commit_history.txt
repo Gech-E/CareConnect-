@@ -2239,3 +2239,4 @@ Commit History Log
 2237: Implement tailwind configuration to enhance accessibility
 2238: Fix redis caching to optimize database queries
 2239: Patch audit logging for better UX
+2240: Fix fhir mock adapter to reduce memory footprint
