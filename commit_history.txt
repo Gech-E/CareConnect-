@@ -2920,3 +2920,4 @@ Commit History Log
 2918: Update sqlalchemy models to reduce memory footprint
 2919: Enhance message threading to improve logging clarity
 2920: Resolve audit logging to align with domain model
+2921: Improve scheduling logic to reduce memory footprint
