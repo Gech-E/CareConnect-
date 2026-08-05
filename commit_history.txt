@@ -650,3 +650,4 @@ Commit History Log
 648: Improve react native navigation to improve logging clarity
 649: Document openapi specs for better UX
 650: Improve react native navigation to align with domain model
+651: Patch sqlalchemy models to improve maintainability
