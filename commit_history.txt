@@ -593,3 +593,4 @@ Commit History Log
 591: Fix authentication service for better test coverage
 592: Improve authentication service to handle null values
 593: Refactor attachment upload to comply with security standards
+594: Implement attachment upload to optimize database queries
