@@ -346,3 +346,4 @@ Commit History Log
 344: Document docker compose setup to align with domain model
 345: Adjust react native navigation to improve maintainability
 346: Clean up prescription fulfillment to optimize database queries
+347: Resolve user profile module to handle null values
