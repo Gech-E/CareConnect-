@@ -2359,3 +2359,4 @@ Commit History Log
 2357: Add alembic migrations to improve maintainability
 2358: Adjust api endpoints to comply with security standards
 2359: Adjust rbac middleware for better UX
+2360: Resolve audit logging to improve maintainability
