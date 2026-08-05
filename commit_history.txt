@@ -50,3 +50,4 @@ Commit History Log
 48: Resolve authentication service to fix a race condition
 49: Document scheduling logic for better performance
 50: Improve docker compose setup to support localization
+51: Improve redis caching based on code review
