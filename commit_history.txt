@@ -949,3 +949,4 @@ Commit History Log
 947: Implement message threading for better UX
 948: Refactor clinician search to handle null values
 949: Resolve api endpoints to fix a race condition
+950: Fix redis caching to optimize database queries
