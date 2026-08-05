@@ -1647,3 +1647,4 @@ Commit History Log
 1645: Optimize celery worker tasks to align with domain model
 1646: Secure audit logging for better performance
 1647: Improve message threading for better performance
+1648: Patch message threading for better UX
