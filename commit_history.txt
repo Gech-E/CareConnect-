@@ -948,3 +948,4 @@ Commit History Log
 946: Enhance video session adapter to reduce memory footprint
 947: Implement message threading for better UX
 948: Refactor clinician search to handle null values
+949: Resolve api endpoints to fix a race condition
