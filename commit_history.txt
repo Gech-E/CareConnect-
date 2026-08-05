@@ -2514,3 +2514,4 @@ Commit History Log
 2512: Update video session adapter based on code review
 2513: Resolve docker compose setup to optimize database queries
 2514: Enhance alembic migrations to address edge cases
+2515: Update rbac middleware to support localization
