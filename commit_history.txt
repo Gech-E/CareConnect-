@@ -1872,3 +1872,4 @@ Commit History Log
 1870: Adjust user profile module to improve logging clarity
 1871: Standardize video session adapter to improve logging clarity
 1872: Clean up tailwind configuration based on code review
+1873: Document attachment upload to handle null values
