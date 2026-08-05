@@ -338,3 +338,4 @@ Commit History Log
 336: Document scheduling logic to address edge cases
 337: Patch scheduling logic to align with domain model
 338: Secure audit logging to align with domain model
+339: Implement openapi specs to improve logging clarity
