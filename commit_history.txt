@@ -1017,3 +1017,4 @@ Commit History Log
 1015: Standardize video session adapter to support localization
 1016: Document waiting room ui to improve logging clarity
 1017: Resolve attachment upload to enhance accessibility
+1018: Secure clinician search for better performance
