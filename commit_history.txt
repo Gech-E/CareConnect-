@@ -719,3 +719,4 @@ Commit History Log
 717: Secure prescription fulfillment to reduce memory footprint
 718: Enhance scheduling logic for better test coverage
 719: Standardize celery worker tasks to improve maintainability
+720: Fix user profile module to improve maintainability
