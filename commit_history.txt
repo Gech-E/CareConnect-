@@ -10,3 +10,4 @@ Commit History Log
 8: Patch prescription fulfillment for better UX
 9: Resolve database schema to optimize database queries
 10: Adjust prescription fulfillment to align with domain model
+11: Fix audit logging to support localization
