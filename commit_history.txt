@@ -1066,3 +1066,4 @@ Commit History Log
 1064: Document booking ui based on code review
 1065: Standardize api endpoints to optimize database queries
 1066: Fix attachment upload to enhance accessibility
+1067: Patch sqlalchemy models to address edge cases
