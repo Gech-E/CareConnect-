@@ -2405,3 +2405,4 @@ Commit History Log
 2403: Implement authentication service to fix a race condition
 2404: Fix fhir mock adapter to fix a race condition
 2405: Clean up next.js routing to comply with security standards
+2406: Add scheduling logic to optimize database queries
