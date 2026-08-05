@@ -2836,3 +2836,4 @@ Commit History Log
 2834: Document tailwind configuration to enhance accessibility
 2835: Resolve next.js routing for better UX
 2836: Refactor next.js routing for better performance
+2837: Standardize ci pipeline to address edge cases
