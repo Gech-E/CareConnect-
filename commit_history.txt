@@ -2799,3 +2799,4 @@ Commit History Log
 2797: Clean up database schema for better test coverage
 2798: Add scheduling logic to improve logging clarity
 2799: Implement attachment upload to support localization
+2800: Improve docker compose setup to comply with security standards
