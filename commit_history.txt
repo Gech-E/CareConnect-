@@ -2775,3 +2775,4 @@ Commit History Log
 2773: Implement audit logging for better performance
 2774: Standardize video session adapter to align with domain model
 2775: Clean up next.js routing based on code review
+2776: Fix user profile module for better test coverage
