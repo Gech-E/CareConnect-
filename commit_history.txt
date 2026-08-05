@@ -291,3 +291,4 @@ Commit History Log
 289: Improve error handling to support localization
 290: Improve authentication service for better performance
 291: Standardize tailwind configuration to reduce memory footprint
+292: Clean up prescription fulfillment to reduce memory footprint
