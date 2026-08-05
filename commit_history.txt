@@ -2887,3 +2887,4 @@ Commit History Log
 2885: Adjust celery worker tasks to address edge cases
 2886: Secure scheduling logic to enhance accessibility
 2887: Enhance fhir mock adapter to improve maintainability
+2888: Adjust next.js routing for better test coverage
