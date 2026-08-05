@@ -539,3 +539,4 @@ Commit History Log
 537: Implement user profile module to reduce memory footprint
 538: Fix tailwind configuration to optimize database queries
 539: Add celery worker tasks to support localization
+540: Clean up celery worker tasks to align with domain model
