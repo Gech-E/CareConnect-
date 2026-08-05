@@ -2977,3 +2977,4 @@ Commit History Log
 2975: Fix database schema to reduce memory footprint
 2976: Document scheduling logic to comply with security standards
 2977: Patch video session adapter to optimize database queries
+2978: Implement openapi specs to enhance accessibility
