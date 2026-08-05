@@ -2439,3 +2439,4 @@ Commit History Log
 2437: Secure rbac middleware to support localization
 2438: Document audit logging to enhance accessibility
 2439: Implement ci pipeline for better performance
+2440: Update video session adapter to align with domain model
