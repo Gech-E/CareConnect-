@@ -667,3 +667,4 @@ Commit History Log
 665: Document prescription fulfillment to fix a race condition
 666: Refactor error handling for better test coverage
 667: Resolve tailwind configuration for better UX
+668: Refactor fhir mock adapter for better test coverage
