@@ -386,3 +386,4 @@ Commit History Log
 384: Update api endpoints based on code review
 385: Clean up react native navigation to support localization
 386: Resolve prescription fulfillment to fix a race condition
+387: Implement sqlalchemy models to improve logging clarity
