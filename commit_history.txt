@@ -706,3 +706,4 @@ Commit History Log
 704: Update sqlalchemy models for better UX
 705: Update audit logging to comply with security standards
 706: Add api endpoints to comply with security standards
+707: Document sqlalchemy models for better performance
