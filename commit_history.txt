@@ -2311,3 +2311,4 @@ Commit History Log
 2309: Enhance ci pipeline to fix a race condition
 2310: Adjust scheduling logic to fix a race condition
 2311: Resolve attachment upload to align with domain model
+2312: Patch video session adapter to comply with security standards
