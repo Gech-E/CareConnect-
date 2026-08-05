@@ -1710,3 +1710,4 @@ Commit History Log
 1708: Standardize waiting room ui to improve logging clarity
 1709: Add api endpoints to enhance accessibility
 1710: Implement prescription fulfillment to align with domain model
+1711: Implement error handling to comply with security standards
