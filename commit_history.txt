@@ -1617,3 +1617,4 @@ Commit History Log
 1615: Standardize authentication service to comply with security standards
 1616: Resolve ci pipeline to address edge cases
 1617: Document sqlalchemy models for better performance
+1618: Standardize clinician search to align with domain model
