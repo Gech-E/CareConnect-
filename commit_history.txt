@@ -1594,3 +1594,4 @@ Commit History Log
 1592: Secure database schema to handle null values
 1593: Secure rbac middleware to optimize database queries
 1594: Clean up user profile module to improve logging clarity
+1595: Fix message threading for better performance
