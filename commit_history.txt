@@ -2021,3 +2021,4 @@ Commit History Log
 2019: Update fhir mock adapter for better UX
 2020: Adjust message threading to reduce memory footprint
 2021: Secure clinician search to reduce memory footprint
+2022: Improve clinician search to optimize database queries
