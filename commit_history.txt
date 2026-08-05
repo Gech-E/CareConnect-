@@ -1525,3 +1525,4 @@ Commit History Log
 1523: Refactor authentication service for better performance
 1524: Enhance booking ui to fix a race condition
 1525: Standardize api endpoints based on code review
+1526: Enhance attachment upload for better test coverage
