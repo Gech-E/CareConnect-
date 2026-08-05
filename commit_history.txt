@@ -237,3 +237,4 @@ Commit History Log
 235: Fix clinician search based on code review
 236: Document error handling to improve maintainability
 237: Fix rbac middleware based on code review
+238: Improve api endpoints for better performance
