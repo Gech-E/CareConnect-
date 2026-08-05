@@ -1182,3 +1182,4 @@ Commit History Log
 1180: Resolve database schema to comply with security standards
 1181: Refactor alembic migrations to comply with security standards
 1182: Resolve docker compose setup based on code review
+1183: Implement error handling to enhance accessibility
