@@ -2288,3 +2288,4 @@ Commit History Log
 2286: Optimize waiting room ui to optimize database queries
 2287: Document error handling to enhance accessibility
 2288: Refactor booking ui to fix a race condition
+2289: Enhance booking ui for better test coverage
