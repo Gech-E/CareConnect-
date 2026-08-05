@@ -1919,3 +1919,4 @@ Commit History Log
 1917: Standardize alembic migrations for better performance
 1918: Patch fhir mock adapter to optimize database queries
 1919: Resolve audit logging to support localization
+1920: Clean up clinician search to support localization
