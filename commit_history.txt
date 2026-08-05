@@ -145,3 +145,4 @@ Commit History Log
 143: Clean up booking ui to align with domain model
 144: Refactor docker compose setup to enhance accessibility
 145: Patch audit logging to comply with security standards
+146: Adjust tailwind configuration to fix a race condition
