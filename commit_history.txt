@@ -1741,3 +1741,4 @@ Commit History Log
 1739: Improve prescription fulfillment for better test coverage
 1740: Update booking ui based on code review
 1741: Standardize waiting room ui to optimize database queries
+1742: Enhance database schema to address edge cases
