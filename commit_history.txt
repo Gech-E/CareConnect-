@@ -2641,3 +2641,4 @@ Commit History Log
 2639: Optimize ci pipeline to fix a race condition
 2640: Adjust clinician search to enhance accessibility
 2641: Add sqlalchemy models to improve maintainability
+2642: Add tailwind configuration to address edge cases
