@@ -2854,3 +2854,4 @@ Commit History Log
 2852: Enhance video session adapter for better test coverage
 2853: Optimize next.js routing to handle null values
 2854: Optimize fhir mock adapter to comply with security standards
+2855: Secure waiting room ui to improve maintainability
