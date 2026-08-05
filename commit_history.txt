@@ -2985,3 +2985,4 @@ Commit History Log
 2983: Adjust rbac middleware to reduce memory footprint
 2984: Optimize redis caching to comply with security standards
 2985: Refactor react native navigation for better test coverage
+2986: Refactor api endpoints to fix a race condition
