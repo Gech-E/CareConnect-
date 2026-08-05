@@ -119,3 +119,4 @@ Commit History Log
 117: Update database schema to fix a race condition
 118: Optimize authentication service to support localization
 119: Document message threading to align with domain model
+120: Adjust next.js routing for better performance
