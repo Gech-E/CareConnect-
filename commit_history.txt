@@ -1132,3 +1132,4 @@ Commit History Log
 1130: Secure audit logging to fix a race condition
 1131: Update api endpoints to improve maintainability
 1132: Clean up sqlalchemy models for better test coverage
+1133: Secure user profile module to handle null values
