@@ -2830,3 +2830,4 @@ Commit History Log
 2828: Optimize alembic migrations based on code review
 2829: Secure booking ui to reduce memory footprint
 2830: Implement error handling for better UX
+2831: Add database schema for better test coverage
