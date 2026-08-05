@@ -1851,3 +1851,4 @@ Commit History Log
 1849: Enhance error handling to reduce memory footprint
 1850: Clean up error handling for better UX
 1851: Resolve user profile module to align with domain model
+1852: Patch celery worker tasks to support localization
