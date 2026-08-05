@@ -582,3 +582,4 @@ Commit History Log
 580: Add waiting room ui to reduce memory footprint
 581: Add rbac middleware based on code review
 582: Update clinician search to fix a race condition
+583: Update react native navigation to support localization
