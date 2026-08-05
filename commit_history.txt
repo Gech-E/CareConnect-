@@ -1083,3 +1083,4 @@ Commit History Log
 1081: Secure api endpoints to improve maintainability
 1082: Patch alembic migrations for better UX
 1083: Improve audit logging to align with domain model
+1084: Improve audit logging to enhance accessibility
