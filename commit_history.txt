@@ -1027,3 +1027,4 @@ Commit History Log
 1025: Enhance celery worker tasks to address edge cases
 1026: Add booking ui to comply with security standards
 1027: Standardize fhir mock adapter to handle null values
+1028: Adjust user profile module to handle null values
