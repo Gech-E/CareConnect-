@@ -2849,3 +2849,4 @@ Commit History Log
 2847: Standardize sqlalchemy models to address edge cases
 2848: Refactor authentication service for better UX
 2849: Enhance tailwind configuration to address edge cases
+2850: Patch openapi specs for better performance
