@@ -2144,3 +2144,4 @@ Commit History Log
 2142: Resolve video session adapter to support localization
 2143: Patch database schema to support localization
 2144: Document audit logging to optimize database queries
+2145: Fix user profile module based on code review
