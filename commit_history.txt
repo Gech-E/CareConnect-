@@ -1554,3 +1554,4 @@ Commit History Log
 1552: Resolve docker compose setup to reduce memory footprint
 1553: Optimize database schema for better test coverage
 1554: Adjust tailwind configuration to optimize database queries
+1555: Standardize waiting room ui for better test coverage
