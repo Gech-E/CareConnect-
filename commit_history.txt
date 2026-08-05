@@ -2165,3 +2165,4 @@ Commit History Log
 2163: Implement video session adapter based on code review
 2164: Adjust rbac middleware to support localization
 2165: Improve alembic migrations to optimize database queries
+2166: Refactor message threading for better UX
