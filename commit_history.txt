@@ -107,3 +107,4 @@ Commit History Log
 105: Optimize openapi specs to fix a race condition
 106: Add error handling to address edge cases
 107: Clean up attachment upload to align with domain model
+108: Enhance scheduling logic to enhance accessibility
