@@ -534,3 +534,4 @@ Commit History Log
 532: Clean up audit logging to comply with security standards
 533: Adjust waiting room ui to handle null values
 534: Implement react native navigation for better test coverage
+535: Resolve tailwind configuration to comply with security standards
