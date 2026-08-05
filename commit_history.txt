@@ -382,3 +382,4 @@ Commit History Log
 380: Document api endpoints to reduce memory footprint
 381: Enhance openapi specs to improve logging clarity
 382: Fix database schema for better performance
+383: Add sqlalchemy models for better performance
