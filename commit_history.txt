@@ -1991,3 +1991,4 @@ Commit History Log
 1989: Secure prescription fulfillment for better UX
 1990: Optimize clinician search to fix a race condition
 1991: Standardize react native navigation based on code review
+1992: Document clinician search to align with domain model
