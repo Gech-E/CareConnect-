@@ -361,3 +361,4 @@ Commit History Log
 359: Improve message threading to optimize database queries
 360: Secure database schema to improve maintainability
 361: Adjust message threading for better UX
+362: Document rbac middleware to support localization
