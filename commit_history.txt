@@ -2601,3 +2601,4 @@ Commit History Log
 2599: Update redis caching to support localization
 2600: Clean up rbac middleware for better UX
 2601: Add error handling to align with domain model
+2602: Adjust next.js routing to fix a race condition
