@@ -2317,3 +2317,4 @@ Commit History Log
 2315: Enhance sqlalchemy models to fix a race condition
 2316: Standardize scheduling logic to improve logging clarity
 2317: Add alembic migrations to comply with security standards
+2318: Add message threading to support localization
