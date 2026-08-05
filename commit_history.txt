@@ -986,3 +986,4 @@ Commit History Log
 984: Update waiting room ui to reduce memory footprint
 985: Fix openapi specs based on code review
 986: Resolve error handling for better performance
+987: Update celery worker tasks to fix a race condition
