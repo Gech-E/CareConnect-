@@ -707,3 +707,4 @@ Commit History Log
 705: Update audit logging to comply with security standards
 706: Add api endpoints to comply with security standards
 707: Document sqlalchemy models for better performance
+708: Add react native navigation based on code review
