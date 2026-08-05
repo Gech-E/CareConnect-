@@ -2374,3 +2374,4 @@ Commit History Log
 2372: Fix message threading for better performance
 2373: Implement redis caching to fix a race condition
 2374: Secure celery worker tasks to enhance accessibility
+2375: Patch fhir mock adapter to comply with security standards
