@@ -171,3 +171,4 @@ Commit History Log
 169: Fix redis caching for better UX
 170: Fix redis caching to reduce memory footprint
 171: Patch clinician search to improve maintainability
+172: Clean up authentication service to handle null values
