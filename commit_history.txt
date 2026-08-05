@@ -123,3 +123,4 @@ Commit History Log
 121: Clean up next.js routing to address edge cases
 122: Optimize video session adapter to align with domain model
 123: Resolve waiting room ui for better test coverage
+124: Update clinician search to fix a race condition
