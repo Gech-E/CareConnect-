@@ -438,3 +438,4 @@ Commit History Log
 436: Enhance tailwind configuration for better UX
 437: Implement video session adapter to address edge cases
 438: Improve message threading to handle null values
+439: Standardize fhir mock adapter to optimize database queries
