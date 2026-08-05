@@ -1516,3 +1516,4 @@ Commit History Log
 1514: Standardize api endpoints for better UX
 1515: Standardize attachment upload to improve logging clarity
 1516: Clean up rbac middleware to comply with security standards
+1517: Optimize alembic migrations to address edge cases
