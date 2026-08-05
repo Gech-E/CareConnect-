@@ -828,3 +828,4 @@ Commit History Log
 826: Resolve next.js routing to enhance accessibility
 827: Fix video session adapter to address edge cases
 828: Update api endpoints to fix a race condition
+829: Secure redis caching to optimize database queries
