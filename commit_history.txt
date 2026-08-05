@@ -373,3 +373,4 @@ Commit History Log
 371: Document rbac middleware to enhance accessibility
 372: Optimize redis caching to fix a race condition
 373: Clean up docker compose setup to optimize database queries
+374: Optimize attachment upload to optimize database queries
