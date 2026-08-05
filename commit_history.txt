@@ -998,3 +998,4 @@ Commit History Log
 996: Implement booking ui for better performance
 997: Implement openapi specs based on code review
 998: Document authentication service to support localization
+999: Patch ci pipeline to fix a race condition
