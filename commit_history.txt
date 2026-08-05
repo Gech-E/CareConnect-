@@ -1331,3 +1331,4 @@ Commit History Log
 1329: Resolve prescription fulfillment based on code review
 1330: Clean up api endpoints to optimize database queries
 1331: Adjust scheduling logic to improve maintainability
+1332: Fix api endpoints to optimize database queries
