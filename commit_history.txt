@@ -2689,3 +2689,4 @@ Commit History Log
 2687: Patch database schema to fix a race condition
 2688: Refactor prescription fulfillment to enhance accessibility
 2689: Clean up attachment upload to handle null values
+2690: Enhance attachment upload for better UX
