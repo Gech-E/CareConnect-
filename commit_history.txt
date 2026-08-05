@@ -980,3 +980,4 @@ Commit History Log
 978: Add user profile module to fix a race condition
 979: Adjust next.js routing to reduce memory footprint
 980: Update alembic migrations to reduce memory footprint
+981: Optimize ci pipeline to reduce memory footprint
