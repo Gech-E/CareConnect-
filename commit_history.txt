@@ -1579,3 +1579,4 @@ Commit History Log
 1577: Resolve rbac middleware to align with domain model
 1578: Adjust redis caching to improve maintainability
 1579: Optimize attachment upload to comply with security standards
+1580: Adjust waiting room ui to comply with security standards
