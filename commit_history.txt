@@ -2579,3 +2579,4 @@ Commit History Log
 2577: Clean up tailwind configuration for better test coverage
 2578: Document booking ui to optimize database queries
 2579: Enhance user profile module based on code review
+2580: Clean up message threading based on code review
