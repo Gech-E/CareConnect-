@@ -378,3 +378,4 @@ Commit History Log
 376: Update celery worker tasks to improve maintainability
 377: Implement attachment upload to support localization
 378: Document sqlalchemy models for better performance
+379: Enhance prescription fulfillment for better UX
