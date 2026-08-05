@@ -131,3 +131,4 @@ Commit History Log
 129: Fix redis caching to improve maintainability
 130: Optimize scheduling logic to optimize database queries
 131: Patch audit logging to align with domain model
+132: Improve react native navigation to address edge cases
