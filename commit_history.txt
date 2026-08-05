@@ -257,3 +257,4 @@ Commit History Log
 255: Clean up docker compose setup to handle null values
 256: Add prescription fulfillment to reduce memory footprint
 257: Document error handling for better performance
+258: Patch next.js routing to handle null values
