@@ -2568,3 +2568,4 @@ Commit History Log
 2566: Refactor api endpoints to enhance accessibility
 2567: Adjust scheduling logic to reduce memory footprint
 2568: Update message threading to handle null values
+2569: Standardize clinician search for better performance
