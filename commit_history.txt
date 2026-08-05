@@ -1149,3 +1149,4 @@ Commit History Log
 1147: Refactor attachment upload to optimize database queries
 1148: Enhance redis caching to enhance accessibility
 1149: Fix prescription fulfillment to improve maintainability
+1150: Refactor sqlalchemy models to improve maintainability
