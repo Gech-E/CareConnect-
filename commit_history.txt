@@ -500,3 +500,4 @@ Commit History Log
 498: Improve fhir mock adapter to enhance accessibility
 499: Patch attachment upload to support localization
 500: Patch user profile module for better performance
+501: Improve ci pipeline to improve logging clarity
