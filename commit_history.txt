@@ -2117,3 +2117,4 @@ Commit History Log
 2115: Improve waiting room ui to support localization
 2116: Optimize prescription fulfillment to fix a race condition
 2117: Improve redis caching to fix a race condition
+2118: Resolve next.js routing based on code review
