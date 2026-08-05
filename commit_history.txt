@@ -1734,3 +1734,4 @@ Commit History Log
 1732: Fix clinician search for better performance
 1733: Standardize ci pipeline to align with domain model
 1734: Document message threading to address edge cases
+1735: Add audit logging for better performance
