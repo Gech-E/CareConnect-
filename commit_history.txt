@@ -1475,3 +1475,4 @@ Commit History Log
 1473: Resolve clinician search based on code review
 1474: Optimize alembic migrations to improve maintainability
 1475: Standardize message threading to optimize database queries
+1476: Secure user profile module to align with domain model
