@@ -2962,3 +2962,4 @@ Commit History Log
 2960: Document authentication service to handle null values
 2961: Implement redis caching to align with domain model
 2962: Enhance fhir mock adapter to improve maintainability
+2963: Enhance rbac middleware to improve maintainability
