@@ -293,3 +293,4 @@ Commit History Log
 291: Standardize tailwind configuration to reduce memory footprint
 292: Clean up prescription fulfillment to reduce memory footprint
 293: Update attachment upload to handle null values
+294: Clean up sqlalchemy models for better performance
