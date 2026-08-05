@@ -1591,3 +1591,4 @@ Commit History Log
 1589: Enhance next.js routing to align with domain model
 1590: Resolve redis caching for better performance
 1591: Secure react native navigation to align with domain model
+1592: Secure database schema to handle null values
