@@ -1687,3 +1687,4 @@ Commit History Log
 1685: Standardize sqlalchemy models for better test coverage
 1686: Clean up celery worker tasks for better performance
 1687: Optimize rbac middleware for better test coverage
+1688: Document user profile module to align with domain model
