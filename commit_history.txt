@@ -32,3 +32,4 @@ Commit History Log
 30: Implement alembic migrations to support localization
 31: Add redis caching to enhance accessibility
 32: Secure celery worker tasks to comply with security standards
+33: Fix openapi specs based on code review
