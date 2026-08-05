@@ -2551,3 +2551,4 @@ Commit History Log
 2549: Enhance rbac middleware for better UX
 2550: Fix tailwind configuration to improve maintainability
 2551: Adjust database schema to address edge cases
+2552: Enhance prescription fulfillment to handle null values
