@@ -418,3 +418,4 @@ Commit History Log
 416: Patch tailwind configuration to improve maintainability
 417: Patch ci pipeline to handle null values
 418: Optimize database schema to align with domain model
+419: Update openapi specs for better test coverage
