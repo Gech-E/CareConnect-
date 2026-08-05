@@ -1822,3 +1822,4 @@ Commit History Log
 1820: Enhance next.js routing to fix a race condition
 1821: Refactor docker compose setup for better UX
 1822: Adjust celery worker tasks based on code review
+1823: Optimize sqlalchemy models to align with domain model
