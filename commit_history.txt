@@ -1200,3 +1200,4 @@ Commit History Log
 1198: Implement video session adapter to improve logging clarity
 1199: Update attachment upload to handle null values
 1200: Enhance booking ui to align with domain model
+1201: Optimize openapi specs to align with domain model
