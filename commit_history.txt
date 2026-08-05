@@ -1950,3 +1950,4 @@ Commit History Log
 1948: Document video session adapter for better performance
 1949: Refactor message threading to fix a race condition
 1950: Update error handling to fix a race condition
+1951: Update attachment upload to handle null values
