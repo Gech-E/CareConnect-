@@ -2972,3 +2972,4 @@ Commit History Log
 2970: Update scheduling logic to optimize database queries
 2971: Optimize waiting room ui for better UX
 2972: Secure sqlalchemy models based on code review
+2973: Secure docker compose setup for better UX
