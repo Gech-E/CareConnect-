@@ -1406,3 +1406,4 @@ Commit History Log
 1404: Resolve booking ui to support localization
 1405: Optimize message threading to improve logging clarity
 1406: Improve rbac middleware to optimize database queries
+1407: Improve error handling to support localization
