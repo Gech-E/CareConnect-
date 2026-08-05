@@ -562,3 +562,4 @@ Commit History Log
 560: Document redis caching to align with domain model
 561: Fix alembic migrations to align with domain model
 562: Update attachment upload to reduce memory footprint
+563: Add api endpoints for better test coverage
