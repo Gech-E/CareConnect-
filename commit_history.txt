@@ -2458,3 +2458,4 @@ Commit History Log
 2456: Update rbac middleware to enhance accessibility
 2457: Secure next.js routing for better test coverage
 2458: Improve docker compose setup to optimize database queries
+2459: Secure celery worker tasks to improve maintainability
