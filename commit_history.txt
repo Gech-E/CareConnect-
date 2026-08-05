@@ -1627,3 +1627,4 @@ Commit History Log
 1625: Document fhir mock adapter to reduce memory footprint
 1626: Enhance alembic migrations to comply with security standards
 1627: Implement redis caching to enhance accessibility
+1628: Clean up message threading to enhance accessibility
