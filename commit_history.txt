@@ -1074,3 +1074,4 @@ Commit History Log
 1072: Secure sqlalchemy models to improve logging clarity
 1073: Refactor message threading to handle null values
 1074: Clean up error handling to fix a race condition
+1075: Update message threading to address edge cases
