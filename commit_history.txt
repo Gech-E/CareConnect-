@@ -1472,3 +1472,4 @@ Commit History Log
 1470: Improve clinician search to enhance accessibility
 1471: Update booking ui to reduce memory footprint
 1472: Optimize redis caching to optimize database queries
+1473: Resolve clinician search based on code review
