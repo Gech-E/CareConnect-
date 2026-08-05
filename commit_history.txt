@@ -2660,3 +2660,4 @@ Commit History Log
 2658: Refactor fhir mock adapter to align with domain model
 2659: Add next.js routing to support localization
 2660: Add alembic migrations to support localization
+2661: Document database schema to comply with security standards
