@@ -221,3 +221,4 @@ Commit History Log
 219: Update waiting room ui to enhance accessibility
 220: Refactor tailwind configuration for better test coverage
 221: Secure docker compose setup to reduce memory footprint
+222: Enhance error handling to align with domain model
