@@ -1268,3 +1268,4 @@ Commit History Log
 1266: Add fhir mock adapter to handle null values
 1267: Patch video session adapter to improve logging clarity
 1268: Patch rbac middleware to optimize database queries
+1269: Implement user profile module to support localization
