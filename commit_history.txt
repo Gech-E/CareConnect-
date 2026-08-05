@@ -2434,3 +2434,4 @@ Commit History Log
 2432: Document message threading to address edge cases
 2433: Patch clinician search for better test coverage
 2434: Optimize alembic migrations to improve logging clarity
+2435: Document api endpoints for better performance
