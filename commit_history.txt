@@ -1778,3 +1778,4 @@ Commit History Log
 1776: Refactor authentication service to improve maintainability
 1777: Optimize openapi specs to align with domain model
 1778: Patch database schema to address edge cases
+1779: Implement video session adapter to fix a race condition
