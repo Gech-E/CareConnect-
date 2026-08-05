@@ -2268,3 +2268,4 @@ Commit History Log
 2266: Resolve react native navigation to optimize database queries
 2267: Refactor next.js routing for better performance
 2268: Adjust fhir mock adapter to address edge cases
+2269: Adjust booking ui to comply with security standards
