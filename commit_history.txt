@@ -1461,3 +1461,4 @@ Commit History Log
 1459: Enhance docker compose setup to fix a race condition
 1460: Optimize message threading to enhance accessibility
 1461: Secure celery worker tasks for better test coverage
+1462: Fix video session adapter for better UX
