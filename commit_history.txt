@@ -160,3 +160,4 @@ Commit History Log
 158: Enhance clinician search based on code review
 159: Enhance attachment upload to improve maintainability
 160: Update booking ui based on code review
+161: Secure react native navigation to support localization
