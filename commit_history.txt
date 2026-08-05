@@ -918,3 +918,4 @@ Commit History Log
 916: Improve video session adapter for better test coverage
 917: Clean up openapi specs to align with domain model
 918: Refactor sqlalchemy models to improve logging clarity
+919: Enhance alembic migrations for better UX
