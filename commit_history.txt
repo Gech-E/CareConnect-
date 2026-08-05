@@ -598,3 +598,4 @@ Commit History Log
 596: Update video session adapter for better performance
 597: Optimize audit logging to comply with security standards
 598: Improve redis caching based on code review
+599: Secure message threading to address edge cases
