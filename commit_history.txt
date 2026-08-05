@@ -1423,3 +1423,4 @@ Commit History Log
 1421: Secure prescription fulfillment for better UX
 1422: Document rbac middleware to handle null values
 1423: Enhance next.js routing to comply with security standards
+1424: Update alembic migrations for better test coverage
