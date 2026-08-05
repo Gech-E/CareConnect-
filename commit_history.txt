@@ -1881,3 +1881,4 @@ Commit History Log
 1879: Add ci pipeline for better UX
 1880: Enhance waiting room ui to improve maintainability
 1881: Adjust redis caching to reduce memory footprint
+1882: Improve tailwind configuration to support localization
