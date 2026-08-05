@@ -1955,3 +1955,4 @@ Commit History Log
 1953: Adjust celery worker tasks for better UX
 1954: Add audit logging to support localization
 1955: Refactor celery worker tasks to address edge cases
+1956: Implement react native navigation to fix a race condition
