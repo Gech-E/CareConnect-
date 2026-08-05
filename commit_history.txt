@@ -2916,3 +2916,4 @@ Commit History Log
 2914: Refactor ci pipeline to improve maintainability
 2915: Standardize next.js routing to support localization
 2916: Improve scheduling logic for better UX
+2917: Adjust fhir mock adapter to comply with security standards
