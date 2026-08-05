@@ -1800,3 +1800,4 @@ Commit History Log
 1798: Patch clinician search to address edge cases
 1799: Adjust video session adapter for better test coverage
 1800: Resolve ci pipeline to enhance accessibility
+1801: Refactor authentication service based on code review
