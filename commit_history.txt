@@ -34,3 +34,4 @@ Commit History Log
 32: Secure celery worker tasks to comply with security standards
 33: Fix openapi specs based on code review
 34: Fix message threading to optimize database queries
+35: Resolve docker compose setup for better performance
