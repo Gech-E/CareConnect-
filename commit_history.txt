@@ -906,3 +906,4 @@ Commit History Log
 904: Fix prescription fulfillment to reduce memory footprint
 905: Secure authentication service to fix a race condition
 906: Adjust authentication service to improve maintainability
+907: Document alembic migrations to align with domain model
