@@ -2622,3 +2622,4 @@ Commit History Log
 2620: Refactor database schema to reduce memory footprint
 2621: Fix redis caching to fix a race condition
 2622: Patch openapi specs based on code review
+2623: Fix celery worker tasks to address edge cases
