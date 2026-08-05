@@ -127,3 +127,4 @@ Commit History Log
 125: Enhance ci pipeline to optimize database queries
 126: Implement openapi specs to handle null values
 127: Improve alembic migrations to optimize database queries
+128: Refactor redis caching to fix a race condition
