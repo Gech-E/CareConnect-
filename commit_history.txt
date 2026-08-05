@@ -1926,3 +1926,4 @@ Commit History Log
 1924: Patch rbac middleware to fix a race condition
 1925: Resolve booking ui to reduce memory footprint
 1926: Patch fhir mock adapter to address edge cases
+1927: Adjust booking ui to address edge cases
