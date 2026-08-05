@@ -552,3 +552,4 @@ Commit History Log
 550: Implement ci pipeline for better performance
 551: Document rbac middleware to reduce memory footprint
 552: Patch celery worker tasks for better test coverage
+553: Resolve fhir mock adapter to improve maintainability
