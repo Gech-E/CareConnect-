@@ -841,3 +841,4 @@ Commit History Log
 839: Resolve next.js routing to align with domain model
 840: Add database schema to support localization
 841: Adjust docker compose setup to enhance accessibility
+842: Standardize docker compose setup for better UX
