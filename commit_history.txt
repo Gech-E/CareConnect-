@@ -466,3 +466,4 @@ Commit History Log
 464: Clean up alembic migrations based on code review
 465: Secure docker compose setup to improve logging clarity
 466: Secure rbac middleware to fix a race condition
+467: Resolve scheduling logic to comply with security standards
