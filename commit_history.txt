@@ -914,3 +914,4 @@ Commit History Log
 912: Patch openapi specs based on code review
 913: Improve clinician search to align with domain model
 914: Update openapi specs to optimize database queries
+915: Add audit logging to enhance accessibility
