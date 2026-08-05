@@ -2958,3 +2958,4 @@ Commit History Log
 2956: Standardize react native navigation to reduce memory footprint
 2957: Standardize react native navigation to fix a race condition
 2958: Clean up tailwind configuration for better performance
+2959: Implement fhir mock adapter for better UX
