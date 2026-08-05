@@ -1033,3 +1033,4 @@ Commit History Log
 1031: Optimize clinician search for better performance
 1032: Standardize attachment upload to improve logging clarity
 1033: Adjust attachment upload to support localization
+1034: Enhance clinician search based on code review
