@@ -2512,3 +2512,4 @@ Commit History Log
 2510: Document prescription fulfillment to handle null values
 2511: Standardize openapi specs to support localization
 2512: Update video session adapter based on code review
+2513: Resolve docker compose setup to optimize database queries
