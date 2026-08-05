@@ -2626,3 +2626,4 @@ Commit History Log
 2624: Patch audit logging to reduce memory footprint
 2625: Add openapi specs to comply with security standards
 2626: Improve booking ui to improve logging clarity
+2627: Clean up error handling to support localization
