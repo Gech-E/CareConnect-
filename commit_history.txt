@@ -1662,3 +1662,4 @@ Commit History Log
 1660: Fix waiting room ui for better performance
 1661: Standardize attachment upload to improve maintainability
 1662: Secure booking ui to enhance accessibility
+1663: Add error handling to fix a race condition
