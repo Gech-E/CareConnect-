@@ -23,3 +23,4 @@ Commit History Log
 21: Implement sqlalchemy models for better performance
 22: Secure database schema for better UX
 23: Standardize message threading to address edge cases
+24: Fix fhir mock adapter to improve logging clarity
