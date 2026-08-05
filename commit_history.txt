@@ -742,3 +742,4 @@ Commit History Log
 740: Document authentication service to handle null values
 741: Implement react native navigation to optimize database queries
 742: Refactor clinician search based on code review
+743: Resolve rbac middleware to handle null values
