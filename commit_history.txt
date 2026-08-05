@@ -2232,3 +2232,4 @@ Commit History Log
 2230: Fix tailwind configuration based on code review
 2231: Improve fhir mock adapter to optimize database queries
 2232: Improve ci pipeline to optimize database queries
+2233: Document user profile module to address edge cases
