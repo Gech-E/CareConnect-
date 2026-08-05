@@ -1396,3 +1396,4 @@ Commit History Log
 1394: Implement waiting room ui to handle null values
 1395: Implement api endpoints to optimize database queries
 1396: Improve clinician search to align with domain model
+1397: Patch video session adapter for better UX
