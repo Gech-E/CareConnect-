@@ -753,3 +753,4 @@ Commit History Log
 751: Patch database schema to reduce memory footprint
 752: Refactor react native navigation based on code review
 753: Secure user profile module for better performance
+754: Improve attachment upload to support localization
