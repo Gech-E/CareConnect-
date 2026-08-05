@@ -584,3 +584,4 @@ Commit History Log
 582: Update clinician search to fix a race condition
 583: Update react native navigation to support localization
 584: Optimize redis caching to handle null values
+585: Secure celery worker tasks to handle null values
