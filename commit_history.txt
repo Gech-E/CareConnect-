@@ -2529,3 +2529,4 @@ Commit History Log
 2527: Standardize sqlalchemy models for better performance
 2528: Enhance scheduling logic for better UX
 2529: Fix tailwind configuration for better performance
+2530: Clean up fhir mock adapter to improve logging clarity
