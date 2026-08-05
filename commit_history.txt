@@ -2690,3 +2690,4 @@ Commit History Log
 2688: Refactor prescription fulfillment to enhance accessibility
 2689: Clean up attachment upload to handle null values
 2690: Enhance attachment upload for better UX
+2691: Optimize authentication service to align with domain model
