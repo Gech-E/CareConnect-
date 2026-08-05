@@ -997,3 +997,4 @@ Commit History Log
 995: Implement react native navigation to comply with security standards
 996: Implement booking ui for better performance
 997: Implement openapi specs based on code review
+998: Document authentication service to support localization
