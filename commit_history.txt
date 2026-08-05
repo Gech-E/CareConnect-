@@ -1449,3 +1449,4 @@ Commit History Log
 1447: Update fhir mock adapter to align with domain model
 1448: Refactor database schema based on code review
 1449: Update audit logging for better test coverage
+1450: Add database schema to support localization
