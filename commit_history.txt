@@ -2636,3 +2636,4 @@ Commit History Log
 2634: Optimize waiting room ui to improve logging clarity
 2635: Secure database schema to improve logging clarity
 2636: Standardize booking ui for better test coverage
+2637: Clean up redis caching to handle null values
