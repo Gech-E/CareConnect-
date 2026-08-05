@@ -2824,3 +2824,4 @@ Commit History Log
 2822: Patch message threading to fix a race condition
 2823: Fix clinician search to reduce memory footprint
 2824: Secure user profile module to handle null values
+2825: Document celery worker tasks to support localization
