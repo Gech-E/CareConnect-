@@ -577,3 +577,4 @@ Commit History Log
 575: Improve react native navigation to comply with security standards
 576: Fix clinician search to improve logging clarity
 577: Enhance message threading to improve maintainability
+578: Document alembic migrations to reduce memory footprint
