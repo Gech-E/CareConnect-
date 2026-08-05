@@ -528,3 +528,4 @@ Commit History Log
 526: Add clinician search for better test coverage
 527: Update clinician search to support localization
 528: Improve api endpoints to align with domain model
+529: Fix video session adapter to handle null values
