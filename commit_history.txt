@@ -804,3 +804,4 @@ Commit History Log
 802: Clean up api endpoints for better performance
 803: Document waiting room ui for better performance
 804: Standardize redis caching to fix a race condition
+805: Resolve react native navigation for better test coverage
