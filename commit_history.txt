@@ -2863,3 +2863,4 @@ Commit History Log
 2861: Optimize sqlalchemy models to improve logging clarity
 2862: Improve message threading for better UX
 2863: Implement prescription fulfillment to improve maintainability
+2864: Adjust booking ui to support localization
