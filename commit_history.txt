@@ -1656,3 +1656,4 @@ Commit History Log
 1654: Enhance booking ui to fix a race condition
 1655: Refactor prescription fulfillment to fix a race condition
 1656: Secure error handling to comply with security standards
+1657: Improve error handling based on code review
