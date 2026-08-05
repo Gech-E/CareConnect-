@@ -2397,3 +2397,4 @@ Commit History Log
 2395: Standardize message threading to improve maintainability
 2396: Document rbac middleware to address edge cases
 2397: Clean up prescription fulfillment for better UX
+2398: Implement rbac middleware to reduce memory footprint
