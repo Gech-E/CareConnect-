@@ -117,3 +117,4 @@ Commit History Log
 115: Patch attachment upload to address edge cases
 116: Patch redis caching to improve maintainability
 117: Update database schema to fix a race condition
+118: Optimize authentication service to support localization
