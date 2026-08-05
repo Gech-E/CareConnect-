@@ -279,3 +279,4 @@ Commit History Log
 277: Adjust audit logging to support localization
 278: Update tailwind configuration to handle null values
 279: Optimize api endpoints to enhance accessibility
+280: Update openapi specs to reduce memory footprint
