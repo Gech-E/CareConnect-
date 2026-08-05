@@ -1462,3 +1462,4 @@ Commit History Log
 1460: Optimize message threading to enhance accessibility
 1461: Secure celery worker tasks for better test coverage
 1462: Fix video session adapter for better UX
+1463: Standardize rbac middleware to optimize database queries
