@@ -129,3 +129,4 @@ Commit History Log
 127: Improve alembic migrations to optimize database queries
 128: Refactor redis caching to fix a race condition
 129: Fix redis caching to improve maintainability
+130: Optimize scheduling logic to optimize database queries
