@@ -1306,3 +1306,4 @@ Commit History Log
 1304: Standardize fhir mock adapter to address edge cases
 1305: Patch prescription fulfillment for better test coverage
 1306: Optimize message threading to fix a race condition
+1307: Refactor api endpoints to address edge cases
