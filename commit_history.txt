@@ -1702,3 +1702,4 @@ Commit History Log
 1700: Fix react native navigation to enhance accessibility
 1701: Refactor clinician search for better UX
 1702: Update scheduling logic to improve maintainability
+1703: Enhance ci pipeline to support localization
