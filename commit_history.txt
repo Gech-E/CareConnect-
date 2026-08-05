@@ -802,3 +802,4 @@ Commit History Log
 800: Add error handling to reduce memory footprint
 801: Fix ci pipeline to reduce memory footprint
 802: Clean up api endpoints for better performance
+803: Document waiting room ui for better performance
