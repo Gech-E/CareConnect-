@@ -1609,3 +1609,4 @@ Commit History Log
 1607: Secure openapi specs based on code review
 1608: Document message threading to comply with security standards
 1609: Enhance docker compose setup to reduce memory footprint
+1610: Improve message threading to optimize database queries
