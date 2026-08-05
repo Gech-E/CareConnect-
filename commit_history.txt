@@ -2204,3 +2204,4 @@ Commit History Log
 2202: Fix attachment upload to handle null values
 2203: Enhance video session adapter for better performance
 2204: Implement openapi specs to comply with security standards
+2205: Fix ci pipeline to align with domain model
