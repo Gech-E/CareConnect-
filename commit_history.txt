@@ -104,3 +104,4 @@ Commit History Log
 102: Standardize authentication service for better UX
 103: Adjust next.js routing to comply with security standards
 104: Improve user profile module for better test coverage
+105: Optimize openapi specs to fix a race condition
