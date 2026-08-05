@@ -424,3 +424,4 @@ Commit History Log
 422: Fix tailwind configuration to support localization
 423: Enhance docker compose setup to comply with security standards
 424: Improve redis caching to comply with security standards
+425: Update prescription fulfillment to handle null values
