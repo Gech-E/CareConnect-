@@ -1144,3 +1144,4 @@ Commit History Log
 1142: Optimize ci pipeline for better test coverage
 1143: Update clinician search to align with domain model
 1144: Patch tailwind configuration to optimize database queries
+1145: Update ci pipeline to reduce memory footprint
