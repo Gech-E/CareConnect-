@@ -445,3 +445,4 @@ Commit History Log
 443: Optimize openapi specs to support localization
 444: Patch celery worker tasks to align with domain model
 445: Enhance ci pipeline to address edge cases
+446: Document next.js routing to improve logging clarity
