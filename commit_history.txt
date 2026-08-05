@@ -1541,3 +1541,4 @@ Commit History Log
 1539: Enhance ci pipeline to handle null values
 1540: Update celery worker tasks to reduce memory footprint
 1541: Fix next.js routing for better UX
+1542: Add booking ui to address edge cases
