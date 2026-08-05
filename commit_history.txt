@@ -444,3 +444,4 @@ Commit History Log
 442: Add docker compose setup to align with domain model
 443: Optimize openapi specs to support localization
 444: Patch celery worker tasks to align with domain model
+445: Enhance ci pipeline to address edge cases
