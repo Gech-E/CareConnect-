@@ -384,3 +384,4 @@ Commit History Log
 382: Fix database schema for better performance
 383: Add sqlalchemy models for better performance
 384: Update api endpoints based on code review
+385: Clean up react native navigation to support localization
