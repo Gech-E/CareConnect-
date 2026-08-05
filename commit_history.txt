@@ -228,3 +228,4 @@ Commit History Log
 226: Optimize waiting room ui for better test coverage
 227: Improve scheduling logic to align with domain model
 228: Document ci pipeline to fix a race condition
+229: Enhance ci pipeline for better UX
