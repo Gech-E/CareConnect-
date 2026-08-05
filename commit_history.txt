@@ -2071,3 +2071,4 @@ Commit History Log
 2069: Refactor celery worker tasks to fix a race condition
 2070: Secure error handling to enhance accessibility
 2071: Update database schema for better UX
+2072: Update fhir mock adapter to align with domain model
