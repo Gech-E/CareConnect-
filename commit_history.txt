@@ -1550,3 +1550,4 @@ Commit History Log
 1548: Fix prescription fulfillment to address edge cases
 1549: Standardize database schema to support localization
 1550: Secure api endpoints to address edge cases
+1551: Clean up openapi specs to support localization
