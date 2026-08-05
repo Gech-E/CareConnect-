@@ -2582,3 +2582,4 @@ Commit History Log
 2580: Clean up message threading based on code review
 2581: Clean up database schema to optimize database queries
 2582: Improve authentication service for better test coverage
+2583: Standardize docker compose setup for better UX
