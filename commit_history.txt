@@ -1679,3 +1679,4 @@ Commit History Log
 1677: Improve react native navigation to enhance accessibility
 1678: Clean up fhir mock adapter for better test coverage
 1679: Optimize scheduling logic to handle null values
+1680: Improve database schema to reduce memory footprint
