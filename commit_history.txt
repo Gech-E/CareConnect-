@@ -2140,3 +2140,4 @@ Commit History Log
 2138: Add api endpoints to comply with security standards
 2139: Document audit logging to fix a race condition
 2140: Adjust prescription fulfillment to address edge cases
+2141: Secure sqlalchemy models to address edge cases
