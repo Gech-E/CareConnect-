@@ -2196,3 +2196,4 @@ Commit History Log
 2194: Update fhir mock adapter to improve maintainability
 2195: Resolve authentication service to reduce memory footprint
 2196: Fix scheduling logic to comply with security standards
+2197: Add error handling based on code review
