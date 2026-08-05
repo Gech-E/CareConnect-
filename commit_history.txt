@@ -1413,3 +1413,4 @@ Commit History Log
 1411: Enhance error handling to optimize database queries
 1412: Document message threading to support localization
 1413: Update tailwind configuration to improve maintainability
+1414: Patch authentication service for better UX
