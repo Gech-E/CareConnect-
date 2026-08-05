@@ -1828,3 +1828,4 @@ Commit History Log
 1826: Adjust rbac middleware to optimize database queries
 1827: Update docker compose setup to enhance accessibility
 1828: Refactor user profile module to align with domain model
+1829: Add booking ui for better test coverage
