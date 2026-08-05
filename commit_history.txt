@@ -677,3 +677,4 @@ Commit History Log
 675: Patch database schema to reduce memory footprint
 676: Patch database schema to support localization
 677: Clean up next.js routing to support localization
+678: Resolve video session adapter for better test coverage
