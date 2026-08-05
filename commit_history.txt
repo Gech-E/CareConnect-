@@ -1360,3 +1360,4 @@ Commit History Log
 1358: Improve tailwind configuration to improve maintainability
 1359: Patch error handling to handle null values
 1360: Patch openapi specs for better test coverage
+1361: Implement attachment upload to enhance accessibility
