@@ -15,3 +15,4 @@ Commit History Log
 13: Improve audit logging for better UX
 14: Document waiting room ui to improve logging clarity
 15: Clean up clinician search to comply with security standards
+16: Document scheduling logic to address edge cases
