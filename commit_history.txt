@@ -1549,3 +1549,4 @@ Commit History Log
 1547: Adjust booking ui to comply with security standards
 1548: Fix prescription fulfillment to address edge cases
 1549: Standardize database schema to support localization
+1550: Secure api endpoints to address edge cases
