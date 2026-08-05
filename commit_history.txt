@@ -296,3 +296,4 @@ Commit History Log
 294: Clean up sqlalchemy models for better performance
 295: Fix prescription fulfillment for better UX
 296: Secure ci pipeline to enhance accessibility
+297: Add openapi specs to address edge cases
