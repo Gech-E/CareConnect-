@@ -1686,3 +1686,4 @@ Commit History Log
 1684: Implement user profile module to support localization
 1685: Standardize sqlalchemy models for better test coverage
 1686: Clean up celery worker tasks for better performance
+1687: Optimize rbac middleware for better test coverage
