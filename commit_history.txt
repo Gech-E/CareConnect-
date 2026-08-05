@@ -557,3 +557,4 @@ Commit History Log
 555: Update attachment upload for better performance
 556: Refactor clinician search to enhance accessibility
 557: Refactor video session adapter to align with domain model
+558: Adjust audit logging for better UX
