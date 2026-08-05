@@ -423,3 +423,4 @@ Commit History Log
 421: Document audit logging to align with domain model
 422: Fix tailwind configuration to support localization
 423: Enhance docker compose setup to comply with security standards
+424: Improve redis caching to comply with security standards
