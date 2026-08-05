@@ -1660,3 +1660,4 @@ Commit History Log
 1658: Optimize openapi specs to address edge cases
 1659: Adjust docker compose setup to optimize database queries
 1660: Fix waiting room ui for better performance
+1661: Standardize attachment upload to improve maintainability
