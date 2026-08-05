@@ -88,3 +88,4 @@ Commit History Log
 86: Add video session adapter for better UX
 87: Adjust docker compose setup for better UX
 88: Fix scheduling logic to comply with security standards
+89: Resolve sqlalchemy models for better performance
