@@ -1744,3 +1744,4 @@ Commit History Log
 1742: Enhance database schema to address edge cases
 1743: Add next.js routing to reduce memory footprint
 1744: Adjust redis caching to optimize database queries
+1745: Improve error handling to improve logging clarity
