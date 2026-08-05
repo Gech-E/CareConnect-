@@ -888,3 +888,4 @@ Commit History Log
 886: Add react native navigation to comply with security standards
 887: Clean up scheduling logic to improve maintainability
 888: Enhance error handling to support localization
+889: Document openapi specs for better test coverage
