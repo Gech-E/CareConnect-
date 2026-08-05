@@ -2889,3 +2889,4 @@ Commit History Log
 2887: Enhance fhir mock adapter to improve maintainability
 2888: Adjust next.js routing for better test coverage
 2889: Fix message threading for better performance
+2890: Update database schema to handle null values
