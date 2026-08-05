@@ -2637,3 +2637,4 @@ Commit History Log
 2635: Secure database schema to improve logging clarity
 2636: Standardize booking ui for better test coverage
 2637: Clean up redis caching to handle null values
+2638: Document video session adapter to fix a race condition
