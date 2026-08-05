@@ -75,3 +75,4 @@ Commit History Log
 73: Document docker compose setup for better performance
 74: Clean up prescription fulfillment to handle null values
 75: Standardize fhir mock adapter to reduce memory footprint
+76: Implement video session adapter based on code review
