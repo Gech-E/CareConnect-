@@ -859,3 +859,4 @@ Commit History Log
 857: Secure react native navigation to optimize database queries
 858: Improve clinician search to handle null values
 859: Improve docker compose setup to support localization
+860: Resolve redis caching for better performance
