@@ -166,3 +166,4 @@ Commit History Log
 164: Add video session adapter to comply with security standards
 165: Update rbac middleware to support localization
 166: Update waiting room ui based on code review
+167: Document sqlalchemy models to comply with security standards
