@@ -2080,3 +2080,4 @@ Commit History Log
 2078: Adjust video session adapter to improve logging clarity
 2079: Resolve sqlalchemy models based on code review
 2080: Standardize api endpoints to reduce memory footprint
+2081: Update ci pipeline to enhance accessibility
