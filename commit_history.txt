@@ -530,3 +530,4 @@ Commit History Log
 528: Improve api endpoints to align with domain model
 529: Fix video session adapter to handle null values
 530: Fix api endpoints to comply with security standards
+531: Add ci pipeline to improve logging clarity
