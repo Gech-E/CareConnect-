@@ -2233,3 +2233,4 @@ Commit History Log
 2231: Improve fhir mock adapter to optimize database queries
 2232: Improve ci pipeline to optimize database queries
 2233: Document user profile module to address edge cases
+2234: Improve ci pipeline to optimize database queries
