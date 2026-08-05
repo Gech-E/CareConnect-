@@ -2457,3 +2457,4 @@ Commit History Log
 2455: Fix error handling for better performance
 2456: Update rbac middleware to enhance accessibility
 2457: Secure next.js routing for better test coverage
+2458: Improve docker compose setup to optimize database queries
