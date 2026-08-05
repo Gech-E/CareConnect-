@@ -439,3 +439,4 @@ Commit History Log
 437: Implement video session adapter to address edge cases
 438: Improve message threading to handle null values
 439: Standardize fhir mock adapter to optimize database queries
+440: Document next.js routing to comply with security standards
