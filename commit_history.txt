@@ -2587,3 +2587,4 @@ Commit History Log
 2585: Improve scheduling logic for better test coverage
 2586: Optimize booking ui to improve logging clarity
 2587: Update attachment upload for better UX
+2588: Optimize api endpoints to align with domain model
