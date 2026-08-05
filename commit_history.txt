@@ -2403,3 +2403,4 @@ Commit History Log
 2401: Enhance ci pipeline for better UX
 2402: Add audit logging for better UX
 2403: Implement authentication service to fix a race condition
+2404: Fix fhir mock adapter to fix a race condition
