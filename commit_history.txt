@@ -1571,3 +1571,4 @@ Commit History Log
 1569: Add user profile module to address edge cases
 1570: Fix video session adapter for better test coverage
 1571: Optimize message threading to align with domain model
+1572: Improve fhir mock adapter to comply with security standards
