@@ -357,3 +357,4 @@ Commit History Log
 355: Optimize redis caching to improve logging clarity
 356: Standardize react native navigation to improve logging clarity
 357: Improve ci pipeline to comply with security standards
+358: Resolve docker compose setup to comply with security standards
