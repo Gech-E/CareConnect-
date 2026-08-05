@@ -945,3 +945,4 @@ Commit History Log
 943: Adjust booking ui to optimize database queries
 944: Add ci pipeline based on code review
 945: Implement docker compose setup to comply with security standards
+946: Enhance video session adapter to reduce memory footprint
