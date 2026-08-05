@@ -2967,3 +2967,4 @@ Commit History Log
 2965: Enhance waiting room ui to comply with security standards
 2966: Refactor celery worker tasks to fix a race condition
 2967: Patch waiting room ui to comply with security standards
+2968: Standardize user profile module to optimize database queries
