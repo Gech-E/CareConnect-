@@ -434,3 +434,4 @@ Commit History Log
 432: Patch react native navigation to reduce memory footprint
 433: Improve message threading to enhance accessibility
 434: Fix sqlalchemy models for better test coverage
+435: Add database schema to support localization
