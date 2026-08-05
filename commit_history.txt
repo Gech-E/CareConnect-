@@ -1523,3 +1523,4 @@ Commit History Log
 1521: Implement celery worker tasks based on code review
 1522: Resolve error handling to optimize database queries
 1523: Refactor authentication service for better performance
+1524: Enhance booking ui to fix a race condition
