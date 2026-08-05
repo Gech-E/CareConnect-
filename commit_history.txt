@@ -1995,3 +1995,4 @@ Commit History Log
 1993: Secure message threading to optimize database queries
 1994: Standardize audit logging to reduce memory footprint
 1995: Fix fhir mock adapter for better UX
+1996: Clean up sqlalchemy models for better performance
