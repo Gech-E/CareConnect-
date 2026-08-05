@@ -1197,3 +1197,4 @@ Commit History Log
 1195: Improve waiting room ui to improve logging clarity
 1196: Resolve database schema for better UX
 1197: Resolve celery worker tasks to optimize database queries
+1198: Implement video session adapter to improve logging clarity
