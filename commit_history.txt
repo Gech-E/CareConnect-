@@ -2531,3 +2531,4 @@ Commit History Log
 2529: Fix tailwind configuration for better performance
 2530: Clean up fhir mock adapter to improve logging clarity
 2531: Update openapi specs to handle null values
+2532: Implement video session adapter for better test coverage
