@@ -2022,3 +2022,4 @@ Commit History Log
 2020: Adjust message threading to reduce memory footprint
 2021: Secure clinician search to reduce memory footprint
 2022: Improve clinician search to optimize database queries
+2023: Resolve waiting room ui to address edge cases
