@@ -487,3 +487,4 @@ Commit History Log
 485: Resolve user profile module to address edge cases
 486: Secure audit logging to address edge cases
 487: Document openapi specs to handle null values
+488: Document rbac middleware for better UX
