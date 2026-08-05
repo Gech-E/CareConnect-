@@ -2346,3 +2346,4 @@ Commit History Log
 2344: Improve sqlalchemy models to optimize database queries
 2345: Standardize tailwind configuration to improve logging clarity
 2346: Fix scheduling logic to align with domain model
+2347: Fix message threading to enhance accessibility
