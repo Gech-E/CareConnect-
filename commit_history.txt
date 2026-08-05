@@ -94,3 +94,4 @@ Commit History Log
 92: Document authentication service to optimize database queries
 93: Document scheduling logic to reduce memory footprint
 94: Document fhir mock adapter to address edge cases
+95: Add waiting room ui to enhance accessibility
