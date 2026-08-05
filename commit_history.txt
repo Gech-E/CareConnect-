@@ -1716,3 +1716,4 @@ Commit History Log
 1714: Implement alembic migrations to fix a race condition
 1715: Resolve next.js routing to reduce memory footprint
 1716: Improve alembic migrations for better UX
+1717: Enhance redis caching for better performance
