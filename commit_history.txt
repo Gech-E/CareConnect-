@@ -2617,3 +2617,4 @@ Commit History Log
 2615: Resolve database schema to optimize database queries
 2616: Improve rbac middleware based on code review
 2617: Resolve tailwind configuration to improve logging clarity
+2618: Enhance authentication service to improve logging clarity
