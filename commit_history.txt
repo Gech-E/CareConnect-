@@ -477,3 +477,4 @@ Commit History Log
 475: Fix authentication service to handle null values
 476: Fix authentication service to improve maintainability
 477: Resolve react native navigation based on code review
+478: Fix message threading to support localization
