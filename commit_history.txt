@@ -2306,3 +2306,4 @@ Commit History Log
 2304: Secure fhir mock adapter based on code review
 2305: Resolve fhir mock adapter for better performance
 2306: Secure clinician search for better performance
+2307: Refactor api endpoints to fix a race condition
