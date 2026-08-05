@@ -579,3 +579,4 @@ Commit History Log
 577: Enhance message threading to improve maintainability
 578: Document alembic migrations to reduce memory footprint
 579: Adjust openapi specs to enhance accessibility
+580: Add waiting room ui to reduce memory footprint
