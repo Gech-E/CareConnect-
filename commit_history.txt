@@ -867,3 +867,4 @@ Commit History Log
 865: Add alembic migrations to improve logging clarity
 866: Fix docker compose setup to enhance accessibility
 867: Clean up video session adapter to improve maintainability
+868: Enhance user profile module to support localization
