@@ -2125,3 +2125,4 @@ Commit History Log
 2123: Refactor react native navigation to enhance accessibility
 2124: Improve prescription fulfillment to enhance accessibility
 2125: Implement next.js routing to fix a race condition
+2126: Resolve scheduling logic to optimize database queries
