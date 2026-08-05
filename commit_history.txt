@@ -608,3 +608,4 @@ Commit History Log
 606: Optimize fhir mock adapter to support localization
 607: Optimize docker compose setup to reduce memory footprint
 608: Add user profile module to improve logging clarity
+609: Fix booking ui to address edge cases
