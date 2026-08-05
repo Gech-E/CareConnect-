@@ -326,3 +326,4 @@ Commit History Log
 324: Resolve next.js routing to optimize database queries
 325: Optimize attachment upload to improve maintainability
 326: Improve message threading to enhance accessibility
+327: Clean up redis caching to align with domain model
