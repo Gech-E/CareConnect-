@@ -2464,3 +2464,4 @@ Commit History Log
 2462: Fix scheduling logic to enhance accessibility
 2463: Optimize fhir mock adapter to address edge cases
 2464: Update rbac middleware based on code review
+2465: Secure error handling to enhance accessibility
