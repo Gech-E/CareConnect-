@@ -2151,3 +2151,4 @@ Commit History Log
 2149: Implement react native navigation to enhance accessibility
 2150: Standardize clinician search to support localization
 2151: Optimize api endpoints to enhance accessibility
+2152: Optimize error handling to reduce memory footprint
