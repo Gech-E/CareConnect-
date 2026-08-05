@@ -580,3 +580,4 @@ Commit History Log
 578: Document alembic migrations to reduce memory footprint
 579: Adjust openapi specs to enhance accessibility
 580: Add waiting room ui to reduce memory footprint
+581: Add rbac middleware based on code review
