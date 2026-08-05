@@ -1756,3 +1756,4 @@ Commit History Log
 1754: Patch booking ui to fix a race condition
 1755: Refactor docker compose setup to address edge cases
 1756: Refactor tailwind configuration for better test coverage
+1757: Fix react native navigation to handle null values
