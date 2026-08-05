@@ -2919,3 +2919,4 @@ Commit History Log
 2917: Adjust fhir mock adapter to comply with security standards
 2918: Update sqlalchemy models to reduce memory footprint
 2919: Enhance message threading to improve logging clarity
+2920: Resolve audit logging to align with domain model
