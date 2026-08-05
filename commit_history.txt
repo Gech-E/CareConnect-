@@ -2696,3 +2696,4 @@ Commit History Log
 2694: Fix audit logging to support localization
 2695: Update message threading to reduce memory footprint
 2696: Update booking ui to improve logging clarity
+2697: Clean up user profile module to enhance accessibility
