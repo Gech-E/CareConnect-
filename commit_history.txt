@@ -555,3 +555,4 @@ Commit History Log
 553: Resolve fhir mock adapter to improve maintainability
 554: Document next.js routing for better UX
 555: Update attachment upload for better performance
+556: Refactor clinician search to enhance accessibility
