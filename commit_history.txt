@@ -2605,3 +2605,4 @@ Commit History Log
 2603: Patch authentication service to enhance accessibility
 2604: Secure video session adapter to comply with security standards
 2605: Document openapi specs to enhance accessibility
+2606: Refactor api endpoints to fix a race condition
