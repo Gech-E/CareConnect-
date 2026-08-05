@@ -1312,3 +1312,4 @@ Commit History Log
 1310: Clean up audit logging to address edge cases
 1311: Adjust celery worker tasks to enhance accessibility
 1312: Adjust openapi specs to fix a race condition
+1313: Resolve scheduling logic to optimize database queries
