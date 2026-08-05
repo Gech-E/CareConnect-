@@ -750,3 +750,4 @@ Commit History Log
 748: Adjust fhir mock adapter for better test coverage
 749: Document ci pipeline to reduce memory footprint
 750: Resolve scheduling logic based on code review
+751: Patch database schema to reduce memory footprint
