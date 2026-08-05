@@ -2722,3 +2722,4 @@ Commit History Log
 2720: Resolve user profile module to improve maintainability
 2721: Add react native navigation to address edge cases
 2722: Optimize alembic migrations to address edge cases
+2723: Optimize video session adapter to optimize database queries
