@@ -1500,3 +1500,4 @@ Commit History Log
 1498: Standardize react native navigation to align with domain model
 1499: Refactor message threading to enhance accessibility
 1500: Add user profile module for better UX
+1501: Standardize clinician search to fix a race condition
