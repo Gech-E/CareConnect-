@@ -120,3 +120,4 @@ Commit History Log
 118: Optimize authentication service to support localization
 119: Document message threading to align with domain model
 120: Adjust next.js routing for better performance
+121: Clean up next.js routing to address edge cases
