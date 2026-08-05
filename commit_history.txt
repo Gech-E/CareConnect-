@@ -360,3 +360,4 @@ Commit History Log
 358: Resolve docker compose setup to comply with security standards
 359: Improve message threading to optimize database queries
 360: Secure database schema to improve maintainability
+361: Adjust message threading for better UX
