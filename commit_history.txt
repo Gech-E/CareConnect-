@@ -1434,3 +1434,4 @@ Commit History Log
 1432: Implement booking ui to support localization
 1433: Secure clinician search to improve logging clarity
 1434: Implement alembic migrations to enhance accessibility
+1435: Patch docker compose setup to address edge cases
