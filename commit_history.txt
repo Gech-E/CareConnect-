@@ -2023,3 +2023,4 @@ Commit History Log
 2021: Secure clinician search to reduce memory footprint
 2022: Improve clinician search to optimize database queries
 2023: Resolve waiting room ui to address edge cases
+2024: Update tailwind configuration to comply with security standards
