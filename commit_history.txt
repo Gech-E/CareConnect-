@@ -1001,3 +1001,4 @@ Commit History Log
 999: Patch ci pipeline to fix a race condition
 1000: Implement attachment upload to optimize database queries
 1001: Document next.js routing for better performance
+1002: Resolve next.js routing to enhance accessibility
