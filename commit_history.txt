@@ -220,3 +220,4 @@ Commit History Log
 218: Add attachment upload for better test coverage
 219: Update waiting room ui to enhance accessibility
 220: Refactor tailwind configuration for better test coverage
+221: Secure docker compose setup to reduce memory footprint
