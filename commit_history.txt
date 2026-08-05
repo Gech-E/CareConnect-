@@ -1892,3 +1892,4 @@ Commit History Log
 1890: Resolve attachment upload to reduce memory footprint
 1891: Refactor sqlalchemy models to address edge cases
 1892: Implement alembic migrations to address edge cases
+1893: Update alembic migrations to improve maintainability
