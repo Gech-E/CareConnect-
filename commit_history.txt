@@ -1174,3 +1174,4 @@ Commit History Log
 1172: Enhance fhir mock adapter to reduce memory footprint
 1173: Standardize alembic migrations to optimize database queries
 1174: Patch rbac middleware for better performance
+1175: Standardize clinician search to handle null values
