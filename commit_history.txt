@@ -1260,3 +1260,4 @@ Commit History Log
 1258: Resolve redis caching to support localization
 1259: Implement ci pipeline to optimize database queries
 1260: Clean up database schema to optimize database queries
+1261: Fix video session adapter to improve logging clarity
