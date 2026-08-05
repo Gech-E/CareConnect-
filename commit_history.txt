@@ -2754,3 +2754,4 @@ Commit History Log
 2752: Add waiting room ui to comply with security standards
 2753: Patch clinician search for better UX
 2754: Document scheduling logic for better UX
+2755: Implement celery worker tasks to optimize database queries
