@@ -2694,3 +2694,4 @@ Commit History Log
 2692: Fix docker compose setup for better performance
 2693: Update audit logging to comply with security standards
 2694: Fix audit logging to support localization
+2695: Update message threading to reduce memory footprint
