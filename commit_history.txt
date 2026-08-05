@@ -151,3 +151,4 @@ Commit History Log
 149: Adjust message threading to enhance accessibility
 150: Secure scheduling logic to improve maintainability
 151: Add redis caching to align with domain model
+152: Secure openapi specs to handle null values
