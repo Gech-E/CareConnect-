@@ -96,3 +96,4 @@ Commit History Log
 94: Document fhir mock adapter to address edge cases
 95: Add waiting room ui to enhance accessibility
 96: Optimize message threading to align with domain model
+97: Update prescription fulfillment for better test coverage
