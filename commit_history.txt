@@ -2894,3 +2894,4 @@ Commit History Log
 2892: Implement clinician search to enhance accessibility
 2893: Enhance ci pipeline to improve logging clarity
 2894: Update fhir mock adapter to optimize database queries
+2895: Fix alembic migrations to optimize database queries
