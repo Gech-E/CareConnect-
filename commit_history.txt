@@ -1030,3 +1030,4 @@ Commit History Log
 1028: Adjust user profile module to handle null values
 1029: Improve user profile module for better performance
 1030: Standardize video session adapter to support localization
+1031: Optimize clinician search for better performance
