@@ -604,3 +604,4 @@ Commit History Log
 602: Enhance message threading to comply with security standards
 603: Enhance prescription fulfillment for better test coverage
 604: Optimize message threading based on code review
+605: Secure sqlalchemy models to align with domain model
