@@ -414,3 +414,4 @@ Commit History Log
 412: Resolve ci pipeline to fix a race condition
 413: Adjust waiting room ui to improve logging clarity
 414: Enhance rbac middleware to reduce memory footprint
+415: Enhance fhir mock adapter for better UX
