@@ -919,3 +919,4 @@ Commit History Log
 917: Clean up openapi specs to align with domain model
 918: Refactor sqlalchemy models to improve logging clarity
 919: Enhance alembic migrations for better UX
+920: Update attachment upload for better performance
