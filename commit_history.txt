@@ -2815,3 +2815,4 @@ Commit History Log
 2813: Clean up scheduling logic based on code review
 2814: Document waiting room ui to handle null values
 2815: Fix rbac middleware based on code review
+2816: Standardize docker compose setup for better UX
