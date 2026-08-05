@@ -511,3 +511,4 @@ Commit History Log
 509: Enhance ci pipeline to enhance accessibility
 510: Adjust user profile module to enhance accessibility
 511: Secure docker compose setup based on code review
+512: Clean up fhir mock adapter to support localization
