@@ -764,3 +764,4 @@ Commit History Log
 762: Secure openapi specs to handle null values
 763: Adjust react native navigation to handle null values
 764: Improve alembic migrations to improve maintainability
+765: Patch redis caching to address edge cases
