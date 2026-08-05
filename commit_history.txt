@@ -2020,3 +2020,4 @@ Commit History Log
 2018: Implement tailwind configuration for better performance
 2019: Update fhir mock adapter for better UX
 2020: Adjust message threading to reduce memory footprint
+2021: Secure clinician search to reduce memory footprint
