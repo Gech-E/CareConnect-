@@ -345,3 +345,4 @@ Commit History Log
 343: Implement error handling to address edge cases
 344: Document docker compose setup to align with domain model
 345: Adjust react native navigation to improve maintainability
+346: Clean up prescription fulfillment to optimize database queries
