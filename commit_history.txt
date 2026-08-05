@@ -1021,3 +1021,4 @@ Commit History Log
 1019: Document alembic migrations to handle null values
 1020: Secure scheduling logic to reduce memory footprint
 1021: Document video session adapter based on code review
+1022: Fix clinician search to improve maintainability
