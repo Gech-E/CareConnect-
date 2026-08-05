@@ -1253,3 +1253,4 @@ Commit History Log
 1251: Adjust error handling to optimize database queries
 1252: Enhance openapi specs to improve maintainability
 1253: Resolve react native navigation to enhance accessibility
+1254: Update authentication service to handle null values
