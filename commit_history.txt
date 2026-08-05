@@ -1304,3 +1304,4 @@ Commit History Log
 1302: Adjust sqlalchemy models to fix a race condition
 1303: Implement video session adapter to align with domain model
 1304: Standardize fhir mock adapter to address edge cases
+1305: Patch prescription fulfillment for better test coverage
