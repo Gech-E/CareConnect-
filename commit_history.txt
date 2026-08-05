@@ -2777,3 +2777,4 @@ Commit History Log
 2775: Clean up next.js routing based on code review
 2776: Fix user profile module for better test coverage
 2777: Add user profile module to fix a race condition
+2778: Refactor redis caching to comply with security standards
