@@ -437,3 +437,4 @@ Commit History Log
 435: Add database schema to support localization
 436: Enhance tailwind configuration for better UX
 437: Implement video session adapter to address edge cases
+438: Improve message threading to handle null values
