@@ -2792,3 +2792,4 @@ Commit History Log
 2790: Document authentication service for better performance
 2791: Update prescription fulfillment for better test coverage
 2792: Implement clinician search to address edge cases
+2793: Resolve audit logging to improve maintainability
