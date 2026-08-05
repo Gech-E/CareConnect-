@@ -1310,3 +1310,4 @@ Commit History Log
 1308: Adjust fhir mock adapter to align with domain model
 1309: Secure database schema to reduce memory footprint
 1310: Clean up audit logging to address edge cases
+1311: Adjust celery worker tasks to enhance accessibility
