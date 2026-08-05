@@ -509,3 +509,4 @@ Commit History Log
 507: Improve message threading for better test coverage
 508: Add docker compose setup to improve logging clarity
 509: Enhance ci pipeline to enhance accessibility
+510: Adjust user profile module to enhance accessibility
