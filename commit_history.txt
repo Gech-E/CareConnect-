@@ -1998,3 +1998,4 @@ Commit History Log
 1996: Clean up sqlalchemy models for better performance
 1997: Fix clinician search to align with domain model
 1998: Refactor prescription fulfillment to align with domain model
+1999: Implement booking ui to support localization
