@@ -2150,3 +2150,4 @@ Commit History Log
 2148: Fix waiting room ui based on code review
 2149: Implement react native navigation to enhance accessibility
 2150: Standardize clinician search to support localization
+2151: Optimize api endpoints to enhance accessibility
