@@ -2429,3 +2429,4 @@ Commit History Log
 2427: Clean up database schema to enhance accessibility
 2428: Fix clinician search to optimize database queries
 2429: Fix next.js routing to comply with security standards
+2430: Optimize scheduling logic to handle null values
