@@ -2745,3 +2745,4 @@ Commit History Log
 2743: Add authentication service for better test coverage
 2744: Patch scheduling logic based on code review
 2745: Optimize openapi specs to comply with security standards
+2746: Standardize redis caching to address edge cases
