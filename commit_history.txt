@@ -430,3 +430,4 @@ Commit History Log
 428: Fix error handling to improve logging clarity
 429: Add fhir mock adapter to handle null values
 430: Update docker compose setup to support localization
+431: Clean up openapi specs to fix a race condition
