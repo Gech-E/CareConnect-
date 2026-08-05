@@ -848,3 +848,4 @@ Commit History Log
 846: Patch audit logging for better test coverage
 847: Adjust database schema to handle null values
 848: Add booking ui for better test coverage
+849: Refactor audit logging to improve logging clarity
