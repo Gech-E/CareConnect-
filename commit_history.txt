@@ -2227,3 +2227,4 @@ Commit History Log
 2225: Patch fhir mock adapter to align with domain model
 2226: Improve video session adapter to optimize database queries
 2227: Patch booking ui for better UX
+2228: Clean up sqlalchemy models to address edge cases
