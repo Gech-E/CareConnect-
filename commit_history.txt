@@ -1779,3 +1779,4 @@ Commit History Log
 1777: Optimize openapi specs to align with domain model
 1778: Patch database schema to address edge cases
 1779: Implement video session adapter to fix a race condition
+1780: Standardize waiting room ui to support localization
