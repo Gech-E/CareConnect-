@@ -1241,3 +1241,4 @@ Commit History Log
 1239: Add ci pipeline based on code review
 1240: Add video session adapter to reduce memory footprint
 1241: Fix error handling to align with domain model
+1242: Resolve error handling to handle null values
