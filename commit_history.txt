@@ -675,3 +675,4 @@ Commit History Log
 673: Adjust error handling to fix a race condition
 674: Update docker compose setup to address edge cases
 675: Patch database schema to reduce memory footprint
+676: Patch database schema to support localization
