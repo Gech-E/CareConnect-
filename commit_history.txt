@@ -1392,3 +1392,4 @@ Commit History Log
 1390: Refactor next.js routing to align with domain model
 1391: Add attachment upload to reduce memory footprint
 1392: Clean up rbac middleware to improve logging clarity
+1393: Implement database schema to improve maintainability
