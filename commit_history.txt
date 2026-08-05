@@ -1190,3 +1190,4 @@ Commit History Log
 1188: Fix fhir mock adapter to improve logging clarity
 1189: Standardize next.js routing to address edge cases
 1190: Implement user profile module for better test coverage
+1191: Secure audit logging for better UX
