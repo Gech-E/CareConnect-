@@ -8,3 +8,4 @@ Commit History Log
 6: Clean up ci pipeline to optimize database queries
 7: Clean up waiting room ui to enhance accessibility
 8: Patch prescription fulfillment for better UX
+9: Resolve database schema to optimize database queries
