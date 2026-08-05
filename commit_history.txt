@@ -1243,3 +1243,4 @@ Commit History Log
 1241: Fix error handling to align with domain model
 1242: Resolve error handling to handle null values
 1243: Standardize sqlalchemy models for better test coverage
+1244: Improve booking ui to comply with security standards
