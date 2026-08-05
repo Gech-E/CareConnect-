@@ -1782,3 +1782,4 @@ Commit History Log
 1780: Standardize waiting room ui to support localization
 1781: Improve clinician search for better test coverage
 1782: Fix error handling to fix a race condition
+1783: Clean up ci pipeline to support localization
