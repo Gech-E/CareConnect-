@@ -2361,3 +2361,4 @@ Commit History Log
 2359: Adjust rbac middleware for better UX
 2360: Resolve audit logging to improve maintainability
 2361: Standardize openapi specs to comply with security standards
+2362: Optimize message threading based on code review
