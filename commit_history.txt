@@ -708,3 +708,4 @@ Commit History Log
 706: Add api endpoints to comply with security standards
 707: Document sqlalchemy models for better performance
 708: Add react native navigation based on code review
+709: Enhance openapi specs to improve logging clarity
