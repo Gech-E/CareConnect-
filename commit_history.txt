@@ -2913,3 +2913,4 @@ Commit History Log
 2911: Fix authentication service to align with domain model
 2912: Secure database schema to support localization
 2913: Enhance error handling for better performance
+2914: Refactor ci pipeline to improve maintainability
