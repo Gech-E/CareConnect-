@@ -1540,3 +1540,4 @@ Commit History Log
 1538: Add ci pipeline to address edge cases
 1539: Enhance ci pipeline to handle null values
 1540: Update celery worker tasks to reduce memory footprint
+1541: Fix next.js routing for better UX
