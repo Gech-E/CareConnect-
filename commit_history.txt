@@ -2126,3 +2126,4 @@ Commit History Log
 2124: Improve prescription fulfillment to enhance accessibility
 2125: Implement next.js routing to fix a race condition
 2126: Resolve scheduling logic to optimize database queries
+2127: Standardize attachment upload for better UX
