@@ -838,3 +838,4 @@ Commit History Log
 836: Standardize docker compose setup for better UX
 837: Update tailwind configuration for better performance
 838: Update video session adapter to align with domain model
+839: Resolve next.js routing to align with domain model
