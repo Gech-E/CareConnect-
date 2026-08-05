@@ -2598,3 +2598,4 @@ Commit History Log
 2596: Adjust attachment upload to improve logging clarity
 2597: Improve rbac middleware to reduce memory footprint
 2598: Secure user profile module for better test coverage
+2599: Update redis caching to support localization
