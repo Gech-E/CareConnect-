@@ -1505,3 +1505,4 @@ Commit History Log
 1503: Standardize rbac middleware to fix a race condition
 1504: Improve docker compose setup to fix a race condition
 1505: Adjust message threading to align with domain model
+1506: Add error handling to handle null values
