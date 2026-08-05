@@ -2325,3 +2325,4 @@ Commit History Log
 2323: Patch authentication service to enhance accessibility
 2324: Patch audit logging to support localization
 2325: Adjust ci pipeline to optimize database queries
+2326: Implement error handling to address edge cases
