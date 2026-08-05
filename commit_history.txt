@@ -623,3 +623,4 @@ Commit History Log
 621: Enhance database schema for better performance
 622: Add authentication service to optimize database queries
 623: Document redis caching to fix a race condition
+624: Document rbac middleware to align with domain model
