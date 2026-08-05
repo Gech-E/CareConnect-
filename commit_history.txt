@@ -1730,3 +1730,4 @@ Commit History Log
 1728: Optimize authentication service to align with domain model
 1729: Refactor scheduling logic to support localization
 1730: Fix user profile module to fix a race condition
+1731: Refactor message threading to comply with security standards
