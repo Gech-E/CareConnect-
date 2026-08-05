@@ -358,3 +358,4 @@ Commit History Log
 356: Standardize react native navigation to improve logging clarity
 357: Improve ci pipeline to comply with security standards
 358: Resolve docker compose setup to comply with security standards
+359: Improve message threading to optimize database queries
