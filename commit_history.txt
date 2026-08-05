@@ -736,3 +736,4 @@ Commit History Log
 734: Add openapi specs to reduce memory footprint
 735: Improve video session adapter to reduce memory footprint
 736: Update fhir mock adapter to reduce memory footprint
+737: Secure docker compose setup for better UX
