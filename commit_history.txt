@@ -2667,3 +2667,4 @@ Commit History Log
 2665: Document ci pipeline for better test coverage
 2666: Enhance video session adapter to enhance accessibility
 2667: Resolve audit logging to align with domain model
+2668: Adjust booking ui for better performance
