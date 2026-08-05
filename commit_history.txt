@@ -1233,3 +1233,4 @@ Commit History Log
 1231: Fix authentication service to fix a race condition
 1232: Standardize message threading to handle null values
 1233: Refactor fhir mock adapter based on code review
+1234: Fix attachment upload to optimize database queries
