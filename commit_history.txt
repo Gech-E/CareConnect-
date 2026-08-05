@@ -550,3 +550,4 @@ Commit History Log
 548: Document redis caching to reduce memory footprint
 549: Add booking ui for better UX
 550: Implement ci pipeline for better performance
+551: Document rbac middleware to reduce memory footprint
