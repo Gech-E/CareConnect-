@@ -519,3 +519,4 @@ Commit History Log
 517: Standardize booking ui to optimize database queries
 518: Improve api endpoints for better test coverage
 519: Update next.js routing for better UX
+520: Update message threading to reduce memory footprint
