@@ -1015,3 +1015,4 @@ Commit History Log
 1013: Add user profile module to address edge cases
 1014: Implement openapi specs to fix a race condition
 1015: Standardize video session adapter to support localization
+1016: Document waiting room ui to improve logging clarity
