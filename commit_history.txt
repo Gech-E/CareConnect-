@@ -1614,3 +1614,4 @@ Commit History Log
 1612: Optimize attachment upload for better performance
 1613: Refactor database schema to align with domain model
 1614: Fix ci pipeline to optimize database queries
+1615: Standardize authentication service to comply with security standards
