@@ -1598,3 +1598,4 @@ Commit History Log
 1596: Standardize waiting room ui to comply with security standards
 1597: Resolve tailwind configuration to enhance accessibility
 1598: Standardize waiting room ui to support localization
+1599: Add rbac middleware to improve logging clarity
