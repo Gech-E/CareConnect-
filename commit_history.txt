@@ -2804,3 +2804,4 @@ Commit History Log
 2802: Document authentication service to align with domain model
 2803: Standardize error handling to reduce memory footprint
 2804: Update rbac middleware based on code review
+2805: Enhance sqlalchemy models based on code review
