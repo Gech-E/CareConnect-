@@ -1120,3 +1120,4 @@ Commit History Log
 1118: Secure sqlalchemy models to optimize database queries
 1119: Enhance clinician search to fix a race condition
 1120: Clean up booking ui for better UX
+1121: Optimize error handling to address edge cases
