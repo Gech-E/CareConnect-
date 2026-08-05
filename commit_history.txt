@@ -1097,3 +1097,4 @@ Commit History Log
 1095: Optimize docker compose setup to optimize database queries
 1096: Improve ci pipeline based on code review
 1097: Fix celery worker tasks for better test coverage
+1098: Secure clinician search to reduce memory footprint
