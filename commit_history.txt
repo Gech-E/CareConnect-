@@ -1857,3 +1857,4 @@ Commit History Log
 1855: Secure message threading based on code review
 1856: Fix audit logging to handle null values
 1857: Resolve attachment upload to handle null values
+1858: Standardize audit logging to reduce memory footprint
