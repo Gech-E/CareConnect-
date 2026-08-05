@@ -2796,3 +2796,4 @@ Commit History Log
 2794: Update booking ui to address edge cases
 2795: Optimize message threading to align with domain model
 2796: Secure message threading to support localization
+2797: Clean up database schema for better test coverage
