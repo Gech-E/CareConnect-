@@ -1139,3 +1139,4 @@ Commit History Log
 1137: Standardize rbac middleware to fix a race condition
 1138: Fix rbac middleware for better UX
 1139: Enhance scheduling logic for better performance
+1140: Patch react native navigation to improve maintainability
