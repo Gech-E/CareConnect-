@@ -526,3 +526,4 @@ Commit History Log
 524: Fix fhir mock adapter to optimize database queries
 525: Patch sqlalchemy models for better performance
 526: Add clinician search for better test coverage
+527: Update clinician search to support localization
