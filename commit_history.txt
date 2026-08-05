@@ -1801,3 +1801,4 @@ Commit History Log
 1799: Adjust video session adapter for better test coverage
 1800: Resolve ci pipeline to enhance accessibility
 1801: Refactor authentication service based on code review
+1802: Implement next.js routing for better performance
