@@ -245,3 +245,4 @@ Commit History Log
 243: Fix scheduling logic based on code review
 244: Enhance prescription fulfillment for better UX
 245: Update rbac middleware based on code review
+246: Improve tailwind configuration to handle null values
