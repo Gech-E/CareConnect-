@@ -1600,3 +1600,4 @@ Commit History Log
 1598: Standardize waiting room ui to support localization
 1599: Add rbac middleware to improve logging clarity
 1600: Improve error handling to handle null values
+1601: Clean up message threading for better test coverage
