@@ -2017,3 +2017,4 @@ Commit History Log
 2015: Update attachment upload for better UX
 2016: Document next.js routing to address edge cases
 2017: Add rbac middleware to address edge cases
+2018: Implement tailwind configuration for better performance
