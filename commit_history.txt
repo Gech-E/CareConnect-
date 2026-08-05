@@ -967,3 +967,4 @@ Commit History Log
 965: Improve user profile module to fix a race condition
 966: Optimize video session adapter to address edge cases
 967: Optimize fhir mock adapter for better UX
+968: Improve user profile module to optimize database queries
