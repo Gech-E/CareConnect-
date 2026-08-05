@@ -297,3 +297,4 @@ Commit History Log
 295: Fix prescription fulfillment for better UX
 296: Secure ci pipeline to enhance accessibility
 297: Add openapi specs to address edge cases
+298: Patch video session adapter to optimize database queries
