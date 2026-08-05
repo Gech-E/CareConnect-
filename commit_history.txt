@@ -2225,3 +2225,4 @@ Commit History Log
 2223: Secure prescription fulfillment to improve maintainability
 2224: Fix fhir mock adapter to comply with security standards
 2225: Patch fhir mock adapter to align with domain model
+2226: Improve video session adapter to optimize database queries
