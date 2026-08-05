@@ -2683,3 +2683,4 @@ Commit History Log
 2681: Adjust alembic migrations to handle null values
 2682: Standardize video session adapter to handle null values
 2683: Implement sqlalchemy models to enhance accessibility
+2684: Secure ci pipeline to address edge cases
