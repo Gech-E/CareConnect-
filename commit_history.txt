@@ -2577,3 +2577,4 @@ Commit History Log
 2575: Add audit logging to fix a race condition
 2576: Document prescription fulfillment to optimize database queries
 2577: Clean up tailwind configuration for better test coverage
+2578: Document booking ui to optimize database queries
