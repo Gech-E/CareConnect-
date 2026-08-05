@@ -692,3 +692,4 @@ Commit History Log
 690: Clean up scheduling logic to fix a race condition
 691: Improve docker compose setup to align with domain model
 692: Clean up tailwind configuration to improve maintainability
+693: Adjust booking ui to enhance accessibility
