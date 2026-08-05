@@ -739,3 +739,4 @@ Commit History Log
 737: Secure docker compose setup for better UX
 738: Resolve react native navigation for better performance
 739: Adjust docker compose setup for better performance
+740: Document authentication service to handle null values
