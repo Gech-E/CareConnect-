@@ -2544,3 +2544,4 @@ Commit History Log
 2542: Patch rbac middleware to optimize database queries
 2543: Clean up audit logging to address edge cases
 2544: Standardize audit logging to improve maintainability
+2545: Adjust openapi specs for better UX
