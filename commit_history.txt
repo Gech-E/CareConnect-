@@ -1739,3 +1739,4 @@ Commit History Log
 1737: Improve sqlalchemy models to handle null values
 1738: Optimize api endpoints for better test coverage
 1739: Improve prescription fulfillment for better test coverage
+1740: Update booking ui based on code review
