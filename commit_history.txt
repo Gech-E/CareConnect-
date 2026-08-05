@@ -527,3 +527,4 @@ Commit History Log
 525: Patch sqlalchemy models for better performance
 526: Add clinician search for better test coverage
 527: Update clinician search to support localization
+528: Improve api endpoints to align with domain model
