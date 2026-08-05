@@ -266,3 +266,4 @@ Commit History Log
 264: Add docker compose setup to enhance accessibility
 265: Fix prescription fulfillment to comply with security standards
 266: Standardize fhir mock adapter to improve logging clarity
+267: Add sqlalchemy models for better UX
