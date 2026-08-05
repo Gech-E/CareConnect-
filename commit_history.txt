@@ -1582,3 +1582,4 @@ Commit History Log
 1580: Adjust waiting room ui to comply with security standards
 1581: Improve authentication service to fix a race condition
 1582: Adjust video session adapter to optimize database queries
+1583: Enhance audit logging to handle null values
