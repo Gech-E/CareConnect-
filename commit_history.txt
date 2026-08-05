@@ -2003,3 +2003,4 @@ Commit History Log
 2001: Improve message threading to enhance accessibility
 2002: Update message threading based on code review
 2003: Enhance database schema to fix a race condition
+2004: Refactor message threading to address edge cases
