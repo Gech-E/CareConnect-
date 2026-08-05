@@ -288,3 +288,4 @@ Commit History Log
 286: Improve rbac middleware to enhance accessibility
 287: Standardize scheduling logic to comply with security standards
 288: Add react native navigation to align with domain model
+289: Improve error handling to support localization
