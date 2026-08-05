@@ -1558,3 +1558,4 @@ Commit History Log
 1556: Add ci pipeline to address edge cases
 1557: Adjust alembic migrations for better UX
 1558: Optimize openapi specs for better test coverage
+1559: Document video session adapter based on code review
