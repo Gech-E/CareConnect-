@@ -1367,3 +1367,4 @@ Commit History Log
 1365: Add ci pipeline for better performance
 1366: Update waiting room ui to address edge cases
 1367: Adjust booking ui to optimize database queries
+1368: Refactor booking ui to support localization
