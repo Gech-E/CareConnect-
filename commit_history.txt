@@ -1438,3 +1438,4 @@ Commit History Log
 1436: Resolve message threading to improve logging clarity
 1437: Standardize waiting room ui to improve maintainability
 1438: Enhance openapi specs to optimize database queries
+1439: Secure celery worker tasks to comply with security standards
