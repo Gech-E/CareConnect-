@@ -2011,3 +2011,4 @@ Commit History Log
 2009: Update next.js routing to fix a race condition
 2010: Add rbac middleware for better UX
 2011: Add alembic migrations to optimize database queries
+2012: Implement docker compose setup to address edge cases
