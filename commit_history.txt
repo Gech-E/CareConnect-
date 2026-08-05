@@ -726,3 +726,4 @@ Commit History Log
 724: Refactor celery worker tasks to comply with security standards
 725: Secure fhir mock adapter for better performance
 726: Standardize video session adapter to comply with security standards
+727: Fix database schema for better UX
