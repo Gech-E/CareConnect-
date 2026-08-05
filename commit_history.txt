@@ -2535,3 +2535,4 @@ Commit History Log
 2533: Add react native navigation to optimize database queries
 2534: Clean up booking ui for better performance
 2535: Optimize fhir mock adapter for better performance
+2536: Clean up scheduling logic to support localization
