@@ -1777,3 +1777,4 @@ Commit History Log
 1775: Document tailwind configuration to reduce memory footprint
 1776: Refactor authentication service to improve maintainability
 1777: Optimize openapi specs to align with domain model
+1778: Patch database schema to address edge cases
