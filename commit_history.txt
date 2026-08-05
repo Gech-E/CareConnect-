@@ -2307,3 +2307,4 @@ Commit History Log
 2305: Resolve fhir mock adapter for better performance
 2306: Secure clinician search for better performance
 2307: Refactor api endpoints to fix a race condition
+2308: Standardize docker compose setup to improve logging clarity
