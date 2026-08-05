@@ -1986,3 +1986,4 @@ Commit History Log
 1984: Optimize docker compose setup to support localization
 1985: Improve video session adapter to enhance accessibility
 1986: Resolve booking ui to comply with security standards
+1987: Resolve alembic migrations to support localization
