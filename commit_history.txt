@@ -716,3 +716,4 @@ Commit History Log
 714: Optimize alembic migrations based on code review
 715: Refactor fhir mock adapter to address edge cases
 716: Implement fhir mock adapter to align with domain model
+717: Secure prescription fulfillment to reduce memory footprint
