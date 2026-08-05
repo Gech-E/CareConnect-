@@ -659,3 +659,4 @@ Commit History Log
 657: Refactor fhir mock adapter to align with domain model
 658: Implement react native navigation for better performance
 659: Optimize celery worker tasks to address edge cases
+660: Fix next.js routing to address edge cases
