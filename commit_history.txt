@@ -276,3 +276,4 @@ Commit History Log
 274: Enhance user profile module to align with domain model
 275: Update database schema to enhance accessibility
 276: Clean up database schema to fix a race condition
+277: Adjust audit logging to support localization
