@@ -1213,3 +1213,4 @@ Commit History Log
 1211: Standardize rbac middleware to enhance accessibility
 1212: Enhance api endpoints for better performance
 1213: Resolve sqlalchemy models for better UX
+1214: Update alembic migrations based on code review
