@@ -231,3 +231,4 @@ Commit History Log
 229: Enhance ci pipeline for better UX
 230: Adjust rbac middleware to optimize database queries
 231: Update celery worker tasks to align with domain model
+232: Clean up clinician search to improve maintainability
