@@ -1905,3 +1905,4 @@ Commit History Log
 1903: Adjust video session adapter for better performance
 1904: Fix celery worker tasks to enhance accessibility
 1905: Improve scheduling logic to address edge cases
+1906: Enhance redis caching to enhance accessibility
