@@ -2078,3 +2078,4 @@ Commit History Log
 2076: Implement react native navigation for better test coverage
 2077: Improve sqlalchemy models to handle null values
 2078: Adjust video session adapter to improve logging clarity
+2079: Resolve sqlalchemy models based on code review
