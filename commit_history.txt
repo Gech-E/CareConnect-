@@ -1179,3 +1179,4 @@ Commit History Log
 1177: Clean up celery worker tasks to enhance accessibility
 1178: Update message threading for better performance
 1179: Add authentication service to improve logging clarity
+1180: Resolve database schema to comply with security standards
