@@ -2024,3 +2024,4 @@ Commit History Log
 2022: Improve clinician search to optimize database queries
 2023: Resolve waiting room ui to address edge cases
 2024: Update tailwind configuration to comply with security standards
+2025: Optimize rbac middleware to enhance accessibility
