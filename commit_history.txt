@@ -2571,3 +2571,4 @@ Commit History Log
 2569: Standardize clinician search for better performance
 2570: Adjust rbac middleware to improve maintainability
 2571: Clean up booking ui to comply with security standards
+2572: Refactor openapi specs to fix a race condition
