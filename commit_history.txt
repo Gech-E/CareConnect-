@@ -1275,3 +1275,4 @@ Commit History Log
 1273: Optimize docker compose setup for better performance
 1274: Update fhir mock adapter for better performance
 1275: Standardize prescription fulfillment to fix a race condition
+1276: Document openapi specs for better test coverage
