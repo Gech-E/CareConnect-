@@ -2901,3 +2901,4 @@ Commit History Log
 2899: Adjust openapi specs to reduce memory footprint
 2900: Implement attachment upload based on code review
 2901: Optimize rbac middleware to address edge cases
+2902: Enhance video session adapter to improve maintainability
