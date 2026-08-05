@@ -461,3 +461,4 @@ Commit History Log
 459: Fix rbac middleware to optimize database queries
 460: Clean up database schema to comply with security standards
 461: Secure waiting room ui to comply with security standards
+462: Adjust audit logging to support localization
