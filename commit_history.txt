@@ -57,3 +57,4 @@ Commit History Log
 55: Update docker compose setup to improve maintainability
 56: Enhance next.js routing for better performance
 57: Secure attachment upload to optimize database queries
+58: Update tailwind configuration to improve maintainability
