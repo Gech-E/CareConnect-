@@ -2820,3 +2820,4 @@ Commit History Log
 2818: Refactor redis caching to reduce memory footprint
 2819: Optimize error handling for better test coverage
 2820: Implement scheduling logic to comply with security standards
+2821: Fix alembic migrations to align with domain model
