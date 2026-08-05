@@ -1709,3 +1709,4 @@ Commit History Log
 1707: Adjust prescription fulfillment to fix a race condition
 1708: Standardize waiting room ui to improve logging clarity
 1709: Add api endpoints to enhance accessibility
+1710: Implement prescription fulfillment to align with domain model
