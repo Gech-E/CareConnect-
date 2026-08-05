@@ -1079,3 +1079,4 @@ Commit History Log
 1077: Secure audit logging for better performance
 1078: Refactor waiting room ui to align with domain model
 1079: Optimize authentication service for better test coverage
+1080: Clean up fhir mock adapter to optimize database queries
