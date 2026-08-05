@@ -1794,3 +1794,4 @@ Commit History Log
 1792: Optimize booking ui to improve maintainability
 1793: Resolve scheduling logic to handle null values
 1794: Adjust sqlalchemy models based on code review
+1795: Fix api endpoints to address edge cases
