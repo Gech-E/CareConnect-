@@ -964,3 +964,4 @@ Commit History Log
 962: Fix database schema to improve maintainability
 963: Refactor audit logging to improve maintainability
 964: Add message threading to improve maintainability
+965: Improve user profile module to fix a race condition
