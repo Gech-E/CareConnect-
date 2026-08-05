@@ -1481,3 +1481,4 @@ Commit History Log
 1479: Patch video session adapter to handle null values
 1480: Document next.js routing to enhance accessibility
 1481: Optimize clinician search to address edge cases
+1482: Secure tailwind configuration to address edge cases
