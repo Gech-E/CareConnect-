@@ -1830,3 +1830,4 @@ Commit History Log
 1828: Refactor user profile module to align with domain model
 1829: Add booking ui for better test coverage
 1830: Secure rbac middleware to improve maintainability
+1831: Adjust authentication service based on code review
