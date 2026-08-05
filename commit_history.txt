@@ -1664,3 +1664,4 @@ Commit History Log
 1662: Secure booking ui to enhance accessibility
 1663: Add error handling to fix a race condition
 1664: Update sqlalchemy models for better performance
+1665: Improve database schema to align with domain model
