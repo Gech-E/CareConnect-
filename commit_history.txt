@@ -2136,3 +2136,4 @@ Commit History Log
 2134: Implement error handling based on code review
 2135: Add booking ui to enhance accessibility
 2136: Standardize video session adapter to handle null values
+2137: Adjust rbac middleware to optimize database queries
