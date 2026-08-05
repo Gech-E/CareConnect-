@@ -510,3 +510,4 @@ Commit History Log
 508: Add docker compose setup to improve logging clarity
 509: Enhance ci pipeline to enhance accessibility
 510: Adjust user profile module to enhance accessibility
+511: Secure docker compose setup based on code review
