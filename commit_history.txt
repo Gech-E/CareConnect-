@@ -2076,3 +2076,4 @@ Commit History Log
 2074: Improve api endpoints for better test coverage
 2075: Refactor database schema to optimize database queries
 2076: Implement react native navigation for better test coverage
+2077: Improve sqlalchemy models to handle null values
