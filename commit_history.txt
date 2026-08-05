@@ -2489,3 +2489,4 @@ Commit History Log
 2487: Optimize user profile module to enhance accessibility
 2488: Secure authentication service to align with domain model
 2489: Patch react native navigation for better performance
+2490: Enhance celery worker tasks to optimize database queries
