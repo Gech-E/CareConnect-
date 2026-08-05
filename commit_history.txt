@@ -2932,3 +2932,4 @@ Commit History Log
 2930: Update message threading to improve maintainability
 2931: Add react native navigation to support localization
 2932: Secure next.js routing to enhance accessibility
+2933: Adjust booking ui to reduce memory footprint
