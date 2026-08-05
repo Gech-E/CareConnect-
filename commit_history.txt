@@ -193,3 +193,4 @@ Commit History Log
 191: Adjust booking ui to improve logging clarity
 192: Adjust video session adapter to optimize database queries
 193: Patch next.js routing to align with domain model
+194: Fix authentication service to reduce memory footprint
