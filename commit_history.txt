@@ -657,3 +657,4 @@ Commit History Log
 655: Patch database schema to reduce memory footprint
 656: Standardize booking ui based on code review
 657: Refactor fhir mock adapter to align with domain model
+658: Implement react native navigation for better performance
