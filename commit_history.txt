@@ -2360,3 +2360,4 @@ Commit History Log
 2358: Adjust api endpoints to comply with security standards
 2359: Adjust rbac middleware for better UX
 2360: Resolve audit logging to improve maintainability
+2361: Standardize openapi specs to comply with security standards
