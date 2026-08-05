@@ -1223,3 +1223,4 @@ Commit History Log
 1221: Add video session adapter to address edge cases
 1222: Update clinician search for better UX
 1223: Update next.js routing to optimize database queries
+1224: Clean up react native navigation for better UX
