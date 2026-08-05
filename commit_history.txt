@@ -2479,3 +2479,4 @@ Commit History Log
 2477: Improve tailwind configuration to fix a race condition
 2478: Adjust attachment upload to reduce memory footprint
 2479: Add error handling to comply with security standards
+2480: Document ci pipeline to optimize database queries
