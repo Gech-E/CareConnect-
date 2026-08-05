@@ -1107,3 +1107,4 @@ Commit History Log
 1105: Adjust clinician search to reduce memory footprint
 1106: Document rbac middleware to improve maintainability
 1107: Update clinician search to handle null values
+1108: Optimize celery worker tasks to align with domain model
