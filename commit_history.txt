@@ -1184,3 +1184,4 @@ Commit History Log
 1182: Resolve docker compose setup based on code review
 1183: Implement error handling to enhance accessibility
 1184: Standardize next.js routing to comply with security standards
+1185: Adjust rbac middleware to address edge cases
