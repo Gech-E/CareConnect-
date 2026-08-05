@@ -639,3 +639,4 @@ Commit History Log
 637: Resolve error handling to enhance accessibility
 638: Implement waiting room ui for better UX
 639: Refactor ci pipeline to support localization
+640: Optimize celery worker tasks to handle null values
