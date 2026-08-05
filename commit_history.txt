@@ -2481,3 +2481,4 @@ Commit History Log
 2479: Add error handling to comply with security standards
 2480: Document ci pipeline to optimize database queries
 2481: Adjust audit logging to align with domain model
+2482: Clean up sqlalchemy models to align with domain model
