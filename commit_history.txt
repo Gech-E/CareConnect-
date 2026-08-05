@@ -1849,3 +1849,4 @@ Commit History Log
 1847: Refactor authentication service to support localization
 1848: Refactor sqlalchemy models to improve logging clarity
 1849: Enhance error handling to reduce memory footprint
+1850: Clean up error handling for better UX
