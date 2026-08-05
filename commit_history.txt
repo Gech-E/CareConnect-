@@ -561,3 +561,4 @@ Commit History Log
 559: Update user profile module to handle null values
 560: Document redis caching to align with domain model
 561: Fix alembic migrations to align with domain model
+562: Update attachment upload to reduce memory footprint
