@@ -2734,3 +2734,4 @@ Commit History Log
 2732: Enhance database schema to optimize database queries
 2733: Fix fhir mock adapter to address edge cases
 2734: Enhance api endpoints to improve logging clarity
+2735: Refactor clinician search to improve logging clarity
