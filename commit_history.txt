@@ -1417,3 +1417,4 @@ Commit History Log
 1415: Implement prescription fulfillment for better performance
 1416: Resolve redis caching to improve maintainability
 1417: Implement celery worker tasks to support localization
+1418: Implement ci pipeline to align with domain model
