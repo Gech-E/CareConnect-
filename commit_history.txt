@@ -173,3 +173,4 @@ Commit History Log
 171: Patch clinician search to improve maintainability
 172: Clean up authentication service to handle null values
 173: Clean up docker compose setup to improve maintainability
+174: Secure ci pipeline to address edge cases
