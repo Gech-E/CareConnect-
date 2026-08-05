@@ -2128,3 +2128,4 @@ Commit History Log
 2126: Resolve scheduling logic to optimize database queries
 2127: Standardize attachment upload for better UX
 2128: Standardize react native navigation to comply with security standards
+2129: Add api endpoints to optimize database queries
