@@ -1428,3 +1428,4 @@ Commit History Log
 1426: Secure message threading for better test coverage
 1427: Refactor database schema to improve logging clarity
 1428: Standardize celery worker tasks to improve maintainability
+1429: Standardize video session adapter to reduce memory footprint
