@@ -1772,3 +1772,4 @@ Commit History Log
 1770: Enhance error handling to handle null values
 1771: Enhance scheduling logic to comply with security standards
 1772: Add scheduling logic based on code review
+1773: Patch rbac middleware to address edge cases
