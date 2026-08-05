@@ -570,3 +570,4 @@ Commit History Log
 568: Update user profile module to comply with security standards
 569: Secure react native navigation to optimize database queries
 570: Refactor redis caching based on code review
+571: Patch video session adapter to fix a race condition
