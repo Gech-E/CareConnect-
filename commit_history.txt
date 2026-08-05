@@ -630,3 +630,4 @@ Commit History Log
 628: Patch rbac middleware to enhance accessibility
 629: Improve celery worker tasks to reduce memory footprint
 630: Resolve message threading to align with domain model
+631: Refactor tailwind configuration to fix a race condition
