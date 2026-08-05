@@ -2737,3 +2737,4 @@ Commit History Log
 2735: Refactor clinician search to improve logging clarity
 2736: Add redis caching to handle null values
 2737: Optimize celery worker tasks to support localization
+2738: Implement attachment upload to align with domain model
