@@ -1970,3 +1970,4 @@ Commit History Log
 1968: Document scheduling logic for better test coverage
 1969: Optimize alembic migrations to fix a race condition
 1970: Standardize docker compose setup to support localization
+1971: Adjust docker compose setup to support localization
