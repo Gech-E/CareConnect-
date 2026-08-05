@@ -1390,3 +1390,4 @@ Commit History Log
 1388: Implement docker compose setup to support localization
 1389: Document sqlalchemy models for better performance
 1390: Refactor next.js routing to align with domain model
+1391: Add attachment upload to reduce memory footprint
