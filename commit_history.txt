@@ -2871,3 +2871,4 @@ Commit History Log
 2869: Enhance fhir mock adapter to support localization
 2870: Patch error handling to comply with security standards
 2871: Optimize clinician search to support localization
+2872: Clean up api endpoints for better UX
