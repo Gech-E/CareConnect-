@@ -2875,3 +2875,4 @@ Commit History Log
 2873: Improve authentication service based on code review
 2874: Secure audit logging for better UX
 2875: Enhance docker compose setup to reduce memory footprint
+2876: Resolve openapi specs for better test coverage
