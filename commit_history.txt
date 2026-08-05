@@ -697,3 +697,4 @@ Commit History Log
 695: Refactor prescription fulfillment to handle null values
 696: Fix attachment upload to comply with security standards
 697: Improve prescription fulfillment to address edge cases
+698: Improve scheduling logic to fix a race condition
