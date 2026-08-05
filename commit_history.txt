@@ -990,3 +990,4 @@ Commit History Log
 988: Optimize waiting room ui to comply with security standards
 989: Optimize docker compose setup to address edge cases
 990: Refactor audit logging to improve logging clarity
+991: Secure audit logging to comply with security standards
