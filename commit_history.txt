@@ -1282,3 +1282,4 @@ Commit History Log
 1280: Resolve waiting room ui to reduce memory footprint
 1281: Standardize ci pipeline to fix a race condition
 1282: Resolve booking ui to comply with security standards
+1283: Patch database schema to improve logging clarity
