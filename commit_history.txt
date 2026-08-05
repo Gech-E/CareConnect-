@@ -1178,3 +1178,4 @@ Commit History Log
 1176: Update openapi specs to support localization
 1177: Clean up celery worker tasks to enhance accessibility
 1178: Update message threading for better performance
+1179: Add authentication service to improve logging clarity
