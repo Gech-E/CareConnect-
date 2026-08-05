@@ -1624,3 +1624,4 @@ Commit History Log
 1622: Document rbac middleware for better test coverage
 1623: Patch message threading for better UX
 1624: Optimize authentication service to improve maintainability
+1625: Document fhir mock adapter to reduce memory footprint
