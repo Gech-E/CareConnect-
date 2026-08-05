@@ -1698,3 +1698,4 @@ Commit History Log
 1696: Secure next.js routing to support localization
 1697: Patch database schema to reduce memory footprint
 1698: Optimize scheduling logic to support localization
+1699: Update celery worker tasks to align with domain model
