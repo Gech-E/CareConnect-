@@ -2971,3 +2971,4 @@ Commit History Log
 2969: Improve user profile module for better performance
 2970: Update scheduling logic to optimize database queries
 2971: Optimize waiting room ui for better UX
+2972: Secure sqlalchemy models based on code review
