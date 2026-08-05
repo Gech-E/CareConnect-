@@ -2259,3 +2259,4 @@ Commit History Log
 2257: Document rbac middleware to improve logging clarity
 2258: Clean up sqlalchemy models for better UX
 2259: Update clinician search for better UX
+2260: Refactor api endpoints to handle null values
