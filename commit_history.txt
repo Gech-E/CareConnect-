@@ -488,3 +488,4 @@ Commit History Log
 486: Secure audit logging to address edge cases
 487: Document openapi specs to handle null values
 488: Document rbac middleware for better UX
+489: Document video session adapter to reduce memory footprint
