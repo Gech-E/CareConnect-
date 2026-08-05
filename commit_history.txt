@@ -1404,3 +1404,4 @@ Commit History Log
 1402: Optimize user profile module to align with domain model
 1403: Optimize scheduling logic to comply with security standards
 1404: Resolve booking ui to support localization
+1405: Optimize message threading to improve logging clarity
