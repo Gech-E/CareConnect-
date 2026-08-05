@@ -2533,3 +2533,4 @@ Commit History Log
 2531: Update openapi specs to handle null values
 2532: Implement video session adapter for better test coverage
 2533: Add react native navigation to optimize database queries
+2534: Clean up booking ui for better performance
