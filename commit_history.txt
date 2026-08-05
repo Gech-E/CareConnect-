@@ -963,3 +963,4 @@ Commit History Log
 961: Standardize attachment upload for better test coverage
 962: Fix database schema to improve maintainability
 963: Refactor audit logging to improve maintainability
+964: Add message threading to improve maintainability
