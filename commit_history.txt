@@ -1362,3 +1362,4 @@ Commit History Log
 1360: Patch openapi specs for better test coverage
 1361: Implement attachment upload to enhance accessibility
 1362: Optimize booking ui to align with domain model
+1363: Fix tailwind configuration based on code review
