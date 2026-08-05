@@ -999,3 +999,4 @@ Commit History Log
 997: Implement openapi specs based on code review
 998: Document authentication service to support localization
 999: Patch ci pipeline to fix a race condition
+1000: Implement attachment upload to optimize database queries
