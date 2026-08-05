@@ -2992,3 +2992,4 @@ Commit History Log
 2990: Improve rbac middleware to enhance accessibility
 2991: Document react native navigation to handle null values
 2992: Improve rbac middleware to align with domain model
+2993: Fix prescription fulfillment for better performance
