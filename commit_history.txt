@@ -1059,3 +1059,4 @@ Commit History Log
 1057: Refactor message threading for better test coverage
 1058: Refactor celery worker tasks to reduce memory footprint
 1059: Improve message threading to improve logging clarity
+1060: Patch ci pipeline to comply with security standards
