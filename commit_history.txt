@@ -1636,3 +1636,4 @@ Commit History Log
 1634: Add waiting room ui based on code review
 1635: Document user profile module to comply with security standards
 1636: Enhance rbac middleware for better performance
+1637: Optimize docker compose setup based on code review
