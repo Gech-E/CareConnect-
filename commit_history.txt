@@ -286,3 +286,4 @@ Commit History Log
 284: Update celery worker tasks to address edge cases
 285: Clean up docker compose setup for better test coverage
 286: Improve rbac middleware to enhance accessibility
+287: Standardize scheduling logic to comply with security standards
