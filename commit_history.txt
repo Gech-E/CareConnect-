@@ -891,3 +891,4 @@ Commit History Log
 889: Document openapi specs for better test coverage
 890: Enhance alembic migrations for better test coverage
 891: Optimize react native navigation to fix a race condition
+892: Document scheduling logic to fix a race condition
