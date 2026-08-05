@@ -984,3 +984,4 @@ Commit History Log
 982: Enhance waiting room ui to enhance accessibility
 983: Update celery worker tasks to align with domain model
 984: Update waiting room ui to reduce memory footprint
+985: Fix openapi specs based on code review
