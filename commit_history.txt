@@ -2085,3 +2085,4 @@ Commit History Log
 2083: Standardize tailwind configuration to enhance accessibility
 2084: Document alembic migrations to comply with security standards
 2085: Secure scheduling logic to reduce memory footprint
+2086: Implement booking ui for better UX
