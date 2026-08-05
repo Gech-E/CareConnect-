@@ -236,3 +236,4 @@ Commit History Log
 234: Optimize user profile module to address edge cases
 235: Fix clinician search based on code review
 236: Document error handling to improve maintainability
+237: Fix rbac middleware based on code review
