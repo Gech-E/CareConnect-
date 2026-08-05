@@ -2384,3 +2384,4 @@ Commit History Log
 2382: Enhance fhir mock adapter to fix a race condition
 2383: Document booking ui to align with domain model
 2384: Implement alembic migrations to enhance accessibility
+2385: Document fhir mock adapter for better test coverage
