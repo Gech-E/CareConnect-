@@ -2266,3 +2266,4 @@ Commit History Log
 2264: Clean up database schema to comply with security standards
 2265: Refactor database schema to fix a race condition
 2266: Resolve react native navigation to optimize database queries
+2267: Refactor next.js routing for better performance
