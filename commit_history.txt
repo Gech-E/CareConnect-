@@ -203,3 +203,4 @@ Commit History Log
 201: Refactor audit logging to improve logging clarity
 202: Improve attachment upload to handle null values
 203: Optimize prescription fulfillment to address edge cases
+204: Document clinician search to align with domain model
