@@ -1935,3 +1935,4 @@ Commit History Log
 1933: Adjust next.js routing to align with domain model
 1934: Adjust booking ui to enhance accessibility
 1935: Enhance user profile module based on code review
+1936: Secure fhir mock adapter to comply with security standards
