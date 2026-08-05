@@ -865,3 +865,4 @@ Commit History Log
 863: Patch message threading based on code review
 864: Secure tailwind configuration to align with domain model
 865: Add alembic migrations to improve logging clarity
+866: Fix docker compose setup to enhance accessibility
