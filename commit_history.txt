@@ -2659,3 +2659,4 @@ Commit History Log
 2657: Patch booking ui for better test coverage
 2658: Refactor fhir mock adapter to align with domain model
 2659: Add next.js routing to support localization
+2660: Add alembic migrations to support localization
