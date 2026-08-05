@@ -1303,3 +1303,4 @@ Commit History Log
 1301: Standardize video session adapter to improve logging clarity
 1302: Adjust sqlalchemy models to fix a race condition
 1303: Implement video session adapter to align with domain model
+1304: Standardize fhir mock adapter to address edge cases
