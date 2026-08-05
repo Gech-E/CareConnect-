@@ -2300,3 +2300,4 @@ Commit History Log
 2298: Resolve fhir mock adapter based on code review
 2299: Standardize authentication service to optimize database queries
 2300: Fix celery worker tasks to improve logging clarity
+2301: Fix sqlalchemy models based on code review
