@@ -1251,3 +1251,4 @@ Commit History Log
 1249: Patch attachment upload to address edge cases
 1250: Patch api endpoints to reduce memory footprint
 1251: Adjust error handling to optimize database queries
+1252: Enhance openapi specs to improve maintainability
