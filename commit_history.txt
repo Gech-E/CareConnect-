@@ -686,3 +686,4 @@ Commit History Log
 684: Update attachment upload to fix a race condition
 685: Clean up openapi specs to support localization
 686: Secure user profile module to improve maintainability
+687: Optimize docker compose setup to improve logging clarity
