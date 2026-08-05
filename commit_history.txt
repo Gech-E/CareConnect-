@@ -92,3 +92,4 @@ Commit History Log
 90: Fix api endpoints to fix a race condition
 91: Document ci pipeline to address edge cases
 92: Document authentication service to optimize database queries
+93: Document scheduling logic to reduce memory footprint
