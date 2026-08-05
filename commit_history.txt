@@ -2294,3 +2294,4 @@ Commit History Log
 2292: Improve ci pipeline to improve maintainability
 2293: Refactor next.js routing to improve maintainability
 2294: Fix database schema to handle null values
+2295: Refactor waiting room ui to address edge cases
