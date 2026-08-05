@@ -174,3 +174,4 @@ Commit History Log
 172: Clean up authentication service to handle null values
 173: Clean up docker compose setup to improve maintainability
 174: Secure ci pipeline to address edge cases
+175: Fix docker compose setup to enhance accessibility
