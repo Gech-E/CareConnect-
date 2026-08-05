@@ -988,3 +988,4 @@ Commit History Log
 986: Resolve error handling for better performance
 987: Update celery worker tasks to fix a race condition
 988: Optimize waiting room ui to comply with security standards
+989: Optimize docker compose setup to address edge cases
