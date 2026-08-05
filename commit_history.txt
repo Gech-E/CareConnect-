@@ -1487,3 +1487,4 @@ Commit History Log
 1485: Secure message threading to optimize database queries
 1486: Resolve attachment upload to support localization
 1487: Standardize attachment upload to reduce memory footprint
+1488: Clean up clinician search to comply with security standards
