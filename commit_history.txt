@@ -2873,3 +2873,4 @@ Commit History Log
 2871: Optimize clinician search to support localization
 2872: Clean up api endpoints for better UX
 2873: Improve authentication service based on code review
+2874: Secure audit logging for better UX
