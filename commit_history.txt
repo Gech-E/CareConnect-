@@ -2908,3 +2908,4 @@ Commit History Log
 2906: Document database schema to improve logging clarity
 2907: Standardize alembic migrations to support localization
 2908: Optimize react native navigation to handle null values
+2909: Secure rbac middleware for better performance
