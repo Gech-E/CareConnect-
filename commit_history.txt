@@ -1236,3 +1236,4 @@ Commit History Log
 1234: Fix attachment upload to optimize database queries
 1235: Add openapi specs to support localization
 1236: Document openapi specs for better UX
+1237: Resolve attachment upload to reduce memory footprint
