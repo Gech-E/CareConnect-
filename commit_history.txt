@@ -1821,3 +1821,4 @@ Commit History Log
 1819: Patch video session adapter to improve maintainability
 1820: Enhance next.js routing to fix a race condition
 1821: Refactor docker compose setup for better UX
+1822: Adjust celery worker tasks based on code review
