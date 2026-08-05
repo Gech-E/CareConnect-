@@ -1494,3 +1494,4 @@ Commit History Log
 1492: Standardize react native navigation to support localization
 1493: Add message threading to improve logging clarity
 1494: Fix fhir mock adapter for better test coverage
+1495: Clean up video session adapter to improve logging clarity
