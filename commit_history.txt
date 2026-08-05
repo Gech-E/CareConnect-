@@ -777,3 +777,4 @@ Commit History Log
 775: Add ci pipeline to handle null values
 776: Add rbac middleware for better test coverage
 777: Implement tailwind configuration for better test coverage
+778: Clean up clinician search to improve maintainability
