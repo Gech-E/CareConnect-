@@ -2121,3 +2121,4 @@ Commit History Log
 2119: Update celery worker tasks to handle null values
 2120: Document booking ui for better test coverage
 2121: Secure tailwind configuration to reduce memory footprint
+2122: Improve waiting room ui to fix a race condition
