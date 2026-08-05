@@ -411,3 +411,4 @@ Commit History Log
 409: Improve attachment upload to improve logging clarity
 410: Improve redis caching to address edge cases
 411: Document authentication service to address edge cases
+412: Resolve ci pipeline to fix a race condition
