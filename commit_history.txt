@@ -853,3 +853,4 @@ Commit History Log
 851: Resolve fhir mock adapter to handle null values
 852: Resolve user profile module for better test coverage
 853: Add rbac middleware to improve maintainability
+854: Enhance attachment upload based on code review
