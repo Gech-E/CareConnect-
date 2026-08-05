@@ -2492,3 +2492,4 @@ Commit History Log
 2490: Enhance celery worker tasks to optimize database queries
 2491: Resolve video session adapter to optimize database queries
 2492: Resolve audit logging for better UX
+2493: Add authentication service to support localization
