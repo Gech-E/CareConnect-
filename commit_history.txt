@@ -1891,3 +1891,4 @@ Commit History Log
 1889: Optimize prescription fulfillment to align with domain model
 1890: Resolve attachment upload to reduce memory footprint
 1891: Refactor sqlalchemy models to address edge cases
+1892: Implement alembic migrations to address edge cases
