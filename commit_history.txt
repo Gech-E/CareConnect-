@@ -462,3 +462,4 @@ Commit History Log
 460: Clean up database schema to comply with security standards
 461: Secure waiting room ui to comply with security standards
 462: Adjust audit logging to support localization
+463: Adjust database schema for better UX
