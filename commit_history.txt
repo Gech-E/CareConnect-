@@ -1267,3 +1267,4 @@ Commit History Log
 1265: Clean up message threading to improve maintainability
 1266: Add fhir mock adapter to handle null values
 1267: Patch video session adapter to improve logging clarity
+1268: Patch rbac middleware to optimize database queries
