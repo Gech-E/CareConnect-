@@ -2467,3 +2467,4 @@ Commit History Log
 2465: Secure error handling to enhance accessibility
 2466: Enhance video session adapter for better UX
 2467: Patch celery worker tasks to address edge cases
+2468: Improve celery worker tasks to address edge cases
