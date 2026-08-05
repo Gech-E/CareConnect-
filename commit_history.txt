@@ -2524,3 +2524,4 @@ Commit History Log
 2522: Enhance database schema to support localization
 2523: Update fhir mock adapter to reduce memory footprint
 2524: Resolve docker compose setup to support localization
+2525: Document waiting room ui to support localization
