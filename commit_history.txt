@@ -1902,3 +1902,4 @@ Commit History Log
 1900: Patch audit logging to reduce memory footprint
 1901: Optimize docker compose setup to address edge cases
 1902: Patch user profile module to handle null values
+1903: Adjust video session adapter for better performance
