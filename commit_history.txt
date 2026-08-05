@@ -1386,3 +1386,4 @@ Commit History Log
 1384: Patch alembic migrations to comply with security standards
 1385: Clean up api endpoints for better test coverage
 1386: Implement openapi specs based on code review
+1387: Update tailwind configuration to comply with security standards
