@@ -1220,3 +1220,4 @@ Commit History Log
 1218: Document alembic migrations to enhance accessibility
 1219: Standardize redis caching for better UX
 1220: Improve tailwind configuration based on code review
+1221: Add video session adapter to address edge cases
