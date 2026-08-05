@@ -2501,3 +2501,4 @@ Commit History Log
 2499: Patch next.js routing to address edge cases
 2500: Update waiting room ui to enhance accessibility
 2501: Secure database schema to handle null values
+2502: Patch celery worker tasks to fix a race condition
