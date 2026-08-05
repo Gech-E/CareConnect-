@@ -569,3 +569,4 @@ Commit History Log
 567: Adjust openapi specs based on code review
 568: Update user profile module to comply with security standards
 569: Secure react native navigation to optimize database queries
+570: Refactor redis caching based on code review
