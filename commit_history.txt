@@ -1768,3 +1768,4 @@ Commit History Log
 1766: Improve database schema based on code review
 1767: Resolve audit logging to optimize database queries
 1768: Adjust tailwind configuration to reduce memory footprint
+1769: Clean up tailwind configuration to support localization
