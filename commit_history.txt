@@ -1860,3 +1860,4 @@ Commit History Log
 1858: Standardize audit logging to reduce memory footprint
 1859: Refactor booking ui to fix a race condition
 1860: Add error handling to comply with security standards
+1861: Patch booking ui to support localization
