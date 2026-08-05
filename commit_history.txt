@@ -1399,3 +1399,4 @@ Commit History Log
 1397: Patch video session adapter for better UX
 1398: Document booking ui to handle null values
 1399: Resolve prescription fulfillment to reduce memory footprint
+1400: Enhance error handling for better performance
