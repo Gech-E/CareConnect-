@@ -51,3 +51,4 @@ Commit History Log
 49: Document scheduling logic for better performance
 50: Improve docker compose setup to support localization
 51: Improve redis caching based on code review
+52: Clean up api endpoints for better test coverage
