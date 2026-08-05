@@ -72,3 +72,4 @@ Commit History Log
 70: Adjust openapi specs to optimize database queries
 71: Adjust waiting room ui to enhance accessibility
 72: Clean up scheduling logic for better performance
+73: Document docker compose setup for better performance
