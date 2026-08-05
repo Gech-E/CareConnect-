@@ -2702,3 +2702,4 @@ Commit History Log
 2700: Clean up rbac middleware for better test coverage
 2701: Implement react native navigation to improve logging clarity
 2702: Optimize openapi specs to address edge cases
+2703: Improve user profile module for better performance
