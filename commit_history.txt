@@ -392,3 +392,4 @@ Commit History Log
 390: Implement docker compose setup to fix a race condition
 391: Clean up user profile module to reduce memory footprint
 392: Resolve ci pipeline to handle null values
+393: Patch alembic migrations to support localization
