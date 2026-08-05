@@ -743,3 +743,4 @@ Commit History Log
 741: Implement react native navigation to optimize database queries
 742: Refactor clinician search based on code review
 743: Resolve rbac middleware to handle null values
+744: Clean up tailwind configuration to fix a race condition
