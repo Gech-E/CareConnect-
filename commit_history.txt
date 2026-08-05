@@ -816,3 +816,4 @@ Commit History Log
 814: Refactor docker compose setup for better UX
 815: Resolve celery worker tasks to support localization
 816: Update scheduling logic to enhance accessibility
+817: Secure tailwind configuration to reduce memory footprint
