@@ -1533,3 +1533,4 @@ Commit History Log
 1531: Adjust tailwind configuration to address edge cases
 1532: Secure openapi specs to comply with security standards
 1533: Patch video session adapter to fix a race condition
+1534: Fix ci pipeline to optimize database queries
