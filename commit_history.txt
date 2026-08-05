@@ -699,3 +699,4 @@ Commit History Log
 697: Improve prescription fulfillment to address edge cases
 698: Improve scheduling logic to fix a race condition
 699: Optimize react native navigation for better test coverage
+700: Fix next.js routing to align with domain model
