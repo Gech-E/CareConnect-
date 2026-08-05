@@ -2391,3 +2391,4 @@ Commit History Log
 2389: Add message threading to improve maintainability
 2390: Refactor user profile module for better test coverage
 2391: Update celery worker tasks to improve logging clarity
+2392: Optimize waiting room ui based on code review
