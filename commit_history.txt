@@ -35,3 +35,4 @@ Commit History Log
 33: Fix openapi specs based on code review
 34: Fix message threading to optimize database queries
 35: Resolve docker compose setup for better performance
+36: Patch audit logging for better test coverage
