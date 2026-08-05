@@ -1555,3 +1555,4 @@ Commit History Log
 1553: Optimize database schema for better test coverage
 1554: Adjust tailwind configuration to optimize database queries
 1555: Standardize waiting room ui for better test coverage
+1556: Add ci pipeline to address edge cases
