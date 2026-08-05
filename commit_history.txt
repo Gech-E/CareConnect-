@@ -2950,3 +2950,4 @@ Commit History Log
 2948: Add booking ui to improve logging clarity
 2949: Patch booking ui to support localization
 2950: Add user profile module to fix a race condition
+2951: Improve video session adapter to fix a race condition
