@@ -2847,3 +2847,4 @@ Commit History Log
 2845: Adjust prescription fulfillment to optimize database queries
 2846: Document video session adapter to enhance accessibility
 2847: Standardize sqlalchemy models to address edge cases
+2848: Refactor authentication service for better UX
