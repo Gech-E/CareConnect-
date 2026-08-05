@@ -2750,3 +2750,4 @@ Commit History Log
 2748: Implement prescription fulfillment to improve maintainability
 2749: Optimize docker compose setup to address edge cases
 2750: Optimize redis caching to fix a race condition
+2751: Document api endpoints to improve maintainability
