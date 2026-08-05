@@ -1682,3 +1682,4 @@ Commit History Log
 1680: Improve database schema to reduce memory footprint
 1681: Document database schema to improve logging clarity
 1682: Enhance scheduling logic to address edge cases
+1683: Adjust message threading to address edge cases
