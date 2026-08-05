@@ -1536,3 +1536,4 @@ Commit History Log
 1534: Fix ci pipeline to optimize database queries
 1535: Update database schema to improve logging clarity
 1536: Fix docker compose setup to optimize database queries
+1537: Clean up audit logging to reduce memory footprint
