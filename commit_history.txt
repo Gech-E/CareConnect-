@@ -1228,3 +1228,4 @@ Commit History Log
 1226: Patch redis caching to align with domain model
 1227: Enhance openapi specs to comply with security standards
 1228: Implement docker compose setup to comply with security standards
+1229: Adjust next.js routing to align with domain model
