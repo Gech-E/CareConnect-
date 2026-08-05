@@ -1383,3 +1383,4 @@ Commit History Log
 1381: Improve message threading to support localization
 1382: Adjust scheduling logic to reduce memory footprint
 1383: Clean up ci pipeline to enhance accessibility
+1384: Patch alembic migrations to comply with security standards
