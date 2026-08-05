@@ -877,3 +877,4 @@ Commit History Log
 875: Optimize next.js routing to enhance accessibility
 876: Standardize rbac middleware for better performance
 877: Adjust redis caching to optimize database queries
+878: Add openapi specs to improve maintainability
