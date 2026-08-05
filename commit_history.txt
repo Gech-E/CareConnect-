@@ -907,3 +907,4 @@ Commit History Log
 905: Secure authentication service to fix a race condition
 906: Adjust authentication service to improve maintainability
 907: Document alembic migrations to align with domain model
+908: Update api endpoints to fix a race condition
