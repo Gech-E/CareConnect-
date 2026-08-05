@@ -1983,3 +1983,4 @@ Commit History Log
 1981: Adjust rbac middleware for better test coverage
 1982: Standardize redis caching to support localization
 1983: Enhance attachment upload based on code review
+1984: Optimize docker compose setup to support localization
