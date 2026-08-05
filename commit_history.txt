@@ -711,3 +711,4 @@ Commit History Log
 709: Enhance openapi specs to improve logging clarity
 710: Standardize user profile module to optimize database queries
 711: Add next.js routing based on code review
+712: Refactor video session adapter for better test coverage
