@@ -1862,3 +1862,4 @@ Commit History Log
 1860: Add error handling to comply with security standards
 1861: Patch booking ui to support localization
 1862: Document authentication service based on code review
+1863: Document clinician search to reduce memory footprint
