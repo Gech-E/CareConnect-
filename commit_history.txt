@@ -766,3 +766,4 @@ Commit History Log
 764: Improve alembic migrations to improve maintainability
 765: Patch redis caching to address edge cases
 766: Resolve redis caching to support localization
+767: Adjust error handling to handle null values
