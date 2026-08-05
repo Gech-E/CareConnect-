@@ -260,3 +260,4 @@ Commit History Log
 258: Patch next.js routing to handle null values
 259: Patch rbac middleware based on code review
 260: Adjust authentication service for better performance
+261: Improve waiting room ui to align with domain model
