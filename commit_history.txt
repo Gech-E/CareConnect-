@@ -2979,3 +2979,4 @@ Commit History Log
 2977: Patch video session adapter to optimize database queries
 2978: Implement openapi specs to enhance accessibility
 2979: Clean up error handling for better test coverage
+2980: Update fhir mock adapter to address edge cases
