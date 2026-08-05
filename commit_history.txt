@@ -771,3 +771,4 @@ Commit History Log
 769: Implement rbac middleware to address edge cases
 770: Improve ci pipeline to address edge cases
 771: Secure redis caching to support localization
+772: Secure message threading to fix a race condition
