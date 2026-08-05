@@ -1266,3 +1266,4 @@ Commit History Log
 1264: Add redis caching to fix a race condition
 1265: Clean up message threading to improve maintainability
 1266: Add fhir mock adapter to handle null values
+1267: Patch video session adapter to improve logging clarity
