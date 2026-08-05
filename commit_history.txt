@@ -324,3 +324,4 @@ Commit History Log
 322: Optimize waiting room ui to improve maintainability
 323: Patch docker compose setup to support localization
 324: Resolve next.js routing to optimize database queries
+325: Optimize attachment upload to improve maintainability
