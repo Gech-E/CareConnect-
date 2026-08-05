@@ -223,3 +223,4 @@ Commit History Log
 221: Secure docker compose setup to reduce memory footprint
 222: Enhance error handling to align with domain model
 223: Patch scheduling logic based on code review
+224: Clean up celery worker tasks to support localization
