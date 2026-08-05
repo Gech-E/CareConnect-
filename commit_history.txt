@@ -1596,3 +1596,4 @@ Commit History Log
 1594: Clean up user profile module to improve logging clarity
 1595: Fix message threading for better performance
 1596: Standardize waiting room ui to comply with security standards
+1597: Resolve tailwind configuration to enhance accessibility
