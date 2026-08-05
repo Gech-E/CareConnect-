@@ -670,3 +670,4 @@ Commit History Log
 668: Refactor fhir mock adapter for better test coverage
 669: Clean up waiting room ui to handle null values
 670: Standardize attachment upload to fix a race condition
+671: Refactor scheduling logic to optimize database queries
