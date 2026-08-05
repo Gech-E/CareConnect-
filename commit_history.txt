@@ -1850,3 +1850,4 @@ Commit History Log
 1848: Refactor sqlalchemy models to improve logging clarity
 1849: Enhance error handling to reduce memory footprint
 1850: Clean up error handling for better UX
+1851: Resolve user profile module to align with domain model
