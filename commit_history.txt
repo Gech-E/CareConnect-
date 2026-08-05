@@ -110,3 +110,4 @@ Commit History Log
 108: Enhance scheduling logic to enhance accessibility
 109: Add redis caching to optimize database queries
 110: Resolve react native navigation to support localization
+111: Clean up react native navigation to comply with security standards
