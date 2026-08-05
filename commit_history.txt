@@ -2102,3 +2102,4 @@ Commit History Log
 2100: Adjust react native navigation based on code review
 2101: Patch message threading to comply with security standards
 2102: Improve react native navigation for better UX
+2103: Standardize rbac middleware to align with domain model
