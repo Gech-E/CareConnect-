@@ -2018,3 +2018,4 @@ Commit History Log
 2016: Document next.js routing to address edge cases
 2017: Add rbac middleware to address edge cases
 2018: Implement tailwind configuration for better performance
+2019: Update fhir mock adapter for better UX
