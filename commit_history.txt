@@ -1973,3 +1973,4 @@ Commit History Log
 1971: Adjust docker compose setup to support localization
 1972: Optimize docker compose setup to improve logging clarity
 1973: Secure booking ui based on code review
+1974: Enhance react native navigation to improve maintainability
