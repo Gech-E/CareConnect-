@@ -141,3 +141,4 @@ Commit History Log
 139: Refactor message threading to handle null values
 140: Standardize next.js routing for better UX
 141: Adjust api endpoints to comply with security standards
+142: Add audit logging to improve logging clarity
