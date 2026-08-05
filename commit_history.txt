@@ -363,3 +363,4 @@ Commit History Log
 361: Adjust message threading for better UX
 362: Document rbac middleware to support localization
 363: Optimize alembic migrations to address edge cases
+364: Document api endpoints to comply with security standards
