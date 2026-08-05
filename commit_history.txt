@@ -2869,3 +2869,4 @@ Commit History Log
 2867: Secure database schema to optimize database queries
 2868: Optimize database schema to reduce memory footprint
 2869: Enhance fhir mock adapter to support localization
+2870: Patch error handling to comply with security standards
