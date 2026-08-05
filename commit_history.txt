@@ -835,3 +835,4 @@ Commit History Log
 833: Optimize docker compose setup to enhance accessibility
 834: Adjust docker compose setup to comply with security standards
 835: Add waiting room ui to improve maintainability
+836: Standardize docker compose setup for better UX
