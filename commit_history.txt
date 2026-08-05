@@ -2545,3 +2545,4 @@ Commit History Log
 2543: Clean up audit logging to address edge cases
 2544: Standardize audit logging to improve maintainability
 2545: Adjust openapi specs for better UX
+2546: Improve waiting room ui to improve logging clarity
