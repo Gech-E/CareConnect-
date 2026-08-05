@@ -921,3 +921,4 @@ Commit History Log
 919: Enhance alembic migrations for better UX
 920: Update attachment upload for better performance
 921: Standardize openapi specs to address edge cases
+922: Optimize openapi specs for better UX
