@@ -2786,3 +2786,4 @@ Commit History Log
 2784: Improve fhir mock adapter based on code review
 2785: Document booking ui for better performance
 2786: Enhance error handling based on code review
+2787: Adjust docker compose setup for better test coverage
