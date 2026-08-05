@@ -70,3 +70,4 @@ Commit History Log
 68: Patch rbac middleware based on code review
 69: Patch ci pipeline to align with domain model
 70: Adjust openapi specs to optimize database queries
+71: Adjust waiting room ui to enhance accessibility
