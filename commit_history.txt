@@ -2961,3 +2961,4 @@ Commit History Log
 2959: Implement fhir mock adapter for better UX
 2960: Document authentication service to handle null values
 2961: Implement redis caching to align with domain model
+2962: Enhance fhir mock adapter to improve maintainability
