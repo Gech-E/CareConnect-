@@ -1808,3 +1808,4 @@ Commit History Log
 1806: Refactor scheduling logic to handle null values
 1807: Add rbac middleware for better UX
 1808: Improve message threading to align with domain model
+1809: Optimize booking ui to optimize database queries
