@@ -2469,3 +2469,4 @@ Commit History Log
 2467: Patch celery worker tasks to address edge cases
 2468: Improve celery worker tasks to address edge cases
 2469: Improve authentication service to address edge cases
+2470: Optimize docker compose setup to comply with security standards
