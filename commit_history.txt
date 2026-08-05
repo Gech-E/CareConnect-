@@ -693,3 +693,4 @@ Commit History Log
 691: Improve docker compose setup to align with domain model
 692: Clean up tailwind configuration to improve maintainability
 693: Adjust booking ui to enhance accessibility
+694: Optimize react native navigation to handle null values
