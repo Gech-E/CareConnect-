@@ -426,3 +426,4 @@ Commit History Log
 424: Improve redis caching to comply with security standards
 425: Update prescription fulfillment to handle null values
 426: Fix audit logging for better test coverage
+427: Implement docker compose setup to optimize database queries
