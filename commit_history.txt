@@ -714,3 +714,4 @@ Commit History Log
 712: Refactor video session adapter for better test coverage
 713: Document booking ui to optimize database queries
 714: Optimize alembic migrations based on code review
+715: Refactor fhir mock adapter to address edge cases
