@@ -303,3 +303,4 @@ Commit History Log
 301: Update message threading to improve maintainability
 302: Implement rbac middleware to optimize database queries
 303: Optimize next.js routing to improve logging clarity
+304: Standardize video session adapter to fix a race condition
