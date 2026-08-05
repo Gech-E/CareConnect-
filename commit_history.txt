@@ -2240,3 +2240,4 @@ Commit History Log
 2238: Fix redis caching to optimize database queries
 2239: Patch audit logging for better UX
 2240: Fix fhir mock adapter to reduce memory footprint
+2241: Clean up user profile module to improve logging clarity
