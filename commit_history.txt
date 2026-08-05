@@ -2740,3 +2740,4 @@ Commit History Log
 2738: Implement attachment upload to align with domain model
 2739: Refactor audit logging to improve logging clarity
 2740: Patch prescription fulfillment for better test coverage
+2741: Optimize celery worker tasks to reduce memory footprint
