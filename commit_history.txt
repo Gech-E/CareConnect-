@@ -2254,3 +2254,4 @@ Commit History Log
 2252: Update error handling for better performance
 2253: Implement attachment upload to optimize database queries
 2254: Add attachment upload to reduce memory footprint
+2255: Improve booking ui to reduce memory footprint
