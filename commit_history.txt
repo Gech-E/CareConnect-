@@ -942,3 +942,4 @@ Commit History Log
 940: Implement user profile module based on code review
 941: Fix database schema to improve logging clarity
 942: Patch rbac middleware to address edge cases
+943: Adjust booking ui to optimize database queries
