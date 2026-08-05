@@ -882,3 +882,4 @@ Commit History Log
 880: Secure scheduling logic based on code review
 881: Adjust fhir mock adapter based on code review
 882: Standardize openapi specs for better test coverage
+883: Document tailwind configuration to address edge cases
