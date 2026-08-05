@@ -1388,3 +1388,4 @@ Commit History Log
 1386: Implement openapi specs based on code review
 1387: Update tailwind configuration to comply with security standards
 1388: Implement docker compose setup to support localization
+1389: Document sqlalchemy models for better performance
