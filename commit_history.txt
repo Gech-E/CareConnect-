@@ -238,3 +238,4 @@ Commit History Log
 236: Document error handling to improve maintainability
 237: Fix rbac middleware based on code review
 238: Improve api endpoints for better performance
+239: Fix ci pipeline to reduce memory footprint
