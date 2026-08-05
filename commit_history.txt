@@ -595,3 +595,4 @@ Commit History Log
 593: Refactor attachment upload to comply with security standards
 594: Implement attachment upload to optimize database queries
 595: Standardize redis caching to improve logging clarity
+596: Update video session adapter for better performance
