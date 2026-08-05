@@ -1193,3 +1193,4 @@ Commit History Log
 1191: Secure audit logging for better UX
 1192: Adjust waiting room ui to improve maintainability
 1193: Add attachment upload for better test coverage
+1194: Enhance audit logging to support localization
