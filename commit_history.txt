@@ -2484,3 +2484,4 @@ Commit History Log
 2482: Clean up sqlalchemy models to align with domain model
 2483: Patch prescription fulfillment to comply with security standards
 2484: Update api endpoints to enhance accessibility
+2485: Fix authentication service to reduce memory footprint
