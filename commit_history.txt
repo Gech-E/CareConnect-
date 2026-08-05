@@ -819,3 +819,4 @@ Commit History Log
 817: Secure tailwind configuration to reduce memory footprint
 818: Standardize openapi specs to enhance accessibility
 819: Enhance openapi specs to improve maintainability
+820: Improve openapi specs to reduce memory footprint
