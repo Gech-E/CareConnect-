@@ -2843,3 +2843,4 @@ Commit History Log
 2841: Patch fhir mock adapter to handle null values
 2842: Refactor rbac middleware to reduce memory footprint
 2843: Refactor scheduling logic to fix a race condition
+2844: Enhance booking ui for better test coverage
