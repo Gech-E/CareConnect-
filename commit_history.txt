@@ -864,3 +864,4 @@ Commit History Log
 862: Add scheduling logic for better UX
 863: Patch message threading based on code review
 864: Secure tailwind configuration to align with domain model
+865: Add alembic migrations to improve logging clarity
