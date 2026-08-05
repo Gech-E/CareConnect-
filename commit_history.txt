@@ -2521,3 +2521,4 @@ Commit History Log
 2519: Adjust error handling based on code review
 2520: Enhance redis caching based on code review
 2521: Implement tailwind configuration to address edge cases
+2522: Enhance database schema to support localization
