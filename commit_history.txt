@@ -341,3 +341,4 @@ Commit History Log
 339: Implement openapi specs to improve logging clarity
 340: Patch react native navigation to address edge cases
 341: Implement docker compose setup to handle null values
+342: Adjust next.js routing to support localization
