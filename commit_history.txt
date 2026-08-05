@@ -2757,3 +2757,4 @@ Commit History Log
 2755: Implement celery worker tasks to optimize database queries
 2756: Refactor attachment upload to reduce memory footprint
 2757: Update attachment upload to improve logging clarity
+2758: Clean up audit logging to support localization
