@@ -1805,3 +1805,4 @@ Commit History Log
 1803: Clean up sqlalchemy models to support localization
 1804: Clean up fhir mock adapter to fix a race condition
 1805: Resolve database schema to improve logging clarity
+1806: Refactor scheduling logic to handle null values
