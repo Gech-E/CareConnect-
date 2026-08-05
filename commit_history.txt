@@ -1106,3 +1106,4 @@ Commit History Log
 1104: Refactor tailwind configuration to align with domain model
 1105: Adjust clinician search to reduce memory footprint
 1106: Document rbac middleware to improve maintainability
+1107: Update clinician search to handle null values
