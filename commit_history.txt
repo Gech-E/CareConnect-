@@ -755,3 +755,4 @@ Commit History Log
 753: Secure user profile module for better performance
 754: Improve attachment upload to support localization
 755: Standardize celery worker tasks to fix a race condition
+756: Secure message threading for better UX
