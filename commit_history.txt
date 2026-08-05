@@ -1422,3 +1422,4 @@ Commit History Log
 1420: Update scheduling logic for better UX
 1421: Secure prescription fulfillment for better UX
 1422: Document rbac middleware to handle null values
+1423: Enhance next.js routing to comply with security standards
