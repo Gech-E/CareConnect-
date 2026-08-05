@@ -2983,3 +2983,4 @@ Commit History Log
 2981: Resolve user profile module to support localization
 2982: Refactor prescription fulfillment for better UX
 2983: Adjust rbac middleware to reduce memory footprint
+2984: Optimize redis caching to comply with security standards
