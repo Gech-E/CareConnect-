@@ -1649,3 +1649,4 @@ Commit History Log
 1647: Improve message threading for better performance
 1648: Patch message threading for better UX
 1649: Optimize next.js routing to address edge cases
+1650: Refactor docker compose setup to optimize database queries
