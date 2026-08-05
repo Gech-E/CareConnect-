@@ -29,3 +29,4 @@ Commit History Log
 27: Standardize tailwind configuration to enhance accessibility
 28: Adjust authentication service to reduce memory footprint
 29: Enhance redis caching to handle null values
+30: Implement alembic migrations to support localization
