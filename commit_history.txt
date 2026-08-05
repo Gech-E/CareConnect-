@@ -1411,3 +1411,4 @@ Commit History Log
 1409: Resolve api endpoints for better test coverage
 1410: Standardize video session adapter to address edge cases
 1411: Enhance error handling to optimize database queries
+1412: Document message threading to support localization
