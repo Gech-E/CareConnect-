@@ -194,3 +194,4 @@ Commit History Log
 192: Adjust video session adapter to optimize database queries
 193: Patch next.js routing to align with domain model
 194: Fix authentication service to reduce memory footprint
+195: Improve database schema to align with domain model
