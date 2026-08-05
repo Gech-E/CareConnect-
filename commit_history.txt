@@ -2542,3 +2542,4 @@ Commit History Log
 2540: Adjust scheduling logic for better UX
 2541: Patch fhir mock adapter for better UX
 2542: Patch rbac middleware to optimize database queries
+2543: Clean up audit logging to address edge cases
