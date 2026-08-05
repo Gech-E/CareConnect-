@@ -1712,3 +1712,4 @@ Commit History Log
 1710: Implement prescription fulfillment to align with domain model
 1711: Implement error handling to comply with security standards
 1712: Improve attachment upload to support localization
+1713: Optimize alembic migrations for better performance
