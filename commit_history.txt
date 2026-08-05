@@ -951,3 +951,4 @@ Commit History Log
 949: Resolve api endpoints to fix a race condition
 950: Fix redis caching to optimize database queries
 951: Secure error handling to align with domain model
+952: Secure docker compose setup based on code review
