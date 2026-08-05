@@ -721,3 +721,4 @@ Commit History Log
 719: Standardize celery worker tasks to improve maintainability
 720: Fix user profile module to improve maintainability
 721: Refactor fhir mock adapter to improve logging clarity
+722: Enhance waiting room ui to align with domain model
