@@ -2164,3 +2164,4 @@ Commit History Log
 2162: Update react native navigation for better performance
 2163: Implement video session adapter based on code review
 2164: Adjust rbac middleware to support localization
+2165: Improve alembic migrations to optimize database queries
