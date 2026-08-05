@@ -1358,3 +1358,4 @@ Commit History Log
 1356: Update user profile module to handle null values
 1357: Clean up react native navigation to improve maintainability
 1358: Improve tailwind configuration to improve maintainability
+1359: Patch error handling to handle null values
