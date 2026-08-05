@@ -147,3 +147,4 @@ Commit History Log
 145: Patch audit logging to comply with security standards
 146: Adjust tailwind configuration to fix a race condition
 147: Improve database schema to fix a race condition
+148: Add rbac middleware for better performance
