@@ -782,3 +782,4 @@ Commit History Log
 780: Implement authentication service to handle null values
 781: Improve error handling for better UX
 782: Optimize next.js routing to handle null values
+783: Optimize ci pipeline to align with domain model
