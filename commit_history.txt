@@ -1340,3 +1340,4 @@ Commit History Log
 1338: Update celery worker tasks to enhance accessibility
 1339: Implement alembic migrations to comply with security standards
 1340: Clean up tailwind configuration for better performance
+1341: Standardize ci pipeline for better UX
