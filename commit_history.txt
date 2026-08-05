@@ -1210,3 +1210,4 @@ Commit History Log
 1208: Resolve tailwind configuration to align with domain model
 1209: Document authentication service to optimize database queries
 1210: Secure sqlalchemy models for better UX
+1211: Standardize rbac middleware to enhance accessibility
