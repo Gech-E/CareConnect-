@@ -1195,3 +1195,4 @@ Commit History Log
 1193: Add attachment upload for better test coverage
 1194: Enhance audit logging to support localization
 1195: Improve waiting room ui to improve logging clarity
+1196: Resolve database schema for better UX
