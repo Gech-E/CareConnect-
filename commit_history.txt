@@ -176,3 +176,4 @@ Commit History Log
 174: Secure ci pipeline to address edge cases
 175: Fix docker compose setup to enhance accessibility
 176: Update tailwind configuration to support localization
+177: Enhance error handling based on code review
