@@ -1103,3 +1103,4 @@ Commit History Log
 1101: Standardize clinician search to enhance accessibility
 1102: Patch sqlalchemy models to fix a race condition
 1103: Standardize attachment upload to improve maintainability
+1104: Refactor tailwind configuration to align with domain model
