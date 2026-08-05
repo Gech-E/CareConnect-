@@ -2676,3 +2676,4 @@ Commit History Log
 2674: Implement user profile module to reduce memory footprint
 2675: Standardize database schema based on code review
 2676: Resolve rbac middleware for better performance
+2677: Patch openapi specs to improve maintainability
