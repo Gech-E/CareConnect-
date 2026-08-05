@@ -2497,3 +2497,4 @@ Commit History Log
 2495: Implement api endpoints to handle null values
 2496: Add next.js routing to fix a race condition
 2497: Update error handling for better test coverage
+2498: Document error handling to enhance accessibility
