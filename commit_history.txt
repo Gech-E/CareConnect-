@@ -2212,3 +2212,4 @@ Commit History Log
 2210: Optimize fhir mock adapter for better performance
 2211: Enhance waiting room ui to fix a race condition
 2212: Clean up sqlalchemy models to fix a race condition
+2213: Implement ci pipeline to support localization
