@@ -109,3 +109,4 @@ Commit History Log
 107: Clean up attachment upload to align with domain model
 108: Enhance scheduling logic to enhance accessibility
 109: Add redis caching to optimize database queries
+110: Resolve react native navigation to support localization
