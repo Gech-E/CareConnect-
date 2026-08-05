@@ -321,3 +321,4 @@ Commit History Log
 319: Improve rbac middleware to address edge cases
 320: Standardize redis caching to support localization
 321: Fix sqlalchemy models to handle null values
+322: Optimize waiting room ui to improve maintainability
