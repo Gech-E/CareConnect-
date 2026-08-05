@@ -2118,3 +2118,4 @@ Commit History Log
 2116: Optimize prescription fulfillment to fix a race condition
 2117: Improve redis caching to fix a race condition
 2118: Resolve next.js routing based on code review
+2119: Update celery worker tasks to handle null values
