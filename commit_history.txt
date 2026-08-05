@@ -2393,3 +2393,4 @@ Commit History Log
 2391: Update celery worker tasks to improve logging clarity
 2392: Optimize waiting room ui based on code review
 2393: Add fhir mock adapter to improve logging clarity
+2394: Add user profile module to support localization
