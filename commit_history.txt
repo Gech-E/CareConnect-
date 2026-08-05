@@ -258,3 +258,4 @@ Commit History Log
 256: Add prescription fulfillment to reduce memory footprint
 257: Document error handling for better performance
 258: Patch next.js routing to handle null values
+259: Patch rbac middleware based on code review
