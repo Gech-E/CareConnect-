@@ -2257,3 +2257,4 @@ Commit History Log
 2255: Improve booking ui to reduce memory footprint
 2256: Optimize booking ui to fix a race condition
 2257: Document rbac middleware to improve logging clarity
+2258: Clean up sqlalchemy models for better UX
