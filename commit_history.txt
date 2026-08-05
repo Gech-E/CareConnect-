@@ -2909,3 +2909,4 @@ Commit History Log
 2907: Standardize alembic migrations to support localization
 2908: Optimize react native navigation to handle null values
 2909: Secure rbac middleware for better performance
+2910: Document next.js routing to improve logging clarity
