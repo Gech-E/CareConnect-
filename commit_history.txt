@@ -741,3 +741,4 @@ Commit History Log
 739: Adjust docker compose setup for better performance
 740: Document authentication service to handle null values
 741: Implement react native navigation to optimize database queries
+742: Refactor clinician search based on code review
