@@ -397,3 +397,4 @@ Commit History Log
 395: Patch waiting room ui to fix a race condition
 396: Secure user profile module to support localization
 397: Patch rbac middleware to address edge cases
+398: Adjust database schema to enhance accessibility
