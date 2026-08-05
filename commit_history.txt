@@ -797,3 +797,4 @@ Commit History Log
 795: Optimize tailwind configuration to handle null values
 796: Add message threading for better UX
 797: Enhance clinician search to address edge cases
+798: Fix api endpoints to fix a race condition
