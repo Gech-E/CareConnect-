@@ -1301,3 +1301,4 @@ Commit History Log
 1299: Standardize authentication service based on code review
 1300: Enhance openapi specs to support localization
 1301: Standardize video session adapter to improve logging clarity
+1302: Adjust sqlalchemy models to fix a race condition
