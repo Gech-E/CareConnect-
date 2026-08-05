@@ -2831,3 +2831,4 @@ Commit History Log
 2829: Secure booking ui to reduce memory footprint
 2830: Implement error handling for better UX
 2831: Add database schema for better test coverage
+2832: Secure waiting room ui to reduce memory footprint
