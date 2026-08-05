@@ -2404,3 +2404,4 @@ Commit History Log
 2402: Add audit logging for better UX
 2403: Implement authentication service to fix a race condition
 2404: Fix fhir mock adapter to fix a race condition
+2405: Clean up next.js routing to comply with security standards
