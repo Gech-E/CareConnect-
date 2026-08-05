@@ -1041,3 +1041,4 @@ Commit History Log
 1039: Standardize booking ui for better performance
 1040: Resolve error handling to improve logging clarity
 1041: Resolve authentication service to optimize database queries
+1042: Refactor clinician search for better UX
