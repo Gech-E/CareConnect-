@@ -59,3 +59,4 @@ Commit History Log
 57: Secure attachment upload to optimize database queries
 58: Update tailwind configuration to improve maintainability
 59: Refactor redis caching for better UX
+60: Clean up react native navigation to align with domain model
