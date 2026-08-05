@@ -1720,3 +1720,4 @@ Commit History Log
 1718: Resolve next.js routing based on code review
 1719: Adjust error handling to enhance accessibility
 1720: Secure scheduling logic for better performance
+1721: Document fhir mock adapter to improve logging clarity
