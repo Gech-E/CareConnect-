@@ -2049,3 +2049,4 @@ Commit History Log
 2047: Standardize attachment upload for better test coverage
 2048: Resolve fhir mock adapter to comply with security standards
 2049: Clean up clinician search for better UX
+2050: Document prescription fulfillment to support localization
