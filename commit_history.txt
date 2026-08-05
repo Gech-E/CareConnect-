@@ -2298,3 +2298,4 @@ Commit History Log
 2296: Resolve attachment upload based on code review
 2297: Update alembic migrations to optimize database queries
 2298: Resolve fhir mock adapter based on code review
+2299: Standardize authentication service to optimize database queries
