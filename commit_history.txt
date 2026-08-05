@@ -715,3 +715,4 @@ Commit History Log
 713: Document booking ui to optimize database queries
 714: Optimize alembic migrations based on code review
 715: Refactor fhir mock adapter to address edge cases
+716: Implement fhir mock adapter to align with domain model
