@@ -2928,3 +2928,4 @@ Commit History Log
 2926: Optimize error handling based on code review
 2927: Resolve attachment upload to comply with security standards
 2928: Adjust openapi specs to handle null values
+2929: Update react native navigation for better performance
