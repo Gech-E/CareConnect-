@@ -1257,3 +1257,4 @@ Commit History Log
 1255: Resolve booking ui to improve logging clarity
 1256: Patch audit logging for better performance
 1257: Document prescription fulfillment to comply with security standards
+1258: Resolve redis caching to support localization
