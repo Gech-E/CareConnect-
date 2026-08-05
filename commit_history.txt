@@ -503,3 +503,4 @@ Commit History Log
 501: Improve ci pipeline to improve logging clarity
 502: Clean up redis caching for better performance
 503: Secure database schema to fix a race condition
+504: Resolve react native navigation for better performance
