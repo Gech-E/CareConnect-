@@ -874,3 +874,4 @@ Commit History Log
 872: Resolve react native navigation for better test coverage
 873: Patch scheduling logic to handle null values
 874: Secure alembic migrations for better UX
+875: Optimize next.js routing to enhance accessibility
