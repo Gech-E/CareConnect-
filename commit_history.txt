@@ -2409,3 +2409,4 @@ Commit History Log
 2407: Patch sqlalchemy models to improve maintainability
 2408: Fix clinician search to enhance accessibility
 2409: Clean up tailwind configuration to support localization
+2410: Patch docker compose setup to reduce memory footprint
