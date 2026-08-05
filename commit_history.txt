@@ -507,3 +507,4 @@ Commit History Log
 505: Adjust rbac middleware for better performance
 506: Improve fhir mock adapter to address edge cases
 507: Improve message threading for better test coverage
+508: Add docker compose setup to improve logging clarity
