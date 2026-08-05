@@ -627,3 +627,4 @@ Commit History Log
 625: Add attachment upload to address edge cases
 626: Adjust react native navigation to address edge cases
 627: Optimize message threading to address edge cases
+628: Patch rbac middleware to enhance accessibility
