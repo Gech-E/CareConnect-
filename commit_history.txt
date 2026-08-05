@@ -1162,3 +1162,4 @@ Commit History Log
 1160: Fix openapi specs to fix a race condition
 1161: Update database schema for better UX
 1162: Document booking ui to optimize database queries
+1163: Resolve next.js routing based on code review
