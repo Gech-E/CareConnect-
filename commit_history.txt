@@ -1359,3 +1359,4 @@ Commit History Log
 1357: Clean up react native navigation to improve maintainability
 1358: Improve tailwind configuration to improve maintainability
 1359: Patch error handling to handle null values
+1360: Patch openapi specs for better test coverage
