@@ -496,3 +496,4 @@ Commit History Log
 494: Adjust ci pipeline to enhance accessibility
 495: Standardize alembic migrations to enhance accessibility
 496: Adjust docker compose setup to improve logging clarity
+497: Resolve sqlalchemy models to improve maintainability
