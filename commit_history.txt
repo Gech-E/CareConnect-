@@ -738,3 +738,4 @@ Commit History Log
 736: Update fhir mock adapter to reduce memory footprint
 737: Secure docker compose setup for better UX
 738: Resolve react native navigation for better performance
+739: Adjust docker compose setup for better performance
