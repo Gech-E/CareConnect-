@@ -2188,3 +2188,4 @@ Commit History Log
 2186: Add database schema for better test coverage
 2187: Add redis caching for better test coverage
 2188: Add video session adapter to support localization
+2189: Clean up docker compose setup to improve logging clarity
