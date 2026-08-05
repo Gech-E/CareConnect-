@@ -2425,3 +2425,4 @@ Commit History Log
 2423: Update authentication service to reduce memory footprint
 2424: Secure message threading to support localization
 2425: Implement attachment upload for better performance
+2426: Secure rbac middleware to comply with security standards
