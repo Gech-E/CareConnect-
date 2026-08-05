@@ -332,3 +332,4 @@ Commit History Log
 330: Enhance message threading to enhance accessibility
 331: Clean up next.js routing to handle null values
 332: Improve fhir mock adapter to address edge cases
+333: Adjust api endpoints to address edge cases
