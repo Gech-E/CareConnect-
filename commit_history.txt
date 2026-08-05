@@ -248,3 +248,4 @@ Commit History Log
 246: Improve tailwind configuration to handle null values
 247: Implement alembic migrations based on code review
 248: Secure fhir mock adapter for better test coverage
+249: Secure api endpoints for better test coverage
