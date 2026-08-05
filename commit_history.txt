@@ -857,3 +857,4 @@ Commit History Log
 855: Implement ci pipeline to optimize database queries
 856: Standardize attachment upload to enhance accessibility
 857: Secure react native navigation to optimize database queries
+858: Improve clinician search to handle null values
