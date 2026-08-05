@@ -353,3 +353,4 @@ Commit History Log
 351: Secure sqlalchemy models to support localization
 352: Adjust audit logging to optimize database queries
 353: Enhance message threading to address edge cases
+354: Patch docker compose setup to optimize database queries
