@@ -1248,3 +1248,4 @@ Commit History Log
 1246: Implement ci pipeline for better performance
 1247: Adjust authentication service to comply with security standards
 1248: Standardize ci pipeline to enhance accessibility
+1249: Patch attachment upload to address edge cases
