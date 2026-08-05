@@ -922,3 +922,4 @@ Commit History Log
 920: Update attachment upload for better performance
 921: Standardize openapi specs to address edge cases
 922: Optimize openapi specs for better UX
+923: Optimize next.js routing to fix a race condition
