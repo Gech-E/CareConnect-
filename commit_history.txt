@@ -416,3 +416,4 @@ Commit History Log
 414: Enhance rbac middleware to reduce memory footprint
 415: Enhance fhir mock adapter for better UX
 416: Patch tailwind configuration to improve maintainability
+417: Patch ci pipeline to handle null values
