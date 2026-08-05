@@ -470,3 +470,4 @@ Commit History Log
 468: Standardize prescription fulfillment for better UX
 469: Implement clinician search to fix a race condition
 470: Clean up alembic migrations to align with domain model
+471: Refactor rbac middleware for better test coverage
