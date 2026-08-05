@@ -1374,3 +1374,4 @@ Commit History Log
 1372: Adjust rbac middleware to handle null values
 1373: Document next.js routing to align with domain model
 1374: Improve audit logging to address edge cases
+1375: Standardize ci pipeline to comply with security standards
