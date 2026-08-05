@@ -823,3 +823,4 @@ Commit History Log
 821: Implement video session adapter to improve maintainability
 822: Adjust error handling to reduce memory footprint
 823: Resolve database schema to improve logging clarity
+824: Resolve next.js routing to improve logging clarity
