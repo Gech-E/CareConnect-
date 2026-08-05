@@ -950,3 +950,4 @@ Commit History Log
 948: Refactor clinician search to handle null values
 949: Resolve api endpoints to fix a race condition
 950: Fix redis caching to optimize database queries
+951: Secure error handling to align with domain model
