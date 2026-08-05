@@ -1837,3 +1837,4 @@ Commit History Log
 1835: Resolve waiting room ui to enhance accessibility
 1836: Patch next.js routing to enhance accessibility
 1837: Patch docker compose setup to handle null values
+1838: Secure alembic migrations to address edge cases
