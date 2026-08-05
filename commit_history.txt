@@ -1186,3 +1186,4 @@ Commit History Log
 1184: Standardize next.js routing to comply with security standards
 1185: Adjust rbac middleware to address edge cases
 1186: Update api endpoints to optimize database queries
+1187: Adjust error handling to reduce memory footprint
