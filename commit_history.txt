@@ -1653,3 +1653,4 @@ Commit History Log
 1651: Improve fhir mock adapter for better performance
 1652: Resolve fhir mock adapter to address edge cases
 1653: Enhance sqlalchemy models to improve logging clarity
+1654: Enhance booking ui to fix a race condition
