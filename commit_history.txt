@@ -2252,3 +2252,4 @@ Commit History Log
 2250: Update docker compose setup to comply with security standards
 2251: Add error handling to handle null values
 2252: Update error handling for better performance
+2253: Implement attachment upload to optimize database queries
