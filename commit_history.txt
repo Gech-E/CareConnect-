@@ -1093,3 +1093,4 @@ Commit History Log
 1091: Refactor authentication service to optimize database queries
 1092: Enhance redis caching to optimize database queries
 1093: Refactor sqlalchemy models to improve logging clarity
+1094: Add ci pipeline to comply with security standards
