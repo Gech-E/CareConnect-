@@ -1335,3 +1335,4 @@ Commit History Log
 1333: Patch authentication service based on code review
 1334: Patch openapi specs to handle null values
 1335: Fix openapi specs based on code review
+1336: Optimize alembic migrations to optimize database queries
