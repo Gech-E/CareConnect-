@@ -1869,3 +1869,4 @@ Commit History Log
 1867: Optimize attachment upload based on code review
 1868: Improve fhir mock adapter to support localization
 1869: Resolve openapi specs to address edge cases
+1870: Adjust user profile module to improve logging clarity
