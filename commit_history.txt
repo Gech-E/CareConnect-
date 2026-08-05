@@ -2309,3 +2309,4 @@ Commit History Log
 2307: Refactor api endpoints to fix a race condition
 2308: Standardize docker compose setup to improve logging clarity
 2309: Enhance ci pipeline to fix a race condition
+2310: Adjust scheduling logic to fix a race condition
