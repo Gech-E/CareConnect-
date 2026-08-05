@@ -2459,3 +2459,4 @@ Commit History Log
 2457: Secure next.js routing for better test coverage
 2458: Improve docker compose setup to optimize database queries
 2459: Secure celery worker tasks to improve maintainability
+2460: Secure docker compose setup for better performance
