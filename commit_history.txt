@@ -2456,3 +2456,4 @@ Commit History Log
 2454: Adjust ci pipeline to improve logging clarity
 2455: Fix error handling for better performance
 2456: Update rbac middleware to enhance accessibility
+2457: Secure next.js routing for better test coverage
