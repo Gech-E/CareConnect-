@@ -2395,3 +2395,4 @@ Commit History Log
 2393: Add fhir mock adapter to improve logging clarity
 2394: Add user profile module to support localization
 2395: Standardize message threading to improve maintainability
+2396: Document rbac middleware to address edge cases
