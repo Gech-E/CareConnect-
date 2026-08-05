@@ -448,3 +448,4 @@ Commit History Log
 446: Document next.js routing to improve logging clarity
 447: Improve rbac middleware for better test coverage
 448: Enhance audit logging to align with domain model
+449: Enhance booking ui based on code review
