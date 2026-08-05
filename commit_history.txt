@@ -342,3 +342,4 @@ Commit History Log
 340: Patch react native navigation to address edge cases
 341: Implement docker compose setup to handle null values
 342: Adjust next.js routing to support localization
+343: Implement error handling to address edge cases
