@@ -1510,3 +1510,4 @@ Commit History Log
 1508: Implement authentication service for better UX
 1509: Fix audit logging based on code review
 1510: Optimize openapi specs to support localization
+1511: Refactor scheduling logic to support localization
