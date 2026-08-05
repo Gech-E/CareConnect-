@@ -2050,3 +2050,4 @@ Commit History Log
 2048: Resolve fhir mock adapter to comply with security standards
 2049: Clean up clinician search for better UX
 2050: Document prescription fulfillment to support localization
+2051: Secure error handling for better UX
