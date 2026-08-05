@@ -2244,3 +2244,4 @@ Commit History Log
 2242: Document clinician search to fix a race condition
 2243: Resolve prescription fulfillment to address edge cases
 2244: Optimize docker compose setup to address edge cases
+2245: Document database schema for better performance
