@@ -1456,3 +1456,4 @@ Commit History Log
 1454: Update attachment upload based on code review
 1455: Enhance tailwind configuration to reduce memory footprint
 1456: Clean up celery worker tasks to improve maintainability
+1457: Improve next.js routing to improve maintainability
