@@ -1118,3 +1118,4 @@ Commit History Log
 1116: Standardize user profile module to enhance accessibility
 1117: Resolve tailwind configuration to enhance accessibility
 1118: Secure sqlalchemy models to optimize database queries
+1119: Enhance clinician search to fix a race condition
