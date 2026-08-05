@@ -2866,3 +2866,4 @@ Commit History Log
 2864: Adjust booking ui to support localization
 2865: Improve fhir mock adapter to fix a race condition
 2866: Clean up openapi specs based on code review
+2867: Secure database schema to optimize database queries
