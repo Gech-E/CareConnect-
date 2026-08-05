@@ -1803,3 +1803,4 @@ Commit History Log
 1801: Refactor authentication service based on code review
 1802: Implement next.js routing for better performance
 1803: Clean up sqlalchemy models to support localization
+1804: Clean up fhir mock adapter to fix a race condition
