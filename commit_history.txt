@@ -1520,3 +1520,4 @@ Commit History Log
 1518: Enhance error handling to reduce memory footprint
 1519: Update clinician search to handle null values
 1520: Resolve booking ui based on code review
+1521: Implement celery worker tasks based on code review
