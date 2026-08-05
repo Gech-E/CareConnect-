@@ -1410,3 +1410,4 @@ Commit History Log
 1408: Standardize rbac middleware to comply with security standards
 1409: Resolve api endpoints for better test coverage
 1410: Standardize video session adapter to address edge cases
+1411: Enhance error handling to optimize database queries
