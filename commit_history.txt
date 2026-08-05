@@ -1771,3 +1771,4 @@ Commit History Log
 1769: Clean up tailwind configuration to support localization
 1770: Enhance error handling to handle null values
 1771: Enhance scheduling logic to comply with security standards
+1772: Add scheduling logic based on code review
