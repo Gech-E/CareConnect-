@@ -2,3 +2,4 @@ Commit History Log
 0: Enhance fhir mock adapter to optimize database queries
 1: Refactor api endpoints to improve logging clarity
 2: Clean up react native navigation to reduce memory footprint
+3: Add user profile module to handle null values
