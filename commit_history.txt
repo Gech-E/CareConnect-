@@ -854,3 +854,4 @@ Commit History Log
 852: Resolve user profile module for better test coverage
 853: Add rbac middleware to improve maintainability
 854: Enhance attachment upload based on code review
+855: Implement ci pipeline to optimize database queries
