@@ -1351,3 +1351,4 @@ Commit History Log
 1349: Refactor redis caching for better UX
 1350: Refactor react native navigation to enhance accessibility
 1351: Enhance celery worker tasks to optimize database queries
+1352: Enhance scheduling logic to handle null values
