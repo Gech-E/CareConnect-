@@ -168,3 +168,4 @@ Commit History Log
 166: Update waiting room ui based on code review
 167: Document sqlalchemy models to comply with security standards
 168: Implement alembic migrations to comply with security standards
+169: Fix redis caching for better UX
