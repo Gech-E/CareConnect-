@@ -931,3 +931,4 @@ Commit History Log
 929: Implement celery worker tasks to enhance accessibility
 930: Update booking ui for better performance
 931: Refactor redis caching to optimize database queries
+932: Standardize rbac middleware for better UX
