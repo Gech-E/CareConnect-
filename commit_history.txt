@@ -19,3 +19,4 @@ Commit History Log
 17: Clean up next.js routing to align with domain model
 18: Update fhir mock adapter to align with domain model
 19: Patch error handling to improve logging clarity
+20: Improve scheduling logic to fix a race condition
