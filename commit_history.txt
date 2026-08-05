@@ -774,3 +774,4 @@ Commit History Log
 772: Secure message threading to fix a race condition
 773: Refactor api endpoints to optimize database queries
 774: Adjust clinician search for better test coverage
+775: Add ci pipeline to handle null values
