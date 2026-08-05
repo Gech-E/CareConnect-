@@ -362,3 +362,4 @@ Commit History Log
 360: Secure database schema to improve maintainability
 361: Adjust message threading for better UX
 362: Document rbac middleware to support localization
+363: Optimize alembic migrations to address edge cases
