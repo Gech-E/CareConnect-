@@ -1316,3 +1316,4 @@ Commit History Log
 1314: Fix tailwind configuration to address edge cases
 1315: Refactor next.js routing based on code review
 1316: Resolve booking ui to handle null values
+1317: Refactor docker compose setup based on code review
