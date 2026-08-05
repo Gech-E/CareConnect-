@@ -1953,3 +1953,4 @@ Commit History Log
 1951: Update attachment upload to handle null values
 1952: Update scheduling logic to enhance accessibility
 1953: Adjust celery worker tasks for better UX
+1954: Add audit logging to support localization
