@@ -2712,3 +2712,4 @@ Commit History Log
 2710: Standardize rbac middleware based on code review
 2711: Optimize openapi specs to comply with security standards
 2712: Update sqlalchemy models to enhance accessibility
+2713: Enhance video session adapter based on code review
