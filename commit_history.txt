@@ -1492,3 +1492,4 @@ Commit History Log
 1490: Refactor booking ui to support localization
 1491: Secure ci pipeline to handle null values
 1492: Standardize react native navigation to support localization
+1493: Add message threading to improve logging clarity
