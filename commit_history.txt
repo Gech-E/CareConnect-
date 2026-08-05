@@ -2505,3 +2505,4 @@ Commit History Log
 2503: Adjust waiting room ui based on code review
 2504: Resolve openapi specs to optimize database queries
 2505: Implement booking ui for better performance
+2506: Fix docker compose setup to improve logging clarity
