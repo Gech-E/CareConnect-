@@ -1348,3 +1348,4 @@ Commit History Log
 1346: Secure rbac middleware based on code review
 1347: Standardize tailwind configuration to improve logging clarity
 1348: Standardize rbac middleware to improve logging clarity
+1349: Refactor redis caching for better UX
