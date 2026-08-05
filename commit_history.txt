@@ -1090,3 +1090,4 @@ Commit History Log
 1088: Patch celery worker tasks to reduce memory footprint
 1089: Clean up booking ui to support localization
 1090: Optimize fhir mock adapter to fix a race condition
+1091: Refactor authentication service to optimize database queries
