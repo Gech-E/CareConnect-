@@ -1024,3 +1024,4 @@ Commit History Log
 1022: Fix clinician search to improve maintainability
 1023: Optimize error handling to improve maintainability
 1024: Add react native navigation to enhance accessibility
+1025: Enhance celery worker tasks to address edge cases
