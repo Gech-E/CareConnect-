@@ -1145,3 +1145,4 @@ Commit History Log
 1143: Update clinician search to align with domain model
 1144: Patch tailwind configuration to optimize database queries
 1145: Update ci pipeline to reduce memory footprint
+1146: Enhance waiting room ui to optimize database queries
