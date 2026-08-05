@@ -1031,3 +1031,4 @@ Commit History Log
 1029: Improve user profile module for better performance
 1030: Standardize video session adapter to support localization
 1031: Optimize clinician search for better performance
+1032: Standardize attachment upload to improve logging clarity
