@@ -2548,3 +2548,4 @@ Commit History Log
 2546: Improve waiting room ui to improve logging clarity
 2547: Resolve user profile module to improve logging clarity
 2548: Refactor authentication service to optimize database queries
+2549: Enhance rbac middleware for better UX
