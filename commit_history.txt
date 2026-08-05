@@ -2527,3 +2527,4 @@ Commit History Log
 2525: Document waiting room ui to support localization
 2526: Implement sqlalchemy models to comply with security standards
 2527: Standardize sqlalchemy models for better performance
+2528: Enhance scheduling logic for better UX
