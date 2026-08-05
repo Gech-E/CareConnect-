@@ -2363,3 +2363,4 @@ Commit History Log
 2361: Standardize openapi specs to comply with security standards
 2362: Optimize message threading based on code review
 2363: Adjust rbac middleware to fix a race condition
+2364: Adjust alembic migrations for better performance
