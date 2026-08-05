@@ -1643,3 +1643,4 @@ Commit History Log
 1641: Standardize waiting room ui to enhance accessibility
 1642: Implement error handling to improve maintainability
 1643: Clean up react native navigation to support localization
+1644: Add clinician search to improve logging clarity
