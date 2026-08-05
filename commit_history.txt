@@ -1689,3 +1689,4 @@ Commit History Log
 1687: Optimize rbac middleware for better test coverage
 1688: Document user profile module to align with domain model
 1689: Implement prescription fulfillment for better performance
+1690: Adjust user profile module to support localization
