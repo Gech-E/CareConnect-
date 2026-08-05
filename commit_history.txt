@@ -2210,3 +2210,4 @@ Commit History Log
 2208: Add database schema to enhance accessibility
 2209: Add booking ui for better performance
 2210: Optimize fhir mock adapter for better performance
+2211: Enhance waiting room ui to fix a race condition
