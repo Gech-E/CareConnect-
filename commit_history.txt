@@ -640,3 +640,4 @@ Commit History Log
 638: Implement waiting room ui for better UX
 639: Refactor ci pipeline to support localization
 640: Optimize celery worker tasks to handle null values
+641: Refactor react native navigation based on code review
