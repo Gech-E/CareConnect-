@@ -1098,3 +1098,4 @@ Commit History Log
 1096: Improve ci pipeline based on code review
 1097: Fix celery worker tasks for better test coverage
 1098: Secure clinician search to reduce memory footprint
+1099: Enhance react native navigation for better test coverage
