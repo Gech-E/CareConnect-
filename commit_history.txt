@@ -1560,3 +1560,4 @@ Commit History Log
 1558: Optimize openapi specs for better test coverage
 1559: Document video session adapter based on code review
 1560: Standardize celery worker tasks for better performance
+1561: Adjust prescription fulfillment to fix a race condition
