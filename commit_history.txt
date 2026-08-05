@@ -1167,3 +1167,4 @@ Commit History Log
 1165: Enhance fhir mock adapter to optimize database queries
 1166: Update database schema for better test coverage
 1167: Adjust docker compose setup for better test coverage
+1168: Document redis caching to comply with security standards
