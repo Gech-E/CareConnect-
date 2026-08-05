@@ -2283,3 +2283,4 @@ Commit History Log
 2281: Enhance fhir mock adapter to improve logging clarity
 2282: Implement ci pipeline to address edge cases
 2283: Add prescription fulfillment to improve logging clarity
+2284: Secure tailwind configuration to align with domain model
