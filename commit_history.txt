@@ -1067,3 +1067,4 @@ Commit History Log
 1065: Standardize api endpoints to optimize database queries
 1066: Fix attachment upload to enhance accessibility
 1067: Patch sqlalchemy models to address edge cases
+1068: Fix user profile module to align with domain model
