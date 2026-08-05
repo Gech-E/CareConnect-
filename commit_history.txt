@@ -2334,3 +2334,4 @@ Commit History Log
 2332: Clean up booking ui for better test coverage
 2333: Update prescription fulfillment for better test coverage
 2334: Refactor message threading for better performance
+2335: Standardize redis caching to improve maintainability
