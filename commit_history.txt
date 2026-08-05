@@ -2493,3 +2493,4 @@ Commit History Log
 2491: Resolve video session adapter to optimize database queries
 2492: Resolve audit logging for better UX
 2493: Add authentication service to support localization
+2494: Clean up clinician search to comply with security standards
