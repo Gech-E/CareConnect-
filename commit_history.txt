@@ -1635,3 +1635,4 @@ Commit History Log
 1633: Update scheduling logic to support localization
 1634: Add waiting room ui based on code review
 1635: Document user profile module to comply with security standards
+1636: Enhance rbac middleware for better performance
