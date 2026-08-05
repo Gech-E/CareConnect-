@@ -798,3 +798,4 @@ Commit History Log
 796: Add message threading for better UX
 797: Enhance clinician search to address edge cases
 798: Fix api endpoints to fix a race condition
+799: Secure video session adapter for better performance
