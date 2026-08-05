@@ -591,3 +591,4 @@ Commit History Log
 589: Secure rbac middleware for better UX
 590: Enhance message threading to improve maintainability
 591: Fix authentication service for better test coverage
+592: Improve authentication service to handle null values
