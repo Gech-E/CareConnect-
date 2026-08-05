@@ -2442,3 +2442,4 @@ Commit History Log
 2440: Update video session adapter to align with domain model
 2441: Adjust booking ui to reduce memory footprint
 2442: Optimize tailwind configuration for better performance
+2443: Standardize database schema to fix a race condition
