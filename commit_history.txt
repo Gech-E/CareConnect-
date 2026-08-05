@@ -2338,3 +2338,4 @@ Commit History Log
 2336: Document tailwind configuration for better performance
 2337: Implement docker compose setup to comply with security standards
 2338: Patch attachment upload based on code review
+2339: Standardize fhir mock adapter to enhance accessibility
