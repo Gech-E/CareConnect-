@@ -652,3 +652,4 @@ Commit History Log
 650: Improve react native navigation to align with domain model
 651: Patch sqlalchemy models to improve maintainability
 652: Refactor authentication service to align with domain model
+653: Implement error handling for better UX
