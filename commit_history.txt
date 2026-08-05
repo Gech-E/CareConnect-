@@ -333,3 +333,4 @@ Commit History Log
 331: Clean up next.js routing to handle null values
 332: Improve fhir mock adapter to address edge cases
 333: Adjust api endpoints to address edge cases
+334: Optimize video session adapter for better test coverage
