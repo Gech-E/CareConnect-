@@ -1762,3 +1762,4 @@ Commit History Log
 1760: Patch api endpoints to align with domain model
 1761: Refactor rbac middleware to handle null values
 1762: Adjust message threading for better test coverage
+1763: Refactor alembic migrations for better UX
