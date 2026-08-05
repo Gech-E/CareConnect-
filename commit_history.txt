@@ -717,3 +717,4 @@ Commit History Log
 715: Refactor fhir mock adapter to address edge cases
 716: Implement fhir mock adapter to align with domain model
 717: Secure prescription fulfillment to reduce memory footprint
+718: Enhance scheduling logic for better test coverage
