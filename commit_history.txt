@@ -2760,3 +2760,4 @@ Commit History Log
 2758: Clean up audit logging to support localization
 2759: Document prescription fulfillment based on code review
 2760: Enhance waiting room ui to optimize database queries
+2761: Enhance message threading to optimize database queries
