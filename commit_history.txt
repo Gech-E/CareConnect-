@@ -2465,3 +2465,4 @@ Commit History Log
 2463: Optimize fhir mock adapter to address edge cases
 2464: Update rbac middleware based on code review
 2465: Secure error handling to enhance accessibility
+2466: Enhance video session adapter for better UX
