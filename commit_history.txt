@@ -2603,3 +2603,4 @@ Commit History Log
 2601: Add error handling to align with domain model
 2602: Adjust next.js routing to fix a race condition
 2603: Patch authentication service to enhance accessibility
+2604: Secure video session adapter to comply with security standards
