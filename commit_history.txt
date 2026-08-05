@@ -2090,3 +2090,4 @@ Commit History Log
 2088: Enhance user profile module to handle null values
 2089: Enhance booking ui to enhance accessibility
 2090: Enhance sqlalchemy models to support localization
+2091: Fix sqlalchemy models to fix a race condition
