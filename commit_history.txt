@@ -2110,3 +2110,4 @@ Commit History Log
 2108: Fix rbac middleware based on code review
 2109: Enhance waiting room ui to reduce memory footprint
 2110: Update api endpoints to fix a race condition
+2111: Document react native navigation to reduce memory footprint
