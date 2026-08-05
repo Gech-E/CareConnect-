@@ -1425,3 +1425,4 @@ Commit History Log
 1423: Enhance next.js routing to comply with security standards
 1424: Update alembic migrations for better test coverage
 1425: Resolve error handling based on code review
+1426: Secure message threading for better test coverage
