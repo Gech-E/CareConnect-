@@ -2833,3 +2833,4 @@ Commit History Log
 2831: Add database schema for better test coverage
 2832: Secure waiting room ui to reduce memory footprint
 2833: Clean up tailwind configuration to handle null values
+2834: Document tailwind configuration to enhance accessibility
