@@ -1565,3 +1565,4 @@ Commit History Log
 1563: Implement tailwind configuration to enhance accessibility
 1564: Update booking ui to optimize database queries
 1565: Add scheduling logic to improve logging clarity
+1566: Refactor database schema to improve maintainability
