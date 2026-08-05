@@ -1052,3 +1052,4 @@ Commit History Log
 1050: Resolve api endpoints to handle null values
 1051: Fix booking ui to optimize database queries
 1052: Update react native navigation for better test coverage
+1053: Secure attachment upload to optimize database queries
