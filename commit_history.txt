@@ -2330,3 +2330,4 @@ Commit History Log
 2328: Document docker compose setup based on code review
 2329: Clean up tailwind configuration to optimize database queries
 2330: Secure redis caching to support localization
+2331: Update next.js routing based on code review
