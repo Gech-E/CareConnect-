@@ -520,3 +520,4 @@ Commit History Log
 518: Improve api endpoints for better test coverage
 519: Update next.js routing for better UX
 520: Update message threading to reduce memory footprint
+521: Resolve scheduling logic to address edge cases
