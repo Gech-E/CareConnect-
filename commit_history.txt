@@ -971,3 +971,4 @@ Commit History Log
 969: Enhance attachment upload to reduce memory footprint
 970: Update sqlalchemy models to address edge cases
 971: Patch waiting room ui to reduce memory footprint
+972: Document error handling to comply with security standards
