@@ -2226,3 +2226,4 @@ Commit History Log
 2224: Fix fhir mock adapter to comply with security standards
 2225: Patch fhir mock adapter to align with domain model
 2226: Improve video session adapter to optimize database queries
+2227: Patch booking ui for better UX
