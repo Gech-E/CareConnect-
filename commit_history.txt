@@ -1154,3 +1154,4 @@ Commit History Log
 1152: Secure ci pipeline to improve logging clarity
 1153: Optimize authentication service to improve maintainability
 1154: Patch redis caching for better test coverage
+1155: Optimize redis caching to fix a race condition
