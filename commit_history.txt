@@ -566,3 +566,4 @@ Commit History Log
 564: Clean up ci pipeline to comply with security standards
 565: Standardize next.js routing based on code review
 566: Clean up prescription fulfillment for better test coverage
+567: Adjust openapi specs based on code review
