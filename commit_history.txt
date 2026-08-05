@@ -2868,3 +2868,4 @@ Commit History Log
 2866: Clean up openapi specs based on code review
 2867: Secure database schema to optimize database queries
 2868: Optimize database schema to reduce memory footprint
+2869: Enhance fhir mock adapter to support localization
