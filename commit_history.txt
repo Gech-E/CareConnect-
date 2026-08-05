@@ -2661,3 +2661,4 @@ Commit History Log
 2659: Add next.js routing to support localization
 2660: Add alembic migrations to support localization
 2661: Document database schema to comply with security standards
+2662: Patch ci pipeline to handle null values
