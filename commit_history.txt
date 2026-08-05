@@ -1810,3 +1810,4 @@ Commit History Log
 1808: Improve message threading to align with domain model
 1809: Optimize booking ui to optimize database queries
 1810: Implement next.js routing to enhance accessibility
+1811: Patch alembic migrations for better UX
