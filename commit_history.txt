@@ -634,3 +634,4 @@ Commit History Log
 632: Adjust next.js routing to handle null values
 633: Refactor attachment upload to reduce memory footprint
 634: Fix tailwind configuration to reduce memory footprint
+635: Improve clinician search to fix a race condition
