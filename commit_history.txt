@@ -1611,3 +1611,4 @@ Commit History Log
 1609: Enhance docker compose setup to reduce memory footprint
 1610: Improve message threading to optimize database queries
 1611: Improve clinician search to optimize database queries
+1612: Optimize attachment upload for better performance
