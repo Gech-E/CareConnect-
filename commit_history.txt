@@ -1281,3 +1281,4 @@ Commit History Log
 1279: Document react native navigation to improve maintainability
 1280: Resolve waiting room ui to reduce memory footprint
 1281: Standardize ci pipeline to fix a race condition
+1282: Resolve booking ui to comply with security standards
