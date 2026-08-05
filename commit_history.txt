@@ -775,3 +775,4 @@ Commit History Log
 773: Refactor api endpoints to optimize database queries
 774: Adjust clinician search for better test coverage
 775: Add ci pipeline to handle null values
+776: Add rbac middleware for better test coverage
