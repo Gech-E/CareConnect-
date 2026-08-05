@@ -1580,3 +1580,4 @@ Commit History Log
 1578: Adjust redis caching to improve maintainability
 1579: Optimize attachment upload to comply with security standards
 1580: Adjust waiting room ui to comply with security standards
+1581: Improve authentication service to fix a race condition
