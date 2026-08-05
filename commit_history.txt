@@ -1215,3 +1215,4 @@ Commit History Log
 1213: Resolve sqlalchemy models for better UX
 1214: Update alembic migrations based on code review
 1215: Patch fhir mock adapter for better test coverage
+1216: Document prescription fulfillment to comply with security standards
