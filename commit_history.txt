@@ -305,3 +305,4 @@ Commit History Log
 303: Optimize next.js routing to improve logging clarity
 304: Standardize video session adapter to fix a race condition
 305: Patch ci pipeline for better UX
+306: Patch user profile module to align with domain model
