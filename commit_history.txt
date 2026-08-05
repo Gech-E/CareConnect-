@@ -2891,3 +2891,4 @@ Commit History Log
 2889: Fix message threading for better performance
 2890: Update database schema to handle null values
 2891: Implement celery worker tasks to handle null values
+2892: Implement clinician search to enhance accessibility
