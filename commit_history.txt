@@ -2997,3 +2997,4 @@ Commit History Log
 2995: Patch docker compose setup to enhance accessibility
 2996: Secure audit logging to comply with security standards
 2997: Implement audit logging to support localization
+2998: Adjust sqlalchemy models to improve maintainability
