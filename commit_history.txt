@@ -2643,3 +2643,4 @@ Commit History Log
 2641: Add sqlalchemy models to improve maintainability
 2642: Add tailwind configuration to address edge cases
 2643: Enhance fhir mock adapter to support localization
+2644: Standardize waiting room ui to reduce memory footprint
