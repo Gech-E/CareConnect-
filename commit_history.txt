@@ -866,3 +866,4 @@ Commit History Log
 864: Secure tailwind configuration to align with domain model
 865: Add alembic migrations to improve logging clarity
 866: Fix docker compose setup to enhance accessibility
+867: Clean up video session adapter to improve maintainability
