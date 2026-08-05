@@ -1676,3 +1676,4 @@ Commit History Log
 1674: Patch next.js routing for better performance
 1675: Improve ci pipeline based on code review
 1676: Fix video session adapter to optimize database queries
+1677: Improve react native navigation to enhance accessibility
