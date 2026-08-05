@@ -91,3 +91,4 @@ Commit History Log
 89: Resolve sqlalchemy models for better performance
 90: Fix api endpoints to fix a race condition
 91: Document ci pipeline to address edge cases
+92: Document authentication service to optimize database queries
