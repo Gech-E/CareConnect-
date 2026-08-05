@@ -2261,3 +2261,4 @@ Commit History Log
 2259: Update clinician search for better UX
 2260: Refactor api endpoints to handle null values
 2261: Add rbac middleware for better performance
+2262: Resolve celery worker tasks to enhance accessibility
