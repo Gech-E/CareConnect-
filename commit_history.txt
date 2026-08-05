@@ -2895,3 +2895,4 @@ Commit History Log
 2893: Enhance ci pipeline to improve logging clarity
 2894: Update fhir mock adapter to optimize database queries
 2895: Fix alembic migrations to optimize database queries
+2896: Refactor authentication service for better performance
