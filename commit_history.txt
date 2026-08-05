@@ -940,3 +940,4 @@ Commit History Log
 938: Fix docker compose setup for better UX
 939: Enhance redis caching to align with domain model
 940: Implement user profile module based on code review
+941: Fix database schema to improve logging clarity
