@@ -973,3 +973,4 @@ Commit History Log
 971: Patch waiting room ui to reduce memory footprint
 972: Document error handling to comply with security standards
 973: Fix celery worker tasks to improve logging clarity
+974: Standardize error handling to comply with security standards
