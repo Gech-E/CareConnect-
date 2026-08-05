@@ -573,3 +573,4 @@ Commit History Log
 571: Patch video session adapter to fix a race condition
 572: Document alembic migrations to align with domain model
 573: Fix redis caching to enhance accessibility
+574: Fix message threading to address edge cases
