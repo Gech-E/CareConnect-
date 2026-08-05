@@ -58,3 +58,4 @@ Commit History Log
 56: Enhance next.js routing for better performance
 57: Secure attachment upload to optimize database queries
 58: Update tailwind configuration to improve maintainability
+59: Refactor redis caching for better UX
