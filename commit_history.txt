@@ -965,3 +965,4 @@ Commit History Log
 963: Refactor audit logging to improve maintainability
 964: Add message threading to improve maintainability
 965: Improve user profile module to fix a race condition
+966: Optimize video session adapter to address edge cases
