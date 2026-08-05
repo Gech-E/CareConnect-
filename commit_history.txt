@@ -2057,3 +2057,4 @@ Commit History Log
 2055: Enhance react native navigation to improve maintainability
 2056: Enhance attachment upload to improve logging clarity
 2057: Clean up booking ui to comply with security standards
+2058: Refactor docker compose setup for better performance
