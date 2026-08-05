@@ -68,3 +68,4 @@ Commit History Log
 66: Add rbac middleware to improve maintainability
 67: Secure authentication service for better performance
 68: Patch rbac middleware based on code review
+69: Patch ci pipeline to align with domain model
