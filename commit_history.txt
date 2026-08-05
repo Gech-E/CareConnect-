@@ -2324,3 +2324,4 @@ Commit History Log
 2322: Add database schema for better performance
 2323: Patch authentication service to enhance accessibility
 2324: Patch audit logging to support localization
+2325: Adjust ci pipeline to optimize database queries
