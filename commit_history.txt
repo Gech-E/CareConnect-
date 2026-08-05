@@ -2217,3 +2217,4 @@ Commit History Log
 2215: Secure docker compose setup to address edge cases
 2216: Implement authentication service to comply with security standards
 2217: Add clinician search to support localization
+2218: Enhance scheduling logic to improve logging clarity
