@@ -2219,3 +2219,4 @@ Commit History Log
 2217: Add clinician search to support localization
 2218: Enhance scheduling logic to improve logging clarity
 2219: Enhance database schema to improve maintainability
+2220: Fix react native navigation to reduce memory footprint
