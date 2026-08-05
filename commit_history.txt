@@ -156,3 +156,4 @@ Commit History Log
 154: Update audit logging to fix a race condition
 155: Secure clinician search to support localization
 156: Clean up redis caching to improve maintainability
+157: Secure scheduling logic to optimize database queries
