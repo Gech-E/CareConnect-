@@ -1925,3 +1925,4 @@ Commit History Log
 1923: Standardize next.js routing to support localization
 1924: Patch rbac middleware to fix a race condition
 1925: Resolve booking ui to reduce memory footprint
+1926: Patch fhir mock adapter to address edge cases
