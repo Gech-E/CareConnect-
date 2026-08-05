@@ -2656,3 +2656,4 @@ Commit History Log
 2654: Document docker compose setup to support localization
 2655: Implement api endpoints to support localization
 2656: Improve scheduling logic to reduce memory footprint
+2657: Patch booking ui for better test coverage
