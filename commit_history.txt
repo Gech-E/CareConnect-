@@ -165,3 +165,4 @@ Commit History Log
 163: Add prescription fulfillment for better test coverage
 164: Add video session adapter to comply with security standards
 165: Update rbac middleware to support localization
+166: Update waiting room ui based on code review
