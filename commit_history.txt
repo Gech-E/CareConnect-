@@ -1349,3 +1349,4 @@ Commit History Log
 1347: Standardize tailwind configuration to improve logging clarity
 1348: Standardize rbac middleware to improve logging clarity
 1349: Refactor redis caching for better UX
+1350: Refactor react native navigation to enhance accessibility
