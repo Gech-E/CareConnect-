@@ -1742,3 +1742,4 @@ Commit History Log
 1740: Update booking ui based on code review
 1741: Standardize waiting room ui to optimize database queries
 1742: Enhance database schema to address edge cases
+1743: Add next.js routing to reduce memory footprint
