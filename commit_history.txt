@@ -597,3 +597,4 @@ Commit History Log
 595: Standardize redis caching to improve logging clarity
 596: Update video session adapter for better performance
 597: Optimize audit logging to comply with security standards
+598: Improve redis caching based on code review
