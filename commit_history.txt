@@ -1226,3 +1226,4 @@ Commit History Log
 1224: Clean up react native navigation for better UX
 1225: Clean up sqlalchemy models for better UX
 1226: Patch redis caching to align with domain model
+1227: Enhance openapi specs to comply with security standards
