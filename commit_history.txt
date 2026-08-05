@@ -2444,3 +2444,4 @@ Commit History Log
 2442: Optimize tailwind configuration for better performance
 2443: Standardize database schema to fix a race condition
 2444: Enhance alembic migrations to fix a race condition
+2445: Enhance sqlalchemy models to align with domain model
