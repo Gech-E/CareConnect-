@@ -1589,3 +1589,4 @@ Commit History Log
 1587: Document next.js routing for better performance
 1588: Optimize prescription fulfillment to address edge cases
 1589: Enhance next.js routing to align with domain model
+1590: Resolve redis caching for better performance
