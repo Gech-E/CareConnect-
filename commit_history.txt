@@ -2864,3 +2864,4 @@ Commit History Log
 2862: Improve message threading for better UX
 2863: Implement prescription fulfillment to improve maintainability
 2864: Adjust booking ui to support localization
+2865: Improve fhir mock adapter to fix a race condition
