@@ -1238,3 +1238,4 @@ Commit History Log
 1236: Document openapi specs for better UX
 1237: Resolve attachment upload to reduce memory footprint
 1238: Resolve authentication service to handle null values
+1239: Add ci pipeline based on code review
