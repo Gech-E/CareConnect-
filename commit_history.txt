@@ -1613,3 +1613,4 @@ Commit History Log
 1611: Improve clinician search to optimize database queries
 1612: Optimize attachment upload for better performance
 1613: Refactor database schema to align with domain model
+1614: Fix ci pipeline to optimize database queries
