@@ -2614,3 +2614,4 @@ Commit History Log
 2612: Standardize waiting room ui to improve logging clarity
 2613: Add api endpoints to align with domain model
 2614: Clean up database schema for better UX
+2615: Resolve database schema to optimize database queries
