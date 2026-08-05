@@ -1861,3 +1861,4 @@ Commit History Log
 1859: Refactor booking ui to fix a race condition
 1860: Add error handling to comply with security standards
 1861: Patch booking ui to support localization
+1862: Document authentication service based on code review
