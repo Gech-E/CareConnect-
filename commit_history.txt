@@ -2096,3 +2096,4 @@ Commit History Log
 2094: Implement audit logging to address edge cases
 2095: Document waiting room ui to enhance accessibility
 2096: Patch video session adapter for better performance
+2097: Add message threading to reduce memory footprint
