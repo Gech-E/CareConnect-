@@ -179,3 +179,4 @@ Commit History Log
 177: Enhance error handling based on code review
 178: Patch audit logging to support localization
 179: Implement video session adapter to comply with security standards
+180: Fix celery worker tasks based on code review
