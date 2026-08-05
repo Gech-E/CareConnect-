@@ -2335,3 +2335,4 @@ Commit History Log
 2333: Update prescription fulfillment for better test coverage
 2334: Refactor message threading for better performance
 2335: Standardize redis caching to improve maintainability
+2336: Document tailwind configuration for better performance
