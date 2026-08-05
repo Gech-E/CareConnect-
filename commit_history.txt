@@ -1843,3 +1843,4 @@ Commit History Log
 1841: Resolve api endpoints to improve logging clarity
 1842: Add react native navigation to improve logging clarity
 1843: Secure attachment upload for better performance
+1844: Refactor next.js routing for better test coverage
