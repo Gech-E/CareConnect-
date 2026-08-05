@@ -18,3 +18,4 @@ Commit History Log
 16: Document scheduling logic to address edge cases
 17: Clean up next.js routing to align with domain model
 18: Update fhir mock adapter to align with domain model
+19: Patch error handling to improve logging clarity
