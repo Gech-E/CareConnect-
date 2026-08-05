@@ -695,3 +695,4 @@ Commit History Log
 693: Adjust booking ui to enhance accessibility
 694: Optimize react native navigation to handle null values
 695: Refactor prescription fulfillment to handle null values
+696: Fix attachment upload to comply with security standards
