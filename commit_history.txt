@@ -163,3 +163,4 @@ Commit History Log
 161: Secure react native navigation to support localization
 162: Adjust docker compose setup to optimize database queries
 163: Add prescription fulfillment for better test coverage
+164: Add video session adapter to comply with security standards
