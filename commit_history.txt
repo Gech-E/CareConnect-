@@ -1172,3 +1172,4 @@ Commit History Log
 1170: Adjust message threading to reduce memory footprint
 1171: Document clinician search for better UX
 1172: Enhance fhir mock adapter to reduce memory footprint
+1173: Standardize alembic migrations to optimize database queries
