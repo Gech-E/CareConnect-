@@ -2292,3 +2292,4 @@ Commit History Log
 2290: Enhance fhir mock adapter for better UX
 2291: Standardize docker compose setup to reduce memory footprint
 2292: Improve ci pipeline to improve maintainability
+2293: Refactor next.js routing to improve maintainability
