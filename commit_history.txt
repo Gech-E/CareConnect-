@@ -1273,3 +1273,4 @@ Commit History Log
 1271: Document scheduling logic to fix a race condition
 1272: Optimize react native navigation for better test coverage
 1273: Optimize docker compose setup for better performance
+1274: Update fhir mock adapter for better performance
