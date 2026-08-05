@@ -2646,3 +2646,4 @@ Commit History Log
 2644: Standardize waiting room ui to reduce memory footprint
 2645: Optimize message threading based on code review
 2646: Patch waiting room ui to reduce memory footprint
+2647: Fix next.js routing to support localization
