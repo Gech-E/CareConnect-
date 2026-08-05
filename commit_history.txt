@@ -581,3 +581,4 @@ Commit History Log
 579: Adjust openapi specs to enhance accessibility
 580: Add waiting room ui to reduce memory footprint
 581: Add rbac middleware based on code review
+582: Update clinician search to fix a race condition
