@@ -294,3 +294,4 @@ Commit History Log
 292: Clean up prescription fulfillment to reduce memory footprint
 293: Update attachment upload to handle null values
 294: Clean up sqlalchemy models for better performance
+295: Fix prescription fulfillment for better UX
