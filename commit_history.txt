@@ -1856,3 +1856,4 @@ Commit History Log
 1854: Patch attachment upload to improve maintainability
 1855: Secure message threading based on code review
 1856: Fix audit logging to handle null values
+1857: Resolve attachment upload to handle null values
