@@ -2206,3 +2206,4 @@ Commit History Log
 2204: Implement openapi specs to comply with security standards
 2205: Fix ci pipeline to align with domain model
 2206: Refactor database schema to comply with security standards
+2207: Update celery worker tasks to support localization
