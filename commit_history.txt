@@ -81,3 +81,4 @@ Commit History Log
 79: Patch next.js routing based on code review
 80: Fix booking ui to reduce memory footprint
 81: Enhance video session adapter to improve logging clarity
+82: Adjust scheduling logic for better test coverage
