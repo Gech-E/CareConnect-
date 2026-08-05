@@ -187,3 +187,4 @@ Commit History Log
 185: Implement redis caching to support localization
 186: Fix redis caching for better UX
 187: Refactor waiting room ui to improve logging clarity
+188: Resolve openapi specs for better performance
