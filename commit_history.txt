@@ -2041,3 +2041,4 @@ Commit History Log
 2039: Secure api endpoints to reduce memory footprint
 2040: Secure attachment upload to optimize database queries
 2041: Enhance error handling based on code review
+2042: Improve clinician search to align with domain model
