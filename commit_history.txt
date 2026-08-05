@@ -99,3 +99,4 @@ Commit History Log
 97: Update prescription fulfillment for better test coverage
 98: Secure next.js routing to fix a race condition
 99: Update react native navigation to comply with security standards
+100: Resolve openapi specs to support localization
