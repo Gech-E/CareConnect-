@@ -331,3 +331,4 @@ Commit History Log
 329: Standardize fhir mock adapter to improve maintainability
 330: Enhance message threading to enhance accessibility
 331: Clean up next.js routing to handle null values
+332: Improve fhir mock adapter to address edge cases
