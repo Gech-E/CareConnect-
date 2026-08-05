@@ -1691,3 +1691,4 @@ Commit History Log
 1689: Implement prescription fulfillment for better performance
 1690: Adjust user profile module to support localization
 1691: Patch tailwind configuration to enhance accessibility
+1692: Refactor user profile module based on code review
