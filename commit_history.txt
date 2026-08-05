@@ -2350,3 +2350,4 @@ Commit History Log
 2348: Refactor alembic migrations to fix a race condition
 2349: Standardize booking ui for better test coverage
 2350: Refactor celery worker tasks to enhance accessibility
+2351: Document sqlalchemy models for better test coverage
