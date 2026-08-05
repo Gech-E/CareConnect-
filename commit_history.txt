@@ -2557,3 +2557,4 @@ Commit History Log
 2555: Add scheduling logic to enhance accessibility
 2556: Adjust redis caching to address edge cases
 2557: Adjust user profile module to reduce memory footprint
+2558: Update error handling to handle null values
