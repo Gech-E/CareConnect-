@@ -729,3 +729,4 @@ Commit History Log
 727: Fix database schema for better UX
 728: Refactor tailwind configuration to improve maintainability
 729: Patch fhir mock adapter to reduce memory footprint
+730: Resolve sqlalchemy models based on code review
