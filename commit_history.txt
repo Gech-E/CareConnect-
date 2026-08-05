@@ -2352,3 +2352,4 @@ Commit History Log
 2350: Refactor celery worker tasks to enhance accessibility
 2351: Document sqlalchemy models for better test coverage
 2352: Resolve scheduling logic to support localization
+2353: Implement api endpoints to address edge cases
