@@ -2655,3 +2655,4 @@ Commit History Log
 2653: Resolve redis caching to enhance accessibility
 2654: Document docker compose setup to support localization
 2655: Implement api endpoints to support localization
+2656: Improve scheduling logic to reduce memory footprint
