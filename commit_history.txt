@@ -2247,3 +2247,4 @@ Commit History Log
 2245: Document database schema for better performance
 2246: Refactor error handling for better UX
 2247: Clean up booking ui to comply with security standards
+2248: Standardize prescription fulfillment to align with domain model
