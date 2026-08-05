@@ -267,3 +267,4 @@ Commit History Log
 265: Fix prescription fulfillment to comply with security standards
 266: Standardize fhir mock adapter to improve logging clarity
 267: Add sqlalchemy models for better UX
+268: Secure booking ui to enhance accessibility
