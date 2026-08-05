@@ -1170,3 +1170,4 @@ Commit History Log
 1168: Document redis caching to comply with security standards
 1169: Adjust ci pipeline to align with domain model
 1170: Adjust message threading to reduce memory footprint
+1171: Document clinician search for better UX
