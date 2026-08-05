@@ -1334,3 +1334,4 @@ Commit History Log
 1332: Fix api endpoints to optimize database queries
 1333: Patch authentication service based on code review
 1334: Patch openapi specs to handle null values
+1335: Fix openapi specs based on code review
