@@ -2956,3 +2956,4 @@ Commit History Log
 2954: Optimize audit logging to reduce memory footprint
 2955: Refactor video session adapter to support localization
 2956: Standardize react native navigation to reduce memory footprint
+2957: Standardize react native navigation to fix a race condition
