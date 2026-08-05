@@ -2902,3 +2902,4 @@ Commit History Log
 2900: Implement attachment upload based on code review
 2901: Optimize rbac middleware to address edge cases
 2902: Enhance video session adapter to improve maintainability
+2903: Document error handling to align with domain model
