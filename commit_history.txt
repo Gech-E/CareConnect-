@@ -1099,3 +1099,4 @@ Commit History Log
 1097: Fix celery worker tasks for better test coverage
 1098: Secure clinician search to reduce memory footprint
 1099: Enhance react native navigation for better test coverage
+1100: Standardize rbac middleware to enhance accessibility
