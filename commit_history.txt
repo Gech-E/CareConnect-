@@ -1853,3 +1853,4 @@ Commit History Log
 1851: Resolve user profile module to align with domain model
 1852: Patch celery worker tasks to support localization
 1853: Clean up booking ui to handle null values
+1854: Patch attachment upload to improve maintainability
