@@ -1776,3 +1776,4 @@ Commit History Log
 1774: Patch video session adapter to enhance accessibility
 1775: Document tailwind configuration to reduce memory footprint
 1776: Refactor authentication service to improve maintainability
+1777: Optimize openapi specs to align with domain model
