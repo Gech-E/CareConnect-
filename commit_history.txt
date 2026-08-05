@@ -2613,3 +2613,4 @@ Commit History Log
 2611: Refactor openapi specs to support localization
 2612: Standardize waiting room ui to improve logging clarity
 2613: Add api endpoints to align with domain model
+2614: Clean up database schema for better UX
