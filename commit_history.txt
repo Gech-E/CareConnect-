@@ -431,3 +431,4 @@ Commit History Log
 429: Add fhir mock adapter to handle null values
 430: Update docker compose setup to support localization
 431: Clean up openapi specs to fix a race condition
+432: Patch react native navigation to reduce memory footprint
