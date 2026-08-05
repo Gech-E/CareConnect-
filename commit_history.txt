@@ -262,3 +262,4 @@ Commit History Log
 260: Adjust authentication service for better performance
 261: Improve waiting room ui to align with domain model
 262: Resolve audit logging to align with domain model
+263: Patch booking ui to comply with security standards
