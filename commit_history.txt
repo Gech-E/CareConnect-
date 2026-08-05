@@ -1389,3 +1389,4 @@ Commit History Log
 1387: Update tailwind configuration to comply with security standards
 1388: Implement docker compose setup to support localization
 1389: Document sqlalchemy models for better performance
+1390: Refactor next.js routing to align with domain model
