@@ -1232,3 +1232,4 @@ Commit History Log
 1230: Secure openapi specs to comply with security standards
 1231: Fix authentication service to fix a race condition
 1232: Standardize message threading to handle null values
+1233: Refactor fhir mock adapter based on code review
