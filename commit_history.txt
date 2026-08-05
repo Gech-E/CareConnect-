@@ -1350,3 +1350,4 @@ Commit History Log
 1348: Standardize rbac middleware to improve logging clarity
 1349: Refactor redis caching for better UX
 1350: Refactor react native navigation to enhance accessibility
+1351: Enhance celery worker tasks to optimize database queries
