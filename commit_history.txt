@@ -39,3 +39,4 @@ Commit History Log
 37: Fix authentication service to improve maintainability
 38: Update booking ui to optimize database queries
 39: Adjust error handling for better test coverage
+40: Document user profile module for better test coverage
