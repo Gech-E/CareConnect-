@@ -2263,3 +2263,4 @@ Commit History Log
 2261: Add rbac middleware for better performance
 2262: Resolve celery worker tasks to enhance accessibility
 2263: Clean up openapi specs for better performance
+2264: Clean up database schema to comply with security standards
