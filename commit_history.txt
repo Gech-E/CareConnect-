@@ -545,3 +545,4 @@ Commit History Log
 543: Clean up booking ui to improve maintainability
 544: Refactor tailwind configuration to address edge cases
 545: Refactor attachment upload based on code review
+546: Optimize clinician search based on code review
