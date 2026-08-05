@@ -2934,3 +2934,4 @@ Commit History Log
 2932: Secure next.js routing to enhance accessibility
 2933: Adjust booking ui to reduce memory footprint
 2934: Improve user profile module to handle null values
+2935: Resolve ci pipeline to support localization
