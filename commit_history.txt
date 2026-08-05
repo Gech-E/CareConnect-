@@ -2373,3 +2373,4 @@ Commit History Log
 2371: Adjust booking ui for better test coverage
 2372: Fix message threading for better performance
 2373: Implement redis caching to fix a race condition
+2374: Secure celery worker tasks to enhance accessibility
