@@ -2782,3 +2782,4 @@ Commit History Log
 2780: Add openapi specs for better test coverage
 2781: Adjust openapi specs to enhance accessibility
 2782: Patch react native navigation to support localization
+2783: Improve redis caching to support localization
