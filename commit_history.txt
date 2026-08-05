@@ -1797,3 +1797,4 @@ Commit History Log
 1795: Fix api endpoints to address edge cases
 1796: Fix redis caching for better performance
 1797: Secure openapi specs to improve maintainability
+1798: Patch clinician search to address edge cases
