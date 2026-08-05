@@ -1471,3 +1471,4 @@ Commit History Log
 1469: Resolve react native navigation for better UX
 1470: Improve clinician search to enhance accessibility
 1471: Update booking ui to reduce memory footprint
+1472: Optimize redis caching to optimize database queries
