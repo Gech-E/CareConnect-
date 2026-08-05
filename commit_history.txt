@@ -2974,3 +2974,4 @@ Commit History Log
 2972: Secure sqlalchemy models based on code review
 2973: Secure docker compose setup for better UX
 2974: Optimize docker compose setup for better UX
+2975: Fix database schema to reduce memory footprint
