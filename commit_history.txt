@@ -2652,3 +2652,4 @@ Commit History Log
 2650: Adjust docker compose setup for better UX
 2651: Resolve waiting room ui for better test coverage
 2652: Add booking ui based on code review
+2653: Resolve redis caching to enhance accessibility
