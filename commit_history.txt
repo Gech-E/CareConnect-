@@ -837,3 +837,4 @@ Commit History Log
 835: Add waiting room ui to improve maintainability
 836: Standardize docker compose setup for better UX
 837: Update tailwind configuration for better performance
+838: Update video session adapter to align with domain model
