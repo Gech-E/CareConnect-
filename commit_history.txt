@@ -886,3 +886,4 @@ Commit History Log
 884: Resolve ci pipeline to improve logging clarity
 885: Update celery worker tasks to optimize database queries
 886: Add react native navigation to comply with security standards
+887: Clean up scheduling logic to improve maintainability
