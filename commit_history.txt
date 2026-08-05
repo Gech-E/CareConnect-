@@ -139,3 +139,4 @@ Commit History Log
 137: Secure audit logging to comply with security standards
 138: Adjust celery worker tasks to improve logging clarity
 139: Refactor message threading to handle null values
+140: Standardize next.js routing for better UX
