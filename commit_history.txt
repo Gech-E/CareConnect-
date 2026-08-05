@@ -1615,3 +1615,4 @@ Commit History Log
 1613: Refactor database schema to align with domain model
 1614: Fix ci pipeline to optimize database queries
 1615: Standardize authentication service to comply with security standards
+1616: Resolve ci pipeline to address edge cases
