@@ -720,3 +720,4 @@ Commit History Log
 718: Enhance scheduling logic for better test coverage
 719: Standardize celery worker tasks to improve maintainability
 720: Fix user profile module to improve maintainability
+721: Refactor fhir mock adapter to improve logging clarity
