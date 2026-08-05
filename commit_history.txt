@@ -778,3 +778,4 @@ Commit History Log
 776: Add rbac middleware for better test coverage
 777: Implement tailwind configuration for better test coverage
 778: Clean up clinician search to improve maintainability
+779: Resolve docker compose setup based on code review
