@@ -2729,3 +2729,4 @@ Commit History Log
 2727: Resolve celery worker tasks based on code review
 2728: Patch prescription fulfillment to optimize database queries
 2729: Secure user profile module to optimize database queries
+2730: Patch error handling to handle null values
