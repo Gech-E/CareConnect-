@@ -2313,3 +2313,4 @@ Commit History Log
 2311: Resolve attachment upload to align with domain model
 2312: Patch video session adapter to comply with security standards
 2313: Document audit logging to optimize database queries
+2314: Refactor api endpoints to align with domain model
