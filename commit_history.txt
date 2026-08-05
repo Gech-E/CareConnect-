@@ -1050,3 +1050,4 @@ Commit History Log
 1048: Fix clinician search for better performance
 1049: Update clinician search to handle null values
 1050: Resolve api endpoints to handle null values
+1051: Fix booking ui to optimize database queries
