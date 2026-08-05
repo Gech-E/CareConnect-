@@ -1674,3 +1674,4 @@ Commit History Log
 1672: Add authentication service to optimize database queries
 1673: Standardize authentication service based on code review
 1674: Patch next.js routing for better performance
+1675: Improve ci pipeline based on code review
