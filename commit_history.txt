@@ -1711,3 +1711,4 @@ Commit History Log
 1709: Add api endpoints to enhance accessibility
 1710: Implement prescription fulfillment to align with domain model
 1711: Implement error handling to comply with security standards
+1712: Improve attachment upload to support localization
