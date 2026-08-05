@@ -2783,3 +2783,4 @@ Commit History Log
 2781: Adjust openapi specs to enhance accessibility
 2782: Patch react native navigation to support localization
 2783: Improve redis caching to support localization
+2784: Improve fhir mock adapter based on code review
