@@ -1663,3 +1663,4 @@ Commit History Log
 1661: Standardize attachment upload to improve maintainability
 1662: Secure booking ui to enhance accessibility
 1663: Add error handling to fix a race condition
+1664: Update sqlalchemy models for better performance
