@@ -1013,3 +1013,4 @@ Commit History Log
 1011: Update user profile module to align with domain model
 1012: Resolve authentication service based on code review
 1013: Add user profile module to address edge cases
+1014: Implement openapi specs to fix a race condition
