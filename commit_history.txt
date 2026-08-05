@@ -1655,3 +1655,4 @@ Commit History Log
 1653: Enhance sqlalchemy models to improve logging clarity
 1654: Enhance booking ui to fix a race condition
 1655: Refactor prescription fulfillment to fix a race condition
+1656: Secure error handling to comply with security standards
