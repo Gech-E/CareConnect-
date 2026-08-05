@@ -60,3 +60,4 @@ Commit History Log
 58: Update tailwind configuration to improve maintainability
 59: Refactor redis caching for better UX
 60: Clean up react native navigation to align with domain model
+61: Add error handling to align with domain model
