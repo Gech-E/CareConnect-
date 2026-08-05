@@ -1412,3 +1412,4 @@ Commit History Log
 1410: Standardize video session adapter to address edge cases
 1411: Enhance error handling to optimize database queries
 1412: Document message threading to support localization
+1413: Update tailwind configuration to improve maintainability
