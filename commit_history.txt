@@ -28,3 +28,4 @@ Commit History Log
 26: Clean up tailwind configuration to align with domain model
 27: Standardize tailwind configuration to enhance accessibility
 28: Adjust authentication service to reduce memory footprint
+29: Enhance redis caching to handle null values
