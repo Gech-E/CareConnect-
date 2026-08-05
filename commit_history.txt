@@ -2806,3 +2806,4 @@ Commit History Log
 2804: Update rbac middleware based on code review
 2805: Enhance sqlalchemy models based on code review
 2806: Optimize next.js routing for better performance
+2807: Resolve api endpoints to fix a race condition
