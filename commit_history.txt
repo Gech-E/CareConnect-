@@ -2708,3 +2708,4 @@ Commit History Log
 2706: Resolve rbac middleware for better UX
 2707: Fix tailwind configuration to handle null values
 2708: Add fhir mock adapter to comply with security standards
+2709: Secure next.js routing to optimize database queries
