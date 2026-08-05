@@ -471,3 +471,4 @@ Commit History Log
 469: Implement clinician search to fix a race condition
 470: Clean up alembic migrations to align with domain model
 471: Refactor rbac middleware for better test coverage
+472: Standardize audit logging to comply with security standards
