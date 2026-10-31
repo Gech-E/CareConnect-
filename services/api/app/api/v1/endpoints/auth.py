@@ -21,7 +21,7 @@ async def register(
         db,
         email=data.email,
         password=data.password,
-        role=data.role,
+        role="patient",
         ip_address=ip_address
     )
 

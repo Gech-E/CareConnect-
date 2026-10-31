@@ -4,13 +4,14 @@ Handles registration, login, token refresh, password reset,
 and session management per SRS §4.1.
 """
 
-from datetime import UTC, datetime
+from datetime import UTC, datetime, timedelta
 from uuid import UUID, uuid4
 
 import structlog
 from sqlalchemy import delete, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
+from app.core import get_settings
 from app.core.exceptions import AppError, ConflictError, NotFoundError
 from app.core.security import (
     UserRole,
@@ -38,6 +39,14 @@ async def register_user(
     """
     from app.models.user import User, UserSession
 
+    # Privileged identities must be provisioned through a controlled workflow.
+    if role != "patient":
+        raise AppError(
+            code="INVALID_REGISTRATION_ROLE",
+            message="Self-service registration is available to patients only.",
+            status_code=403,
+        )
+
     # Check for existing account (but don't reveal it)
     existing = await db.execute(select(User).where(User.email == email.lower()))
     if existing.scalar_one_or_none():
@@ -64,7 +73,7 @@ async def register_user(
         session_token=session_id,
         device_info="registration",
         ip_address=ip_address or "unknown",
-        expires_at=datetime.now(UTC),
+        expires_at=datetime.now(UTC) + timedelta(days=get_settings().JWT_REFRESH_TOKEN_EXPIRE_DAYS),
     )
     db.add(session)
     await db.flush()
@@ -134,7 +143,7 @@ async def authenticate_user(
         session_token=session_id,
         device_info=user_agent or "unknown",
         ip_address=ip_address or "unknown",
-        expires_at=datetime.now(UTC),
+        expires_at=datetime.now(UTC) + timedelta(days=get_settings().JWT_REFRESH_TOKEN_EXPIRE_DAYS),
     )
     db.add(session)
 
@@ -168,14 +177,34 @@ async def refresh_access_token(
     refresh_token: str,
 ) -> dict:
     """Generate a new access token from a valid refresh token."""
-    from app.models.user import User
+    from app.models.user import User, UserSession
 
     payload = decode_token(refresh_token)
+    if payload.type != "refresh" or not payload.session_id:
+        raise AppError(
+            code="INVALID_REFRESH_TOKEN",
+            message="Invalid or expired refresh token.",
+            status_code=401,
+        )
     result = await db.execute(
         select(User).where(User.id == payload.sub, User.is_active == True)  # noqa: E712
     )
     user = result.scalar_one_or_none()
     if not user:
+        raise AppError(
+            code="INVALID_REFRESH_TOKEN",
+            message="Invalid or expired refresh token.",
+            status_code=401,
+        )
+
+    active_session = await db.execute(
+        select(UserSession.id).where(
+            UserSession.user_id == user.id,
+            UserSession.session_token == payload.session_id,
+            UserSession.expires_at > datetime.now(UTC),
+        )
+    )
+    if active_session.scalar_one_or_none() is None:
         raise AppError(
             code="INVALID_REFRESH_TOKEN",
             message="Invalid or expired refresh token.",
