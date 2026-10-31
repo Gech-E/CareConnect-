@@ -6,14 +6,14 @@ FastAPI dependencies for extracting the current authenticated user.
 
 from datetime import UTC, datetime, timedelta
 from enum import Enum
-from typing import Annotated, Any
+from typing import Annotated, Any, Literal
 from uuid import UUID
 
 from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
 from jose import JWTError, jwt
 from passlib.context import CryptContext
-from pydantic import BaseModel
+from pydantic import BaseModel, ValidationError
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
@@ -49,6 +49,7 @@ class TokenPayload(BaseModel):
     iat: datetime
     jti: str | None = None
     session_id: str | None = None
+    type: Literal["access", "refresh"]
 
 
 class TokenPair(BaseModel):
@@ -140,6 +141,8 @@ def decode_token(token: str) -> TokenPayload:
             token,
             settings.JWT_SECRET_KEY,
             algorithms=[settings.JWT_ALGORITHM],
+            issuer=settings.OIDC_ISSUER_URL,
+            options={"require_exp": True, "require_iat": True},
         )
         return TokenPayload(
             sub=payload["sub"],
@@ -148,8 +151,9 @@ def decode_token(token: str) -> TokenPayload:
             iat=datetime.fromtimestamp(payload["iat"], tz=UTC),
             jti=payload.get("jti"),
             session_id=payload.get("session_id"),
+            type=payload["type"],
         )
-    except JWTError as e:
+    except (JWTError, ValidationError, KeyError, TypeError, ValueError) as e:
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Invalid or expired token",
@@ -168,9 +172,15 @@ async def get_current_user(
     Returns the User ORM instance. Raises 401 if invalid.
     """
     # Import here to avoid circular dependency
-    from app.models.user import User
+    from app.models.user import User, UserSession
 
     payload = decode_token(token)
+    if payload.type != "access" or not payload.session_id:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Invalid access token",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
     user_id = payload.sub
 
     result = await db.execute(
@@ -182,6 +192,20 @@ async def get_current_user(
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="User not found or deactivated",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+
+    active_session = await db.execute(
+        select(UserSession.id).where(
+            UserSession.user_id == user.id,
+            UserSession.session_token == payload.session_id,
+            UserSession.expires_at > datetime.now(UTC),
+        )
+    )
+    if active_session.scalar_one_or_none() is None:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Session expired or revoked",
             headers={"WWW-Authenticate": "Bearer"},
         )
     return user
