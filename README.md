@@ -4,274 +4,172 @@
 
 ### Healthcare connections, made simpler.
 
-**A patient-centered telehealth platform for discovering clinicians, scheduling virtual visits, and managing care.**
+**A modern, responsive telehealth web platform for discovering clinicians, booking consultations, and managing care.**
 
-[![Status](https://img.shields.io/badge/status-active%20development-087E83?style=flat-square)](#project-status)
-[![Mobile](https://img.shields.io/badge/mobile-Expo%20%2B%20React%20Native-152B3D?style=flat-square)](#technology-stack)
-[![API](https://img.shields.io/badge/API-FastAPI-009688?style=flat-square)](#technology-stack)
-[![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?style=flat-square)](#technology-stack)
+![Next.js](https://img.shields.io/badge/Next.js-15-111827?style=flat-square&logo=nextdotjs)
+![React](https://img.shields.io/badge/React-19-149eca?style=flat-square&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6?style=flat-square&logo=typescript)
+![FastAPI](https://img.shields.io/badge/API-FastAPI-009688?style=flat-square&logo=fastapi)
+![Status](https://img.shields.io/badge/status-active%20development-087e83?style=flat-square)
 
-[Overview](#overview) · [Features](#features--project-status) · [Quick start](#getting-started) · [Architecture](#architecture) · [Roadmap](#roadmap)
+[Overview](#overview) · [Features](#features) · [Get started](#getting-started) · [Architecture](#architecture) · [Roadmap](#roadmap)
 
 </div>
 
 ---
 
 > [!IMPORTANT]
-> **Development prototype — not for clinical use.** CareConnect is not verified for handling real patient health information or providing clinical services. Identity verification, clinician eligibility, consent, security, availability, and regulatory requirements must be completed and independently assessed before any production launch. Use **synthetic data only** during development.
+> **Development prototype only.** CareConnect must not be used with real medical records or personal health information. Patient verification, clinical eligibility, consent, authorization, secure integrations, tests and regulatory assessment are still required. This project is **not** certified as HIPAA compliant.
 
 ## Overview
 
-**CareConnect** brings the essential steps of accessing virtual healthcare into a calm, approachable experience. Patients can explore a clinician directory, review profiles, find appointment times, and manage upcoming visits from a mobile application.
+CareConnect brings healthcare access into one simple web interface. Patients can find clinicians, explore available visit times, and manage appointments from their browser—on a desktop, tablet, or phone.
 
-The project is organized around three intended user experiences:
+**Web-first scope:** The current product targets responsive browser experiences. Native iOS/Android applications are intentionally out of scope.
 
-- **Patients** — discover clinicians, book consultations, and manage care.
-- **Clinicians** — manage availability, appointments, and encounters.
-- **Administrators** — support operations, clinician oversight, and audit workflows.
+## Features
 
-The product vision, priorities, functional requirements, and acceptance criteria are captured in the [Product Requirements Document](./CareConnect_PRD_v1.0.md) and [Software Requirements Specification](./CareConnect_SRS_v1.0.md).
-
-## Features & project status
-
-Features below distinguish **source that exists** from functionality that still needs complete integration and testing.
-
-| Area | Current state | Notes |
-| --- | --- | --- |
-| Patient home and navigation | **Implemented in mobile client** | Home, clinician search, visits, and account screens |
-| Clinician directory and profiles | **Mobile + API integration written** | Search and specialty filtering; server-side clinical eligibility needs verification |
-| Appointment availability and booking | **Mobile + API integration written** | Slot lookup, hold, and confirmation; concurrency and workflow tests are required |
-| Patient sign-in and registration | **Mobile + API integration written** | Patient-only self-registration; identity verification and full session lifecycle are pending |
-| Appointment list | **Mobile + API integration written** | Authenticated patient appointment retrieval |
-| Patient profile and insurance | **Backend endpoints present** | Complete patient UI and end-to-end validation still needed |
-| Messaging, records, prescriptions | **Backend modules present** | Patient-facing integration and authorization review needed |
-| Video consultation | **Backend integration scaffolding present** | Secure production video and device readiness not delivered |
-| Clinician and admin portals | **Not validated in this repository** | Existing directories are Git links; inspect source repositories before claiming readiness |
-| Automated quality gates | **In progress** | Initial auth tests added; full CI, E2E, accessibility and security testing outstanding |
-
-**Status:** Active development. Features described as implemented have code in the repository; that designation does **not** mean they have passed integration, security, or device testing.
-
-## Design approach
-
-The patient experience follows a focused, accessible interface system:
-
-- **Clear hierarchy** with simple navigation and obvious next actions.
-- **Calm visual language** using soft off-white surfaces, slate text, and teal accents.
-- **Consistent components** for cards, buttons, search, selection, and status feedback.
-- **Responsive interaction states** for loading, empty results, sign-in requirements, and API errors.
-- **Privacy-aware defaults** that avoid fabricated doctor credentials and unnecessary exposure of patient information.
-
-The current interface is an initial implementation; WCAG 2.2 AA testing and usability validation are still required.
-
-## Technology stack
-
-| Layer | Technology |
+| Experience | Current state |
 | --- | --- |
-| Patient application | React Native, Expo, TypeScript |
-| API | Python, FastAPI, Pydantic |
-| Database and migrations | PostgreSQL, SQLAlchemy, Alembic |
-| Background processing | Redis, Celery |
-| File storage (local) | MinIO, S3-compatible API |
-| Infrastructure | Docker Compose |
-| Testing and code quality | pytest, Ruff, mypy, TypeScript checks (coverage incomplete) |
+| Responsive home page and navigation | Implemented in Next.js |
+| Clinician directory, search and specialty filters | Implemented in web UI and wired to FastAPI |
+| Clinician detail and appointment availability | Implemented in web UI and wired to FastAPI |
+| Appointment hold and booking | Client + API integration written; needs E2E and concurrency verification |
+| Patient registration, sign-in and sign-out | Client + API integration written; identity and consent validation pending |
+| Patient appointments | Authenticated UI and API integration written |
+| Secure messaging, records, prescriptions, video | Backend modules exist; web features not completed |
+| Clinician and admin portals | Existing Git links; source and behavior require verification |
+| Production readiness | Not ready for clinical deployment |
+
+The interface uses deep navy typography, teal accents, soft surfaces, accessible controls and responsive grids. No fake clinician reviews, credentials or availability are inserted into API results.
 
 ## Architecture
 
 ```mermaid
 flowchart TD
-    Patient["Patient app<br/>Expo + React Native"] -->|HTTPS / REST| API["FastAPI service"]
-    Clinician["Clinician web<br/>Source integration pending"] -.-> API
-    Admin["Admin web<br/>Source integration pending"] -.-> API
+    P["Patient web · Next.js + React"] --> API["FastAPI REST API"]
+    C["Clinician portal · existing Git link"] -.-> API
+    A["Admin portal · existing Git link"] -.-> API
     API --> DB[("PostgreSQL")]
-    API --> Cache[("Redis")]
-    API --> Storage[("MinIO / S3")]
-    API --> Tasks["Celery jobs"]
-    Tasks --> Cache
+    API --> R[("Redis")]
+    API --> S["MinIO / S3"]
+    API --> W["Celery jobs"]
 ```
 
-### Repository structure
+## Technology stack
+
+| Layer | Tools |
+| --- | --- |
+| Web client | Next.js 15, React 19, TypeScript, CSS, Lucide icons |
+| Backend | Python, FastAPI, Pydantic, SQLAlchemy |
+| Persistence | PostgreSQL, Alembic |
+| Jobs and cache | Celery, Redis |
+| Local infrastructure | Docker Compose, MinIO, MailHog |
+
+### Repository layout
 
 ```text
-CareConnect-/
-├── apps/
-│   ├── patient-mobile/        # Expo patient application
-│   │   ├── App.tsx            # Patient screens and navigation
-│   │   └── src/api.ts         # Typed FastAPI client
-│   ├── clinician-web/         # Git link; source integration pending
-│   └── admin-web/             # Git link; source integration pending
-├── services/
-│   ├── api/                   # FastAPI routes, services, models, migrations
-│   └── worker/                # Background-task service
-├── infra/
-│   └── docker-compose.yml     # Local development services
-├── docs/
-│   └── IMPLEMENTATION_STATUS.md
-├── CareConnect_PRD_v1.0.md
-└── CareConnect_SRS_v1.0.md
+apps/
+  patient-web/         # Responsive Next.js web portal
+    app/               # Page, layout and design system CSS
+    lib/api.ts         # Typed FastAPI client
+  clinician-web/       # Existing Git link; not verified
+  admin-web/           # Existing Git link; not verified
+services/
+  api/                 # FastAPI routes, models, services, migrations
+  worker/              # Background tasks
+infra/
+  docker-compose.yml   # Local development services
+docs/
+  IMPLEMENTATION_STATUS.md
 ```
 
 ## Getting started
 
 ### Prerequisites
 
+- Node.js 20+
+- npm
 - Docker Engine and Docker Compose
-- Node.js and npm
-- Expo Go or an Android/iOS simulator for mobile development
-- Python 3.11+ if running the API or tests outside Docker
 
-### 1. Clone the repository
+### 1. Clone and configure
 
 ```bash
 git clone https://github.com/Gech-E/CareConnect-.git
 cd CareConnect-
-```
-
-> To try the new patient app and the changes documented here, switch to the feature branch:
->
-> ```bash
-> git switch feat/patient-experience-and-security-foundation
-> ```
-
-### 2. Configure the backend
-
-Copy the example environment file and review the **local-only** configuration:
-
-```bash
 cp services/api/.env.example services/api/.env
 ```
 
-On Windows PowerShell, use `Copy-Item services/api/.env.example services/api/.env`.
+Use only development secrets and synthetic data. For PowerShell, replace `cp` with `Copy-Item`.
 
-Replace the example secrets for your development environment. Do not commit `.env` files or reuse local credentials in staging or production.
-
-### 3. Start local services
+### 2. Start backend services
 
 ```bash
 docker compose -f infra/docker-compose.yml up --build -d
 docker compose -f infra/docker-compose.yml exec api alembic upgrade head
 ```
 
-The local stack defines these development endpoints:
+FastAPI runs at **http://localhost:8005** and local API documentation at **http://localhost:8005/docs**.
 
-| Service | Local address |
-| --- | --- |
-| FastAPI | `http://localhost:8005` |
-| API documentation | `http://localhost:8005/docs` |
-| PostgreSQL | `localhost:5433` |
-| Redis | `localhost:6380` |
-| MinIO console | `http://localhost:9001` |
-| MailHog | `http://localhost:8025` |
-
-Use only synthetic fixtures. Review `services/api/seed.py` before running any seed command.
-
-### 4. Run the patient application
+### 3. Run the web app
 
 ```bash
-cd apps/patient-mobile
+cd apps/patient-web
+cp .env.example .env.local
 npm install
+npm run dev
 ```
 
-Copy `.env.example` to `.env` in the **patient-mobile** directory. Set `EXPO_PUBLIC_API_URL` according to your device:
+Open **http://localhost:3005**.
 
-| Runtime | API base URL |
-| --- | --- |
-| iOS simulator | `http://localhost:8005/api/v1` |
-| Android emulator | `http://10.0.2.2:8005/api/v1` |
-| Physical device | `http://<your-computer-LAN-IP>:8005/api/v1` |
+The web app expects `NEXT_PUBLIC_CARECONNECT_API_URL=http://localhost:8005/api/v1` by default. For staging and production, use HTTPS and configure approved CORS origins.
 
-For a physical device, the API must be reachable from the same trusted local network. Local HTTP is for development only; deployed applications must use HTTPS.
+### 4. Verify your changes
 
 ```bash
-npm start
-```
-
-Open the project using Expo Go or your preferred emulator. The local stack and mobile app have not yet passed a complete end-to-end startup verification.
-
-### 5. Development checks
-
-Run the mobile TypeScript check:
-
-```bash
-cd apps/patient-mobile
+cd apps/patient-web
 npm run typecheck
+npm run build
 ```
 
-For API tests and linting, use a Python environment with development dependencies installed:
+These are verification commands, **not** a claim that CI or runtime integration tests have passed. The API and appointment flow still require end-to-end testing.
 
-```bash
-cd services/api
-python -m pip install -e ".[dev]"
-python -m pytest
-ruff check app tests
-```
+## Security considerations
 
-These commands are **recommended verification steps**, not a claim that the current build or test suite passes.
-
-## API overview
-
-The API uses the `/api/v1` prefix. Representative routes include:
-
-| Method | Endpoint | Purpose |
-| --- | --- | --- |
-| `POST` | `/auth/register` | Patient self-registration |
-| `POST` | `/auth/login` | Authenticate a user |
-| `GET` | `/specialties` | Browse specialties |
-| `GET` | `/practitioners` | Search clinician directory |
-| `GET` | `/practitioners/{id}/availability` | Retrieve available slots |
-| `POST` | `/appointment-holds` | Create a temporary hold |
-| `POST` | `/appointments` | Confirm an appointment |
-| `GET` | `/appointments` | List a patient's appointments |
-
-See `/docs` when the local API is running for the generated OpenAPI reference. Contract correctness and authorization behavior still require integration testing.
-
-## Security & privacy
-
-CareConnect handles a sensitive domain; protecting patient information is a prerequisite, not a future polish item.
-
-- Do not store real protected health information in development databases, logs, screenshots, test fixtures, or analytics.
-- Keep credentials outside version control and rotate any real secrets previously committed.
-- Restrict public registration to patient accounts; provision workforce identities separately.
-- Validate access-token type and session state on protected requests; implement refresh rotation, verification, audit coverage, and comprehensive authorization before production.
-- Enforce clinician credential/service-area checks, verified consent, object-level access controls, secure document handling, and appointment concurrency safeguards.
-- Complete threat modeling, penetration testing, incident-response planning, and legal/regulatory assessment.
-
-**No HIPAA-compliance certification or clinical safety claim is made.** Technical architecture alone does not establish regulatory compliance.
+- No real patient data, passwords, or secrets in fixtures or Git.
+- Browser authentication currently uses **memory-only bearer tokens**, which expire from the UI on refresh. For production, replace this with an audited backend-for-frontend approach using secure HttpOnly cookies and CSRF defenses.
+- Complete patient email verification and telehealth consent before protected clinical data access.
+- Audit every privileged operation; enforce server-side authorization and clinician licensing/service-area checks.
+- Add strong slot-conflict prevention at the database layer.
+- Implement rate limits, token rotation, data-retention policy, security review and incident response.
+- Do not claim HIPAA compliance until all required technical and organizational controls are validated.
 
 ## Roadmap
 
-- [x] Establish backend API and domain modules
-- [x] Create initial patient mobile experience
-- [x] Integrate clinician discovery and booking requests
-- [x] Add patient-only registration and initial token/session hardening
-- [ ] Verify patient identity, consent, and profile completion
-- [ ] Fix concurrency guarantees and appointment state transitions
-- [ ] Complete messaging, records, prescriptions, and video experiences
-- [ ] Integrate and validate clinician/admin portals
-- [ ] Build CI pipelines and end-to-end regression tests
-- [ ] Complete accessibility, privacy, and security reviews
-- [ ] Validate deployment and monitoring for an approved clinical environment
+- [x] Responsive Next.js patient experience
+- [x] FastAPI client and clinician discovery integration
+- [x] Basic appointment selection and booking UI
+- [ ] Verify and stabilize auth, consent, and account sessions
+- [ ] End-to-end booking, cancellation and rescheduling
+- [ ] Messaging, records and prescriptions web experiences
+- [ ] Clinician and administrator web dashboards
+- [ ] Accessibility, integration and security tests
+- [ ] Production deployment validation and operational controls
 
-For detailed gaps and delivery gates, see [Implementation Status](./docs/IMPLEMENTATION_STATUS.md).
+## Documentation
 
-## Project documentation
-
-- [Product Requirements Document (PRD)](./CareConnect_PRD_v1.0.md)
-- [Software Requirements Specification (SRS)](./CareConnect_SRS_v1.0.md)
-- [Implementation Status & Risks](./docs/IMPLEMENTATION_STATUS.md)
-- [Patient App Setup](./apps/patient-mobile/README.md)
+- [Product Requirements](./CareConnect_PRD_v1.0.md)
+- [Software Requirements Specification](./CareConnect_SRS_v1.0.md)
+- [Implementation status](./docs/IMPLEMENTATION_STATUS.md)
 
 ## Contributing
 
-Contributions are welcome through issues and pull requests. Please keep changes small, explain their effect on patient data and authorization, add appropriate tests, and reference relevant PRD/SRS requirements. Do not include secrets or real patient data.
-
-This repository does not currently declare a license; contact the repository owner before assuming permission to redistribute or commercially reuse the source.
+Use focused pull requests, describe the user-facing changes, include tests for business rules, and never include real patient information. This repository does not currently declare an open-source license.
 
 ---
 
 <div align="center">
 
-**CareConnect** · A simpler path to connected care
-
-*Built with a focus on clarity, accessibility, and responsible engineering.*
+**CareConnect** · Better access to care, thoughtfully built.
 
 </div>
