@@ -12,8 +12,7 @@ class LoginRequest(CareConnectBase):
 
 class RegisterRequest(CareConnectBase):
     email: EmailStr = Field(..., description="User's email address")
-    password: str = Field(..., description="User's password")
-    role: Literal["patient", "practitioner", "admin"] = Field("patient", description="User role")
+    password: str = Field(..., min_length=12, max_length=72, description="Password (12–72 characters)")
 
 class TokenResponse(CareConnectBase):
     access_token: str = Field(..., description="JWT access token")
