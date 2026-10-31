@@ -1,29 +1,35 @@
-# Implementation status (2026-10-31)
+# CareConnect implementation status
 
-## Delivered on the feature branch
+**Scope:** Browser-based web application only. No native iOS/Android client is maintained.
 
-- Expo patient app with branded home, clinician directory, specialty selection, profile, availability, appointment booking, basic account screens and appointments.
-- API client using existing endpoint contracts and bearer authorization, URL encoding, typed response models, normalized error states.
-- Native access-token storage through Expo SecureStore; web token is intentionally in memory only.
-- Authentication hardening: self-service patient registration, access/refresh token type checking, issuer validation, expiry checks, DB session validation, expiry timestamps.
-- Root README, ignore rules, development environment example.
+## Current implementation
 
-## Major gaps and security gates
+- Responsive patient portal in `apps/patient-web`, built with Next.js, React, TypeScript and CSS.
+- Home, clinician directory, search/filter, clinician details, slot lookup, sign-in/registration, booking and appointment list screens.
+- Existing FastAPI services for authentication, discovery, appointment management, messaging, records, prescriptions, clinician/admin workflows and integrations.
+- Browser client uses short-lived in-memory bearer tokens to avoid writing tokens to localStorage.
+- Backend local stack: PostgreSQL, Redis, MinIO and Celery, configured via Docker Compose.
+- Expo patient mobile application source was removed from the working tree.
 
-1. **Do not deploy with actual PHI.** Finish threat modeling, external security review, encryption/key management, activity audit verification and legal review.
-2. Previously committed `services/api/.env` is removed on this branch. Review repository history; rotate any secrets that were real, and if required remove them from git history using an approved process.
-3. Registration currently creates unverified accounts. Protected health data must remain blocked until verified identity and documented telehealth consent are implemented.
-4. Token refresh needs rotation/reuse detection, audit, and security tests.
-5. Rate limiting middleware in existing code is not yet enforcing a production policy.
-6. Appointment overlap enforcement requires DB-level concurrency constraint/locking; existing logic checks overlap but is vulnerable to simultaneous requests.
-7. Reconcile user and practitioner IDs in clinician endpoints and ensure all record/message download paths enforce contextual authorization.
-8. Verify migrations and seed script against the API; fix response contract drift (some Pydantic schemas and response objects disagree).
-9. Clinician/admin directories in the base tree are gitlinks, not regular source folders; verify their target repositories before integrating.
-10. Run npm typecheck, Ruff, mypy, unit, API integration, and end-to-end device checks in a real CI environment. No build/test pass is claimed here.
+## Not complete / verification required
 
-## Visual direction
+1. **Do not use with real patients or real PHI.** Clinical/legal/privacy security review is outstanding.
+2. Run `npm install && npm run typecheck && npm run build` in `apps/patient-web`. These checks have not been executed by GitHub connector operations.
+3. Execute API integration and end-to-end browser tests against the local database and Redis.
+4. Verify email/identity verification, consent, clinician licensing and service-area restrictions.
+5. Rework browser login for production using a carefully reviewed BFF and secure HttpOnly cookies.
+6. Enforce database-level appointment conflict protection and idempotency under concurrency.
+7. Complete clinician and admin web apps: current directories are Git links whose source hasn't been verified here.
+8. Finish messaging, visits, documents, prescriptions and video UI.
+9. Add CI, accessibility tests, dependency scanning, threat model, rate limits, robust audit events and security review.
 
-- Warm off-white surfaces, deep slate text, accessible teal CTAs, gentle elevation through strokes and rounded corners.
-- Patient-focused task hierarchy, no fake doctor photos, no fabricated clinician credentials.
-- States: loading, empty, network error, guest account, session sign-out, slot selection and booking failure.
-- Next: clinician/admin portals, records/messaging, onboarding, comprehensive accessibility and localization.
+## Visual system
+
+- Off-white background, deep slate text, muted teal accent and soft mint surfaces.
+- Rounded cards, clear primary actions, responsive grids and simple top navigation.
+- Error, loading, empty-list and authentication-required states.
+- No fabricated clinician records, credentials, reviews or slots in the app; lists are fetched from the API.
+
+## Important note
+
+Existing PRD/SRS files still specify React Native/Expo as the planned patient client. Those documents require a formal web-first revision before claiming complete alignment.
