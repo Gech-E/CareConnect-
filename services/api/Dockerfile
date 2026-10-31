@@ -2,13 +2,23 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-COPY pyproject.toml ./
+# Install system dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
 
-# Install dependencies using pip and standard python tools.
-# In a real environment, we might use uv or poetry.
+# Copy and install Python dependencies
+COPY pyproject.toml ./
 RUN pip install --no-cache-dir hatchling \
     && pip install --no-cache-dir .
 
+# Copy application code
 COPY . .
+
+# Create non-root user
+RUN useradd --create-home appuser
+USER appuser
+
+EXPOSE 8000
 
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
