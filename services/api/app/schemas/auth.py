@@ -1,18 +1,24 @@
 from datetime import datetime
-from typing import Literal
 from uuid import UUID
 
-from pydantic import EmailStr, Field
+from pydantic import ConfigDict, EmailStr, Field
 
 from app.schemas import CareConnectBase, TimestampSchema
 
+
 class LoginRequest(CareConnectBase):
+    model_config = ConfigDict(str_strip_whitespace=False, extra="forbid")
     email: EmailStr = Field(..., description="User's email address")
-    password: str = Field(..., description="User's password")
+    password: str = Field(..., min_length=1, max_length=128, description="User's password")
+
 
 class RegisterRequest(CareConnectBase):
+    model_config = ConfigDict(str_strip_whitespace=False, extra="forbid")
     email: EmailStr = Field(..., description="User's email address")
-    password: str = Field(..., min_length=12, max_length=72, description="Password (12–72 characters)")
+    password: str = Field(
+        ..., min_length=12, max_length=128, description="Password (12–128 characters)"
+    )
+
 
 class TokenResponse(CareConnectBase):
     access_token: str = Field(..., description="JWT access token")
@@ -20,15 +26,20 @@ class TokenResponse(CareConnectBase):
     token_type: str = Field("bearer", description="Token type")
     expires_in: int = Field(..., description="Token expiration in seconds")
 
+
 class RefreshRequest(CareConnectBase):
-    refresh_token: str = Field(..., description="JWT refresh token")
+    refresh_token: str = Field(..., min_length=1, max_length=4096, description="JWT refresh token")
+
 
 class PasswordResetRequest(CareConnectBase):
     email: EmailStr = Field(..., description="User's email address")
 
+
 class PasswordResetConfirm(CareConnectBase):
-    token: str = Field(..., description="Reset token")
-    new_password: str = Field(..., description="New password")
+    model_config = ConfigDict(str_strip_whitespace=False, extra="forbid")
+    token: str = Field(..., min_length=1, max_length=4096, description="Reset token")
+    new_password: str = Field(..., min_length=12, max_length=128, description="New password")
+
 
 class SessionInfo(TimestampSchema):
     id: UUID = Field(..., description="Session ID")

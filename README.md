@@ -1,175 +1,115 @@
-<div align="center">
-
 # CareConnect
 
-### Healthcare connections, made simpler.
+A responsive patient portal and API for clinician discovery, appointment booking,
+and care management. The maintained client is a Next.js web application.
 
-**A modern, responsive telehealth web platform for discovering clinicians, booking consultations, and managing care.**
-
-![Next.js](https://img.shields.io/badge/Next.js-15-111827?style=flat-square&logo=nextdotjs)
-![React](https://img.shields.io/badge/React-19-149eca?style=flat-square&logo=react)
-![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6?style=flat-square&logo=typescript)
-![FastAPI](https://img.shields.io/badge/API-FastAPI-009688?style=flat-square&logo=fastapi)
-![Status](https://img.shields.io/badge/status-active%20development-087e83?style=flat-square)
-
-[Overview](#overview) · [Features](#features) · [Get started](#getting-started) · [Architecture](#architecture) · [Roadmap](#roadmap)
-
-</div>
-
----
-
-> [!IMPORTANT]
-> **Development prototype only.** CareConnect must not be used with real medical records or personal health information. Patient verification, clinical eligibility, consent, authorization, secure integrations, tests and regulatory assessment are still required. This project is **not** certified as HIPAA compliant.
-
-## Overview
-
-CareConnect brings healthcare access into one simple web interface. Patients can find clinicians, explore available visit times, and manage appointments from their browser—on a desktop, tablet, or phone.
-
-**Web-first scope:** The current product targets responsive browser experiences. Native iOS/Android applications are intentionally out of scope.
-
-## Features
-
-| Experience | Current state |
-| --- | --- |
-| Responsive home page and navigation | Implemented in Next.js |
-| Clinician directory, search and specialty filters | Implemented in web UI and wired to FastAPI |
-| Clinician detail and appointment availability | Implemented in web UI and wired to FastAPI |
-| Appointment hold and booking | Client + API integration written; needs E2E and concurrency verification |
-| Patient registration, sign-in and sign-out | Client + API integration written; identity and consent validation pending |
-| Patient appointments | Authenticated UI and API integration written |
-| Secure messaging, records, prescriptions, video | Backend modules exist; web features not completed |
-| Clinician and admin portals | Existing Git links; source and behavior require verification |
-| Production readiness | Not ready for clinical deployment |
-
-The interface uses deep navy typography, teal accents, soft surfaces, accessible controls and responsive grids. No fake clinician reviews, credentials or availability are inserted into API results.
+**Release status:** security and reliability hardening is implemented, but clinical
+production launch is blocked by the real provider integrations and operational
+validation listed in [Production readiness](docs/PRODUCTION_READINESS.md). Use
+synthetic data until those gates are completed.
 
 ## Architecture
 
-```mermaid
-flowchart TD
-    P["Patient web · Next.js + React"] --> API["FastAPI REST API"]
-    C["Clinician portal · existing Git link"] -.-> API
-    A["Admin portal · existing Git link"] -.-> API
-    API --> DB[("PostgreSQL")]
-    API --> R[("Redis")]
-    API --> S["MinIO / S3"]
-    API --> W["Celery jobs"]
-```
+- `apps/patient-web`: Next.js, React, TypeScript; same-origin server proxy with
+  HttpOnly session cookies. Browser code never receives bearer tokens.
+- `services/api`: FastAPI, SQLAlchemy, PostgreSQL, Redis and S3-compatible storage.
+- `services/api/app/worker.py`: Celery worker and periodic hold expiry.
+- `infra/docker-compose.yml`: isolated local development infrastructure.
+- `.github/workflows/ci.yml`: quality, regression, dependency and container checks.
 
-## Technology stack
+The previously tracked clinician/admin Git links had no usable source or submodule
+configuration. Those portals are not implemented in this repository. Product and
+software requirements documents describe intended functionality, not a verified
+release contract.
 
-| Layer | Tools |
-| --- | --- |
-| Web client | Next.js 15, React 19, TypeScript, CSS, Lucide icons |
-| Backend | Python, FastAPI, Pydantic, SQLAlchemy |
-| Persistence | PostgreSQL, Alembic |
-| Jobs and cache | Celery, Redis |
-| Local infrastructure | Docker Compose, MinIO, MailHog |
+## Local setup
 
-### Repository layout
+Requires Docker Compose, Node.js 22+ and npm. Python development uses Python 3.12
+and [uv](https://docs.astral.sh/uv/).
 
-```text
-apps/
-  patient-web/         # Responsive Next.js web portal
-    app/               # Page, layout and design system CSS
-    lib/api.ts         # Typed FastAPI client
-  clinician-web/       # Existing Git link; not verified
-  admin-web/           # Existing Git link; not verified
-services/
-  api/                 # FastAPI routes, models, services, migrations
-  worker/              # Background tasks
-infra/
-  docker-compose.yml   # Local development services
-docs/
-  IMPLEMENTATION_STATUS.md
-```
-
-## Getting started
-
-### Prerequisites
-
-- Node.js 20+
-- npm
-- Docker Engine and Docker Compose
-
-### 1. Clone and configure
-
-```bash
+```sh
 git clone https://github.com/Gech-E/CareConnect-.git
 cd CareConnect-
-cp services/api/.env.example services/api/.env
-```
-
-Use only development secrets and synthetic data. For PowerShell, replace `cp` with `Copy-Item`.
-
-### 2. Start backend services
-
-```bash
 docker compose -f infra/docker-compose.yml up --build -d
-docker compose -f infra/docker-compose.yml exec api alembic upgrade head
 ```
 
-FastAPI runs at **http://localhost:8005** and local API documentation at **http://localhost:8005/docs**.
+Compose waits for PostgreSQL, runs Alembic migrations, then starts the API and
+workers. Services bind to loopback. API: `http://localhost:8005`; API reference:
+`http://localhost:8005/docs`; MinIO console: `http://localhost:9001`.
 
-### 3. Run the web app
+Optional synthetic demonstration data:
 
-```bash
+```sh
+docker compose -f infra/docker-compose.yml exec api python seed.py
+```
+
+The seed refuses to run outside `ENVIRONMENT=local`. It includes synthetic users
+with published demonstration passwords and must never be run on a real dataset.
+
+```sh
 cd apps/patient-web
 cp .env.example .env.local
-npm install
+npm ci
 npm run dev
 ```
 
-Open **http://localhost:3005**.
+Open `http://localhost:3005`. PowerShell supports `Copy-Item` in place of `cp`.
+Configure the web server's API URL using the example environment file. Requests
+and sessions pass through the web server, so its upstream API must be reachable
+from that server.
 
-The web app expects `NEXT_PUBLIC_CARECONNECT_API_URL=http://localhost:8005/api/v1` by default. For staging and production, use HTTPS and configure approved CORS origins.
+## Development checks
 
-### 4. Verify your changes
-
-```bash
-cd apps/patient-web
-npm run typecheck
-npm run build
+```sh
+cd services/api
+uv sync --frozen --extra dev --python 3.12
+uv run ruff check .
+uv run ruff format --check .
+uv run pytest -q
 ```
 
-These are verification commands, **not** a claim that CI or runtime integration tests have passed. The API and appointment flow still require end-to-end testing.
+Real database tests require a **dedicated** database with a name ending `_test`.
+Set `DATABASE_URL` and `TEST_DATABASE_URL` to its async PostgreSQL URL, run
+`uv run alembic upgrade head`, then `uv run pytest -q`. CI provisions this database
+and tests token rotation/revocation and concurrent appointment exclusion. Without
+`TEST_DATABASE_URL`, those integration tests are explicitly skipped.
 
-## Security considerations
+```sh
+cd apps/patient-web
+npm ci
+npm run lint
+npm run format:check
+npm run typecheck
+npm test
+npm run build
+npm audit --omit=dev --audit-level=high
+```
 
-- No real patient data, passwords, or secrets in fixtures or Git.
-- Browser authentication currently uses **memory-only bearer tokens**, which expire from the UI on refresh. For production, replace this with an audited backend-for-frontend approach using secure HttpOnly cookies and CSRF defenses.
-- Complete patient email verification and telehealth consent before protected clinical data access.
-- Audit every privileged operation; enforce server-side authorization and clinician licensing/service-area checks.
-- Add strong slot-conflict prevention at the database layer.
-- Implement rate limits, token rotation, data-retention policy, security review and incident response.
-- Do not claim HIPAA compliance until all required technical and organizational controls are validated.
+Commit `uv.lock` and `package-lock.json` with dependency changes. CI installs from
+these locks. Format Python with `uv run ruff format .` and web files with
+`npm run format`. Tests must use synthetic identities and records only.
 
-## Roadmap
+## Deployment
 
-- [x] Responsive Next.js patient experience
-- [x] FastAPI client and clinician discovery integration
-- [x] Basic appointment selection and booking UI
-- [ ] Verify and stabilize auth, consent, and account sessions
-- [ ] End-to-end booking, cancellation and rescheduling
-- [ ] Messaging, records and prescriptions web experiences
-- [ ] Clinician and administrator web dashboards
-- [ ] Accessibility, integration and security tests
-- [ ] Production deployment validation and operational controls
+See [the production runbook](docs/PRODUCTION_READINESS.md) before deploying. Build
+API and web images from their respective directories. API and worker share the
+same image; migrations run as a separate release command before replicas start.
 
-## Documentation
+- `/health/live` is process liveness; `/health/ready` checks database, Redis and
+  storage, returning 503 when a dependency is unhealthy.
+- Stage/production configuration rejects development secrets, debug mode,
+  insecure public origins and enabled demo providers.
+- Redis-backed API/auth/upload rate limits fail closed during Redis outages.
+- Appointment holds use transaction locks and a PostgreSQL exclusion constraint.
+- Uploaded documents remain quarantined until a trusted scanner marks them clean.
+- Fake video, pharmacy, notification and FHIR operations cannot claim success in
+  a production environment.
 
-- [Product Requirements](./CareConnect_PRD_v1.0.md)
-- [Software Requirements Specification](./CareConnect_SRS_v1.0.md)
-- [Implementation status](./docs/IMPLEMENTATION_STATUS.md)
+## Project documentation
 
-## Contributing
+- [Implementation status](docs/IMPLEMENTATION_STATUS.md)
+- [Production readiness and operations](docs/PRODUCTION_READINESS.md)
+- [Product requirements](CareConnect_PRD_v1.0.md)
+- [Software requirements](CareConnect_SRS_v1.0.md)
 
-Use focused pull requests, describe the user-facing changes, include tests for business rules, and never include real patient information. This repository does not currently declare an open-source license.
-
----
-
-<div align="center">
-
-**CareConnect** · Better access to care, thoughtfully built.
-
-</div>
+This repository does not currently declare an open-source license.

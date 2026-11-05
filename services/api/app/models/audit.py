@@ -1,20 +1,26 @@
 import enum
 import uuid
-from datetime import datetime
-from sqlalchemy import String, ForeignKey, Enum, DateTime
-from sqlalchemy.dialects.postgresql import UUID, JSONB
-from sqlalchemy.orm import Mapped, mapped_column, relationship
+from datetime import UTC, datetime
+
+from sqlalchemy import DateTime, Enum, ForeignKey, String
+from sqlalchemy.dialects.postgresql import JSONB, UUID
+from sqlalchemy.orm import Mapped, mapped_column
+
 from app.models import Base, UUIDMixin
 
-class AuditOutcome(str, enum.Enum):
+
+class AuditOutcome(enum.StrEnum):
     success = "success"
     failure = "failure"
     denied = "denied"
 
+
 class AuditEvent(Base, UUIDMixin):
     __tablename__ = "audit_events"
 
-    actor_id: Mapped[uuid.UUID | None] = mapped_column(ForeignKey("users.id", ondelete="SET NULL"), index=True)
+    actor_id: Mapped[uuid.UUID | None] = mapped_column(
+        ForeignKey("users.id", ondelete="SET NULL"), index=True
+    )
     actor_role: Mapped[str | None] = mapped_column(String(100))
     action: Mapped[str] = mapped_column(String(100), index=True, nullable=False)
     resource_type: Mapped[str] = mapped_column(String(100), index=True, nullable=False)
@@ -25,4 +31,6 @@ class AuditEvent(Base, UUIDMixin):
     user_agent: Mapped[str | None] = mapped_column(String(500))
     request_id: Mapped[str | None] = mapped_column(String(100))
     metadata_json: Mapped[dict] = mapped_column("metadata", JSONB, default=dict)
-    timestamp: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=datetime.utcnow, index=True, nullable=False)
+    timestamp: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=lambda: datetime.now(UTC), index=True, nullable=False
+    )

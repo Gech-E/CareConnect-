@@ -11,6 +11,7 @@ import structlog
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
+from app.core import get_settings
 from app.core.exceptions import AppError, ConflictError, ForbiddenError, NotFoundError
 from app.services.audit_service import log_audit_event
 
@@ -73,9 +74,7 @@ async def get_prescription_by_id(
     """Get prescription detail with audit (RX-002)."""
     from app.models.prescription import Prescription
 
-    result = await db.execute(
-        select(Prescription).where(Prescription.id == prescription_id)
-    )
+    result = await db.execute(select(Prescription).where(Prescription.id == prescription_id))
     rx = result.scalar_one_or_none()
     if not rx:
         raise NotFoundError("prescription")
@@ -108,9 +107,7 @@ async def get_fulfillment_options(
     """
     from app.models.prescription import Prescription
 
-    result = await db.execute(
-        select(Prescription).where(Prescription.id == prescription_id)
-    )
+    result = await db.execute(select(Prescription).where(Prescription.id == prescription_id))
     rx = result.scalar_one_or_none()
     if not rx:
         raise NotFoundError("prescription")
@@ -125,7 +122,13 @@ async def get_fulfillment_options(
             status_code=400,
         )
 
-    # Mock pharmacy options (adapter would provide real data)
+    if not get_settings().ENABLE_DEMO_PROVIDERS:
+        raise AppError(
+            "PHARMACY_PROVIDER_UNAVAILABLE",
+            "Pharmacy fulfillment is currently unavailable.",
+            status_code=503,
+        )
+    # Demonstration options are never exposed in staging or production.
     return [
         {
             "pharmacy_name": "CareConnect Pharmacy - Downtown",
@@ -154,14 +157,26 @@ async def create_fulfillment_request(
     """Submit a fulfillment request (RX-005, RX-006, RX-007)."""
     from app.models.prescription import FulfillmentRequest, Prescription
 
+    if not get_settings().ENABLE_DEMO_PROVIDERS:
+        raise AppError(
+            "PHARMACY_PROVIDER_UNAVAILABLE",
+            "Pharmacy fulfillment is currently unavailable.",
+            status_code=503,
+        )
+
     result = await db.execute(
-        select(Prescription).where(Prescription.id == prescription_id)
+        select(Prescription)
+        .where(Prescription.id == prescription_id, Prescription.is_deleted.is_(False))
+        .with_for_update()
     )
     rx = result.scalar_one_or_none()
     if not rx:
         raise NotFoundError("prescription")
     if rx.patient_id != patient_id:
         raise ForbiddenError()
+
+    if rx.status != "active" or (rx.expires_at and rx.expires_at <= datetime.now(UTC)):
+        raise ConflictError("PRESCRIPTION_INACTIVE", "This prescription cannot be fulfilled.")
 
     # RX-008: Exclude controlled substances
     if rx.is_controlled:
@@ -175,10 +190,12 @@ async def create_fulfillment_request(
     existing = await db.execute(
         select(FulfillmentRequest).where(
             FulfillmentRequest.prescription_id == prescription_id,
-            FulfillmentRequest.status.in_(["requested", "accepted", "processing"]),
+            FulfillmentRequest.status.in_(
+                ["requested", "accepted", "processing", "ready", "dispatched"]
+            ),
         )
     )
-    if existing.scalar_one_or_none():
+    if existing.scalars().first():
         raise ConflictError(
             code="FULFILLMENT_IN_PROGRESS",
             message="A fulfillment request is already in progress for this prescription.",

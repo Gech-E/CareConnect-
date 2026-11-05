@@ -4,53 +4,75 @@ Provides appointment management, availability rules, encounter
 documents, and prescription creation for clinicians.
 """
 
-from datetime import UTC, datetime
+from datetime import UTC, datetime, time
 from typing import Annotated, Any
 from uuid import UUID
+from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
 from fastapi import APIRouter, Depends, Request, status
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator, model_validator
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.database import get_db
+from app.core.exceptions import ForbiddenError
 from app.core.security import UserRole, get_current_active_user, require_roles
-from app.models.appointment import Appointment
+from app.models.appointment import Appointment, AppointmentStatus
 from app.models.availability import AvailabilityRule
 from app.models.prescription import Prescription
 from app.services import appointment_service, record_service
+from app.services.access_service import (
+    get_active_practitioner,
+    get_authorized_appointment,
+    get_authorized_encounter,
+)
 from app.services.audit_service import log_audit_event
-
 
 # ── Local schemas (clinician-specific) ───────────────────────────────
 
+
 class AvailabilityRuleInput(BaseModel):
     day_of_week: int = Field(..., ge=0, le=6)
-    start_time: str = Field(..., description="HH:MM format")
-    end_time: str = Field(..., description="HH:MM format")
+    start_time: time
+    end_time: time
     visit_duration_minutes: int = Field(30, ge=10, le=120)
     buffer_minutes: int = Field(10, ge=0, le=60)
-    timezone: str = Field("America/Los_Angeles")
+    timezone: str = Field("UTC", max_length=50)
+
+    @field_validator("timezone")
+    @classmethod
+    def valid_timezone(cls, value: str) -> str:
+        try:
+            ZoneInfo(value)
+        except (ZoneInfoNotFoundError, ValueError) as exc:
+            raise ValueError("Use a valid IANA timezone") from exc
+        return value
+
+    @model_validator(mode="after")
+    def valid_hours(self):
+        if self.start_time.tzinfo or self.end_time.tzinfo or self.end_time <= self.start_time:
+            raise ValueError("Use local times with an end after the start")
+        return self
 
 
 class StatusUpdateInput(BaseModel):
-    status: str = Field(..., description="New appointment status")
-    reason: str | None = None
+    status: AppointmentStatus
+    reason: str | None = Field(None, max_length=255)
 
 
 class PrescriptionInput(BaseModel):
     patient_id: UUID
-    medication_name: str
-    strength: str | None = None
-    form: str | None = None
-    quantity: str | None = None
-    instructions: str | None = None
-    refills_total: int = 0
+    medication_name: str = Field(min_length=1, max_length=255)
+    strength: str | None = Field(None, max_length=100)
+    form: str | None = Field(None, max_length=100)
+    quantity: str | None = Field(None, max_length=100)
+    instructions: str | None = Field(None, max_length=5000)
+    refills_total: int = Field(0, ge=0, le=12)
 
 
 class DocumentInput(BaseModel):
-    filename: str
-    content_type: str
+    filename: str = Field(min_length=1, max_length=255)
+    content_type: str = Field(min_length=1, max_length=100)
 
 
 router = APIRouter(
@@ -60,20 +82,12 @@ router = APIRouter(
 
 @router.get("/appointments")
 async def get_clinician_appointments(
-    db: Annotated[AsyncSession, Depends(get_db)],
+    db: Annotated[AsyncSession, Depends(get_db, scope="function")],
     current_user: Annotated[Any, Depends(get_current_active_user)],
     status_filter: str | None = None,
 ) -> Any:
     """Get the clinician's appointment queue."""
-    from app.models.practitioner import Practitioner
-
-    # Find practitioner record for this user
-    prac_result = await db.execute(
-        select(Practitioner).where(Practitioner.user_id == current_user.id)
-    )
-    practitioner = prac_result.scalar_one_or_none()
-    if not practitioner:
-        return {"items": []}
+    practitioner = await get_active_practitioner(db, current_user.id)
 
     stmt = select(Appointment).where(
         Appointment.practitioner_id == practitioner.id,
@@ -82,7 +96,7 @@ async def get_clinician_appointments(
     if status_filter:
         stmt = stmt.where(Appointment.status == status_filter)
 
-    stmt = stmt.order_by(Appointment.scheduled_start.asc())
+    stmt = stmt.order_by(Appointment.scheduled_start.asc()).limit(100)
     result = await db.execute(stmt)
     appointments = result.scalars().all()
 
@@ -104,7 +118,7 @@ async def get_clinician_appointments(
 @router.get("/appointments/{appointment_id}")
 async def get_clinician_appointment_detail(
     appointment_id: UUID,
-    db: Annotated[AsyncSession, Depends(get_db)],
+    db: Annotated[AsyncSession, Depends(get_db, scope="function")],
     current_user: Annotated[Any, Depends(get_current_active_user)],
 ) -> Any:
     """Get appointment detail for the clinician."""
@@ -116,29 +130,17 @@ async def get_clinician_appointment_detail(
 @router.post("/availability", status_code=status.HTTP_201_CREATED)
 async def set_availability(
     data: AvailabilityRuleInput,
-    db: Annotated[AsyncSession, Depends(get_db)],
+    db: Annotated[AsyncSession, Depends(get_db, scope="function")],
     current_user: Annotated[Any, Depends(get_current_active_user)],
 ) -> Any:
     """Create or update availability rules."""
-    from app.models.practitioner import Practitioner
-
-    prac_result = await db.execute(
-        select(Practitioner).where(Practitioner.user_id == current_user.id)
-    )
-    practitioner = prac_result.scalar_one_or_none()
-    if not practitioner:
-        from app.core.exceptions import NotFoundError
-        raise NotFoundError("practitioner")
-
-    from datetime import time as dt_time
-    parts_start = data.start_time.split(":")
-    parts_end = data.end_time.split(":")
+    practitioner = await get_active_practitioner(db, current_user.id)
 
     rule = AvailabilityRule(
         practitioner_id=practitioner.id,
         day_of_week=data.day_of_week,
-        start_time=dt_time(int(parts_start[0]), int(parts_start[1])),
-        end_time=dt_time(int(parts_end[0]), int(parts_end[1])),
+        start_time=data.start_time,
+        end_time=data.end_time,
         visit_duration_minutes=data.visit_duration_minutes,
         buffer_minutes=data.buffer_minutes,
         timezone=data.timezone,
@@ -155,31 +157,28 @@ async def update_appointment_status(
     appointment_id: UUID,
     data: StatusUpdateInput,
     request: Request,
-    db: Annotated[AsyncSession, Depends(get_db)],
+    db: Annotated[AsyncSession, Depends(get_db, scope="function")],
     current_user: Annotated[Any, Depends(get_current_active_user)],
 ) -> Any:
     """Update an appointment's status (clinician action)."""
-    from app.models.practitioner import Practitioner
-
-    prac_result = await db.execute(
-        select(Practitioner).where(Practitioner.user_id == current_user.id)
+    appointment = await get_authorized_appointment(
+        db, appointment_id, current_user.id, current_user.role, for_update=True
     )
-    practitioner = prac_result.scalar_one_or_none()
-
-    result = await db.execute(
-        select(Appointment).where(Appointment.id == appointment_id)
-    )
-    appointment = result.scalar_one_or_none()
-    if not appointment:
-        from app.core.exceptions import NotFoundError
-        raise NotFoundError("appointment")
-
-    if practitioner and appointment.practitioner_id != practitioner.id:
-        from app.core.exceptions import ForbiddenError
-        raise ForbiddenError()
+    if data.status not in {
+        "waiting",
+        "in_progress",
+        "completed",
+        "no_show",
+        "cancelled_by_clinician",
+    }:
+        raise ForbiddenError("Use the dedicated booking workflow for this action.")
+    appointment_service.validate_transition(appointment.status, data.status)
 
     old_status = appointment.status
     appointment.status = data.status
+    await appointment_service._record_status_change(
+        db, appointment.id, old_status, data.status, current_user.id, data.reason
+    )
     await db.flush()
 
     ip_address = request.client.host if request.client else None
@@ -202,7 +201,7 @@ async def upload_encounter_document(
     encounter_id: UUID,
     data: DocumentInput,
     request: Request,
-    db: Annotated[AsyncSession, Depends(get_db)],
+    db: Annotated[AsyncSession, Depends(get_db, scope="function")],
     current_user: Annotated[Any, Depends(get_current_active_user)],
 ) -> Any:
     """Create a document upload intent for an encounter."""
@@ -210,6 +209,7 @@ async def upload_encounter_document(
     return await record_service.create_upload_intent(
         db,
         owner_id=current_user.id,
+        owner_role=current_user.role,
         filename=data.filename,
         content_type=data.content_type,
         context_type="encounter",
@@ -223,19 +223,22 @@ async def create_prescription(
     encounter_id: UUID,
     data: PrescriptionInput,
     request: Request,
-    db: Annotated[AsyncSession, Depends(get_db)],
+    db: Annotated[AsyncSession, Depends(get_db, scope="function")],
     current_user: Annotated[Any, Depends(get_current_active_user)],
 ) -> Any:
     """Create a prescription from an encounter."""
-    from app.models.practitioner import Practitioner
-
-    prac_result = await db.execute(
-        select(Practitioner).where(Practitioner.user_id == current_user.id)
+    practitioner = await get_active_practitioner(db, current_user.id)
+    encounter, appointment = await get_authorized_encounter(
+        db, encounter_id, current_user.id, current_user.role
     )
-    practitioner = prac_result.scalar_one_or_none()
-    if not practitioner:
-        from app.core.exceptions import NotFoundError
-        raise NotFoundError("practitioner")
+    if appointment.patient_id != data.patient_id:
+        raise ForbiddenError()
+    if encounter.status not in {"in_progress", "completed"}:
+        from app.core.exceptions import ConflictError
+
+        raise ConflictError(
+            "ENCOUNTER_NOT_READY", "The encounter must have started before prescribing."
+        )
 
     prescription = Prescription(
         patient_id=data.patient_id,
@@ -267,4 +270,8 @@ async def create_prescription(
         ip_address=ip_address,
     )
 
-    return {"id": str(prescription.id), "medication_name": prescription.medication_name, "status": "active"}
+    return {
+        "id": str(prescription.id),
+        "medication_name": prescription.medication_name,
+        "status": "active",
+    }

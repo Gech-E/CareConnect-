@@ -8,17 +8,17 @@ from datetime import UTC, datetime, timedelta
 from uuid import UUID, uuid4
 
 import structlog
-from sqlalchemy import and_, select
+from sqlalchemy import select, update
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core import get_settings
 from app.core.exceptions import (
     ConflictError,
-    ForbiddenError,
     InvalidStateTransitionError,
     NotFoundError,
     SlotUnavailableError,
 )
+from app.services.access_service import get_authorized_appointment
 from app.services.audit_service import log_audit_event
 
 logger = structlog.get_logger(__name__)
@@ -32,7 +32,13 @@ VALID_TRANSITIONS: dict[str, set[str]] = {
     "held": {"confirmed", "expired"},
     "confirmed": {"checked_in", "rescheduled", "cancelled_by_patient", "cancelled_by_clinician"},
     "checked_in": {"waiting", "rescheduled", "cancelled_by_patient", "cancelled_by_clinician"},
-    "waiting": {"in_progress", "rescheduled", "cancelled_by_patient", "cancelled_by_clinician", "no_show"},
+    "waiting": {
+        "in_progress",
+        "rescheduled",
+        "cancelled_by_patient",
+        "cancelled_by_clinician",
+        "no_show",
+    },
     "in_progress": {"completed"},
     # Terminal states — no further transitions
     "completed": set(),
@@ -49,6 +55,84 @@ def validate_transition(from_status: str, to_status: str) -> None:
     allowed = VALID_TRANSITIONS.get(from_status, set())
     if to_status not in allowed:
         raise InvalidStateTransitionError("appointment", from_status, to_status)
+
+
+async def _lock_practitioner(db: AsyncSession, practitioner_id: UUID) -> None:
+    from app.models.practitioner import Practitioner
+
+    result = await db.execute(
+        select(Practitioner)
+        .where(
+            Practitioner.id == practitioner_id,
+            Practitioner.status == "active",
+            Practitioner.is_deleted.is_(False),
+        )
+        .with_for_update()
+    )
+    if result.scalar_one_or_none() is None:
+        raise NotFoundError("practitioner")
+
+
+async def _expire_holds(db: AsyncSession, practitioner_id: UUID) -> None:
+    from app.models.appointment import Appointment
+
+    await db.execute(
+        update(Appointment)
+        .where(
+            Appointment.practitioner_id == practitioner_id,
+            Appointment.status == "held",
+            Appointment.hold_expires_at <= datetime.now(UTC),
+        )
+        .values(status="expired")
+    )
+
+
+async def _validate_visit_type(db: AsyncSession, practitioner_id: UUID, visit_type: str) -> None:
+    from app.models.practitioner import Organization, PractitionerRole
+
+    result = await db.execute(
+        select(PractitionerRole.id)
+        .join(Organization, Organization.id == PractitionerRole.organization_id)
+        .where(
+            PractitionerRole.practitioner_id == practitioner_id,
+            PractitionerRole.is_deleted.is_(False),
+            PractitionerRole.visit_types.contains([visit_type]),
+            Organization.is_active.is_(True),
+            Organization.is_deleted.is_(False),
+        )
+        .limit(1)
+    )
+    if result.scalar_one_or_none() is None:
+        raise ConflictError(
+            "VISIT_TYPE_UNAVAILABLE", "This practitioner does not offer that visit type."
+        )
+
+
+async def _validate_slot(
+    db: AsyncSession,
+    practitioner_id: UUID,
+    slot_start: datetime,
+    *,
+    exclude_id: UUID | None = None,
+) -> datetime:
+    from app.services.discovery_service import get_practitioner_availability
+
+    if slot_start.tzinfo is None or slot_start <= datetime.now(UTC):
+        raise SlotUnavailableError()
+    # Include neighboring local dates for practitioners on either side of UTC.
+    day = slot_start.astimezone(UTC).date()
+    availability = await get_practitioner_availability(
+        db,
+        practitioner_id,
+        day - timedelta(days=1),
+        day + timedelta(days=1),
+        exclude_appointment_id=exclude_id,
+    )
+    for slots in availability["availability"].values():
+        for slot in slots:
+            if datetime.fromisoformat(slot["start"]) == slot_start and slot["is_available"]:
+                return datetime.fromisoformat(slot["end"])
+    raise SlotUnavailableError()
 
 
 async def _record_status_change(
@@ -74,6 +158,7 @@ async def _record_status_change(
 
 # ── Slot hold ────────────────────────────────────────────────────────
 
+
 async def create_slot_hold(
     db: AsyncSession,
     *,
@@ -86,33 +171,46 @@ async def create_slot_hold(
 ) -> dict:
     """Create a temporary slot hold (APT-004).
 
-    Prevents double booking during confirmation by using a database
-    constraint on (practitioner_id, scheduled_start, status).
+    Serialize reservations per practitioner, with a database exclusion
+    constraint as the final protection against concurrent overlapping bookings.
     """
     from app.models.appointment import Appointment
+
+    await _lock_practitioner(db, practitioner_id)
 
     # Check idempotency — return existing hold if key matches
     existing = await db.execute(
         select(Appointment).where(Appointment.idempotency_key == idempotency_key)
     )
     if hold := existing.scalar_one_or_none():
+        if (
+            hold.patient_id != patient_id
+            or hold.practitioner_id != practitioner_id
+            or hold.scheduled_start != slot_start
+            or hold.visit_type != visit_type
+        ):
+            raise ConflictError(
+                "IDEMPOTENCY_KEY_REUSED", "Use a new idempotency key for this request."
+            )
         return {
             "hold_id": str(hold.id),
             "expires_at": hold.hold_expires_at.isoformat() if hold.hold_expires_at else None,
             "status": hold.status,
         }
 
-    # Check for overlapping confirmed appointments
-    slot_end = slot_start + timedelta(minutes=settings.DEFAULT_VISIT_DURATION_MINUTES)
+    await _expire_holds(db, practitioner_id)
+    await _validate_visit_type(db, practitioner_id, visit_type)
+    slot_end = await _validate_slot(db, practitioner_id, slot_start)
     overlap = await db.execute(
         select(Appointment).where(
             Appointment.practitioner_id == practitioner_id,
+            Appointment.is_deleted.is_(False),
             Appointment.status.in_(["held", "confirmed", "checked_in", "waiting", "in_progress"]),
             Appointment.scheduled_start < slot_end,
             Appointment.scheduled_end > slot_start,
         )
     )
-    if overlap.scalar_one_or_none():
+    if overlap.scalars().first():
         raise SlotUnavailableError()
 
     hold_expires = datetime.now(UTC) + timedelta(seconds=settings.SLOT_HOLD_TTL_SECONDS)
@@ -149,6 +247,7 @@ async def create_slot_hold(
 
 # ── Booking ──────────────────────────────────────────────────────────
 
+
 async def confirm_appointment(
     db: AsyncSession,
     *,
@@ -162,10 +261,13 @@ async def confirm_appointment(
     from app.models.appointment import Appointment
 
     result = await db.execute(
-        select(Appointment).where(
+        select(Appointment)
+        .where(
             Appointment.id == hold_id,
             Appointment.patient_id == patient_id,
+            Appointment.is_deleted.is_(False),
         )
+        .with_for_update()
     )
     appointment = result.scalar_one_or_none()
     if not appointment:
@@ -176,9 +278,9 @@ async def confirm_appointment(
         return _appointment_to_dict(appointment)
 
     # Check hold expiry
-    if appointment.hold_expires_at and appointment.hold_expires_at < datetime.now(UTC):
-        appointment.status = "expired"
-        await db.flush()
+    if appointment.status == "expired" or (
+        appointment.hold_expires_at and appointment.hold_expires_at <= datetime.now(UTC)
+    ):
         raise ConflictError(
             code="HOLD_EXPIRED",
             message="The slot hold has expired. Please select a new time.",
@@ -189,9 +291,7 @@ async def confirm_appointment(
     appointment.status = "confirmed"
     appointment.preparation_instructions = preparation_notes
 
-    await _record_status_change(
-        db, appointment.id, old_status, "confirmed", patient_id
-    )
+    await _record_status_change(db, appointment.id, old_status, "confirmed", patient_id)
     await db.flush()
 
     await log_audit_event(
@@ -209,6 +309,7 @@ async def confirm_appointment(
 
 # ── Reschedule ───────────────────────────────────────────────────────
 
+
 async def reschedule_appointment(
     db: AsyncSession,
     *,
@@ -222,29 +323,26 @@ async def reschedule_appointment(
     """Reschedule an appointment — creates a new one linked to the original."""
     from app.models.appointment import Appointment
 
-    result = await db.execute(
-        select(Appointment).where(Appointment.id == appointment_id)
+    original = await get_authorized_appointment(db, appointment_id, user_id, user_role)
+    await _lock_practitioner(db, original.practitioner_id)
+    original = await get_authorized_appointment(
+        db, appointment_id, user_id, user_role, for_update=True
     )
-    original = result.scalar_one_or_none()
-    if not original:
-        raise NotFoundError("appointment")
-
-    # Authorization check
-    if user_role == "patient" and original.patient_id != user_id:
-        raise ForbiddenError()
-    if user_role == "clinician" and original.practitioner_id != user_id:
-        raise ForbiddenError()
+    await _expire_holds(db, original.practitioner_id)
+    await _validate_visit_type(db, original.practitioner_id, original.visit_type)
+    new_end = await _validate_slot(
+        db, original.practitioner_id, new_slot_start, exclude_id=original.id
+    )
 
     validate_transition(original.status, "rescheduled")
     old_status = original.status
     original.status = "rescheduled"
+    # Release the old range before inserting a potentially overlapping new range.
+    await db.flush()
 
-    await _record_status_change(
-        db, original.id, old_status, "rescheduled", user_id, reason
-    )
+    await _record_status_change(db, original.id, old_status, "rescheduled", user_id, reason)
 
     # Create new appointment linked to original
-    new_end = new_slot_start + timedelta(minutes=settings.DEFAULT_VISIT_DURATION_MINUTES)
     new_appointment = Appointment(
         patient_id=original.patient_id,
         practitioner_id=original.practitioner_id,
@@ -275,6 +373,7 @@ async def reschedule_appointment(
 
 # ── Cancellation ─────────────────────────────────────────────────────
 
+
 async def cancel_appointment(
     db: AsyncSession,
     *,
@@ -285,23 +384,15 @@ async def cancel_appointment(
     ip_address: str | None = None,
 ) -> dict:
     """Cancel an appointment with proper role-based status."""
-    from app.models.appointment import Appointment
 
-    result = await db.execute(
-        select(Appointment).where(Appointment.id == appointment_id)
+    appointment = await get_authorized_appointment(
+        db, appointment_id, user_id, user_role, for_update=True
     )
-    appointment = result.scalar_one_or_none()
-    if not appointment:
-        raise NotFoundError("appointment")
 
     # Determine cancellation status based on role
-    if user_role in ("clinician", "clinical_staff"):
-        if appointment.practitioner_id != user_id and user_role == "clinician":
-            raise ForbiddenError()
+    if user_role == "clinician":
         new_status = "cancelled_by_clinician"
     else:
-        if appointment.patient_id != user_id:
-            raise ForbiddenError()
         new_status = "cancelled_by_patient"
 
     validate_transition(appointment.status, new_status)
@@ -309,9 +400,7 @@ async def cancel_appointment(
     appointment.status = new_status
     appointment.cancellation_reason = reason
 
-    await _record_status_change(
-        db, appointment.id, old_status, new_status, user_id, reason
-    )
+    await _record_status_change(db, appointment.id, old_status, new_status, user_id, reason)
     await db.flush()
 
     await log_audit_event(
@@ -330,6 +419,7 @@ async def cancel_appointment(
 
 # ── Check-in ─────────────────────────────────────────────────────────
 
+
 async def check_in(
     db: AsyncSession,
     *,
@@ -343,10 +433,13 @@ async def check_in(
     from app.models.appointment import Appointment
 
     result = await db.execute(
-        select(Appointment).where(
+        select(Appointment)
+        .where(
             Appointment.id == appointment_id,
             Appointment.patient_id == patient_id,
+            Appointment.is_deleted.is_(False),
         )
+        .with_for_update()
     )
     appointment = result.scalar_one_or_none()
     if not appointment:
@@ -358,13 +451,25 @@ async def check_in(
             message="Please confirm your current physical location before checking in.",
         )
 
+    if not emergency_contact_confirmed:
+        raise ConflictError(
+            "EMERGENCY_CONTACT_NOT_CONFIRMED",
+            "Please confirm your emergency contact before checking in.",
+        )
+    now = datetime.now(UTC)
+    if (
+        now < appointment.scheduled_start - timedelta(minutes=settings.APPOINTMENT_WINDOW_MINUTES)
+        or now >= appointment.scheduled_end
+    ):
+        raise ConflictError(
+            "CHECK_IN_WINDOW_CLOSED", "Check-in is available shortly before the scheduled visit."
+        )
+
     validate_transition(appointment.status, "checked_in")
     old_status = appointment.status
     appointment.status = "checked_in"
 
-    await _record_status_change(
-        db, appointment.id, old_status, "checked_in", patient_id
-    )
+    await _record_status_change(db, appointment.id, old_status, "checked_in", patient_id)
     await db.flush()
 
     await log_audit_event(
@@ -381,6 +486,7 @@ async def check_in(
 
 
 # ── Query ────────────────────────────────────────────────────────────
+
 
 async def get_patient_appointments(
     db: AsyncSession,
@@ -407,6 +513,7 @@ async def get_patient_appointments(
 
     if cursor:
         from uuid import UUID as UUIDType
+
         query = query.where(Appointment.id < UUIDType(cursor))
 
     result = await db.execute(query)
@@ -430,20 +537,8 @@ async def get_appointment_by_id(
     user_role: str,
 ) -> dict:
     """Get a single appointment with authorization check."""
-    from app.models.appointment import Appointment
 
-    result = await db.execute(
-        select(Appointment).where(Appointment.id == appointment_id)
-    )
-    appointment = result.scalar_one_or_none()
-    if not appointment:
-        raise NotFoundError("appointment")
-
-    # Authorization
-    if user_role == "patient" and appointment.patient_id != user_id:
-        raise ForbiddenError()
-    if user_role == "clinician" and appointment.practitioner_id != user_id:
-        raise ForbiddenError()
+    appointment = await get_authorized_appointment(db, appointment_id, user_id, user_role)
 
     return _appointment_to_dict(appointment)
 
@@ -454,16 +549,26 @@ def _appointment_to_dict(appointment) -> dict:
         "id": str(appointment.id),
         "patient_id": str(appointment.patient_id),
         "practitioner_id": str(appointment.practitioner_id),
-        "organization_id": str(appointment.organization_id) if appointment.organization_id else None,
+        "organization_id": str(appointment.organization_id)
+        if appointment.organization_id
+        else None,
         "visit_type": appointment.visit_type,
         "status": appointment.status,
-        "scheduled_start": appointment.scheduled_start.isoformat() if appointment.scheduled_start else None,
-        "scheduled_end": appointment.scheduled_end.isoformat() if appointment.scheduled_end else None,
+        "scheduled_start": appointment.scheduled_start.isoformat()
+        if appointment.scheduled_start
+        else None,
+        "scheduled_end": appointment.scheduled_end.isoformat()
+        if appointment.scheduled_end
+        else None,
         "timezone": appointment.timezone,
         "cancellation_reason": appointment.cancellation_reason,
-        "rescheduled_from_id": str(appointment.rescheduled_from_id) if appointment.rescheduled_from_id else None,
+        "rescheduled_from_id": str(appointment.rescheduled_from_id)
+        if appointment.rescheduled_from_id
+        else None,
         "preparation_instructions": appointment.preparation_instructions,
-        "estimated_price": float(appointment.estimated_price) if appointment.estimated_price else None,
+        "estimated_price": float(appointment.estimated_price)
+        if appointment.estimated_price
+        else None,
         "created_at": appointment.created_at.isoformat() if appointment.created_at else None,
         "updated_at": appointment.updated_at.isoformat() if appointment.updated_at else None,
     }

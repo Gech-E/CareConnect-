@@ -6,12 +6,13 @@ and slot calculation with timezone awareness.
 
 from datetime import UTC, date, datetime, time, timedelta
 from uuid import UUID
+from zoneinfo import ZoneInfo
 
 import structlog
-from sqlalchemy import and_, func, or_, select
+from sqlalchemy import func, or_, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from app.core.exceptions import NotFoundError
+from app.core.exceptions import AppError, NotFoundError
 
 logger = structlog.get_logger(__name__)
 
@@ -37,6 +38,7 @@ async def search_practitioners(
         select(Practitioner)
         .join(PractitionerRole, Practitioner.id == PractitionerRole.practitioner_id)
         .where(Practitioner.status == "active")
+        .where(Practitioner.is_deleted.is_(False), PractitionerRole.is_deleted.is_(False))
     )
 
     # Name search
@@ -76,7 +78,9 @@ async def search_practitioners(
     elif sort_by == "price":
         stmt = stmt.order_by(PractitionerRole.price_range_min.asc().nullslast())
     elif sort_by == "soonest":
-        stmt = stmt.order_by(Practitioner.created_at.asc())  # Simplified; real would use availability
+        stmt = stmt.order_by(
+            Practitioner.created_at.asc()
+        )  # Simplified; real would use availability
     else:  # recommended
         stmt = stmt.order_by(
             Practitioner.average_rating.desc().nullslast(),
@@ -107,7 +111,11 @@ async def get_practitioner_detail(
     from app.models.practitioner import Practitioner, PractitionerRole
 
     result = await db.execute(
-        select(Practitioner).where(Practitioner.id == practitioner_id)
+        select(Practitioner).where(
+            Practitioner.id == practitioner_id,
+            Practitioner.status == "active",
+            Practitioner.is_deleted.is_(False),
+        )
     )
     practitioner = result.scalar_one_or_none()
     if not practitioner:
@@ -127,7 +135,9 @@ async def get_practitioner_detail(
         "years_of_experience": practitioner.years_of_experience,
         "profile_image_url": practitioner.profile_image_url,
         "status": practitioner.status,
-        "average_rating": float(practitioner.average_rating) if practitioner.average_rating else None,
+        "average_rating": float(practitioner.average_rating)
+        if practitioner.average_rating
+        else None,
         "review_count": practitioner.review_count or 0,
         "roles": [
             {
@@ -149,18 +159,23 @@ async def get_practitioner_availability(
     practitioner_id: UUID,
     start_date: date,
     end_date: date | None = None,
+    *,
+    exclude_appointment_id: UUID | None = None,
 ) -> dict:
     """Generate available slots from availability rules (APT-002)."""
     from app.models.availability import AvailabilityException, AvailabilityRule
 
     if not end_date:
         end_date = start_date + timedelta(days=7)
+    if end_date < start_date or (end_date - start_date).days > 31:
+        raise AppError("INVALID_DATE_RANGE", "Availability must cover between 1 and 32 days.")
 
     # Fetch rules
     rules_result = await db.execute(
         select(AvailabilityRule).where(
             AvailabilityRule.practitioner_id == practitioner_id,
             AvailabilityRule.is_active == True,  # noqa: E712
+            AvailabilityRule.is_deleted.is_(False),
         )
     )
     rules = rules_result.scalars().all()
@@ -171,6 +186,7 @@ async def get_practitioner_availability(
             AvailabilityException.practitioner_id == practitioner_id,
             AvailabilityException.date >= start_date,
             AvailabilityException.date <= end_date,
+            AvailabilityException.is_deleted.is_(False),
         )
     )
     exceptions = {e.date: e for e in exceptions_result.scalars().all()}
@@ -181,14 +197,19 @@ async def get_practitioner_availability(
     appt_result = await db.execute(
         select(Appointment).where(
             Appointment.practitioner_id == practitioner_id,
+            Appointment.is_deleted.is_(False),
             Appointment.status.in_(["held", "confirmed", "checked_in", "waiting", "in_progress"]),
-            Appointment.scheduled_start >= datetime.combine(start_date, time.min).replace(tzinfo=UTC),
-            Appointment.scheduled_start <= datetime.combine(end_date, time.max).replace(tzinfo=UTC),
+            or_(Appointment.status != "held", Appointment.hold_expires_at > datetime.now(UTC)),
+            Appointment.scheduled_end
+            > datetime.combine(start_date - timedelta(days=1), time.min, UTC),
+            Appointment.scheduled_start
+            < datetime.combine(end_date + timedelta(days=2), time.min, UTC),
         )
     )
     booked_slots = [
         (a.scheduled_start, a.scheduled_end)
         for a in appt_result.scalars().all()
+        if a.id != exclude_appointment_id
     ]
 
     # Generate slots
@@ -211,22 +232,35 @@ async def get_practitioner_availability(
             if rule.day_of_week != day_of_week:
                 continue
 
-            slot_start = datetime.combine(current_date, rule.start_time).replace(tzinfo=UTC)
-            slot_end_limit = datetime.combine(current_date, rule.end_time).replace(tzinfo=UTC)
+            zone = ZoneInfo(rule.timezone)
+            start_time, end_time = rule.start_time, rule.end_time
+            if current_date in exceptions:
+                exc = exceptions[current_date]
+                start_time = exc.start_time or start_time
+                end_time = exc.end_time or end_time
+            slot_start = datetime.combine(current_date, start_time, zone)
+            slot_end_limit = datetime.combine(current_date, end_time, zone)
             duration = timedelta(minutes=rule.visit_duration_minutes)
             buffer = timedelta(minutes=rule.buffer_minutes or 0)
+            if duration <= timedelta(0) or buffer < timedelta(0):
+                continue
 
             while slot_start + duration <= slot_end_limit:
                 slot_end = slot_start + duration
-                is_booked = any(
-                    bs < slot_end and be > slot_start
-                    for bs, be in booked_slots
+                # Nonexistent wall times at a DST jump must not be offered.
+                if slot_start.astimezone(UTC).astimezone(zone).replace(
+                    tzinfo=None
+                ) != slot_start.replace(tzinfo=None):
+                    slot_start = slot_end + buffer
+                    continue
+                is_booked = any(bs < slot_end and be > slot_start for bs, be in booked_slots)
+                day_slots.append(
+                    {
+                        "start": slot_start.isoformat(),
+                        "end": slot_end.isoformat(),
+                        "is_available": not is_booked and slot_start > datetime.now(UTC),
+                    }
                 )
-                day_slots.append({
-                    "start": slot_start.isoformat(),
-                    "end": slot_end.isoformat(),
-                    "is_available": not is_booked,
-                })
                 slot_start = slot_end + buffer
 
         availability_by_date[current_date.isoformat()] = day_slots

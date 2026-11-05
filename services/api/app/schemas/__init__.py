@@ -1,8 +1,7 @@
 """Shared Pydantic schema utilities and base classes."""
 
 from datetime import datetime
-from typing import Any, Generic, TypeVar
-from uuid import UUID
+from typing import Any, TypeVar
 
 from pydantic import BaseModel, ConfigDict, Field
 
@@ -33,7 +32,7 @@ class PaginationParams(BaseModel):
     limit: int = Field(20, ge=1, le=100, description="Number of items per page")
 
 
-class PaginatedResponse(BaseModel, Generic[T]):
+class PaginatedResponse[T](BaseModel):
     """Standard paginated response wrapper."""
 
     items: list[T]

@@ -3,27 +3,14 @@
 import asyncio
 from logging.config import fileConfig
 
-from alembic import context
 from sqlalchemy import pool
 from sqlalchemy.ext.asyncio import async_engine_from_config
 
+from alembic import context
 from app.core import get_settings
-from app.models import Base
+from app.models import Base, register_models
 
-# Import all models so they register with Base.metadata
-from app.models.user import User, UserSession  # noqa: F401
-from app.models.patient import PatientProfile, InsurancePolicy  # noqa: F401
-from app.models.practitioner import Practitioner, PractitionerRole, Organization  # noqa: F401
-from app.models.availability import AvailabilityRule, AvailabilityException  # noqa: F401
-from app.models.appointment import Appointment, AppointmentStatusHistory  # noqa: F401
-from app.models.encounter import Encounter, VideoSession  # noqa: F401
-from app.models.consent import Consent  # noqa: F401
-from app.models.messaging import MessageThread, MessageThreadParticipant, Message  # noqa: F401
-from app.models.record import MedicalRecord, Document  # noqa: F401
-from app.models.prescription import Prescription, FulfillmentRequest  # noqa: F401
-from app.models.notification import Notification  # noqa: F401
-from app.models.audit import AuditEvent  # noqa: F401
-from app.models.support import SupportCase  # noqa: F401
+register_models()
 
 config = context.config
 settings = get_settings()
@@ -33,7 +20,7 @@ if config.config_file_name is not None:
 
 target_metadata = Base.metadata
 
-config.set_main_option("sqlalchemy.url", settings.DATABASE_URL)
+config.set_main_option("sqlalchemy.url", settings.DATABASE_URL.replace("%", "%%"))
 
 
 def run_migrations_offline() -> None:

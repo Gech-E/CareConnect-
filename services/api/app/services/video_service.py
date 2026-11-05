@@ -4,7 +4,7 @@ Implements SRS §4.6-4.7: device checks, video token management,
 encounter lifecycle, and video session state machine.
 """
 
-from datetime import UTC, datetime
+from datetime import UTC, datetime, timedelta
 from typing import Any
 from uuid import UUID, uuid4
 
@@ -12,6 +12,7 @@ import structlog
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
+from app.core import get_settings
 from app.core.exceptions import (
     AppError,
     ConflictError,
@@ -19,6 +20,7 @@ from app.core.exceptions import (
     InvalidStateTransitionError,
     NotFoundError,
 )
+from app.services.access_service import get_authorized_appointment
 from app.services.audit_service import log_audit_event
 
 logger = structlog.get_logger(__name__)
@@ -39,36 +41,54 @@ async def run_device_check(
     data: dict | Any,
 ) -> dict:
     """Validate device readiness (WAIT-004)."""
-    has_camera = data.has_camera if hasattr(data, 'has_camera') else data.get('has_camera', False)
-    has_microphone = data.has_microphone if hasattr(data, 'has_microphone') else data.get('has_microphone', False)
-    has_speaker = data.has_speaker if hasattr(data, 'has_speaker') else data.get('has_speaker', False)
-    network_quality = data.network_quality if hasattr(data, 'network_quality') else data.get('network_quality', 'unknown')
+    has_camera = data.has_camera if hasattr(data, "has_camera") else data.get("has_camera", False)
+    has_microphone = (
+        data.has_microphone
+        if hasattr(data, "has_microphone")
+        else data.get("has_microphone", False)
+    )
+    has_speaker = (
+        data.has_speaker if hasattr(data, "has_speaker") else data.get("has_speaker", False)
+    )
+    network_quality = (
+        data.network_quality
+        if hasattr(data, "network_quality")
+        else data.get("network_quality", "unknown")
+    )
 
     issues = []
     if not has_camera:
-        issues.append({
-            "device": "camera",
-            "message": "Camera not detected. Please check your camera settings.",
-            "severity": "warning",
-        })
+        issues.append(
+            {
+                "device": "camera",
+                "message": "Camera not detected. Please check your camera settings.",
+                "severity": "warning",
+            }
+        )
     if not has_microphone:
-        issues.append({
-            "device": "microphone",
-            "message": "Microphone not detected. You will not be heard during the call.",
-            "severity": "error",
-        })
+        issues.append(
+            {
+                "device": "microphone",
+                "message": "Microphone not detected. You will not be heard during the call.",
+                "severity": "error",
+            }
+        )
     if not has_speaker:
-        issues.append({
-            "device": "speaker",
-            "message": "Speaker/audio output not detected.",
-            "severity": "warning",
-        })
+        issues.append(
+            {
+                "device": "speaker",
+                "message": "Speaker/audio output not detected.",
+                "severity": "warning",
+            }
+        )
     if network_quality in ("poor", "none"):
-        issues.append({
-            "device": "network",
-            "message": "Your network connection is weak. Audio-only mode may be used.",
-            "severity": "warning",
-        })
+        issues.append(
+            {
+                "device": "network",
+                "message": "Your network connection is weak. Audio-only mode may be used.",
+                "severity": "warning",
+            }
+        )
 
     return {
         "ready": len([i for i in issues if i["severity"] == "error"]) == 0,
@@ -89,22 +109,17 @@ async def create_video_token(
 
     Creates encounter and video session if they don't exist.
     """
-    from app.models.appointment import Appointment
     from app.models.encounter import Encounter, VideoSession
 
-    # Verify appointment exists and user is authorized
-    result = await db.execute(
-        select(Appointment).where(Appointment.id == appointment_id)
+    appointment = await get_authorized_appointment(
+        db, appointment_id, user_id, user_role, for_update=True
     )
-    appointment = result.scalar_one_or_none()
-    if not appointment:
-        raise NotFoundError("appointment")
-
-    # Authorization
-    if user_role == "patient" and appointment.patient_id != user_id:
-        raise ForbiddenError()
-    if user_role == "clinician" and appointment.practitioner_id != user_id:
-        raise ForbiddenError()
+    if not get_settings().ENABLE_DEMO_PROVIDERS:
+        raise AppError(
+            "VIDEO_PROVIDER_UNAVAILABLE",
+            "Video consultations are currently unavailable.",
+            status_code=503,
+        )
 
     # Check appointment is in valid state for joining
     if appointment.status not in ("checked_in", "waiting", "in_progress"):
@@ -151,11 +166,10 @@ async def create_video_token(
     if user_role == "clinician" and appointment.status != "in_progress":
         if appointment.status in ("waiting", "checked_in"):
             from app.services.appointment_service import _record_status_change
+
             old_status = appointment.status
             appointment.status = "in_progress"
-            await _record_status_change(
-                db, appointment.id, old_status, "in_progress", user_id
-            )
+            await _record_status_change(db, appointment.id, old_status, "in_progress", user_id)
             encounter.status = "in_progress"
             encounter.started_at = datetime.now(UTC)
             await db.flush()
@@ -173,7 +187,8 @@ async def create_video_token(
     return {
         "token": mock_token,
         "session_id": str(video_session.vendor_session_id),
-        "expires_at": datetime.now(UTC).isoformat(),
+        "expires_at": (datetime.now(UTC) + timedelta(minutes=5)).isoformat(),
+        "demo": True,
     }
 
 
@@ -182,12 +197,18 @@ async def record_video_event(
     *,
     appointment_id: UUID,
     event_data: dict | Any,
-    user_id: UUID | None = None,
+    user_id: UUID,
+    user_role: str,
     ip_address: str | None = None,
 ) -> None:
     """Record video events (CALL-007): join, leave, reconnect, end."""
-    event_type = event_data.event_type if hasattr(event_data, 'event_type') else event_data.get('event_type')
-    metadata = event_data.metadata if hasattr(event_data, 'metadata') else event_data.get('metadata')
+    await get_authorized_appointment(db, appointment_id, user_id, user_role, for_update=True)
+    event_type = (
+        event_data.event_type if hasattr(event_data, "event_type") else event_data.get("event_type")
+    )
+    metadata = (
+        event_data.metadata if hasattr(event_data, "metadata") else event_data.get("metadata")
+    )
     from app.models.encounter import VideoSession
 
     vs_result = await db.execute(
@@ -207,6 +228,16 @@ async def record_video_event(
     }
     new_status = status_map.get(event_type)
     if new_status:
+        allowed = {
+            "token_issued": {"connected", "failed"},
+            "joining": {"connected", "failed"},
+            "connected": {"reconnecting", "ended", "failed"},
+            "reconnecting": {"connected", "failed", "ended"},
+        }
+        if new_status != video_session.status and new_status not in allowed.get(
+            video_session.status, set()
+        ):
+            raise InvalidStateTransitionError("video_session", video_session.status, new_status)
         video_session.status = new_status
         if new_status == "connected" and not video_session.started_at:
             video_session.started_at = datetime.now(UTC)
@@ -218,7 +249,7 @@ async def record_video_event(
     await log_audit_event(
         db,
         actor_id=user_id,
-        actor_role="user",
+        actor_role=user_role,
         action=f"video.{event_type}",
         resource_type="video_session",
         resource_id=video_session.id,
@@ -236,17 +267,15 @@ async def end_visit(
     ip_address: str | None = None,
 ) -> dict:
     """End a visit and transition to completion (CALL-008)."""
-    from app.models.appointment import Appointment
     from app.models.encounter import Encounter, VideoSession
     from app.services.appointment_service import _record_status_change, validate_transition
 
-    # Get appointment
-    result = await db.execute(
-        select(Appointment).where(Appointment.id == appointment_id)
+    if user_role != "clinician":
+        raise ForbiddenError()
+    appointment = await get_authorized_appointment(
+        db, appointment_id, user_id, user_role, for_update=True
     )
-    appointment = result.scalar_one_or_none()
-    if not appointment:
-        raise NotFoundError("appointment")
+    validate_transition(appointment.status, "completed")
 
     # Complete encounter
     enc_result = await db.execute(
@@ -271,9 +300,7 @@ async def end_visit(
         validate_transition(appointment.status, "completed")
         old_status = appointment.status
         appointment.status = "completed"
-        await _record_status_change(
-            db, appointment.id, old_status, "completed", user_id
-        )
+        await _record_status_change(db, appointment.id, old_status, "completed", user_id)
 
     await db.flush()
 

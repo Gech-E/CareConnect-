@@ -1,12 +1,15 @@
 import enum
 import uuid
-from datetime import datetime
-from sqlalchemy import String, ForeignKey, Enum, DateTime, Float
-from sqlalchemy.dialects.postgresql import UUID
-from sqlalchemy.orm import Mapped, mapped_column, relationship
-from app.models import Base, TimestampMixin, UUIDMixin, SoftDeleteMixin
+from datetime import UTC, datetime
 
-class AppointmentStatus(str, enum.Enum):
+from sqlalchemy import CheckConstraint, DateTime, Enum, Float, ForeignKey, String, text
+from sqlalchemy.dialects.postgresql import ExcludeConstraint
+from sqlalchemy.orm import Mapped, mapped_column, relationship
+
+from app.models import Base, SoftDeleteMixin, TimestampMixin, UUIDMixin
+
+
+class AppointmentStatus(enum.StrEnum):
     draft = "draft"
     held = "held"
     confirmed = "confirmed"
@@ -20,34 +23,68 @@ class AppointmentStatus(str, enum.Enum):
     no_show = "no_show"
     expired = "expired"
 
+
 class Appointment(Base, UUIDMixin, TimestampMixin, SoftDeleteMixin):
     __tablename__ = "appointments"
+    __table_args__ = (
+        CheckConstraint("scheduled_end > scheduled_start", name="appointments_positive_duration"),
+        ExcludeConstraint(
+            ("practitioner_id", "="),
+            (text("tstzrange(scheduled_start, scheduled_end, '[)')"), "&&"),
+            where=text(
+                "NOT is_deleted AND status IN ('held', 'confirmed', 'checked_in', 'waiting', 'in_progress')"
+            ),
+            name="appointments_no_active_overlap",
+            using="gist",
+        ),
+    )
 
-    patient_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"), index=True, nullable=False)
-    practitioner_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("practitioners.id", ondelete="CASCADE"), index=True, nullable=False)
-    organization_id: Mapped[uuid.UUID | None] = mapped_column(ForeignKey("organizations.id", ondelete="SET NULL"), index=True)
+    patient_id: Mapped[uuid.UUID] = mapped_column(
+        ForeignKey("users.id", ondelete="CASCADE"), index=True, nullable=False
+    )
+    practitioner_id: Mapped[uuid.UUID] = mapped_column(
+        ForeignKey("practitioners.id", ondelete="CASCADE"), index=True, nullable=False
+    )
+    organization_id: Mapped[uuid.UUID | None] = mapped_column(
+        ForeignKey("organizations.id", ondelete="SET NULL"), index=True
+    )
     visit_type: Mapped[str] = mapped_column(String(100), nullable=False)
-    status: Mapped[AppointmentStatus] = mapped_column(Enum(AppointmentStatus), index=True, nullable=False)
-    scheduled_start: Mapped[datetime] = mapped_column(DateTime(timezone=True), index=True, nullable=False)
+    status: Mapped[AppointmentStatus] = mapped_column(
+        Enum(AppointmentStatus), index=True, nullable=False
+    )
+    scheduled_start: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), index=True, nullable=False
+    )
     scheduled_end: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
     timezone: Mapped[str | None] = mapped_column(String(50), default="UTC")
     cancellation_reason: Mapped[str | None] = mapped_column(String(255))
-    rescheduled_from_id: Mapped[uuid.UUID | None] = mapped_column(ForeignKey("appointments.id", ondelete="SET NULL"))
+    rescheduled_from_id: Mapped[uuid.UUID | None] = mapped_column(
+        ForeignKey("appointments.id", ondelete="SET NULL")
+    )
     idempotency_key: Mapped[str | None] = mapped_column(String(255), unique=True)
     hold_expires_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
     preparation_instructions: Mapped[str | None] = mapped_column(String)
     estimated_price: Mapped[float | None] = mapped_column(Float)
 
-    history: Mapped[list["AppointmentStatusHistory"]] = relationship("AppointmentStatusHistory", back_populates="appointment")
+    history: Mapped[list["AppointmentStatusHistory"]] = relationship(
+        "AppointmentStatusHistory", back_populates="appointment"
+    )
+
 
 class AppointmentStatusHistory(Base, UUIDMixin, TimestampMixin):
     __tablename__ = "appointment_status_history"
 
-    appointment_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("appointments.id", ondelete="CASCADE"), index=True, nullable=False)
+    appointment_id: Mapped[uuid.UUID] = mapped_column(
+        ForeignKey("appointments.id", ondelete="CASCADE"), index=True, nullable=False
+    )
     from_status: Mapped[AppointmentStatus | None] = mapped_column(Enum(AppointmentStatus))
     to_status: Mapped[AppointmentStatus] = mapped_column(Enum(AppointmentStatus), nullable=False)
-    changed_by_id: Mapped[uuid.UUID | None] = mapped_column(ForeignKey("users.id", ondelete="SET NULL"))
+    changed_by_id: Mapped[uuid.UUID | None] = mapped_column(
+        ForeignKey("users.id", ondelete="SET NULL")
+    )
     reason: Mapped[str | None] = mapped_column(String(255))
-    changed_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=datetime.utcnow, nullable=False)
+    changed_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=lambda: datetime.now(UTC), nullable=False
+    )
 
     appointment: Mapped["Appointment"] = relationship("Appointment", back_populates="history")

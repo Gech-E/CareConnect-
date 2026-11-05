@@ -5,30 +5,34 @@ FastAPI dependencies for extracting the current authenticated user.
 """
 
 from datetime import UTC, datetime, timedelta
-from enum import Enum
+from enum import StrEnum
 from typing import Annotated, Any, Literal
-from uuid import UUID
+from uuid import UUID, uuid4
 
+import bcrypt
+import jwt
+from argon2 import PasswordHasher
+from argon2.exceptions import InvalidHashError, VerificationError
 from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
-from jose import JWTError, jwt
-from passlib.context import CryptContext
-from pydantic import BaseModel, ValidationError
+from jwt import InvalidTokenError
+from pydantic import BaseModel, ValidationError, field_validator
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from app.core import get_settings
+from app.core import Environment, get_settings
 from app.core.database import get_db
 
 settings = get_settings()
 
-pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+password_hasher = PasswordHasher()
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl=f"{settings.API_V1_PREFIX}/auth/login")
 
 
 # ── Roles ────────────────────────────────────────────────────────────
 
-class UserRole(str, Enum):
+
+class UserRole(StrEnum):
     """System roles per SRS §3.1."""
 
     PATIENT = "patient"
@@ -42,6 +46,7 @@ class UserRole(str, Enum):
 
 # ── Token models ─────────────────────────────────────────────────────
 
+
 class TokenPayload(BaseModel):
     sub: str
     role: str
@@ -50,6 +55,11 @@ class TokenPayload(BaseModel):
     jti: str | None = None
     session_id: str | None = None
     type: Literal["access", "refresh"]
+
+    @field_validator("sub")
+    @classmethod
+    def validate_subject(cls, value: str) -> str:
+        return str(UUID(value))
 
 
 class TokenPair(BaseModel):
@@ -61,17 +71,30 @@ class TokenPair(BaseModel):
 
 # ── Password utilities ───────────────────────────────────────────────
 
+
 def hash_password(password: str) -> str:
-    """Hash a plaintext password using bcrypt."""
-    return pwd_context.hash(password)
+    """Hash a password with Argon2id, without bcrypt's 72-byte truncation."""
+    return password_hasher.hash(password)
 
 
 def verify_password(plain: str, hashed: str) -> bool:
-    """Verify a plaintext password against a bcrypt hash."""
-    return pwd_context.verify(plain, hashed)
+    """Verify current hashes and legacy bcrypt hashes during migration."""
+    try:
+        if hashed.startswith(("$2a$", "$2b$", "$2y$")):
+            # Existing bcrypt accounts may contain historically truncated passwords.
+            # Preserve that behavior only until their successful login rehashes them.
+            return bcrypt.checkpw(plain.encode("utf-8")[:72], hashed.encode("ascii"))
+        return password_hasher.verify(hashed, plain)
+    except (VerificationError, InvalidHashError, ValueError, UnicodeError):
+        return False
+
+
+def password_needs_rehash(hashed: str) -> bool:
+    return not hashed.startswith("$argon2") or password_hasher.check_needs_rehash(hashed)
 
 
 # ── Token creation ───────────────────────────────────────────────────
+
 
 def create_access_token(
     subject: str | UUID,
@@ -88,11 +111,15 @@ def create_access_token(
         "iat": now,
         "exp": expire,
         "iss": settings.OIDC_ISSUER_URL,
+        "aud": settings.JWT_AUDIENCE,
+        "jti": str(uuid4()),
         "type": "access",
     }
     if session_id:
         claims["session_id"] = session_id
     if extra_claims:
+        if set(extra_claims) & (set(claims) | {"session_id"}):
+            raise ValueError("Extra claims cannot override security claims")
         claims.update(extra_claims)
     return jwt.encode(claims, settings.JWT_SECRET_KEY, algorithm=settings.JWT_ALGORITHM)
 
@@ -109,6 +136,8 @@ def create_refresh_token(
         "iat": now,
         "exp": expire,
         "iss": settings.OIDC_ISSUER_URL,
+        "aud": settings.JWT_AUDIENCE,
+        "jti": str(uuid4()),
         "type": "refresh",
     }
     if session_id:
@@ -131,6 +160,7 @@ def create_token_pair(
 
 # ── Token validation ────────────────────────────────────────────────
 
+
 def decode_token(token: str) -> TokenPayload:
     """Decode and validate a JWT token.
 
@@ -142,7 +172,10 @@ def decode_token(token: str) -> TokenPayload:
             settings.JWT_SECRET_KEY,
             algorithms=[settings.JWT_ALGORITHM],
             issuer=settings.OIDC_ISSUER_URL,
-            options={"require_exp": True, "require_iat": True},
+            audience=settings.JWT_AUDIENCE,
+            options={
+                "require": ["exp", "iat", "sub", "iss", "aud", "jti"],
+            },
         )
         return TokenPayload(
             sub=payload["sub"],
@@ -153,7 +186,15 @@ def decode_token(token: str) -> TokenPayload:
             session_id=payload.get("session_id"),
             type=payload["type"],
         )
-    except (JWTError, ValidationError, KeyError, TypeError, ValueError) as e:
+    except (
+        InvalidTokenError,
+        ValidationError,
+        KeyError,
+        TypeError,
+        ValueError,
+        OverflowError,
+        OSError,
+    ) as e:
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Invalid or expired token",
@@ -163,9 +204,10 @@ def decode_token(token: str) -> TokenPayload:
 
 # ── FastAPI dependencies ─────────────────────────────────────────────
 
+
 async def get_current_user(
     token: Annotated[str, Depends(oauth2_scheme)],
-    db: Annotated[AsyncSession, Depends(get_db)],
+    db: Annotated[AsyncSession, Depends(get_db, scope="function")],
 ) -> Any:
     """Extract and validate the current user from the JWT bearer token.
 
@@ -184,7 +226,9 @@ async def get_current_user(
     user_id = payload.sub
 
     result = await db.execute(
-        select(User).where(User.id == user_id, User.is_active == True)  # noqa: E712
+        select(User).where(
+            User.id == UUID(user_id), User.is_active.is_(True), User.is_deleted.is_(False)
+        )
     )
     user = result.scalar_one_or_none()
 
@@ -219,6 +263,14 @@ async def get_current_active_user(
         raise HTTPException(
             status_code=status.HTTP_403_FORBIDDEN,
             detail="Account is deactivated",
+        )
+    if (
+        settings.ENVIRONMENT in {Environment.STAGING, Environment.PRODUCTION}
+        and not current_user.is_verified
+    ):
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="Account verification is required before accessing patient services.",
         )
     return current_user
 

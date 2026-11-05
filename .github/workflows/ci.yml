@@ -1,0 +1,96 @@
+name: Quality and security
+
+on:
+  push:
+    branches: [main, 'codex/**']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  api:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: services/api
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: careconnect
+          POSTGRES_PASSWORD: test-password
+          POSTGRES_DB: careconnect_test
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U careconnect -d careconnect_test"
+          --health-interval 5s --health-timeout 3s --health-retries 10
+      redis:
+        image: redis:7-alpine
+        ports: ['6379:6379']
+        options: --health-cmd "redis-cli ping" --health-interval 5s --health-retries 10
+    env:
+      ENVIRONMENT: local
+      DATABASE_URL: postgresql+asyncpg://careconnect:test-password@localhost:5432/careconnect_test
+      TEST_DATABASE_URL: postgresql+asyncpg://careconnect:test-password@localhost:5432/careconnect_test
+      REDIS_URL: redis://localhost:6379/0
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: '0.13.7'
+          enable-cache: true
+      - run: uv sync --frozen --extra dev --python 3.12
+      - run: uv run ruff check .
+      - run: uv run ruff format --check .
+      - run: uv run alembic upgrade head
+      - run: uv run pytest -q --cov=app --cov-report=term-missing
+      - name: Audit runtime dependencies
+        run: |
+          uv export --frozen --no-dev --no-emit-project --format requirements-txt -o /tmp/careconnect-requirements.txt
+          uv run pip-audit --disable-pip -r /tmp/careconnect-requirements.txt
+  web:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: apps/patient-web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: apps/patient-web/package-lock.json
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run format:check
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build
+      - run: npm audit --omit=dev --audit-level=high
+  containers:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker compose -f infra/docker-compose.yml config --quiet
+      - run: docker compose -f infra/docker-compose.yml up --build -d
+      - name: Verify dependency readiness
+        run: curl --fail --retry 30 --retry-delay 3 --retry-all-errors http://localhost:8005/health/ready
+      - name: Validate synthetic seed
+        run: docker compose -f infra/docker-compose.yml exec -T api python seed.py
+      - name: Build web image
+        run: docker build -t careconnect-web:ci apps/patient-web
+      - name: Container diagnostics
+        if: failure()
+        run: docker compose -f infra/docker-compose.yml logs --tail=100
+      - name: Clean up test stack
+        if: always()
+        run: docker compose -f infra/docker-compose.yml down --volumes

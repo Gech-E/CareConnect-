@@ -4,10 +4,14 @@ from pydantic import Field
 
 from app.schemas import CareConnectBase, TimestampSchema
 
+
 class ThreadCreateRequest(CareConnectBase):
-    participant_ids: list[UUID] = Field(..., description="Participant user IDs")
+    participant_ids: list[UUID] = Field(
+        ..., min_length=1, max_length=2, description="Participant user IDs"
+    )
     appointment_id: UUID | None = Field(None, description="Related appointment ID")
-    subject: str = Field(..., description="Thread subject")
+    subject: str = Field(..., min_length=1, max_length=255, description="Thread subject")
+
 
 class MessageResponse(TimestampSchema):
     id: UUID = Field(..., description="Message ID")
@@ -16,6 +20,7 @@ class MessageResponse(TimestampSchema):
     body: str = Field(..., description="Message body")
     attachment_document_id: UUID | None = Field(None, description="Attachment document ID")
 
+
 class ThreadResponse(TimestampSchema):
     id: UUID = Field(..., description="Thread ID")
     subject: str = Field(..., description="Subject")
@@ -23,9 +28,11 @@ class ThreadResponse(TimestampSchema):
     appointment_id: UUID | None = Field(None, description="Appointment ID")
     last_message_preview: str | None = Field(None, description="Last message snippet")
 
+
 class MessageCreateRequest(CareConnectBase):
-    body: str = Field(..., description="Message text")
+    body: str = Field(..., min_length=1, max_length=10000, description="Message text")
     attachment_document_id: UUID | None = Field(None, description="Attachment document ID")
+
 
 class MarkReadRequest(CareConnectBase):
     message_ids: list[UUID] = Field(..., description="Messages to mark as read")

@@ -4,13 +4,17 @@ Production-grade entry point with middleware stack, error handlers,
 CORS configuration, and health checks per SRS requirements.
 """
 
+import asyncio
+from collections.abc import AsyncGenerator
 from contextlib import asynccontextmanager
-from typing import AsyncGenerator
 
 import structlog
-from fastapi import FastAPI, HTTPException, Request
+from fastapi import FastAPI, Response
 from fastapi.exceptions import RequestValidationError
 from fastapi.middleware.cors import CORSMiddleware
+from sqlalchemy import text
+from starlette.concurrency import run_in_threadpool
+from starlette.exceptions import HTTPException
 
 from app.core import get_settings
 from app.core.exceptions import (
@@ -22,6 +26,7 @@ from app.core.exceptions import (
 )
 from app.core.logging import setup_logging
 from app.middleware import (
+    RateLimitMiddleware,
     RequestIDMiddleware,
     RequestLoggingMiddleware,
     SecurityHeadersMiddleware,
@@ -48,38 +53,36 @@ async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
     if settings.is_local:
         try:
             from app.core.storage import ensure_bucket_exists
-            ensure_bucket_exists()
+
+            await run_in_threadpool(ensure_bucket_exists)
             logger.info("storage.bucket_ready")
-        except Exception as e:
-            logger.warning("storage.bucket_init_failed", error=str(e))
+        except Exception:
+            logger.warning("storage.bucket_init_failed")
 
-    yield
-
-    # ── Shutdown ─────────────────────────────────────────────────
-    logger.info("application.shutting_down")
-
-    # Close Redis pool
     try:
-        from app.core.redis import redis_pool
-        await redis_pool.aclose()
-    except Exception:
-        pass
-
-    # Dispose database engine
-    try:
+        yield
+    finally:
+        logger.info("application.shutting_down")
         from app.core.database import engine
+        from app.core.redis import redis_client, redis_pool
+        from app.core.storage import get_s3_client
+
+        await redis_client.aclose()
+        await redis_pool.aclose()
         await engine.dispose()
-    except Exception:
-        pass
+        get_s3_client().close()
+        get_s3_client.cache_clear()
 
 
 def create_application() -> FastAPI:
     """Factory function to create and configure the FastAPI application."""
+    from app.models import register_models
+
+    register_models()
     app = FastAPI(
         title=settings.APP_NAME,
         description=(
             "CareConnect Telehealth Platform API. "
-            "Designed to support a HIPAA-compliant deployment. "
             "This API provides patient registration, clinician discovery, "
             "appointment scheduling, video consultations, secure messaging, "
             "medical records, and prescription management."
@@ -91,7 +94,8 @@ def create_application() -> FastAPI:
         lifespan=lifespan,
     )
 
-    # ── Middleware (order matters: first added = outermost) ───────
+    # Middleware wraps in reverse registration order (last added = outermost).
+    app.add_middleware(RateLimitMiddleware)
     app.add_middleware(RequestLoggingMiddleware)
     app.add_middleware(SecurityHeadersMiddleware)
     app.add_middleware(RequestIDMiddleware)
@@ -112,43 +116,49 @@ def create_application() -> FastAPI:
 
     # ── Routes ───────────────────────────────────────────────────
     from app.api.v1 import api_router
+
     app.include_router(api_router, prefix=settings.API_V1_PREFIX)
 
     # ── Health check ─────────────────────────────────────────────
+    @app.get("/health/live", tags=["System"])
+    async def liveness() -> dict[str, str]:
+        """Process health independent of downstream service outages."""
+        return {"status": "ok"}
+
     @app.get("/health", response_model=HealthResponse, tags=["System"])
-    async def health_check() -> HealthResponse:
-        """System health check endpoint."""
-        services = {}
+    @app.get("/health/ready", response_model=HealthResponse, tags=["System"])
+    async def health_check(response: Response) -> HealthResponse:
+        """Bounded readiness checks; dependencies failing produces HTTP 503."""
 
-        # Check database
-        try:
+        async def database_check() -> None:
             from app.core.database import engine
+
             async with engine.connect() as conn:
-                await conn.execute(
-                    __import__("sqlalchemy").text("SELECT 1")
-                )
-            services["database"] = "healthy"
-        except Exception:
-            services["database"] = "unhealthy"
+                await conn.execute(text("SELECT 1"))
 
-        # Check Redis
-        try:
+        async def redis_check() -> None:
             from app.core.redis import redis_client
-            await redis_client.ping()
-            services["redis"] = "healthy"
-        except Exception:
-            services["redis"] = "unhealthy"
 
-        # Check S3
-        try:
+            await redis_client.ping()
+
+        async def storage_check() -> None:
             from app.core.storage import get_s3_client
-            client = get_s3_client()
-            client.head_bucket(Bucket=settings.S3_BUCKET_NAME)
-            services["storage"] = "healthy"
-        except Exception:
-            services["storage"] = "unhealthy"
+
+            await asyncio.to_thread(get_s3_client().head_bucket, Bucket=settings.S3_BUCKET_NAME)
+
+        checks = {"database": database_check, "redis": redis_check, "storage": storage_check}
+        results = await asyncio.gather(
+            *(asyncio.wait_for(check(), timeout=5) for check in checks.values()),
+            return_exceptions=True,
+        )
+        services = {
+            name: "unhealthy" if isinstance(result, BaseException) else "healthy"
+            for name, result in zip(checks, results, strict=True)
+        }
 
         overall = "ok" if all(s == "healthy" for s in services.values()) else "degraded"
+        response.status_code = 200 if overall == "ok" else 503
+        response.headers["Cache-Control"] = "no-store"
 
         return HealthResponse(
             status=overall,
@@ -163,7 +173,7 @@ def create_application() -> FastAPI:
         return {
             "name": settings.APP_NAME,
             "version": settings.APP_VERSION,
-            "docs": "/docs",
+            "docs": None if settings.is_production else "/docs",
             "health": "/health",
             "api": settings.API_V1_PREFIX,
         }

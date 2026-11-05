@@ -9,6 +9,7 @@ from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.database import get_db
+from app.core.exceptions import AppError, ForbiddenError
 from app.core.security import get_current_active_user
 from app.models.consent import Consent
 from app.models.patient import PatientProfile
@@ -22,7 +23,7 @@ router = APIRouter()
 
 @router.get("/")
 async def get_me(
-    db: Annotated[AsyncSession, Depends(get_db)],
+    db: Annotated[AsyncSession, Depends(get_db, scope="function")],
     current_user: Annotated[Any, Depends(get_current_active_user)],
 ) -> Any:
     """Get current user profile and associated data."""
@@ -43,7 +44,9 @@ async def get_me(
             response["profile"] = {
                 "legal_first_name": profile.legal_first_name,
                 "legal_last_name": profile.legal_last_name,
-                "date_of_birth": profile.date_of_birth.isoformat() if profile.date_of_birth else None,
+                "date_of_birth": profile.date_of_birth.isoformat()
+                if profile.date_of_birth
+                else None,
                 "gender": profile.gender,
                 "address_line1": profile.address_line1,
                 "address_line2": profile.address_line2,
@@ -65,29 +68,49 @@ async def get_me(
 @router.patch("/profile")
 async def update_profile(
     data: PatientProfileUpdate,
-    db: Annotated[AsyncSession, Depends(get_db)],
+    db: Annotated[AsyncSession, Depends(get_db, scope="function")],
     current_user: Annotated[Any, Depends(get_current_active_user)],
 ) -> Any:
     """Update the current patient's profile."""
+    if current_user.role != "patient":
+        raise ForbiddenError()
+    updates = data.model_dump(exclude_unset=True)
+    if any(value is None for value in updates.values()):
+        raise AppError("INVALID_PROFILE", "Required profile fields cannot be cleared.")
     result = await db.execute(
         select(PatientProfile).where(PatientProfile.user_id == current_user.id)
     )
     profile = result.scalar_one_or_none()
     if not profile:
+        if not all(
+            updates.get(key) for key in ("legal_first_name", "legal_last_name", "date_of_birth")
+        ):
+            raise AppError(
+                "INCOMPLETE_PROFILE",
+                "First name, last name and date of birth are required to create a profile.",
+            )
         # Create profile if it doesn't exist
         profile = PatientProfile(user_id=current_user.id)
         db.add(profile)
 
-    for key, value in data.model_dump(exclude_unset=True).items():
+    for key, value in updates.items():
         setattr(profile, key, value)
 
     await db.flush()
+    await log_audit_event(
+        db,
+        actor_id=current_user.id,
+        actor_role=current_user.role,
+        action="patient_profile.updated",
+        resource_type="patient_profile",
+        resource_id=profile.id,
+    )
     return {"status": "updated"}
 
 
 @router.get("/sessions")
 async def get_sessions(
-    db: Annotated[AsyncSession, Depends(get_db)],
+    db: Annotated[AsyncSession, Depends(get_db, scope="function")],
     current_user: Annotated[Any, Depends(get_current_active_user)],
 ) -> Any:
     """List active sessions for the current user."""
@@ -97,7 +120,7 @@ async def get_sessions(
 @router.delete("/sessions/{session_id}", status_code=status.HTTP_204_NO_CONTENT)
 async def delete_session(
     session_id: UUID,
-    db: Annotated[AsyncSession, Depends(get_db)],
+    db: Annotated[AsyncSession, Depends(get_db, scope="function")],
     current_user: Annotated[Any, Depends(get_current_active_user)],
 ) -> None:
     """Revoke a specific user session."""
@@ -106,12 +129,13 @@ async def delete_session(
 
 @router.get("/consents")
 async def get_consents(
-    db: Annotated[AsyncSession, Depends(get_db)],
+    db: Annotated[AsyncSession, Depends(get_db, scope="function")],
     current_user: Annotated[Any, Depends(get_current_active_user)],
 ) -> Any:
     """List consent records for the current user."""
     result = await db.execute(
-        select(Consent).where(Consent.patient_id == current_user.id)
+        select(Consent)
+        .where(Consent.patient_id == current_user.id)
         .order_by(Consent.accepted_at.desc())
     )
     consents = result.scalars().all()
@@ -132,7 +156,7 @@ async def get_consents(
 async def create_consent(
     request: Request,
     data: ConsentCreateRequest,
-    db: Annotated[AsyncSession, Depends(get_db)],
+    db: Annotated[AsyncSession, Depends(get_db, scope="function")],
     current_user: Annotated[Any, Depends(get_current_active_user)],
 ) -> Any:
     """Accept a consent."""
@@ -169,7 +193,7 @@ async def create_consent(
 @router.post("/account-closure-requests", status_code=status.HTTP_202_ACCEPTED)
 async def request_account_closure(
     request: Request,
-    db: Annotated[AsyncSession, Depends(get_db)],
+    db: Annotated[AsyncSession, Depends(get_db, scope="function")],
     current_user: Annotated[Any, Depends(get_current_active_user)],
 ) -> Any:
     """Request account closure. The request will be reviewed by support."""

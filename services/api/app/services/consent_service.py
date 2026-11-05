@@ -20,11 +20,9 @@ async def get_patient_consents(db: AsyncSession, patient_id: UUID) -> list[dict]
     """List consents for patient."""
     from app.models.consent import Consent
 
-    result = await db.execute(
-        select(Consent).where(Consent.patient_id == patient_id)
-    )
+    result = await db.execute(select(Consent).where(Consent.patient_id == patient_id))
     consents = result.scalars().all()
-    
+
     return [
         {
             "id": str(c.id),
@@ -41,11 +39,11 @@ async def get_patient_consents(db: AsyncSession, patient_id: UUID) -> list[dict]
 
 
 async def accept_consent(
-    db: AsyncSession, 
-    patient_id: UUID, 
-    consent_type: str, 
-    version: str, 
-    ip_address: str | None = None
+    db: AsyncSession,
+    patient_id: UUID,
+    consent_type: str,
+    version: str,
+    ip_address: str | None = None,
 ) -> dict:
     """Create new consent record, audit log."""
     from app.models.consent import Consent, ConsentStatus
@@ -69,7 +67,7 @@ async def accept_consent(
         resource_type="consent",
         resource_id=consent.id,
         ip_address=ip_address,
-        metadata={"consent_type": consent_type, "version": version}
+        metadata={"consent_type": consent_type, "version": version},
     )
 
     return {
@@ -84,10 +82,7 @@ async def accept_consent(
 
 
 async def withdraw_consent(
-    db: AsyncSession, 
-    patient_id: UUID, 
-    consent_id: UUID, 
-    ip_address: str | None = None
+    db: AsyncSession, patient_id: UUID, consent_id: UUID, ip_address: str | None = None
 ) -> dict:
     """Withdraw consent, audit log."""
     from app.models.consent import Consent, ConsentStatus

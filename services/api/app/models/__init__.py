@@ -57,9 +57,33 @@ class SoftDeleteMixin:
         default=None,
     )
 
+
 __all__ = [
     "Base",
     "TimestampMixin",
     "UUIDMixin",
     "SoftDeleteMixin",
+    "register_models",
 ]
+
+
+def register_models() -> None:
+    """Load the complete metadata registry before migrations or ORM use."""
+    from importlib import import_module
+
+    for name in (
+        "appointment",
+        "audit",
+        "availability",
+        "consent",
+        "encounter",
+        "messaging",
+        "notification",
+        "patient",
+        "practitioner",
+        "prescription",
+        "record",
+        "support",
+        "user",
+    ):
+        import_module(f"app.models.{name}")

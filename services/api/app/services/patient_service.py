@@ -3,7 +3,6 @@
 Handles patient profiles, insurance policies, and account closures.
 """
 
-from datetime import UTC, datetime
 from uuid import UUID
 
 import structlog
@@ -20,9 +19,7 @@ async def get_patient_profile(db: AsyncSession, user_id: UUID) -> dict:
     """Query PatientProfile by user_id."""
     from app.models.patient import PatientProfile
 
-    result = await db.execute(
-        select(PatientProfile).where(PatientProfile.user_id == user_id)
-    )
+    result = await db.execute(select(PatientProfile).where(PatientProfile.user_id == user_id))
     profile = result.scalar_one_or_none()
     if not profile:
         raise NotFoundError("patient profile")
@@ -51,9 +48,7 @@ async def update_patient_profile(db: AsyncSession, user_id: UUID, **updates) -> 
     """Update PatientProfile fields, audit log."""
     from app.models.patient import PatientProfile
 
-    result = await db.execute(
-        select(PatientProfile).where(PatientProfile.user_id == user_id)
-    )
+    result = await db.execute(select(PatientProfile).where(PatientProfile.user_id == user_id))
     profile = result.scalar_one_or_none()
     if not profile:
         raise NotFoundError("patient profile")
@@ -84,7 +79,7 @@ async def get_insurance_policies(db: AsyncSession, patient_id: UUID) -> list[dic
         select(InsurancePolicy).where(InsurancePolicy.patient_id == patient_id)
     )
     policies = result.scalars().all()
-    
+
     return [
         {
             "id": str(policy.id),
@@ -95,7 +90,9 @@ async def get_insurance_policies(db: AsyncSession, patient_id: UUID) -> list[dic
             "plan_name": policy.plan_name,
             "verification_status": policy.verification_status,
             "verified_at": policy.verified_at.isoformat() if policy.verified_at else None,
-            "policy_document_id": str(policy.policy_document_id) if policy.policy_document_id else None,
+            "policy_document_id": str(policy.policy_document_id)
+            if policy.policy_document_id
+            else None,
         }
         for policy in policies
     ]
@@ -138,17 +135,17 @@ async def create_insurance_policy(db: AsyncSession, patient_id: UUID, **data) ->
     }
 
 
-async def request_account_closure(db: AsyncSession, user_id: UUID, ip_address: str | None = None) -> dict:
+async def request_account_closure(
+    db: AsyncSession, user_id: UUID, ip_address: str | None = None
+) -> dict:
     """Mark user for closure, audit log."""
     from app.models.user import User
 
-    result = await db.execute(
-        select(User).where(User.id == user_id)
-    )
+    result = await db.execute(select(User).where(User.id == user_id))
     user = result.scalar_one_or_none()
     if not user:
         raise NotFoundError("user")
-        
+
     user.is_active = False
     await db.flush()
 
@@ -161,5 +158,5 @@ async def request_account_closure(db: AsyncSession, user_id: UUID, ip_address: s
         resource_id=user_id,
         ip_address=ip_address,
     )
-    
+
     return {"status": "closure_requested", "user_id": str(user_id)}

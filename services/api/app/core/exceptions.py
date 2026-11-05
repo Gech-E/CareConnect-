@@ -9,9 +9,10 @@ from typing import Any
 from uuid import uuid4
 
 import structlog
-from fastapi import HTTPException, Request, status
+from fastapi import Request, status
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
+from starlette.exceptions import HTTPException
 
 logger = structlog.get_logger(__name__)
 
@@ -123,14 +124,14 @@ async def app_error_handler(request: Request, exc: AppError) -> JSONResponse:
         code=exc.code,
         status_code=exc.status_code,
         request_id=request_id,
-        path=str(request.url.path),
+        route=getattr(request.scope.get("route"), "path", "<unmatched>"),
     )
     return JSONResponse(
         status_code=exc.status_code,
         content=_build_error_response(
             exc.code, exc.message, exc.status_code, request_id, exc.details
         ),
-        headers={"Cache-Control": "no-store"},
+        headers={"Cache-Control": "no-store", "X-Request-ID": request_id},
     )
 
 
@@ -145,13 +146,11 @@ async def http_exception_handler(request: Request, exc: HTTPException) -> JSONRe
             exc.status_code,
             request_id,
         ),
-        headers={"Cache-Control": "no-store"},
+        headers={**(exc.headers or {}), "Cache-Control": "no-store", "X-Request-ID": request_id},
     )
 
 
-async def validation_error_handler(
-    request: Request, exc: RequestValidationError
-) -> JSONResponse:
+async def validation_error_handler(request: Request, exc: RequestValidationError) -> JSONResponse:
     """Handle Pydantic validation errors with sanitized output."""
     request_id = getattr(request.state, "request_id", str(uuid4()))
     # Sanitize: remove 'input' from errors to avoid logging user data
@@ -184,8 +183,7 @@ async def generic_exception_handler(request: Request, exc: Exception) -> JSONRes
         "unhandled_exception",
         exc_type=type(exc).__name__,
         request_id=request_id,
-        path=str(request.url.path),
-        exc_info=True,
+        route=getattr(request.scope.get("route"), "path", "<unmatched>"),
     )
     return JSONResponse(
         status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
@@ -195,5 +193,9 @@ async def generic_exception_handler(request: Request, exc: Exception) -> JSONRes
             500,
             request_id,
         ),
-        headers={"Cache-Control": "no-store"},
+        headers={
+            "Cache-Control": "no-store",
+            "X-Request-ID": request_id,
+            "X-Content-Type-Options": "nosniff",
+        },
     )

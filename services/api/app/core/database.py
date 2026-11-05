@@ -19,6 +19,7 @@ engine = create_async_engine(
     pool_timeout=settings.DATABASE_POOL_TIMEOUT,
     pool_pre_ping=True,
     echo=settings.DATABASE_ECHO,
+    hide_parameters=True,
 )
 
 async_session_factory = async_sessionmaker(

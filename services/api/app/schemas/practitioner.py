@@ -6,14 +6,17 @@ from pydantic import Field
 
 from app.schemas import CareConnectBase, TimestampSchema
 
+
 class OrganizationResponse(TimestampSchema):
     id: UUID = Field(..., description="Organization ID")
     name: str = Field(..., description="Organization name")
+
 
 class PractitionerRoleResponse(TimestampSchema):
     id: UUID = Field(..., description="Role ID")
     organization_id: UUID = Field(..., description="Organization ID")
     role_name: str = Field(..., description="Role name")
+
 
 class PractitionerResponse(TimestampSchema):
     id: UUID = Field(..., description="Practitioner ID")
@@ -27,6 +30,7 @@ class PractitionerResponse(TimestampSchema):
     roles: list[PractitionerRoleResponse] = Field(..., description="Practitioner roles")
     organization: OrganizationResponse | None = Field(None, description="Primary organization")
 
+
 class PractitionerSummary(CareConnectBase):
     id: UUID = Field(..., description="Practitioner ID")
     name: str = Field(..., description="Full name")
@@ -34,7 +38,10 @@ class PractitionerSummary(CareConnectBase):
     specialty: str = Field(..., description="Specialty")
     rating: float = Field(..., description="Average rating")
     price: float = Field(..., description="Consultation price")
-    next_available_slot: datetime | None = Field(None, description="Next available appointment slot")
+    next_available_slot: datetime | None = Field(
+        None, description="Next available appointment slot"
+    )
+
 
 class PractitionerSearch(CareConnectBase):
     name: str | None = Field(None, description="Search by name")
@@ -44,4 +51,6 @@ class PractitionerSearch(CareConnectBase):
     min_rating: float | None = Field(None, description="Minimum rating")
     max_price: float | None = Field(None, description="Maximum price")
     available_date: datetime | None = Field(None, description="Available date")
-    sort_by: Literal["rating", "price", "availability"] | None = Field(None, description="Sort order")
+    sort_by: Literal["rating", "price", "availability"] | None = Field(
+        None, description="Sort order"
+    )

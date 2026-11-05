@@ -8,10 +8,11 @@ from datetime import UTC, datetime
 from uuid import UUID
 
 import structlog
-from sqlalchemy import and_, func, select, update
+from sqlalchemy import select, update
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from app.core.exceptions import ForbiddenError, NotFoundError
+from app.core.exceptions import ConflictError, ForbiddenError
+from app.services.access_service import get_authorized_appointment
 from app.services.audit_service import log_audit_event
 
 logger = structlog.get_logger(__name__)
@@ -28,9 +29,21 @@ async def create_thread(
     ip_address: str | None = None,
 ) -> dict:
     """Create a new message thread (MSG-001, MSG-002)."""
-    from app.models.messaging import Message, MessageThread, MessageThreadParticipant
+    from app.models.messaging import MessageThread, MessageThreadParticipant
 
-    # Ensure creator is in participants
+    # Clinical conversations require an existing care relationship.
+    if appointment_id is None:
+        raise ForbiddenError("A care-team conversation requires an appointment.")
+    appointment = await get_authorized_appointment(db, appointment_id, creator_id, creator_role)
+    from app.models.practitioner import Practitioner
+
+    result = await db.execute(
+        select(Practitioner).where(Practitioner.id == appointment.practitioner_id)
+    )
+    practitioner = result.scalar_one()
+    allowed = {appointment.patient_id, practitioner.user_id}
+    if not set(participant_ids).issubset(allowed):
+        raise ForbiddenError()
     all_participants = list(set([creator_id] + participant_ids))
 
     thread = MessageThread(
@@ -85,6 +98,7 @@ async def get_user_threads(
         .join(MessageThreadParticipant)
         .where(MessageThreadParticipant.user_id == user_id)
         .where(MessageThread.status != "closed")
+        .where(MessageThread.is_deleted.is_(False))
         .order_by(MessageThread.updated_at.desc())
         .limit(limit + 1)
     )
@@ -134,6 +148,31 @@ async def send_message(
     )
     if not participant_check.scalar_one_or_none():
         raise ForbiddenError("You are not a participant in this thread.")
+
+    result = await db.execute(
+        select(MessageThread)
+        .where(MessageThread.id == thread_id, MessageThread.is_deleted.is_(False))
+        .with_for_update()
+    )
+    thread = result.scalar_one_or_none()
+    if thread is None or thread.status != "active":
+        raise ConflictError("THREAD_CLOSED", "This conversation is not open for messages.")
+    if attachment_document_id is not None:
+        from app.models.record import Document
+
+        result = await db.execute(
+            select(Document).where(
+                Document.id == attachment_document_id,
+                Document.owner_id == sender_id,
+                Document.context_type == "message",
+                Document.context_id == thread_id,
+                Document.scan_status == "clean",
+                Document.uploaded_at.is_not(None),
+                Document.is_deleted.is_(False),
+            )
+        )
+        if result.scalar_one_or_none() is None:
+            raise ForbiddenError("This attachment is unavailable for this conversation.")
 
     message = Message(
         thread_id=thread_id,
@@ -196,6 +235,7 @@ async def get_thread_messages(
     stmt = (
         select(Message)
         .where(Message.thread_id == thread_id)
+        .where(Message.is_deleted.is_(False))
         .order_by(Message.sent_at.desc())
         .limit(limit + 1)
     )

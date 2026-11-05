@@ -1,9 +1,9 @@
-from datetime import datetime
 from uuid import UUID
 
 from pydantic import Field
 
 from app.schemas import CareConnectBase, TimestampSchema
+
 
 class NotificationResponse(TimestampSchema):
     id: UUID = Field(..., description="Notification ID")
@@ -13,6 +13,7 @@ class NotificationResponse(TimestampSchema):
     body: str = Field(..., description="Notification body (PHI-safe)")
     is_read: bool = Field(False, description="Whether the notification has been read")
     action_url: str | None = Field(None, description="URL for action")
+
 
 class NotificationPreferences(CareConnectBase):
     email_appointments: bool = Field(True, description="Email notifications for appointments")

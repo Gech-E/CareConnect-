@@ -6,16 +6,18 @@ vendor credentials to run locally.
 """
 
 from abc import ABC, abstractmethod
-from datetime import datetime
-from typing import Any
 from uuid import UUID, uuid4
 
 import structlog
+
+from app.core import get_settings
+from app.core.exceptions import AppError
 
 logger = structlog.get_logger(__name__)
 
 
 # ── Video Provider Adapter ───────────────────────────────────────────
+
 
 class VideoProviderAdapter(ABC):
     """Abstract video provider interface (SRS §8.2)."""
@@ -26,9 +28,7 @@ class VideoProviderAdapter(ABC):
         ...
 
     @abstractmethod
-    async def generate_token(
-        self, session_id: str, participant_id: UUID, role: str
-    ) -> dict:
+    async def generate_token(self, session_id: str, participant_id: UUID, role: str) -> dict:
         """Generate a participant-scoped, short-lived token."""
         ...
 
@@ -46,9 +46,7 @@ class MockVideoProvider(VideoProviderAdapter):
         logger.info("mock_video.session_created", session_id=session_id)
         return {"session_id": session_id, "provider": "mock"}
 
-    async def generate_token(
-        self, session_id: str, participant_id: UUID, role: str
-    ) -> dict:
+    async def generate_token(self, session_id: str, participant_id: UUID, role: str) -> dict:
         token = f"mock-token-{uuid4().hex[:24]}"
         logger.info("mock_video.token_generated", session_id=session_id)
         return {"token": token, "expires_in": 3600}
@@ -59,75 +57,60 @@ class MockVideoProvider(VideoProviderAdapter):
 
 # ── Notification Adapter ────────────────────────────────────────────
 
+
 class NotificationAdapter(ABC):
     """Abstract notification interface (SRS §8.3)."""
 
     @abstractmethod
     async def send_email(
         self, to: str, subject: str, body: str, template_key: str | None = None
-    ) -> dict:
-        ...
+    ) -> dict: ...
 
     @abstractmethod
-    async def send_sms(self, to: str, body: str) -> dict:
-        ...
+    async def send_sms(self, to: str, body: str) -> dict: ...
 
     @abstractmethod
-    async def send_push(
-        self, device_token: str, title: str, body: str
-    ) -> dict:
-        ...
+    async def send_push(self, device_token: str, title: str, body: str) -> dict: ...
 
 
 class MockNotificationAdapter(NotificationAdapter):
-    """Mock notification adapter — logs all notifications."""
+    """Development simulation that never logs recipients or clinical content."""
 
     async def send_email(
         self, to: str, subject: str, body: str, template_key: str | None = None
     ) -> dict:
-        logger.info(
-            "mock_notification.email_sent",
-            to=to,
-            subject=subject,
-            template=template_key,
-        )
-        return {"id": str(uuid4()), "status": "sent", "channel": "email"}
+        logger.info("mock_notification.simulated", channel="email")
+        return {"id": str(uuid4()), "status": "simulated", "channel": "email"}
 
     async def send_sms(self, to: str, body: str) -> dict:
-        logger.info("mock_notification.sms_sent", to=to)
-        return {"id": str(uuid4()), "status": "sent", "channel": "sms"}
+        logger.info("mock_notification.simulated", channel="sms")
+        return {"id": str(uuid4()), "status": "simulated", "channel": "sms"}
 
-    async def send_push(
-        self, device_token: str, title: str, body: str
-    ) -> dict:
-        logger.info("mock_notification.push_sent", title=title)
-        return {"id": str(uuid4()), "status": "sent", "channel": "push"}
+    async def send_push(self, device_token: str, title: str, body: str) -> dict:
+        logger.info("mock_notification.simulated", channel="push")
+        return {"id": str(uuid4()), "status": "simulated", "channel": "push"}
 
 
 # ── FHIR/EHR Adapter ────────────────────────────────────────────────
+
 
 class FHIRAdapter(ABC):
     """Abstract FHIR R4 adapter (SRS §8.4)."""
 
     @abstractmethod
-    async def get_patient(self, patient_id: str) -> dict:
-        ...
+    async def get_patient(self, patient_id: str) -> dict: ...
 
     @abstractmethod
-    async def get_appointments(self, patient_id: str) -> list[dict]:
-        ...
+    async def get_appointments(self, patient_id: str) -> list[dict]: ...
 
     @abstractmethod
-    async def create_encounter(self, encounter_data: dict) -> dict:
-        ...
+    async def create_encounter(self, encounter_data: dict) -> dict: ...
 
     @abstractmethod
-    async def get_medication_requests(self, patient_id: str) -> list[dict]:
-        ...
+    async def get_medication_requests(self, patient_id: str) -> list[dict]: ...
 
     @abstractmethod
-    async def get_diagnostic_reports(self, patient_id: str) -> list[dict]:
-        ...
+    async def get_diagnostic_reports(self, patient_id: str) -> list[dict]: ...
 
 
 class MockFHIRAdapter(FHIRAdapter):
@@ -161,22 +144,20 @@ class MockFHIRAdapter(FHIRAdapter):
 
 # ── Pharmacy Adapter ────────────────────────────────────────────────
 
+
 class PharmacyAdapter(ABC):
     """Abstract pharmacy/fulfillment adapter (SRS §8.5)."""
 
     @abstractmethod
-    async def get_pharmacies(self, zip_code: str) -> list[dict]:
-        ...
+    async def get_pharmacies(self, zip_code: str) -> list[dict]: ...
 
     @abstractmethod
     async def submit_fulfillment(
         self, prescription_id: str, pharmacy_id: str, delivery_method: str
-    ) -> dict:
-        ...
+    ) -> dict: ...
 
     @abstractmethod
-    async def check_fulfillment_status(self, reference_id: str) -> dict:
-        ...
+    async def check_fulfillment_status(self, reference_id: str) -> dict: ...
 
 
 class MockPharmacyAdapter(PharmacyAdapter):
@@ -217,21 +198,31 @@ class MockPharmacyAdapter(PharmacyAdapter):
 
 # ── Adapter factory ─────────────────────────────────────────────────
 
+
+def _require_demo_provider() -> None:
+    if not get_settings().ENABLE_DEMO_PROVIDERS:
+        raise AppError("PROVIDER_UNAVAILABLE", "This integration is not configured.", 503)
+
+
 def get_video_provider() -> VideoProviderAdapter:
     """Return the configured video provider adapter."""
+    _require_demo_provider()
     return MockVideoProvider()
 
 
 def get_notification_adapter() -> NotificationAdapter:
     """Return the configured notification adapter."""
+    _require_demo_provider()
     return MockNotificationAdapter()
 
 
 def get_fhir_adapter() -> FHIRAdapter:
     """Return the configured FHIR adapter."""
+    _require_demo_provider()
     return MockFHIRAdapter()
 
 
 def get_pharmacy_adapter() -> PharmacyAdapter:
     """Return the configured pharmacy adapter."""
+    _require_demo_provider()
     return MockPharmacyAdapter()

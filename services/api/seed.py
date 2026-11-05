@@ -10,31 +10,21 @@ from datetime import UTC, date, datetime, time, timedelta
 from uuid import uuid4
 
 from sqlalchemy import text
-from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine, async_sessionmaker
+from sqlalchemy.ext.asyncio import async_sessionmaker, create_async_engine
 
 from app.core import get_settings
 from app.core.security import hash_password
+from app.models import register_models
 
-# Import all models to ensure they are registered with SQLAlchemy
-from app.models.user import User, UserSession
-from app.models.patient import PatientProfile, InsurancePolicy
-from app.models.practitioner import Practitioner, PractitionerRole, Organization
-from app.models.availability import AvailabilityRule, AvailabilityException
-from app.models.appointment import Appointment, AppointmentStatusHistory
-from app.models.encounter import Encounter, VideoSession
-from app.models.consent import Consent
-from app.models.messaging import MessageThread, MessageThreadParticipant, Message
-from app.models.record import MedicalRecord, Document
-from app.models.prescription import Prescription, FulfillmentRequest
-from app.models.notification import Notification
-from app.models.audit import AuditEvent
-from app.models.support import SupportCase
+register_models()
 
 settings = get_settings()
 
 
 async def seed_database():
     """Populate the database with synthetic data for development."""
+    if not settings.is_local:
+        raise RuntimeError("Synthetic seed data is permitted only with ENVIRONMENT=local")
     engine = create_async_engine(settings.DATABASE_URL)
     session_factory = async_sessionmaker(engine, expire_on_commit=False)
 
@@ -148,15 +138,23 @@ async def seed_database():
             is_verified=True,
         )
 
-        db.add_all([
-            patient, patient2, patient3,
-            clinician_user, clinician2_user, clinician3_user, clinician4_user,
-            admin_user, support_user,
-        ])
+        db.add_all(
+            [
+                patient,
+                patient2,
+                patient3,
+                clinician_user,
+                clinician2_user,
+                clinician3_user,
+                clinician4_user,
+                admin_user,
+                support_user,
+            ]
+        )
         await db.flush()
 
         # ── Patient Profiles ─────────────────────────────────────
-        from app.models.patient import PatientProfile, InsurancePolicy
+        from app.models.patient import InsurancePolicy, PatientProfile
 
         profile1 = PatientProfile(
             user_id=patient_id,
@@ -389,7 +387,7 @@ async def seed_database():
         # Past completed appointment
         apt2 = Appointment(
             patient_id=patient_id,
-            practitioner_id=prac2_id,
+            practitioner_id=prac1_id,
             visit_type="video",
             status="completed",
             scheduled_start=now - timedelta(days=7),
@@ -566,10 +564,10 @@ async def seed_database():
         db.add_all([msg1, msg2, msg3])
 
         await db.commit()
-        print("✅ Database seeded successfully with synthetic data!")
-        print(f"   Patients: maya.johnson@example.com / Patient123!")
-        print(f"   Clinician: dr.bekele@careconnect.health / Clinician123!")
-        print(f"   Admin: helen.brooks@careconnect.health / Admin123!")
+        print("Database seeded successfully with synthetic data!")
+        print("   Patients: maya.johnson@example.com / Patient123!")
+        print("   Clinician: dr.bekele@careconnect.health / Clinician123!")
+        print("   Admin: helen.brooks@careconnect.health / Admin123!")
 
     await engine.dispose()
 

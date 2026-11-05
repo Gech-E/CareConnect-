@@ -1,136 +1,97 @@
-# CareConnect Telehealth Platform - Docker Compose
-# Local development environment per SRS §11.2
+# Local development only. Public deployments use managed services and secret injection.
+x-api-environment: &api-environment
+  ENVIRONMENT: local
+  DEBUG: "false"
+  DATABASE_URL: postgresql+asyncpg://careconnect:password@db:5432/careconnect_db
+  REDIS_URL: redis://redis:6379/0
+  CELERY_BROKER_URL: redis://redis:6379/1
+  CELERY_RESULT_BACKEND: redis://redis:6379/2
+  S3_ENDPOINT_URL: http://minio:9000
+  S3_ACCESS_KEY_ID: minioadmin
+  S3_SECRET_ACCESS_KEY: minioadmin
+  SMTP_HOST: mailhog
+  SMTP_PORT: "1025"
+  ALLOWED_ORIGINS: http://localhost:3005
+
+x-api-image: &api-image
+  image: careconnect-api:local
+  build:
+    context: ../services/api
+  environment: *api-environment
+  init: true
 
 services:
-  # ── PostgreSQL ───────────────────────────────────────────────────
   db:
     image: postgres:16-alpine
     environment:
       POSTGRES_USER: careconnect
       POSTGRES_PASSWORD: password
       POSTGRES_DB: careconnect_db
-    ports:
-      - "5433:5432"
-    volumes:
-      - db_data:/var/lib/postgresql/data
+    ports: ["127.0.0.1:5433:5432"]
+    volumes: ["db_data:/var/lib/postgresql/data"]
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U careconnect -d careconnect_db"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
-
-  # ── Redis ────────────────────────────────────────────────────────
+      interval: 5s
+      timeout: 3s
+      retries: 12
   redis:
     image: redis:7-alpine
-    ports:
-      - "6380:6379"
+    ports: ["127.0.0.1:6380:6379"]
     healthcheck:
       test: ["CMD", "redis-cli", "ping"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
-
-  # ── MinIO (S3-compatible object storage) ─────────────────────────
+      interval: 5s
+      timeout: 3s
+      retries: 12
   minio:
-    image: minio/minio:latest
-    command: server /data --console-address ":9001"
+    image: minio/minio:RELEASE.2025-09-07T16-13-09Z
+    command: server /data --console-address :9001
     environment:
       MINIO_ROOT_USER: minioadmin
       MINIO_ROOT_PASSWORD: minioadmin
-    ports:
-      - "9000:9000"
-      - "9001:9001"
-    volumes:
-      - minio_data:/data
-    healthcheck:
-      test: ["CMD", "mc", "ready", "local"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-
-  # ── MailHog (email catcher for development) ──────────────────────
+    ports: ["127.0.0.1:9000:9000", "127.0.0.1:9001:9001"]
+    volumes: ["minio_data:/data"]
   mailhog:
-    image: mailhog/mailhog:latest
-    ports:
-      - "1025:1025"   # SMTP
-      - "8025:8025"   # Web UI
-
-  # ── FastAPI Application ──────────────────────────────────────────
-  api:
-    build:
-      context: ../services/api
-      dockerfile: Dockerfile
-    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
-    ports:
-      - "8005:8000"
-    environment:
-      - DATABASE_URL=postgresql+asyncpg://careconnect:password@db:5432/careconnect_db
-      - REDIS_URL=redis://redis:6379/0
-      - CELERY_BROKER_URL=redis://redis:6379/1
-      - CELERY_RESULT_BACKEND=redis://redis:6379/2
-      - S3_ENDPOINT_URL=http://minio:9000
-      - S3_ACCESS_KEY_ID=minioadmin
-      - S3_SECRET_ACCESS_KEY=minioadmin
-      - SMTP_HOST=mailhog
-      - SMTP_PORT=1025
-      - ENVIRONMENT=local
-      - DEBUG=true
+    image: mailhog/mailhog:v1.0.1
+    ports: ["127.0.0.1:1025:1025", "127.0.0.1:8025:8025"]
+  migrate:
+    <<: *api-image
+    command: alembic upgrade head
+    restart: "no"
     depends_on:
       db:
         condition: service_healthy
+  api:
+    <<: *api-image
+    ports: ["127.0.0.1:8005:8000"]
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
       redis:
         condition: service_healthy
       minio:
         condition: service_started
-    volumes:
-      - ../services/api:/app
-
-  # ── Celery Worker ────────────────────────────────────────────────
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health/live', timeout=3)"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
   worker:
-    build:
-      context: ../services/api
-      dockerfile: Dockerfile
-    command: >
-      celery -A app.worker:celery_app worker
-      --loglevel=info
-      --concurrency=2
-      --queues=default,notifications,fhir_sync,reminders,dead_letter
-    environment:
-      - DATABASE_URL=postgresql+asyncpg://careconnect:password@db:5432/careconnect_db
-      - REDIS_URL=redis://redis:6379/0
-      - CELERY_BROKER_URL=redis://redis:6379/1
-      - CELERY_RESULT_BACKEND=redis://redis:6379/2
-      - S3_ENDPOINT_URL=http://minio:9000
-      - S3_ACCESS_KEY_ID=minioadmin
-      - S3_SECRET_ACCESS_KEY=minioadmin
-      - SMTP_HOST=mailhog
-      - SMTP_PORT=1025
-      - ENVIRONMENT=local
+    <<: *api-image
+    command: celery -A app.worker:celery_app worker --loglevel=info --concurrency=2 --queues=default,notifications,fhir_sync,reminders
     depends_on:
-      db:
-        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
       redis:
         condition: service_healthy
-    volumes:
-      - ../services/api:/app
-
-  # ── Celery Beat (periodic tasks) ────────────────────────────────
   beat:
-    build:
-      context: ../services/api
-      dockerfile: Dockerfile
-    command: >
-      celery -A app.worker:celery_app beat
-      --loglevel=info
-    environment:
-      - CELERY_BROKER_URL=redis://redis:6379/1
-      - CELERY_RESULT_BACKEND=redis://redis:6379/2
-      - ENVIRONMENT=local
+    <<: *api-image
+    command: celery -A app.worker:celery_app beat --loglevel=info --schedule=/tmp/celerybeat-schedule
     depends_on:
+      migrate:
+        condition: service_completed_successfully
       redis:
         condition: service_healthy
-    volumes:
-      - ../services/api:/app
 
 volumes:
   db_data:

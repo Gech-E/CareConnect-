@@ -11,34 +11,31 @@ from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.exceptions import NotFoundError
-from app.services.audit_service import log_audit_event
 
 logger = structlog.get_logger(__name__)
 
 
 async def get_user_notifications(
-    db: AsyncSession, 
-    user_id: UUID, 
-    limit: int = 20, 
-    cursor: str | None = None
+    db: AsyncSession, user_id: UUID, limit: int = 20, cursor: str | None = None
 ) -> dict:
     """List notifications with pagination."""
     from app.models.notification import Notification
 
     query = select(Notification).where(Notification.recipient_id == user_id)
     query = query.order_by(Notification.created_at.desc()).limit(limit + 1)
-    
+
     if cursor:
         from uuid import UUID as UUIDType
+
         query = query.where(Notification.id < UUIDType(cursor))
-        
+
     result = await db.execute(query)
     notifications = result.scalars().all()
-    
+
     has_more = len(notifications) > limit
     if has_more:
         notifications = notifications[:limit]
-        
+
     return {
         "items": [
             {
@@ -64,16 +61,18 @@ async def mark_notification_read(db: AsyncSession, notification_id: UUID, user_i
     from app.models.notification import Notification, NotificationStatus
 
     result = await db.execute(
-        select(Notification).where(Notification.id == notification_id, Notification.recipient_id == user_id)
+        select(Notification).where(
+            Notification.id == notification_id, Notification.recipient_id == user_id
+        )
     )
     notification = result.scalar_one_or_none()
     if not notification:
         raise NotFoundError("notification")
-        
+
     notification.status = NotificationStatus.read
     notification.read_at = datetime.now(UTC)
     await db.flush()
-    
+
     return {
         "id": str(notification.id),
         "status": notification.status,
@@ -82,13 +81,13 @@ async def mark_notification_read(db: AsyncSession, notification_id: UUID, user_i
 
 
 async def create_notification(
-    db: AsyncSession, 
-    recipient_id: UUID, 
-    channel: str, 
-    template_key: str | None, 
-    subject: str | None, 
-    body_preview: str | None, 
-    payload: dict
+    db: AsyncSession,
+    recipient_id: UUID,
+    channel: str,
+    template_key: str | None,
+    subject: str | None,
+    body_preview: str | None,
+    payload: dict,
 ) -> dict:
     """Create notification record and optionally queue for delivery."""
     from app.models.notification import Notification
@@ -103,9 +102,9 @@ async def create_notification(
     )
     db.add(notification)
     await db.flush()
-    
+
     # Optionally queue for delivery using celery or similar task here
-    
+
     return {
         "id": str(notification.id),
         "status": notification.status,

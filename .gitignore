@@ -15,8 +15,15 @@ node_modules/
 .expo/
 dist/
 .next/
+.next-dev/
 coverage/
 *.tsbuildinfo
+.tmp/
+.uv-cache/
+*.egg-info/
+.coverage
+htmlcov/
+backups/
 # OS/editor
 .DS_Store
 .vscode/
