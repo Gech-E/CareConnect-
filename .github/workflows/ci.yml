@@ -41,7 +41,7 @@ jobs:
       TEST_DATABASE_URL: postgresql+asyncpg://careconnect:test-password@localhost:5432/careconnect_test
       REDIS_URL: redis://localhost:6379/0
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: astral-sh/setup-uv@v6
         with:
           version: '0.13.7'
@@ -62,7 +62,7 @@ jobs:
       run:
         working-directory: apps/patient-web
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -79,7 +79,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - run: docker compose -f infra/docker-compose.yml config --quiet
       - run: docker compose -f infra/docker-compose.yml up --build -d
       - name: Verify dependency readiness
